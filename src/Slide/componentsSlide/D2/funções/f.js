@@ -1,6 +1,5 @@
 import $ from "../../../Funções/Query/$";
 import { P } from "../BD/OP";
-import { Objetos } from "../ObjsHookD2/ObjsHookD2";
 import { Style } from "../../D11/stylesPreDef/Styles";
 import { EF } from "../../D11/ElementosFilhosD11/EF";
 import React from "react";
