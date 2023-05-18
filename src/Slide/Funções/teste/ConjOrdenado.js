@@ -15,4 +15,4 @@ var ConjOrdenado = (qe,vi,f) => {
 teste();*/
 
 
-export default ConjOrdenado
+export {ConjOrdenado}

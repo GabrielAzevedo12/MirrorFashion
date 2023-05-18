@@ -48,5 +48,5 @@ var sn = (n1) => {return n1 + 1 }, I10 = ConjOrdenado(10,sn), el = 1;
 
 MaxWidth(I10,1,() => {console.log('Existe o elemento '+ el + ' em ' + I10 + ' ou ' + el + ' é menor q todo elemento de ' + I10)})
 */
-export default MaxWidth
+export  {MaxWidth}
 

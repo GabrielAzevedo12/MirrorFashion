@@ -3,10 +3,10 @@ import UL from "../../../Funções/Mov/TL";
 import OOM from "../../../Funções/teste/OOM";
 import gx from "../../../Funções/Mov/gx";
 import {MD3} from "../../../Funções/Mov/MD3.js";
-import MD4 from "../../../Funções/Mov/MD4.js";
-import ConjOrdenado from "../../../Funções/teste/ConjOrdenado";
-import MaxWidth from "../../../Funções/teste/MaxWidth";
-import MinWidth from "../../../Funções/teste/MinWidth";
+import {MD4} from "../../../Funções/Mov/MD4.js";
+import {ConjOrdenado} from "../../../Funções/teste/ConjOrdenado";
+import {MaxWidth} from "../../../Funções/teste/MaxWidth";
+import {MinWidth} from "../../../Funções/teste/MinWidth";
 
 var Funções = {
     /*

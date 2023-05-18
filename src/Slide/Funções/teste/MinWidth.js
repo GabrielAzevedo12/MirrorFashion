@@ -20,7 +20,7 @@ var MinWidth = (CO,e,a1) => {
 /*var sn = (n1) => {return n1 + 1 }, I10 = ConjOrdenado(10,0,sn), el = 10;
 MinWidth(I10,10,() => {console.log('Existe o elemento '+ el + ' em ' + I10 + ' ou ' + el + ' é maior que pelo menos um elemento de ' + I10)})*/
 
-export default MinWidth
+export  {MinWidth}
 
 //---------------------------------------------------------------------------------------------------
 /*
