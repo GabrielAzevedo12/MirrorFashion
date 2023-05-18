@@ -1,0 +1,32 @@
+//Definições : 
+//mx = Movimento em uma dada direção.
+//me = Movimento a Esquerda do observador que está com uma visão frontal ao monitor.
+// md = -me Oposto do movimento a esquerda.
+// mt = Movimento acima do observador que está com uma visão frontal ao monitor.
+// mb = Movimento abaixo do observador que está com uma visão frontal ao monitor.
+// (( = Operador binário pertence.
+// OB = {x/x é um operador booleano}
+// OA = {x/x é um operador aritimético}
+// QB = {x/x é um quantificador booleano}
+// V = {x/x é um vetor}
+// ^, ||, -> e <-> (( OB  
+// +,- (( OB || OA
+//w = width
+//x (( EH -> xw = largura de x.
+//EH = {x/x é um mais de um Elemento Html}
+// , (( OB e sua função é atuar como um separador de afirmações OB.
+// EX = Existe (( QB
+// Pe(x,y) = Plano de eixos x e y.Sendo x = eixo horizontal = md e y = eixo vertical = mt
+// -> EX -Pe(-x,-y), -x = me, -y = mb    
+// d,t (( V -> EX v = d + t = [d,t] <-> mPe(x,y), d (( x, t (( y.  
+//MX(E,E.offsetX) = o movimento de um dado elemento na direção X .
+
+m = me + md = v + (-v)            
+d(n)md -> d(n+1)md ^ d(n-1)md  
+x (( EH, ^ y (( x, ^ xw === windoww ^ xywindoww != 0
+-> EX Pe(xh,xw) -> Posição de y = v = [md,mt] = [MD(y,y.offsetLeft),MT(y,y.offsetTop)]
+
+
+var ml = $('.Header').offsetLeft, md = ml + $('.Header').offsetWidth - window.innerWidth
+var ml = $('.Header').offsetLeft, md = window.innerWidth - (ml + $('.Header').offsetWidth)
+$('.Header').offsetWidth===window.innerWidth-(ml + md)

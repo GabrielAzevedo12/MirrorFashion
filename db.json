@@ -1,0 +1,45 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "Produtos": [
+    {
+      "src": "./images/Produtos/P1.jpg",
+      "class": "P1",
+      "style": "null",
+      "id": "P1"
+    },
+    {
+      "id": "P2",
+      "src": "./images/Produtos/P2.jpg",
+      "class": "P2",
+      "style": "null"
+    },
+    {
+      "id": "P3",
+      "src": "./images/Produtos/P3.jpg",
+      "class": "P3",
+      "style": "null"
+    }
+  ],
+  "p1": [
+    {
+      "id": "p1",
+      "src": "./images/Produtos/p1.jpg"
+    }
+  ]
+}

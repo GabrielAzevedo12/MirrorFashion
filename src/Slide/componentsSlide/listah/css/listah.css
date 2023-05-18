@@ -1,0 +1,196 @@
+.Listah {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+padding-right: 30px;
+padding-top: 0;
+position: relative;
+}
+.Listahli {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 25px;
+/*----------------------------------------------------------------------------------------------------------------------------------------*/    
+    list-style: none;
+    font-size: 1.7em;
+    font-weight: 600;
+    color: rgb(245, 222, 179);
+/*----------------------------------------------------------------------------------------------------------------------------------------*/    
+    animation-duration: 0.5s;
+    animation-name: slidein, fadeIn;
+/*----------------------------------------------------------------------------------------------------------------------------------------*/    
+    border-style: solid;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    }
+.Listahli :hover {
+        font-weight: 800;
+        font-size: 150%;
+        color: whitesmoke;
+/*----------------------------------------------------------------------------------------------------------------------------------------*/        
+        border-color: antiquewhite;
+/*----------------------------------------------------------------------------------------------------------------------------------------*/                
+        animation-name: my0lh;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        transition: 0.2s ease-in;
+/*----------------------------------------------------------------------------------------------------------------------------------------*/                
+        background: radial-gradient(rgb(56, 56, 56),black);
+}
+
+.Listahli:not(:hover) {
+  animation-name: my3lh;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  transition: 0.2s ease-in;
+}
+
+.Listahli:hover {
+  animation-name: my1lh;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+}
+.Listahli:hover {
+  box-shadow: 0px 0px 200px 300px black,0px 0px 300px 250px antiquewhite; 
+  border-bottom-width: 5px;
+}
+.Listahli:not(:hover) {
+  animation-name: my2lh;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+}
+.Listahli:not(:hover) {
+  box-shadow:  0px 0px 0px 0px black,0px 0px 0px 0px antiquewhite;  
+}
+.Listaha {
+  text-decoration: none;
+}
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+      }
+    
+      to {
+        margin-left: -1%;
+      }
+  }
+  @keyframes my0lh {
+    from {
+        margin-left: 0%;
+        font-size: 100%;
+        color: wheat;
+        background: black;
+        border-bottom-width: 0px;
+        border-color: none;
+      }
+      to {
+        margin-right: -5%;
+        font-size: 150%;
+        color: antiquewhite;
+        background: radial-gradient(rgb(76, 75, 74),black);
+        border-bottom-width: 5px;
+        border-color: antiquewhite;
+      }
+  }
+
+  @keyframes my3lh {
+    from {
+        margin-right: -5%;
+        font-size: 150%;
+        color: antiquewhite;
+        background: radial-gradient(rgb(76, 75, 74),black);
+        border-bottom-width: 5px;
+        border-color: antiquewhite;
+      }
+      to {
+        margin-left: 0%;
+        font-size: 100%;
+        color: wheat;
+        background: black;
+        border-bottom-width: 0px;
+        border-color: none;
+      }
+  }
+
+  @keyframes my1lh {
+    from {
+      box-shadow:  0px 0px 0px 0px rgb(67, 67, 67), 0px 0px 0px 0px antiquewhite;
+      }
+      to {
+        box-shadow: 0px 0px 200px 300px black, 0px 0px 300px 250px antiquewhite;  
+      }
+  }
+
+  @keyframes my2lh {
+    from {
+      box-shadow: 0px 0px 200px 240px black, 0px 0px 300px 250px antiquewhite;  
+      }
+      to {
+        box-shadow:  0px 0px 0px 0px black, 0px 0px 0px 0px antiquewhite;  
+      }
+  }
+
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+
+  @media (max-width: 1450px) {
+    .Listahli3 {
+      display: none;
+    }
+    .Listahli4 {
+      display: none;
+    }
+  }
+
+  @media (min-width: 1451px) {
+    .Listahli3  {
+      display: flex;
+    }
+    .Listahli4 {
+      display: flex;
+    }
+  }
+
+  @media (max-width: 1221px) {
+    .Listahli1 {
+      display: none;
+    }
+    .Listahli2 {
+      display: none;
+    }
+  }
+
+  @media (min-width: 1222px) {
+    .Listahli1  {
+      display: flex;
+    }
+    .Listahli2 {
+      display: flex;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .HiOutlineViewList {
+      display: flex;
+    }
+    .Listah {
+      display: none;
+    }
+  }
+  @media (min-width: 801px) {
+    .HiOutlineViewList {
+      display: none;
+    }
+    .Listah {
+      display: flex;
+    }
+  }

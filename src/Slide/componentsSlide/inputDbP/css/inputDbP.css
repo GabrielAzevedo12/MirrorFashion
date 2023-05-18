@@ -1,0 +1,38 @@
+.DinputDbP {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(rgb(187, 214, 239),cornsilk);
+}
+.DEFinputDbP {
+    width: 800px;
+    height: 40px;
+    background: radial-gradient(antiquewhite,rgb(187, 214, 239))
+}
+label {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+input {
+    border-radius: 20px;
+    border-color: antiquewhite;
+}
+button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: 800;
+    width: 200px;
+}
+.DSubBt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: cornsilk;
+}
+.BSubBt {
+    background: linear-gradient(rgb(187, 214, 239),white);
+    border-radius: 20px;
+    border-color: antiquewhite;
+}

@@ -1,0 +1,103 @@
+.Produtos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    min-height: 100vh;
+    min-width: 100vw;
+    position: absolute;
+}
+.ProdutosEF {
+    position: relative;
+    width: 100vw;
+}
+.ProdutosEF2 {
+    position: relative;
+}
+.ProdutosInf {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: gray;
+    height: 82vh;
+    width: 100vw;
+}
+.ProdutosImg {
+    background-color:  blueviolet;
+    height: 82vh;
+    width: 30vw;
+    margin-top: 0;
+    background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4));
+}
+.ProdutosTítulo {
+    background-color: antiquewhite;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+}
+.Produtosvoid {
+    background-color: black;
+    height: 10vh;
+}
+.ProdutosDescri {
+    display: flex;
+    justify-content: center;
+    background-color: steelblue ;
+    font-size: 2em;
+    height: 82vh;
+    width: 30vw;
+    margin-top: 0;
+    box-shadow: 0px 0px 50px 50px steelblue,0px 0px 100px 100px black;
+}
+.ProdutosImgD {
+    display: flex;
+    justify-content: center;
+    background: radial-gradient(antiquewhite,lightsalmon );
+    height: 82vh;
+    width: 40vw;
+    margin-top: 0;
+    box-shadow: 0px 0px 50px 50px lightsalmon,0px 0px 100px 100px black;
+    border-radius: 2em;
+}
+@media (max-width : 600px) {
+    .ProdutosImg {
+        width: 100vw;
+    }
+    .ProdutosDescri {
+        width: 100vw;
+    }      
+}
+/*----------------------------------------------------------------------------------------------------------*/
+/*Animações*/
+.AEF2:hover {
+    animation-name: AEF2;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+.AEF2:hover {
+    height: 85vh;
+    width: 40vw;
+    border-radius: 100px;
+    box-shadow: 0px 0px 300px 260px black,0px 0px 200px 150px antiquewhite,0px 0px 400px 400px black;
+    right: 5vw;
+}  
+@keyframes AEF2 {
+    from {
+        height: 82vh;
+        width: 30vw;
+        border-radius: 0px;
+        box-shadow: 0px 0px 0px 0px black,0px 0px 0px 0px antiquewhite,0px 0px 0px 0px black;
+        right: 0vw;
+    }
+    to {
+        height: 85vh;
+        width: 40vw;
+        right: 5vw;
+        border-radius: 100px;
+        box-shadow: 0px 0px 300px 260px black,0px 0px 200px 150px antiquewhite,0px 0px 400px 400px black;
+    }
+}
+/*----------------------------------------------------------------------------------------------------------*/

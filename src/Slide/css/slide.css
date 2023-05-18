@@ -1,0 +1,129 @@
+/*---------------------------------------------------------------------------------------------------------------------*/
+.slide {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+/*---------------------------------------------------------------------------------------------------------------------*/
+.Div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 150px 80px black;
+}
+/*---------------------------------------------------------------------------------------------------------------------*/
+.DivC1  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+.Div1 {
+  background: linear-gradient(antiquewhite,black,darksalmon);
+}
+.Div2 {
+  background: linear-gradient(black,antiquewhite,darksalmon);
+}
+.Div3 {
+  background: linear-gradient(darksalmon,antiquewhite,black)
+}
+/*---------------------------------------------------------------------------------------------------------------------*/
+.DivC2  {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+.Div4 {
+  background: linear-gradient(rgb(88, 32, 200),#004ade);
+}
+.Div5 {
+  background: linear-gradient(#004ade,rgb(18, 126, 135));
+}
+.Div6 {
+  background: linear-gradient(rgb(18, 126, 135),#4bba70);
+}
+/*---------------------------------------------------------------------------------------------------------------------*/
+.LHd {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.LHul {
+  position: fixed;
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.LHli{
+  position: relative;
+  width: 1em;
+  font-size: 4em;
+  color: wheat;
+  list-style-type: disc;
+}
+/*---------------------------------------------------------------------------------------------------------------------*/
+.x {
+  background-color: #004ade;
+  position: relative;
+  border-color: #fac802;
+  top: 767.5px;
+  width:0px;
+  border-width: 0.000000000000000000000000000000000000000000001px;
+}
+.y {
+  background-color: #004ade;
+  position: relative;
+  border-color: #ff6831;
+  border-width: 0.000000000000000000000000000000000000000000001px;
+  width: 0px;
+}
+.eixoy {
+  display: flex;
+  flex-direction: column;
+}
+.eixox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: absolute;
+}
+/*---------------------------------------------------------------------------------------------------------------------*/
+.yx {
+  background-color: #fac802;
+  position: relative;
+  border-color: #fac802;
+  width:0px;
+  border-width: 0.000000000000000000000000000000000000000000001px;
+}
+/*---------------------------------------------------------------------------------------------------------------------*/
+.xy {
+  position: absolute;
+  top: 0px;
+  display: flex;
+}
+/*---------------------------------------------------------------------------------------------------------------------*/
+/*linear-gradient(rgb(21,0,83),rgb(83,0,21));*/
+/*
+.GoTriangleUp {
+  font-size: 4em;
+  position: fixed;
+  color: black;
+  top: 0em;
+  left: 12em;
+}
+.GoTriangleDown {
+  font-size: 4em;
+  position: fixed;
+  color: black;
+  bottom: 0em;
+  left: 12em;
+}
+.GoTriangleUpC {
+  width: 0;
+}
+.GoTriangleDownC {
+  width: 0;
+}
+*/
