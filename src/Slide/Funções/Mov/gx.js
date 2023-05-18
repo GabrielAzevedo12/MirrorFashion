@@ -9,4 +9,4 @@ var gx = (x,v,cg,a) => {
     return x + v*cg*a
 };
 
-module.exports = gx;
+export {gx}

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Slide from './Slide/slide';
 import $ from './Slide/Funções/Query/$';
-import scrDiv from './Slide/Funções/Mov/ML4';
+import {scrDiv} from './Slide/Funções/Mov/ML4';
 import SlideApp from './SlideApp/slideApp'
 import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
 import ErrorPag from './ErrorPag/ErrorPag'

@@ -1,16 +1,13 @@
 import './css/slide.css';
 import DivC1 from './componentsSlide/DivC1/DivC1'
-import OOM from './Funções/teste/OOM';
-import MD5 from './Funções/Mov/MD5';
-import MD6 from './Funções/Mov/MD6';
 import DivC2 from './componentsSlide/DivC2/DC2';
-import ML2v2 from './Funções/Mov/ML2';
-import S from './Funções/Styles/S';
-import gx from './Funções/Mov/gx';
-import UT from './Funções/Mov/TT';
+import {OOM} from './Funções/teste/OOM';
+import {MD5} from './Funções/Mov/MD5';
+import {MD6} from './Funções/Mov/MD6';
+import {ML2v2} from './Funções/Mov/ML2';
+import {gx} from './Funções/Mov/gx';
+import {UT} from './Funções/Mov/TT';
 import $ from './Funções/Query/$';
-import Header from './componentsSlide/Header/Header';
-import Ld from './componentsSlide/LD/LD';
 
 function Slide() {
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

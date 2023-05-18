@@ -6,4 +6,4 @@ var UT = (E,upx) => {
     return d
   };
 
-module.exports = UT;
+export {UT}
