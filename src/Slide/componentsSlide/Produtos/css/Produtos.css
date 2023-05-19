@@ -23,6 +23,8 @@
     background-color: gray;
     height: 82vh;
     width: 100vw;
+    position: relative;
+    top: 10vh;
 }
 .ProdutosImg {
     background-color:  blueviolet;
@@ -30,6 +32,8 @@
     width: 30vw;
     margin-top: 0;
     background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4));
+    border-radius: 50px;
+    box-shadow: 0px 0px 25px 25px black
 }
 .ProdutosTítulo {
     background-color: antiquewhite;
@@ -63,13 +67,45 @@
     border-radius: 2em;
 }
 @media (max-width : 600px) {
-    .ProdutosImg {
+    .ProdutosImgD {
         width: 100vw;
     }
-    .ProdutosDescri {
-        width: 100vw;
+    .ProdutosDescri,
+    .ProdutosImg 
+    {
+        width: 90vw;
     }      
+/*----------------------------------------------------------------------------------------------------------*/
+/*Animações*/
+.AEF22:hover {
+    animation-name: AEF2;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
 }
+.AEF22:hover {
+    height: 90vh;
+    width: 100vw;
+    border-radius: 100px;
+    box-shadow: 0px 0px 300px 260px black,0px 0px 200px 150px antiquewhite,0px 0px 400px 400px black;
+    right: 5vw;
+}  
+@keyframes AEF22 {
+    from {
+        height: 82vh;
+        width: 90vw;
+        box-shadow: 0px 0px 0px 0px black,0px 0px 0px 0px antiquewhite,0px 0px 0px 0px black;
+        right: 0vw;
+    }
+    to {
+        height: 90vh;
+        width: 100vw;
+        border-radius: 100px;
+        box-shadow: 0px 0px 300px 260px black,0px 0px 200px 150px antiquewhite,0px 0px 400px 400px black;
+    }
+}
+/*----------------------------------------------------------------------------------------------------------*/
+}
+
 /*----------------------------------------------------------------------------------------------------------*/
 /*Animações*/
 .AEF2:hover {
@@ -91,6 +127,7 @@
         border-radius: 0px;
         box-shadow: 0px 0px 0px 0px black,0px 0px 0px 0px antiquewhite,0px 0px 0px 0px black;
         right: 0vw;
+        border-radius: 50px;
     }
     to {
         height: 85vh;

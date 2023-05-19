@@ -19,7 +19,7 @@ var Produtos = () => {
             </div>
             <div className='ProdutosEF ProdutosInf'>
                  <div className='ProdutosEF2 ProdutosImgD'>
-                <img className='ProdutosEF2 ProdutosImg AEF2' src = { img ? img : ''} alt='Alguma foto'/>
+                    <img className='ProdutosEF2 ProdutosImg AEF2' src = { img ? img : ''} alt='Alguma foto'/>
                 </div>
                 <h2 className='ProdutosEF2 ProdutosDescri AEF2'>Descrição do Produto</h2>
             </div>

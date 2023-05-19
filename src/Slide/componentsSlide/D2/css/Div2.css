@@ -6,21 +6,33 @@
 .olD2 {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    position: relative;
     background: transparent;
     padding: 5px;
     overflow-x: hidden;
     box-shadow: 0px 0px 100px 50px black;
+    width: 100vw;
+    height: 76vh;
 }
 .liD2 {
-    padding-right: 10px; 
-    border-radius: 10px;
-    list-style-type: none;
-}
-.liD2:nth-child(n) {
-     background: transparent
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(black,antiquewhite);
+    box-shadow: 0px 0px 100px 100px antiquewhite, 0px 0px 100px 100px darksalmon, 0px 0px 100px 100px black;
+    border-radius: 20px;
+    min-width:  40vw;
+    min-height: 85vh;
+    width:  40vw;
+    height: 85vh;
 }
 .TíD {
-    width: 100%;
+    min-width:  100vw;
+    min-height: 10vh;
+    width:  100vw;
+    height: 10vh;
     display: flex;
     justify-content: center;
     color: wheat;
@@ -30,11 +42,33 @@
 }
 .figCD2 {
     font-size: 2em;
-    color: aliceblue;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
-.imgD2 {
+.figD2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.DimgD2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     box-shadow: 0px 0px 300px 150px black;
     border-radius: 20px;
+    min-width:  30vw;
+    min-height: 85vh;
+    width:  40vw;
+    height: 85vh;
+}
+.imgD2 {
+    border-radius: 20px;
+    min-width:  30vw;
+    min-height: 85vh;
+    width:  30vw;
+    height: 85vh;
 }
 .imgD21 {
     background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)),url("C:\Users\Casas Bahia\Desktop\Gabriel\Estudo\Livros\Ciências Exatas\Ciência da Computação\Programação\Projetos\slide\public\images\Produtos\P1.jpg");
@@ -51,3 +85,44 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+/*
+@media (max-width : 600px) {
+    .ProdutosImg {
+        width: 100vw;
+    }
+    .ProdutosDescri {
+        width: 100vw;
+    }      
+}
+*/
+/*----------------------------------------------------------------------------------------------------------*/
+/*Animações*/
+.AimgD2:hover {
+    animation-name: AEF2;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+.AimgD2:hover {
+    width:  45vw;
+    height: 100vh;
+    border-radius: 100px;
+    box-shadow: 0px 0px 300px 260px black,0px 0px 200px 150px antiquewhite,0px 0px 400px 400px black;
+    right: 5vw;
+}  
+@keyframes AimgD2 {
+    from {
+        width:  30vw;
+        height: 85vh;
+        border-radius: 0px;
+        box-shadow: 0px 0px 0px 0px black,0px 0px 0px 0px antiquewhite,0px 0px 0px 0px black;
+        right: 0vw;
+    }
+    to {
+        width:  45vw;
+        height: 100vh;
+        right: 5vw;
+        border-radius: 100px;
+        box-shadow: 0px 0px 300px 260px black,0px 0px 200px 150px antiquewhite,0px 0px 400px 400px black;
+    }
+}
+/*----------------------------------------------------------------------------------------------------------*/

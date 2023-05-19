@@ -47,18 +47,26 @@ var Div2 = (props) => {
         
                     console.log('imgD23 foi executada')
         
-                }           
+                },
+            FilhosFigD2     = {
+                img1 : <img className='imgD2 imgD21 P1 AimgD2' id='imgD21'/>,
+                img2 : <img className='imgD2 imgD22 P2 AimgD2' id='imgD22'/>,
+                img3 : <img className='imgD2 imgD23 P3 AimgD2' id='imgD23'/>,
+                img4 : <img className='imgD2 imgD24 P4 AimgD2' id='imgD24'/>,
+                img5 : <img className='imgD2 imgD25 P5 AimgD2' id='imgD25'/>,
+                img6 : <img className='imgD2 imgD26 P6 AimgD2' id='imgD26'/>,
+            }
     return(
         <div className='Div2 Div' style={props.s}>
-            <h1 className='TíD' style={s.sTíD}>Destaques</h1>
-            <ol className='olD2' style={s.solD2}>    
-                <li className='liD2 lD21' style={s.sliD2}><figure className='figD2 figD21' style={s.sfigD2}><img className='imgD2 imgD21 P1' id='imgD21'  style={s.simgD2} onClick={f.events.over.imgD21} onMouseOut={f.events.out.imgD21}/><figcaption className='figCD2' style={s.sfigcD2} onClick ={EimgD21}>Nome e preço</figcaption></figure></li>                
-                <li className='liD2 lD22' style={s.sliD2}><figure className='figD2 figD22' style={s.sfigD2}><img className='imgD2 imgD22 P2' id='imgD22'  style={s.simgD2}/><figcaption className='figCD2' style={s.sfigcD2} onClick ={EimgD22}>Nome e preço</figcaption></figure></li>
-                <li className='liD2 lD23' style={s.sliD2}><figure className='figD2 figD23' style={s.sfigD2}><img className='imgD2 imgD23 P3' id='imgD23'  style={s.simgD2}/><figcaption className='figCD2' style={s.sfigcD2} onClick ={EimgD23}>Nome e preço</figcaption></figure></li>
-                <li className='liD2 lD24' style={s.sliD2}><figure className='figD2 figD24' style={s.sfigD2}><img className='imgD2 imgD24 P4' id='imgD24'  style={s.simgD2}/><figcaption className='figCD2' style={s.sfigcD2}>Nome e preço</figcaption></figure></li>
-                <li className='liD2 lD25' style={s.sliD2}><figure className='figD2 figD25' style={s.sfigD2}><img className='imgD2 imgD25 P5' id='imgD25'  style={s.simgD2}/><figcaption className='figCD2' style={s.sfigcD2}>Nome e preço</figcaption></figure></li>
-                <li className='liD2 lD26' style={s.sliD2}><figure className='figD2 figD26' style={s.sfigD2}><img className='imgD2 imgD26 P6' id='imgD26'  style={s.simgD2}/><figcaption className='figCD2' style={s.sfigcD2}>Nome e preço</figcaption></figure></li>
-            </ol>
+            <h1 className='TíD'>Destaques</h1>
+            <div className='olD2'>    
+                <div className='liD2 lD21'> {FilhosFigD2.img1} <p className='figCD2' onClick ={EimgD21}>Nome e preço</p></div>              
+                <div className='liD2 lD22'> {FilhosFigD2.img2} <p className='figCD2' onClick ={EimgD22}>Nome e preço</p></div>
+                <div className='liD2 lD23'> {FilhosFigD2.img3} <p className='figCD2' onClick ={EimgD23}>Nome e preço</p></div>
+                <div className='liD2 lD24'> {FilhosFigD2.img4} <p className='figCD2' >Nome e preço</p></div>
+                <div className='liD2 lD25'> {FilhosFigD2.img5} <p className='figCD2' >Nome e preço</p></div>
+                <div className='liD2 lD26'> {FilhosFigD2.img6} <p className='figCD2' >Nome e preço</p></div>
+            </div>
         </div>        
     )
 }
