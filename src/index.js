@@ -9,9 +9,10 @@ import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
 import ErrorPag from './ErrorPag/ErrorPag'
 import Produtos from './Slide/componentsSlide/Produtos/Produtos';
 import EP from './Slide/componentsSlide/EP/EP';
-//a
+
 const root = ReactDOM.createRoot(document.getElementById('root')); root.className = 'root' ;
 var 
+  teste = 1,
   f = {
     //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   als1 : (n) => {
