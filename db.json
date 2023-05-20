@@ -18,8 +18,8 @@
   },
   "Produtos": [
     {
-      "src": "./images/Produtos/P1.jpg",
-      "class": "P1",
+      "src": "./images/Produtos/P2.jpg",
+      "class": "P2",
       "style": "null",
       "id": "P1"
     },

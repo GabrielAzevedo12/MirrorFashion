@@ -49,16 +49,16 @@ var Div2 = (props) => {
         
                 },
             FilhosFigD2     = {
-                img1 : <img className='imgD2 imgD21 P1 AimgD2' id='imgD21'/>,
-                img2 : <img className='imgD2 imgD22 P2 AimgD2' id='imgD22'/>,
-                img3 : <img className='imgD2 imgD23 P3 AimgD2' id='imgD23'/>,
-                img4 : <img className='imgD2 imgD24 P4 AimgD2' id='imgD24'/>,
-                img5 : <img className='imgD2 imgD25 P5 AimgD2' id='imgD25'/>,
-                img6 : <img className='imgD2 imgD26 P6 AimgD2' id='imgD26'/>,
+                img1 : <img className='imgD2 imgD21 AimgD2' id='P1'/>,
+                img2 : <img className='imgD2 imgD22 AimgD2' id='P2'/>,
+                img3 : <img className='imgD2 imgD23 AimgD2' id='P3'/>,
+                img4 : <img className='imgD2 imgD24 AimgD2' id='P4'/>,
+                img5 : <img className='imgD2 imgD25 AimgD2' id='P5'/>,
+                img6 : <img className='imgD2 imgD26 AimgD2' id='P6'/>,
             }
     return(
         <div className='Div2 Div' style={props.s}>
-            <h1 className='TíD'>Destaques</h1>
+            <h1 className='TíD'>Novidades</h1>
             <div className='olD2'>    
                 <div className='liD2 lD21'> {FilhosFigD2.img1} <p className='figCD2' onClick ={EimgD21}>Nome e preço</p></div>              
                 <div className='liD2 lD22'> {FilhosFigD2.img2} <p className='figCD2' onClick ={EimgD22}>Nome e preço</p></div>
