@@ -1,56 +1,58 @@
 /*---------------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------------------------------------*/
 .Div11 {
     position: absolute;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: hidden;
+    top: 10vh;
+    height: 95vh;
+    width: 100vw; 
+    min-height: 95vh;
+    min-width: 100vw;   
 }
 .Div11:hover {
-  box-shadow: 0px 0px 200px 240px black;
-  animation-name: my3;
+  animation-name: Div11;
   animation-duration: 1.5s;
   animation-iteration-count: 1;
+  box-shadow: 0px 0px 200px 240px black;
+  min-height: 105vh;
 }
 .Div11:not(:hover) {
-  box-shadow: 0px 0px 150px 80px black;
-  animation-name: mynot3;
+  animation-name: -Div11;
   animation-duration: 1.5s;
   animation-iteration-count: 1;
+  box-shadow: 0px 0px 150px 80px black;
 }
 /*---------------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------------------------------------*/
-.D11 {
+.D11F1 {
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    height: 95vh;
+    width: 100vw;
+    min-height: 95vh;
+    min-width: 100vw;
 }
+.D11F1:hover{
+  animation-name: D11F1;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  min-height: 105vh;
+} 
 /*---------------------------------------------------------------------------------------------------------------------*/
-.D111{
+.D11F11 {
     background: transparent;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    animation-name: my1;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-  }
-.D111:hover{
-    animation-name: my1;
-    animation-duration: 100s;
-    animation-iteration-count: 1;
-  }  
+  } 
 /*---------------------------------------------------------------------------------------------------------------------*/  
-.D112{
-  background: linear-gradient(antiquewhite,darksalmon);
+.D11F12{
+  background: transparent/*linear-gradient(antiquewhite,darksalmon)*/;
 }
 /*---------------------------------------------------------------------------------------------------------------------*/
-.D113{
-     background: linear-gradient(antiquewhite,black,darksalmon);
+.D11F13{
+     background: transparent/*linear-gradient(antiquewhite,black,darksalmon)*/;
 }
-/*---------------------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------------------*/
 .GoTriangleRight {
     font-size: 4em;
@@ -79,50 +81,41 @@
     width: 0;
   }
 /*---------------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------------------------------------*/
-  .imgd  {
-    animation-name: fadeIn;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    box-shadow: 0px 0px 110px 100px black;
-    border-radius: 20px;
-  }
-  .imgd:hover {
-      animation-name: my2;
-      animation-duration: 1.5s;
-      animation-iteration-count: 1;
-  }
-  .imgd:hover {
-    box-shadow: 0px 0px 200px 240px black;
-    border-radius: 80px;
+.imgd  {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 95vh; 
+  width: 80vw; 
+  left: 0px;
+}
+.imgd:hover {
+  animation-name: imgdhover1;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  box-shadow: 0px 0px 200px 240px black;
+  border-radius: 120px;
+  width: 100vw; 
 }
 .imgd:not(:hover) {
-  animation-name: my4;
-  animation-duration: 2s;
+  animation-name: -imgdhover1;
+  animation-duration: 1.5s;
   animation-iteration-count: 1;
+  box-shadow: 0px 0px 50px 50px antiquewhite, 0px 0px 50px 50px darksalmon,0px 0px 50px 50px salmon,0px 0px 200px 200px black;
+  border-radius: 70px;
 }
-.img:not(:hover) {
-  box-shadow: 0px 0px 110px 80px black;
-  border-radius: 20px;
-}
-/*---------------------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------------------*/
 .img112 {
   background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)),url("C:\Users\Casas Bahia\Desktop\Gabriel\Estudo\Livros\Ciências Exatas\Ciência da Computação\Programação\Projetos\slide\public\images\destaque-home2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .img111 {
   background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)),url("C:\Users\Casas Bahia\Desktop\Gabriel\Estudo\Livros\Ciências Exatas\Ciência da Computação\Programação\Projetos\slide\public\images\destaque-home6.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .img113 {
   background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)),url("C:\Users\Casas Bahia\Desktop\Gabriel\Estudo\Livros\Ciências Exatas\Ciência da Computação\Programação\Projetos\slide\public\images\destaque-home3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-/*---------------------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------------------*/
   @keyframes fadeIn {
     from {
@@ -135,36 +128,29 @@
     }
   }
 /*---------------------------------------------------------------------------------------------------------------------*/  
-  @keyframes my1 {
+  @keyframes D11F1 {
     0% {
       background: radial-gradient(darksalmon,black);
+      min-height: 95vh;
    }
     100% {
-      background: black 
+      background: black ;
+      min-height: 105vh;
     }
   }
 /*---------------------------------------------------------------------------------------------------------------------*/
-  @keyframes my2 {
-    from {
-      box-shadow: 0px 0px 110px 100px whitesmoke;
-      border-radius: 20px;
-    } 
-    to {
-      box-shadow: 0px 0px 200px 220px black;
-      border-radius: 80px;
-    }
-  }
-/*---------------------------------------------------------------------------------------------------------------------*/
-  @keyframes my3 {
+@keyframes Div11 {
     from {
       box-shadow: 0px 0px 110px 80px whitesmoke;
+      min-height: 95vh;
     } 
     to {
       box-shadow: 0px 0px 200px 240px black;
+      min-height: 105vh;
     }
   }
 /*---------------------------------------------------------------------------------------------------------------------*/
-@keyframes mynot3 {
+@keyframes -Div11 {
   from {
     box-shadow: 0px 0px 200px 240px black;
   } 
@@ -173,89 +159,71 @@
   }
 }
 /*---------------------------------------------------------------------------------------------------------------------*/
-  @keyframes my4 {
+@keyframes imgdhover1 {
+  from {
+    box-shadow: 0px 0px 110px 100px whitesmoke;
+    border-radius: 70px;
+    width: 80vw; 
+  } 
+  to {
+    box-shadow: 0px 0px 200px 220px black;
+    border-radius: 120px;
+    width: 100vw; 
+  }
+}
+/*---------------------------------------------------------------------------------------------------------------------*/
+@keyframes -imgdhover1 {
     from {
       box-shadow: 0px 0px 200px 240px black;
-      border-radius: 80px;
+      border-radius: 120px;
+      width: 100vw;
     } 
     to {
       box-shadow: 0px 0px 110px 100px black;
-      border-radius: 20px;
+      border-radius: 70px;
+      width: 80vw;
     }
   }
-.D11  {
-    min-height: 74vh; 
-    min-width: 100vw;  
-    left: 0px
-}
-.img111  {
-    height: 95vh; 
-    width: 80vw; 
-    left: 0px;
-    }
-.img112  {
-height: 95vh; 
-width: 80vw; 
-left: 0px;
-}
-.img113  {
-height: 95vh; 
-width: 80vw; 
-left: 0px;
-}
-.Div11  {
-    top: 10vh;
-    height: 74vh;
-    width: 100vw;   
-}
+/*---------------------------------------------------------------------------------------------------------------------*/
   @media (max-width: 800px) {
-    .Div11 {
+    .Div11
+    .D11F1 
+    {
       width: 100vw;
       height: 90vh;
     }
-    .img111  {
+    .imgd {
     width: 90vw;
     height: 100vh;
       }
-    .img112  {
-    width: 90vw;
-    height: 100vh;
-  }
-    .img113  {
-    width: 90vw;
-    height: 100vh;
-  }
-    .D11 {
-      width: 100vw;
-      height: 100vh;
-    }
     .LHul {
       width: 45vh;
     }
   }
 
   @media (min-width: 1500px) {
-    .Div11 {
+    .Div11 
+    .D11F1
+    {
       width: 100vw;
-      height: 74vh;
+      height: 95vh;
     }
-    .img111  {
+    .imgd {
       width: 80vw;
       height: 95vh;
         }
-    .img112  {
-        width: 80vw;
-        height: 95vh;
-    }
-    .img113  {
-      width: 80vw;
-      height: 95vh;
-    }
-    .D11 {
-      width: 100vw;
-      height: 74vh;
-    }
     .LHul {
       width: none;
     }
   }
+  /*
+.img111,
+.img112,
+.img113
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh; 
+    width: 80vw; 
+    left: 0px;
+}*/

@@ -57,7 +57,7 @@ var Div2 = (props) => {
                 img6 : <img className='imgD2 imgD26 AimgD2' id='P6'/>,
             }
     return(
-        <div className='Div2 Div' style={props.s}>
+        <div className='Div2 Div'>
             <h1 className='TíD'>Novidades</h1>
             <div className='olD2'>    
                 <div className='liD2 lD21'> {FilhosFigD2.img1} <p className='figCD2' onClick ={EimgD21}>Nome e preço</p></div>              

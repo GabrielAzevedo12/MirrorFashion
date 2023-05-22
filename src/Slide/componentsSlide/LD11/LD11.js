@@ -21,17 +21,17 @@ var LD11 = () => {
              }
            },
         ml1 : () => {
-            let e = $('.D111')
+            let e = $('#D11F11')
             scrd11(e);
             f.alsg(1,'LD11li','white','black')
         },
         ml2 : () => {
-            let e = $('.D112')
+            let e = $('#D11F12')
             scrd11(e)
             f.alsg(2,'LD11li','white','black')
         },
         ml3 : () => {
-            let e = $('.D113')
+            let e = $('#D11F13')
             scrd11(e)
             f.alsg(3,'LD11li','white','black')
         },

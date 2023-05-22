@@ -1,21 +1,13 @@
 import "./css/D11.css"
 import {EF} from './ElementosFilhosD11/EF'
-import { Funções } from "./funções/funções";
-import { Style } from "./stylesPreDef/Styles";
-import { useEffect, useState } from "react";
-import { f } from "../D2/funções/f";
-import $ from "../../Funções/Query/$";
 
-var t = null
 var Div11 = () => {
     return(    
     <div className="Div11">
-        <div className="D11 D111">{EF.D11.TL}{EF.D11.TR}{EF.D111.img111}</div>
-        <div className="D11 D112">{EF.D11.TL}{EF.D11.TR}{EF.D112.img112}</div>
-        <div className="D11 D113">{EF.D11.TL}{EF.D11.TR}{EF.D113.img113}</div>
-        {t && (
-            <div className="D11 D114" style={Style.D11}>{EF.D11.TL}{EF.D11.TR}<img className="img114 imgd" id ='img114' style={Style.D11I} alt=''/></div>
-        )}
+        <div className="D11F1 D11F11" /*D111*/ id="D11F11">{EF.D11.TL}{EF.D11.TR}{EF.D111.img111}</div>
+        <div className="D11F1 D11F12" /*D112*/ id="D11F12">{EF.D11.TL}{EF.D11.TR}{EF.D112.img112}</div>
+        <div className="D11F1 D11F13" /*D113*/ id="D11F13">{EF.D11.TL}{EF.D11.TR}{EF.D113.img113}</div>
+        
     </div>
     )
 }
