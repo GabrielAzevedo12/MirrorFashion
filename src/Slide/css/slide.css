@@ -50,20 +50,6 @@
   width: 0;
   height: 0;
 }
-.LHul {
-  position: fixed;
-  display: flex; 
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.LHli{
-  position: relative;
-  width: 1em;
-  font-size: 4em;
-  color: wheat;
-  list-style-type: disc;
-}
 /*---------------------------------------------------------------------------------------------------------------------*/
 .x {
   background-color: #004ade;

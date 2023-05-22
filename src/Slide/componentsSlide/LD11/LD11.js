@@ -45,7 +45,7 @@ var LD11 = () => {
         }
     return(
         <> 
-        <ul className="LHul LD11" style={s.LD11s}>
+        <ul className="LD11">
             <li className="LHli LD11li LD11li1" onClick={f.ml1}></li>
             <li className="LHli LD11li LD11li2" onClick={f.ml2}></li>
             <li className="LHli LD11li LD11li3" onClick={f.ml3}></li>
@@ -54,3 +54,7 @@ var LD11 = () => {
     )
 }
 export default LD11
+/*
+top: 583.86px;
+left: 720px;
+*/
