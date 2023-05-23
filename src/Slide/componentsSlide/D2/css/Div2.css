@@ -1,4 +1,4 @@
-.Div2 {
+.DivLista {
     display: flex;
     flex-direction: column;
     justify-content: center; 
@@ -7,7 +7,9 @@
     height: 120vh;
     top: 10vh;
 }
-.olD2 {
+.olD2,
+.olD22
+{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -15,9 +17,12 @@
     background: transparent;
     padding: 5px;
     overflow-x: hidden;
-    box-shadow: 0px 0px 100px 100px black;
+    box-shadow: 0px 0px 50px 50px black;
     width: 100vw;
     height: 100vh;
+}
+.olD22 {
+    box-shadow: 0px 0px 50px 50px black;
 }
 .liD2 {
     position: relative;
@@ -26,14 +31,15 @@
     align-items: center;
     background: radial-gradient(black -50%,antiquewhite);
     box-shadow: 0px 0px 100px 100px antiquewhite, 0px 0px 100px 100px darksalmon, 0px 0px 100px 100px black;
-    padding-right: 10vh;
+    padding-right: 5vh;
     border-radius: 20px;
     min-width:  40vw;
     min-height: 85vh;
     width:  40vw;
     height: 85vh;
 }
-.TíD {
+.TíD, 
+.TíD2 {
     min-width:  100vw;
     min-height: 10vh;
     width:  100vw;
@@ -41,12 +47,17 @@
     display: flex;
     justify-content: center;
     color: wheat;
+    font-weight: 900;
     font-size: 3em;
     box-shadow: 0px 0px 100px 100px antiquewhite,0px 0px 200px 200px black;
     border-radius: 10px;
 }
+.TíD2 {
+    box-shadow: 0px 0px 100px 100px antiquewhite,0px 0px 25px 25px black;
+}
 .figCD2 {
-    font-size: 2em;
+    font-size: 2.2em;
+    font-weight: 900;
     color: black;
     display: flex;
     flex-direction: row;
@@ -77,13 +88,13 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.imgD21 {
+#P1 {
     background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)),url("C:\Users\Casas Bahia\Desktop\Gabriel\Estudo\Livros\Ciências Exatas\Ciência da Computação\Programação\Projetos\slide\public\images\Produtos\P1.jpg");
 }
-.imgD22 {
+#P2 {
     background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)),url("C:\Users\Casas Bahia\Desktop\Gabriel\Estudo\Livros\Ciências Exatas\Ciência da Computação\Programação\Projetos\slide\public\images\Produtos\P2.jpg");
 }
-.imgD23 {
+#P3 {
     background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)),url("C:\Users\Casas Bahia\Desktop\Gabriel\Estudo\Livros\Ciências Exatas\Ciência da Computação\Programação\Projetos\slide\public\images\Produtos\P3.jpg");
 }
 /*

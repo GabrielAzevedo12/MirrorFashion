@@ -1,0 +1,160 @@
+/*---------------------------------------------------------------------------------------------------------------------*/
+.DivT {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100vw;
+    background-color: brown;
+  }
+  .DivTF {
+    position: relative;
+    height: 70vh;
+    width: 20vw;
+    padding: 0;
+    margin-top: 15vh;
+  }
+  /*---------------------------------------------------------------------------------------------------------------------*/
+  .DivTF1 {
+    background-color: black ;
+  }
+  .DivTF1A {
+    animation: DivTF1A;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    height: 50vh;
+    width: 10vw;
+    left: 32vw;
+    bottom: 0px;
+  }
+  .DivTF1IA {
+    animation: DivTF1IA;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    height: 70vh;
+    width: 20vw;
+    left: -2vw;
+    bottom: 0px;
+  }
+  /*---------------------------------------------------------------------------------------------------------------------*/
+  .DivTF2 {
+    background-color: aqua;
+    height: 50vh;
+    width: 10vw;
+    bottom: 50px;
+  }
+  .DivTF2A {
+    animation: DivTF2A;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    height: 70vh;
+    width: 20vw;
+    left: -25vw;
+    bottom: 0px;
+  }
+  .DivTF2IA {
+    animation: DivTF2IA;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    height: 50vh;
+    width: 10vw;
+    left: 0px;
+    bottom: 0px;
+  }
+  /*---------------------------------------------------------------------------------------------------------------------*/
+  .DivTF3 {
+    background-color: blue;
+  }
+  .DivTF3:hover {
+    animation: DivTF3;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }  
+/*---------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------*/
+@keyframes DivTF1A {
+    0% {
+        height: 70vh;
+        width: 20vw;
+        left: 0px;
+        bottom: 0px;
+    }
+    50% {
+        height: 60vh;
+        width: 15vw;
+        left: 12vw;
+        bottom: 50px;
+      } 
+    100% {
+        height: 50vh;
+        width: 10vw;
+        left: 32vw;
+        bottom: 0px;
+    }
+  }
+  @keyframes DivTF1IA {
+    0% {
+        height: 50vh;
+        width: 10vw;
+        left: 32vw;
+        bottom: 0px;
+      }
+      50% {
+        height: 60vh;
+        width: 15vw;
+        left: 12vw;
+        bottom: 50px;
+        } 
+      100% {
+        height: 70vh;
+        width: 20vw;
+        left: -2vw;
+        bottom: 0px;
+      }
+  }
+/*---------------------------------------------------------------------------------------------------------------------*/
+  @keyframes DivTF2A {
+    0% {
+        height: 50vh;
+        width: 10vw;
+        left: 0vw;
+        bottom: 0px;
+    }
+    50% {
+        height: 60vh;
+        width: 15vw;
+        left: -14.5vw;
+        bottom: -50px;
+      } 
+    100% {
+        height: 70vh;
+        width: 20vw;
+        left: -25vw;
+        bottom: 0px;
+    }
+  }
+  @keyframes DivTF2IA {
+    0% {
+        height: 70vh;
+        width: 20vw;
+        left: -25vw;
+        bottom: 0px;
+      } 
+    50% {
+        height: 60vh;
+        width: 15vw;
+        left: -14.5vw;
+        bottom: -50px;
+      }
+    100% {
+        height: 50vh;
+        width: 10vw;
+        left: 0vw;
+        bottom: 0px;
+      }
+  }
+/*---------------------------------------------------------------------------------------------------------------------*/  
+/*---------------------------------------------------------------------------------------------------------------------*/
+

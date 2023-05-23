@@ -1,13 +1,13 @@
 import "./css/D11.css"
+import "./css/DT.css"
 import {EF} from './ElementosFilhosD11/EF'
 
-var Div11 = () => {
+var Div11 = ({Div11Destaque}) => {
     return(    
-    <div className="Div11">
-        <div className="D11F1 D11F11" /*D111*/ id="D11F11">{EF.D11.TL}{EF.D11.TR}{EF.D111.img111}</div>
-        <div className="D11F1 D11F12" /*D112*/ id="D11F12">{EF.D11.TL}{EF.D11.TR}{EF.D112.img112}</div>
-        <div className="D11F1 D11F13" /*D113*/ id="D11F13">{EF.D11.TL}{EF.D11.TR}{EF.D113.img113}</div>
-        
+    <div className={Div11Destaque.class} id={Div11Destaque.id}>
+        {Div11Destaque.filhos.F1}
+        {Div11Destaque.filhos.F2}
+        {Div11Destaque.filhos.F3}
     </div>
     )
 }

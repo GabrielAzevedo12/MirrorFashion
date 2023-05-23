@@ -1,25 +1,22 @@
 import './css/Div1.css'
-import $ from '../../Funções/Query/$';
-import S from '../../Funções/Styles/S';
-import Div11 from '../D11/D11';
-import LD11 from '../LD11/LD11';
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-var Div1 = (props) => {
-    let 
-    ex = <div className='eixox'></div>,
-    ey = <div className='eixoy'></div>,
-    xy = <div className='xy'></div>
+var DivDestaque = (props) => {
     return(
-        <div className='Div1 Div' style={props.s}>
-            {props.TL}{props.TR}{ex}{ey}{xy}
-            <Div11/>
-            <LD11/>
+        <div className={props.DivDestaque.class} id={props.DivDestaque.id}>
+            {props.DivDestaque.filhos.F1}
+            {props.DivDestaque.filhos.F2}
         </div>
     )
 }
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-export default Div1;
+export default DivDestaque;
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/*
+let 
+    ex = <div className='eixox'></div>,
+    ey = <div className='eixoy'></div>,
+    xy = <div className='xy'></div>
+*/
     /*(
         let S1 = S;
         let wd = window;

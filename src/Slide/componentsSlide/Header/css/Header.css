@@ -1,7 +1,8 @@
 .Dheader {
     display: flex;
+    flex-direction: column;
     position: absolute;
-    width: 100%;
+    width: 100vw;
 }
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .header {
@@ -13,6 +14,7 @@
     background: linear-gradient(rgb(18, 18, 18),black);
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     height: 9vh;
+    min-height: 9vh;
     width: 100vw;
     box-shadow: 0px 0px 110px 65px black;
     box-shadow: 0px 0px 25px 25px black,0px 0px 25px 25px darksalmon,0px 0px 70px 70px antiquewhite;
@@ -35,6 +37,9 @@
     padding: 0.5em;
     position: relative;
     box-shadow: 0px 0px 0px 0px black,0px 0px 0px 0px antiquewhite;
+    display: flex;
+    height: 6vh;
+    min-height: 6vh;
 }
 .Lheader:hover {
     animation-name: Lheader1;
@@ -52,11 +57,45 @@
     font-size: 3em;
     margin-top: 0.2em;
     margin-right: 0.2em;
+    color: wheat;
 }
 .VscSearch {
     font-size: 4em;
     color: wheat;
 }
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.Pesquisa {
+    position: relative;
+    width: 100vw;
+    background: radial-gradient(darksalmon,antiquewhite,black);
+    text-align: center;
+    font-size: 4em;
+    font-weight: 900;
+    color: black;
+}
+.PesquisaA {
+    position: relative;
+    animation: PesquisaA;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 12vh;
+    height: 12vh;
+    width: 100vw;
+    box-shadow: 0px 0px 100px 100px black,0px 0px 100px 100px antiquewhite;
+}
+.PesquisaAI {
+    position: relative;
+    animation: PesquisaAI;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    min-height: 0vh;
+    height: 0vh;
+    width: 0vw;
+    box-shadow: 0px 0px 0px 0px black,0px 0px 0px 0px antiquewhite;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media (max-width : 1000px) {
     .Lheader {
         width: 6.5em;
@@ -110,3 +149,34 @@
         box-shadow: 0px 0px 0px 0px black,0px 0px 0px 0px antiquewhite;
     }
 }
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+@keyframes PesquisaA {
+    from{
+        width: 0vw;
+        height: 0vh;
+        box-shadow: 0px 0px 0px 0px black;
+    } 
+    to {
+        width: 100vw;
+        min-height: 12vh;
+        height: 12vh;
+        box-shadow: 0px 0px 100px 100px black,0px 0px 100px 100px antiquewhite;
+    }
+}
+
+@keyframes PesquisaAI {
+    from{
+        width: 100vw;
+        min-height: 12vh;
+        height: 12vh;
+        box-shadow: 0px 0px 100px 100px black,0px 0px 100px 100px antiquewhite;
+    } 
+    to {
+        width: 0vw;
+        height: 0vh;
+        box-shadow: 0px 0px 0px 0px black;
+    }
+}
+
+/*---------------------------------------------------------------------------------------------------------------------*/

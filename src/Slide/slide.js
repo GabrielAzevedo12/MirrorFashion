@@ -1,6 +1,5 @@
 import './css/slide.css';
 import DivC1 from './componentsSlide/DivC1/DivC1'
-import DivC2 from './componentsSlide/DivC2/DC2';
 import {OOM} from './Funções/teste/OOM';
 import {MD5} from './Funções/Mov/MD5';
 import {MD6} from './Funções/Mov/MD6';
@@ -53,28 +52,30 @@ var
   var e1 = $(e);
    return parseInt(e1.style.left) 
 } 
-},
-  p = {
-  
-  };
+};
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  (() => {
-    window.addEventListener("scroll",() => {
-    })
-  })();
+const slidePR = {
+  class : "slide",
+  id : "slide",
+  filhos : {
+    f1 : {
+      class  : "DivC1",
+      corpoJSX : <DivC1/>
+    } 
+  }
+}  
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   return (
-    <>
-      <div className="slide">
-        <DivC1/>
-        <DivC2  Ml2={f.MoverL2} MB={f.MoverB} MC={f.MoverC}/> 
+      <div className={slidePR.class}>
+        <DivC1 DivC1pr={slidePR.filhos.f1}/>
       </div>
-    </>
   );
 }
 
 export default Slide;
-
+/*
+<DivC2  Ml2={f.MoverL2} MB={f.MoverB} MC={f.MoverC}/> 
+*/
 /*  (() => {
     var UL = (E,upx) => {
       var E1 = E,d = upx + 'px';

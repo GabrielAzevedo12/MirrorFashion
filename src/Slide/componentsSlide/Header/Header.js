@@ -15,41 +15,21 @@ var Header = () => {
     Dimensões = {
         h : window.innerHeight,
         w : window.innerWidth
-    },
-    Style = {
-      Dheader : {
-        width: (95/100)*Dimensões.w    
-      },
-      header : {
-        minHeight: '9vh',
-        height: '9vh'        
-      },
-      ViewList : {
-        color: 'wheat',
-      },
-      VscSearch : {
-        display : 'none'
-      },
-      Listah :  {
-        minHeight: '9vh'        
-      },
-      Lheader :  {
-        minHeight: '6vh',
-        height: '6vh',
-        display: "flex"        
-      },
-      lh :  {
-        minHeight: '8vh',
-        height: '8vh',     
-      }     
     };
  return (
   <div className="Dheader">
-    <header className="header" style={Style.header}>
-      <div className="Lheader" style={Style.Lheader}><img className="Lheader" style={Style.Lheader} src="./images/logo-rodape.png"/></div>
-      <div className="Listahd" style={Style.lh}><Listah stylelh = {Style.lh}/></div>
-      <div className="HiOutlineViewList" style={Style.ViewList}><HiOutlineViewList/></div>
+    <div className="PesquisaD">
+      <form className="FormPesquisa">
+        <input id="Pesquisa" name="Pesquisa" type="search" placeHolder=" Busque Produtos " style={{display: "none"}}/>
+      </form>
+    </div>
+    <div>
+    <header className="header">
+      <div className="Lheader"><img className="Lheader" src="./images/logo-rodape.png"/></div>
+      <div className="Listahd"><Listah/></div>
+      <div className="HiOutlineViewList"><HiOutlineViewList/></div>
     </header>
+    </div>
   </div>  
  )
 }
