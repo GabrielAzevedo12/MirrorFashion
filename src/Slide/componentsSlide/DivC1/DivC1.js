@@ -6,8 +6,6 @@ import { Fetch } from '../../Funções/teste/Fetch.js'
 import Div11 from '../D11/D11';
 import LD11 from '../LD11/LD11';
 import { EF } from '../D11/ElementosFilhosD11/EF' ;
-import { f } from './funções/funções'
-import { s } from "./styles/style.js"
 
 let DivC1 = ({ DivC1pr }) => {   
     const DivTF1A = () => {
@@ -33,7 +31,6 @@ let DivC1 = ({ DivC1pr }) => {
     const   EP1 = async (e) => {
             Navigate('/Produtos')
             const text = e.target.textContent
-            console.log(e.target.textContent)
             let [url,method,content] = ["http://localhost:5000/Produtos/P1","PUT",{
                 name: "Fuzz Cardigan ",
                 preço: "R$179,99",
@@ -47,12 +44,13 @@ let DivC1 = ({ DivC1pr }) => {
             console.log('imgD21 foi executada')
 
                 },
-            EP2 = async () => {
+            EP2 = async (e) => {
                     Navigate('/Produtos')
-        
+                    const text = e.target.textContent
                     let [url,method,content] = ["http://localhost:5000/Produtos/P1","PUT",{
                         name: "Fuzz Cardigan ",
                         preço: "R$179,99",
+                        namePreço:  text ? text : "",
                         src: "./images/Produtos/P2.jpg",
                         class: "P2",
                         style: "null",
@@ -62,12 +60,13 @@ let DivC1 = ({ DivC1pr }) => {
                     console.log('imgD22 foi executada')
         
                 },
-            EP3 = async () => {
+            EP3 = async (e) => {
                     Navigate('/Produtos')
-        
+                    const text = e.target.textContent
                     let [url,method,content] = ["http://localhost:5000/Produtos/P1","PUT",{
                         name: "Fuzz Cardigan ",
                         preço: "R$179,99",
+                        namePreço:  text ? text : "",
                         src: "./images/Produtos/P3.jpg",
                         class: "P3",
                         style: "null",
