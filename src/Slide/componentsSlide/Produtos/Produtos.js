@@ -25,12 +25,6 @@ var Produtos = () => {
                     <h2 className='ProdutosEF3 ProdutosDescri'>Descrição do Produto</h2>
                     <div className='TabelaD'>
                         <h2 className="TabelaTíd">Tabela</h2>
-                        <p>
-                        material italiano com estampa desenhada pelos artesões da comunidade
-                        Esse é o melhor casaco Cardigã que você já viu. Excelente de Krotor 
-                        nas ilhas gregas. Compre já e receba hoje mesmo pela nossa entrega                                                                                              
-                        nossa entrega a jato. 
-                        </p>
                         <table> 
                             <thead> 
                                 <tr>
@@ -52,7 +46,13 @@ var Produtos = () => {
                                     <td>Lavar a Mão</td>
                                 </tr>
                             </tbody>
-                        </table> 
+                        </table>
+                        <p>
+                        material italiano com estampa desenhada pelos artesões da comunidade
+                        Esse é o melhor casaco Cardigã que você já viu. Excelente de Krotor 
+                        nas ilhas gregas. Compre já e receba hoje mesmo pela nossa entrega                                                                                              
+                        nossa entrega a jato. 
+                        </p> 
                     </div>
                 </div>
             </div>

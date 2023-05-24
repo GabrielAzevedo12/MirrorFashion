@@ -10,16 +10,17 @@ import { useState } from "react"
 import $ from "../../Funções/Query/$"
 import { Link } from "react-router-dom";
 
-var Listah = ({stylelh}) => {
+var Listah = () => {
     let href = "#";
     const [display,setDisplay] = useState(true),
            Listahli6oC = () => {
+            console.log("start Listahli6oC");
             const Pesquisa = $("#Pesquisa");
-            if(Pesquisa.className === "" ) {
+            if( (Pesquisa.className === "PesquisaAI") || (Pesquisa.className === "") ) {
                 Pesquisa.style.display = "flex"
                 Pesquisa.classList.add("PesquisaA")
                 Pesquisa.classList.remove("PesquisaAI")
-            } else {
+    } else if ((Pesquisa.className === "PesquisaA" )) {
                 Pesquisa.style.display = "none"
                 Pesquisa.classList.add("PesquisaAI")
                 Pesquisa.classList.remove("PesquisaA")
@@ -28,7 +29,7 @@ var Listah = ({stylelh}) => {
     return(
         <>
         {display && 
-        <ul className="Listah" style = {stylelh}>
+        <ul className="Listah">
             <Link to='/FormDbProd'>
                 <li className="Listahli">F</li>
             </Link>
