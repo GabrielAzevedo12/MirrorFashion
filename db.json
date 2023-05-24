@@ -21,19 +21,25 @@
       "src": "./images/Produtos/P2.jpg",
       "class": "P2",
       "style": "null",
-      "id": "P1"
+      "id": "P1",
+      "name": "Fuzz Cardigan",
+      "preço": "R$179,99"
     },
     {
       "id": "P2",
       "src": "./images/Produtos/P2.jpg",
       "class": "P2",
-      "style": "null"
+      "style": "null",
+      "name": "Fuzz Cardigan",
+      "preço": "R$179,99"
     },
     {
       "id": "P3",
       "src": "./images/Produtos/P3.jpg",
       "class": "P3",
-      "style": "null"
+      "style": "null",
+      "name": "Fuzz Cardigan",
+      "preço": "R$179,99"
     }
   ],
   "p1": [

@@ -97,16 +97,20 @@
 #P3 {
     background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)),url("/workspace/MirrorFashion/public/images/Produtos/P3.jpg");
 }
-/*
 @media (max-width : 600px) {
-    .ProdutosImg {
-        width: 100vw;
+    .imgD2 {
+        min-width:  95vw;
+        min-height: 95vh;
+        width:  95vw;
+        height: 95vh;
     }
-    .ProdutosDescri {
-        width: 100vw;
-    }      
+    .liD2 {
+        min-width:  95vw;
+        min-height: 95vh;
+        width:  95vw;
+        height: 95vh;
+    }
 }
-*/
 /*----------------------------------------------------------------------------------------------------------*/
 /*Animações*/
 .AimgD2:hover {

@@ -1,6 +1,5 @@
 import "./css/D11.css"
 import "./css/DT.css"
-import {EF} from './ElementosFilhosD11/EF'
 
 var Div11 = ({Div11Destaque}) => {
     return(    

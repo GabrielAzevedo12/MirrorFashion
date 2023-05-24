@@ -7,3 +7,8 @@
     bottom: 0vh;
     left: 43.5vw;
   }
+  @media (max-width : 600px) {
+    .LHul {
+        display: none;
+    }
+}

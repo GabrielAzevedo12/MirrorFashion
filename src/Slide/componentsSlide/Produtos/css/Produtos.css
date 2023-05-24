@@ -78,6 +78,9 @@
     border-radius: 2em;
 }
 .TabelaD {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: radial-gradient(white -300%,black);
     height: 55vh;
     box-shadow: 0px 0px 50px 50px black, 0px 0px 50px 50px steelblue;
@@ -86,7 +89,45 @@
 }
 .TabelaTíd {
     color: antiquewhite;
-    font-size: 2.5em;
+    font-size: 2.5rem;
+}
+.Tabela {
+    width: 30vw;
+    border-style: solid;
+    border-color: steelblue ;
+}
+.TabelaH {
+    color: antiquewhite;
+    font-size: 1.8rem;
+}
+.TabelaH  tr th {
+    border-style: solid;
+    border-bottom-width: 0rem;
+    border-left-width: 0rem;
+    border-top-width: 0rem;
+    border-color: steelblue ;
+}
+.TabelaH  tr th:nth-child(2n) {
+    border-right-width: 0rem;
+}
+.TabelaB {
+    color: rgb(218, 183, 171);
+    font-size: 1.4rem;
+}
+.TabelaB  tr td {
+    border-style: solid;
+    border-bottom-width: 0rem;
+    border-left-width: 0rem;
+    border-top-width: 0.2rem;
+    border-color: steelblue ;
+}
+.TabelaB  tr td:nth-child(2n) {
+    border-right-width: 0rem;
+}
+.DescriP {
+    color: rgb(218, 183, 171);
+    font-size: 1.4rem;
+    text-align: center;
 }
 @media (max-width : 600px) {
     .ProdutosImgD {

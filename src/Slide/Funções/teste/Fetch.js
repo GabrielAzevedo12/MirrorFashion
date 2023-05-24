@@ -1,5 +1,5 @@
-var Fetch = async (url,method,content,setData,setImg)  => {
-    let [url1,method1,content1,sD,sI] = [url,method,content,setData,setImg];
+var Fetch = async (url,method,content,setData,setImg,setNamePreço)  => {
+    let [url1,method1,content1,sD,sI,sNP] = [url,method,content,setData,setImg,setNamePreço];
     if(method1 === "GET") {
         /*fetch(url1,{ 
             method: method1,
@@ -37,6 +37,13 @@ var Fetch = async (url,method,content,setData,setImg)  => {
             console.log("setImg não está definido !!")  
          }
 
+         if (sNP !== null) {
+            const np = data[0].namePreço
+            sNP(np);    
+         } else {
+            console.log("setNamePreço não está definido !!")  
+         }
+
     } else if (method1 === "PUT" || method1 === "POST") {
         fetch(url1,{ 
     method: method1,
@@ -61,18 +68,10 @@ var Fetch = async (url,method,content,setData,setImg)  => {
 } 
 }
 
+export { Fetch }
 
-/*let teste = () => {
-    let [url,method,content,setData] = ["http://localhost:5000/Produtos/P1","PUT",  {
-        src: "./images/Produtos/P1.jpg",
-        class: "P1",
-        style: "null",
-      },null]; 
-    Fetch(url,method,content,null,null)
-}
-teste() */
 
-export {Fetch}
+
 
 
 

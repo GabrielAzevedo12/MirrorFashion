@@ -1,66 +1,15 @@
 import DivDestaque from '../D1/Div1'
 import DivLista from '../D2/Div2.js'
-import $ from '../../Funções/Query/$.js'
+import { $ } from '../../Funções/Query/query'
 import { useNavigate } from 'react-router-dom'
 import { Fetch } from '../../Funções/teste/Fetch.js'
 import Div11 from '../D11/D11';
 import LD11 from '../LD11/LD11';
 import { EF } from '../D11/ElementosFilhosD11/EF' ;
+import { f } from './funções/funções'
+import { s } from "./styles/style.js"
 
-var 
-    s = {
-        Div: {
-            height: '100vh', 
-            width: '100vw',  
-            left: "0px"
-        }
-    },
-    f = {
-        rd : {
-            dec : (s1,mh1,mw1,qe1) => {
-                let [s,mh,mw,qe] = [s1,mh1,mw1,qe1], [w,h] = [window.innerWidth,window.innerHeight];
-                for(var i = 1; i < qe + 1 ; i++) {
-                    var ei  = $(s + i);
-                    if(mh !== 'não definido')  {
-                        ei.style.minHeight = mh*h + "px";
-                        ei.style.Height = mh*h + "px";
-                    } 
-                    else {
-                        console.log('Altura não está definida')
-                    }
-                    if(mw !== 'não definido')  {
-                        ei.style.minWidth = mw*w + "px";
-                        ei.style.Width = mw*w + "px";
-                    } 
-                    else {
-                        console.log('Largura não está definida')
-                    }
-                }},
-            Div :   {
-                // a (( IR [+] - {0}
-                wwIdapx1 : () => {f.rd.dec('.Div',1,1,6)},
-                wwIdapx2 : () => {f.rd.dec('.Div',1,1,6)}
-            }
-        },
-        events : {
-            resize : {
-                AtualizarDimensõesDiv : () => {
-                    f.rd.Div.wwIdapx1()
-                }
-            },
-            load : {
-                AdicionarEventBody : () => {
-                    let b = document.body;
-                    b.addEventListener('resize',f.events.resize.AtualizarDimensõesDiv)
-                }
-            }
-        },
-        AddEventWindow :  () => {
-            window.addEventListener('load',f.events.load.AdicionarEventBody)
-        }
-    };
-
-var DivC1 = ({ DivC1pr }) => {   
+let DivC1 = ({ DivC1pr }) => {   
     const DivTF1A = () => {
         let e1 = $("#DivTF1"), e2 = $("#DivTF2")  ;
         e1.classList.add("DivTF1A");
@@ -81,15 +30,19 @@ var DivC1 = ({ DivC1pr }) => {
     };
     ;    
     const Navigate =  useNavigate();
-    const   EP1 = async () => {
+    const   EP1 = async (e) => {
             Navigate('/Produtos')
-
+            const text = e.target.textContent
+            console.log(e.target.textContent)
             let [url,method,content] = ["http://localhost:5000/Produtos/P1","PUT",{
+                name: "Fuzz Cardigan ",
+                preço: "R$179,99",
+                namePreço:  text ? text : "",
                 src: "./images/Produtos/P1.jpg",
                 class: "P1",
                 style: "null",
               },"null"]; 
-            Fetch(url,method,content,null,null) 
+            Fetch(url,method,content,null,null,null) 
 
             console.log('imgD21 foi executada')
 
@@ -98,11 +51,13 @@ var DivC1 = ({ DivC1pr }) => {
                     Navigate('/Produtos')
         
                     let [url,method,content] = ["http://localhost:5000/Produtos/P1","PUT",{
+                        name: "Fuzz Cardigan ",
+                        preço: "R$179,99",
                         src: "./images/Produtos/P2.jpg",
                         class: "P2",
                         style: "null",
                       },"null"]; 
-                    Fetch(url,method,content,null,null) 
+                    Fetch(url,method,content,null,null,null) 
         
                     console.log('imgD22 foi executada')
         
@@ -111,11 +66,13 @@ var DivC1 = ({ DivC1pr }) => {
                     Navigate('/Produtos')
         
                     let [url,method,content] = ["http://localhost:5000/Produtos/P1","PUT",{
+                        name: "Fuzz Cardigan ",
+                        preço: "R$179,99",
                         src: "./images/Produtos/P3.jpg",
                         class: "P3",
                         style: "null",
                       },"null"]; 
-                    Fetch(url,method,content,null,null) 
+                    Fetch(url,method,content,null,null,null) 
         
                     console.log('imgD23 foi executada')
         
@@ -150,7 +107,7 @@ var DivC1 = ({ DivC1pr }) => {
                     f2: {
                         class:"olD2",
                         filhos : {
-                            n1 : {corpoJSX: <div className='liD2 lD21'> {DFilhosDi1.img1} <p className='figCD2' onClick ={EP1}>Nome e preço</p></div>},
+                            n1 : {corpoJSX: <div className='liD2 lD21'> {DFilhosDi1.img1} <p className='figCD2' onClick ={EP1}>Fuzz Cardigan R$179,99</p></div>},
                             n2 : {corpoJSX: <div className='liD2 lD22'> {DFilhosDi1.img2} <p className='figCD2' onClick ={EP2}>Nome e preço</p></div>},
                             n3 : {corpoJSX: <div className='liD2 lD23'> {DFilhosDi1.img3} <p className='figCD2' onClick ={EP3}>Nome e preço</p></div>},
                             n4 : {corpoJSX: <div className='liD2 lD24'> {DFilhosDi1.img4} <p className='figCD2' >Nome e preço</p></div>},
@@ -173,7 +130,7 @@ var DivC1 = ({ DivC1pr }) => {
                     f2: {
                         class:"olD22",
                         filhos : {
-                            n1 : {corpoJSX: <div className='liD2 lD21'> {DFilhosDi2.img1} <p className='figCD2' >Nome e preço</p></div>},
+                            n1 : {corpoJSX: <div className='liD2 lD21'> {DFilhosDi2.img1} <p className='figCD2' >Fuzz Cardigan R$179,99</p></div>},
                             n2 : {corpoJSX: <div className='liD2 lD22'> {DFilhosDi2.img2} <p className='figCD2' >Nome e preço</p></div>},
                             n3 : {corpoJSX: <div className='liD2 lD23'> {DFilhosDi2.img3} <p className='figCD2' >Nome e preço</p></div>},
                             n4 : {corpoJSX: <div className='liD2 lD24'> {DFilhosDi2.img4} <p className='figCD2' >Nome e preço</p></div>},
@@ -196,9 +153,15 @@ var DivC1 = ({ DivC1pr }) => {
                 class:'DivT', 
                 id: "DivT", 
                 filhos: {
-                    F1: <div className="DivTF DivTF1" /*D111*/ id="DivTF1" onClick={DivTF1A} /*onMouseOut={DivTF1IA}*/>{EF.D11.TL}{EF.D11.TR}</div>,
-                    F2: <div className="DivTF DivTF2" /*D112*/ id="DivTF2" onClick={DivTF2A}>{EF.D11.TL}{EF.D11.TR}</div>,
-                    F3: <div className="DivTF DivTF3" /*D113*/ id="DivTF3">{EF.D11.TL}{EF.D11.TR}</div>,
+                    F1: <div /*D111*/  /*onMouseOut={DivTF1IA}*/>
+                            <img className="DivTF DivTF1" src="./images/Destaques/D1.jpg" alt="" id="DivTF1" onClick={DivTF1A}/>
+                        </div>,
+                    F2: <div /*D112*/>
+                            <img className="DivTF DivTF2" src="./images/Destaques/D2.jpg" alt="" id="DivTF2" onClick={DivTF2A}/>
+                        </div>,
+                    F3: <div /*D113*/>
+                            <img className="DivTF DivTF3" src="./images/Destaques/D3.jpg" alt="" id="DivTF3"/>
+                        </div>,
                     }                
             },
             DivD = {
