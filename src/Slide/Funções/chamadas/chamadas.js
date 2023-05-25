@@ -1,52 +1,11 @@
-import './css/slide.css';
-import DivC1 from './componentsSlide/DivC1/DivC1'
-import { f } from '../funções/chamadas/chamadas';
-
-function Slide() {
-//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-const slidePR = {
-  class : "slide",
-  id : "slide",
-  filhos : {
-    f1 : {
-      class  : "DivC1",
-      corpoJSX : <DivC1/>
-    } 
-  }
-}  
-//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  return (
-      <div className={slidePR.class}>
-        <DivC1 DivC1pr={slidePR.filhos.f1}/>
-      </div>
-  );
-}
-
-export default Slide;
-/*
-<DivC2  Ml2={f.MoverL2} MB={f.MoverB} MC={f.MoverC}/> 
-*/
-/*  (() => {
-    var UL = (E,upx) => {
-      var E1 = E,d = upx + 'px';
-      E1.style.left = d;
-      return d
-    };
-    var UT = (E,upx) => {
-    var E1 = E,d = upx + 'px';
-    E1.style.top = d;
-    return d
-  };
-    UL($('.Div1'),0);UL($('.Div2'),0);UL($('.Div3'),0)
-    UT($('.Div4'),0);UT($('.Div5'),0);UT($('.Div6'),0);UT($('.Div1'),0)
-  })() */
-//Pa = Posição atual
-//npx = Número natural múltiplo de px
-//Pl = posição da lista
-//sCIF = sentença da condição inicial da função = determina o intervalo
-//vx = váriavel x que será iterada    
-// Pa + npx = Pl = CI <->  npx = Pl - Pa , Pa>Pl -> sCIF <-> vx === Pl v vx < Pl    
-/*
+import '../css/slide.css';
+import {OOM} from '../teste/OOM';
+import {MD5} from '../Mov/MD5';
+import {MD6} from '../Mov/MD6';
+import {ML2v2} from '../Mov/ML2';
+import {gx} from '../Mov/gx';
+import {UT} from '../Mov/TT';
+import $ from '../Query/$';
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //Definições
 // f = Funções 
@@ -92,11 +51,4 @@ var
 } 
 };
 
-import {OOM} from './Funções/teste/OOM';
-import {MD5} from './Funções/Mov/MD5';
-import {MD6} from './Funções/Mov/MD6';
-import {ML2v2} from './Funções/Mov/ML2';
-import {gx} from './Funções/Mov/gx';
-import {UT} from './Funções/Mov/TT';
-import $ from './Funções/Query/$';
-*/
+export { f }

@@ -22,6 +22,7 @@ var FormDbProd = ({classNameF,classNameD,handleSubmit,ProdutoData}) => {
                 type="text"
                 text="id"
                 name="id"
+                labelDisplay={true}
                 placeholder="Insira o id"
                 handleOnChange={handleChangeI}
                 classD = "DinputDbP"
@@ -31,6 +32,7 @@ var FormDbProd = ({classNameF,classNameD,handleSubmit,ProdutoData}) => {
                 type="text"
                 text="src"
                 name="src"
+                labelDisplay={true}
                 placeholder="Insira o src"
                 handleOnChange={handleChangeI}
                 classD = "DinputDbP"
@@ -40,6 +42,7 @@ var FormDbProd = ({classNameF,classNameD,handleSubmit,ProdutoData}) => {
                 type="text"
                 text="class"
                 name="class"
+                labelDisplay={true}
                 placeholder="Insira a class"
                 handleOnChange={handleChangeI}
                 classD = "DinputDbP"
@@ -49,6 +52,7 @@ var FormDbProd = ({classNameF,classNameD,handleSubmit,ProdutoData}) => {
                 type="text"
                 text="style"
                 name="style"
+                labelDisplay={true}
                 placeholder="Insira o style"
                 handleOnChange={handleChangeI}
                 classD = "DinputDbP"
