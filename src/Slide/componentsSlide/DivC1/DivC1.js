@@ -6,29 +6,17 @@ import { Fetch } from '../../Funções/teste/Fetch.js'
 import Div11 from '../D11/D11';
 import LD11 from '../LD11/LD11';
 import { EF } from '../D11/ElementosFilhosD11/EF' ;
+import { useState,useEffect } from 'react';
+import { DivTF1A, DivTF2A } from "./funções/chamadas.js"
 
 let DivC1 = ({ DivC1pr }) => {   
-    const DivTF1A = () => {
-        let e1 = $("#DivTF1"), e2 = $("#DivTF2")  ;
-        e1.classList.add("DivTF1A");
-        e2.classList.add("DivTF2A");
-        e1.classList.remove("DivTF1IA");
-        e2.classList.remove("DivTF2IA");
-    },
-          DivTF2A = () => {
-        let e1 = $("#DivTF1"), e2 = $("#DivTF2")  ;
-        e1.classList.add("DivTF1IA");
-        e2.classList.add("DivTF2IA");
-        e1.classList.remove("DivTF1A");
-        e2.classList.remove("DivTF2A");
-    }
-    const DivTF1IA = () => {
-        let e = $("#DivTF1")  ;
-        e.classList.remove("DivTF1A");
-    };
-    ;    
-    const Navigate =  useNavigate();
-    const   EP1 = async (e) => {
+    const [datau,setDatau] = useState([]);
+    useEffect(() => {
+        let [url,method,content] = ["http://localhost:5000/Produtos/","GET","null"]; 
+        Fetch(url,method,content,setDatau,null,null)
+    },[])
+    const   Navigate =  useNavigate(),
+            EP1 = async (e) => {
             Navigate('/Produtos')
             const text = e.target.textContent
             let [url,method,content] = ["http://localhost:5000/Produtos/P1","PUT",{
@@ -190,3 +178,22 @@ let DivC1 = ({ DivC1pr }) => {
 }
 
 export default DivC1;
+
+/*const DivTF1A = () => {
+        let e1 = $("#DivTF1"), e2 = $("#DivTF2")  ;
+        e1.classList.add("DivTF1A");
+        e2.classList.add("DivTF2A");
+        e1.classList.remove("DivTF1IA");
+        e2.classList.remove("DivTF2IA");
+    },
+          DivTF2A = () => {
+        let e1 = $("#DivTF1"), e2 = $("#DivTF2")  ;
+        e1.classList.add("DivTF1IA");
+        e2.classList.add("DivTF2IA");
+        e1.classList.remove("DivTF1A");
+        e2.classList.remove("DivTF2A");
+    }
+    const DivTF1IA = () => {
+        let e = $("#DivTF1")  ;
+        e.classList.remove("DivTF1A");
+    };*/    
