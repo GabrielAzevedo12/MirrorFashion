@@ -41,11 +41,5 @@
       "name": "Fuzz Cardigan",
       "preço": "R$179,99"
     }
-  ],
-  "p1": [
-    {
-      "id": "p1",
-      "src": "./images/Produtos/p1.jpg"
-    }
   ]
 }

@@ -1,17 +1,47 @@
 import './css/Div2.css';
+import { useState, useEffect } from 'react';
+import { Fetch } from '../../Funções/teste/Fetch';
+import { useNavigate } from 'react-router-dom';
 
 var DivLista = (props) => { 
-            /*return*/
+    const [produtos,setProdutos] = useState([]), Navigate =  useNavigate();
+    console.log(produtos,"produtos")
+    useEffect(() => {
+        let [url,method,content] = ["http://localhost:5000/Produtos"+props.DivPrincipal.idGet+"/","GET","null"]; 
+        Fetch(url,method,content,setProdutos,null,null)
+    },[])
+    const  EPG = async (e) => {
+        Navigate('/Produtos')
+        const [text, id, name, preço, classd, classi,alti] = [e.target.textContent, e.target.previousSibling.id, e.target.textContent.split("  ")[0], e.target.textContent.split("  ")[1], e.target.parentElement.className, e.target.previousSibling.className, e.target.previousSibling.alt]; 
+            console.log(id)
+        let [url,method,content] = [`http://localhost:5000/ProdutosP/P`,"PUT",{ 
+            name: name+" ",
+            preço: preço,
+            namePreço:  text ? text : "",
+            src: "./images/Produtos/"+id+".jpg",
+            classD: classd,
+            classImg: classi,
+            classP: e.target.className,
+            altImg: alti,
+            style: "",
+          }]; 
+        
+        Fetch(url,method,content,null,null,null) 
+        
+        console.log('EPG foi executada')
+        }
     return(
         <div className={props.DivPrincipal.class} id={props.DivPrincipal.id}>
             <h1 className={props.DivPrincipal.filhos.f1.class}>{props.DivPrincipal.filhos.f1.filhos.textContent}</h1>
             <div className={props.DivPrincipal.filhos.f2.class}>    
-                {props.DivPrincipal.filhos.f2.filhos.n1.corpoJSX}
-                {props.DivPrincipal.filhos.f2.filhos.n2.corpoJSX}
-                {props.DivPrincipal.filhos.f2.filhos.n3.corpoJSX}
-                {props.DivPrincipal.filhos.f2.filhos.n4.corpoJSX}
-                {props.DivPrincipal.filhos.f2.filhos.n5.corpoJSX}
-                {props.DivPrincipal.filhos.f2.filhos.n6.corpoJSX}
+            {produtos.map((Produto) => (
+                    <div className={Produto.classD}>
+                        <img className={Produto.classImg} id={Produto.id} src={Produto.src} alt={Produto.altImg}/> 
+                        <p className={Produto.classP} onClick = {EPG}>
+                            {Produto.namePreço}
+                        </p>
+                    </div>                
+                ))}
             </div>
         </div>        
     )
@@ -20,6 +50,23 @@ var DivLista = (props) => {
 export default DivLista;
 
 //Rascunho
+/*
+    <div className='liD2 lD21'>
+        <img className='imgD2 imgD21 AimgD2' id='P1' src="./images/Produtos/P1.jpg" alt=""/> 
+        <p className='figCD2 figCD21' onClick ={EPG}>
+            Fuzz Cardigan  R$179,99
+        </p>
+    </div>
+
+    {produtos.map((Produto) => {
+                    <div className='liD2 lD21'>
+                    <img className='imgD2 imgD21 AimgD2' id='P1' src="./images/Produtos/P1.jpg" alt=""/> 
+                    <p className='figCD2 figCD21' onClick ={EPG}>
+                        Fuzz Cardigan  R$179,99
+                    </p>
+                </div>                
+                })}
+*/
 /*
 
                 <div className='liD2 lD21'> {FilhosFigD2.img1} <p className='figCD2' onClick ={EimgD21}>Nome e preço</p></div>              
@@ -112,4 +159,12 @@ let TFU = async () => {
     useEffect(() => {
         TFU()
     },[])
+*/
+/*
+                {props.DivPrincipal.filhos.f2.filhos.n1.corpoJSX}
+                {props.DivPrincipal.filhos.f2.filhos.n2.corpoJSX}
+                {props.DivPrincipal.filhos.f2.filhos.n3.corpoJSX}
+                {props.DivPrincipal.filhos.f2.filhos.n4.corpoJSX}
+                {props.DivPrincipal.filhos.f2.filhos.n5.corpoJSX}
+                {props.DivPrincipal.filhos.f2.filhos.n6.corpoJSX}
 */

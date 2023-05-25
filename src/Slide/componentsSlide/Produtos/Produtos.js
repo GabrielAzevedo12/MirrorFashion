@@ -7,7 +7,7 @@ var Produtos = () => {
     const [datau,setDatau] = useState([]), [img,setImg] = useState([]), [np,setNamePreço] = useState([]);
     console.log([datau,img])
     useEffect(() => {
-        let [url,method,content] = ["http://localhost:5000/Produtos/","GET","null"]; 
+        let [url,method,content] = ["http://localhost:5000/ProdutosP/","GET","null"]; 
         Fetch(url,method,content,setDatau,setImg,setNamePreço)
     },[])
     return(
@@ -19,7 +19,7 @@ var Produtos = () => {
             </div>
             <div className='ProdutosEF ProdutosInf'>
                  <div className='ProdutosEF2 ProdutosImgD'>
-                    <img className='ProdutosEF3 ProdutosImg AEF3' src = { img ? img : ''} alt='Alguma foto'/>
+                    <img className='ProdutosEF3 ProdutosImg AEF3' src = { img ? img : '' } alt='Alguma foto'/>
                 </div>
                 <div className='ProdutosEF2 ProdutosDescriD AEF3'>
                     <h2 className='ProdutosEF3 ProdutosDescri'>Descrição do Produto</h2>
