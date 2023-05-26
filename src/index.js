@@ -2,15 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Slide from './Slide/slide';
-import $ from './Slide/Funções/Query/$';
-import {scrDiv} from './Slide/Funções/Mov/ML4';
 import SlideApp from './SlideApp/slideApp'
 import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
 import ErrorPag from './ErrorPag/ErrorPag'
 import Produtos from './Slide/componentsSlide/Produtos/Produtos';
 import EP from './Slide/componentsSlide/EP/EP';
-import FormPag from './Slide/componentsSlide/FormPag/FormPag';
 import { f } from './funções/chamadas/chamadas';
+import DFormPag from './Slide/componentsSlide/DFormPag/DFormPag';
 
 const root = ReactDOM.createRoot(document.getElementById('root')); root.className = 'root' ;
 var router = 
@@ -20,7 +18,7 @@ var router =
           <Route path='/' index element={<Slide/>}/>
           <Route path='/Produtos'  element={<Produtos/>}/>
           <Route path='/FormDbProd'  element={<EP/>}/>
-          <Route path='/FormPag'  element={<FormPag/>}/>
+          <Route path='/FormPag'  element={<DFormPag/>}/>
           <Route errorElement={<ErrorPag/>}/>
       </Route>
     </Routes>

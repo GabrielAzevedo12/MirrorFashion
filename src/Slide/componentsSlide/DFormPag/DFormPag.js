@@ -1,8 +1,8 @@
-import "./css/DFormPag.css"
 import { Fetch } from "../../Funções/teste/Fetch"
 import FormPag from "../FormPag/FormPag"
+import "./css/DFormPag.css"
 
-var EP = () => {
+var DFormPag = () => {
     var crPost = (Produto)  => {
             const [url,method,content] = [`http://localhost:5000/ProdutosPag`,"POST",Produto]  
             Fetch(url,method,content,null,null,null)      
@@ -16,7 +16,7 @@ var EP = () => {
     )
 }
 
-export default EP
+export default DFormPag
 
 /*
         fetch('http://localhost:5000/Produtos',{ 
