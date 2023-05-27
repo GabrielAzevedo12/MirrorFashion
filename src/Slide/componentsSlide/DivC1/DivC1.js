@@ -10,7 +10,9 @@ import { useState,useEffect } from 'react';
 import { DivTF1A, DivTF2A } from "./funções/chamadas.js"
 
 let DivC1 = ({ DivC1pr }) => {   
-    const [datau,setDatau] = useState([]),  [LDsc1,setLDsc1] = useState([]), [LDsc2,setLDsc2] = useState([]) ;
+    const [datau,setDatau] = useState([]),  [LDsc1,setLDsc1] = useState([]), [LDsc2,setLDsc2] = useState([]), 
+          [LDsc3,setLDsc3] = useState([])   ;
+
     useEffect(() => {
         let [url,method,content] = ["http://localhost:5000/Produtos/","GET","null"]; 
         Fetch(url,method,content,setDatau,null,null)
@@ -20,6 +22,9 @@ let DivC1 = ({ DivC1pr }) => {
 
         let [url3,method3,content3] = ["http://localhost:5000/LDsc2/","GET","null"]; 
         Fetch(url3,method3,content3,setLDsc2,null,null)
+
+        let [url4,method4,content4] = ["http://localhost:5000/LDsc3/","GET","null"]; 
+        Fetch(url4,method4,content4,setLDsc3,null,null)
 
     }, [])
     const   Navigate =  useNavigate(),
@@ -82,8 +87,7 @@ let DivC1 = ({ DivC1pr }) => {
                             n6 : {corpoJSX: <div className='liD2 lD26'> {DFilhosDi1.img6} <p className='figCD2 figCD26' >Nome e preço</p></div>},
                         }
                     },
-                    f3:"",
-                    f4: <LD11 ListaScrd={LDsc2}/>,
+                    f3: <LD11 ListaScrd={LDsc2}/>,
             }
             },
             DivPrincipal2 = {
@@ -108,7 +112,7 @@ let DivC1 = ({ DivC1pr }) => {
                             n6 : {corpoJSX: <div className='liD2 lD26'> {DFilhosDi2.img6} <p className='figCD2' >Nome e preço</p></div>},
                         }
                     },
-                    f3: <LD11/>,
+                    f3: <LD11 ListaScrd={LDsc3}/>,
                     }
             },
             Div11D = {

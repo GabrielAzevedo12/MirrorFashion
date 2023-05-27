@@ -1,5 +1,4 @@
 import "./css/LD11.css"
-import { f } from "./f/f"
 import { scrd } from "../../Funções/Mov/src" 
 import $ from "../../Funções/Query/$"
 

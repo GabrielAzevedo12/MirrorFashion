@@ -42,7 +42,7 @@ var DivLista = (props) => {
                     </div>                
                 ))}
             </div>
-            {props.DivPrincipal.filhos.f4}
+            {props.DivPrincipal.filhos.f3}
         </div>        
     )
 }
