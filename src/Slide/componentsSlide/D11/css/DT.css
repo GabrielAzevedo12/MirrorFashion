@@ -39,6 +39,7 @@
     width: 40vw;
     left: 10px;
     bottom: 50px;
+    z-index: 1;
   }
   /*---------------------------------------------------------------------------------------------------------------------*/
   .DivTF2 {
@@ -92,7 +93,7 @@
         height: 60vh;
         width: 35vw;
         left: 21.5vw;
-        bottom: 75px;
+        bottom: 150px;
       } 
     100% {
         height: 50vh;
@@ -112,7 +113,7 @@
         height: 60vh;
         width: 35vw;
         left: 21.5vw;
-        bottom: 75px;
+        bottom: -150px;
         } 
       100% {
         height: 70vh;
@@ -153,7 +154,7 @@
         height: 60vh;
         width: 35vw;
         left: -16vw;
-        bottom: -50px;
+        bottom: 150px;
       }
     100% {
         height: 50vh;

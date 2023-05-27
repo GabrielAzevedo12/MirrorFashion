@@ -29,76 +29,88 @@ var FormPag = ({ classNameF, classNameD, handleSubmit, ProdutoPagData, Selection
             <form className={classNameF} onSubmit={subm}> 
                 <Input 
                 type="text"
-                text=""
-                labelDisplay={null}
+                text="Nome"
+                labelDisplay={true}
                 InputDisplay={true}
                 name="name"
                 placeholder="Insira o nome completo"
                 handleOnChange={handleChangeI}
                 classD = "DinputDFP"
                 classDF = "inputDbP DinputDbPF"
+                classL = "LabelF"
+                classLD= "LabelD"
                 SelDisplay={false}
                 />
                 <Input 
                 type="email"
-                text=""
-                labelDisplay={null}
+                text="E-mail"
+                labelDisplay={true}
                 InputDisplay={true}
                 name="email"
-                placeholder="Insira o E-mail"
+                placeholder="ex: user1@email.com"
                 handleOnChange={handleChangeI}
                 classD = "DinputDFP"
                 classDF = "inputDbP DinputDbPF"
+                classL = "LabelF"
+                classLD= "LabelD"
                 SelDisplay={false}
                 />
                 <Input 
                 type="number"
-                text=""
-                labelDisplay={null}
+                text="CPF"
+                labelDisplay={true}
                 InputDisplay={true}
                 name="CPF"
-                placeholder="Insira o seu CPF"
+                placeholder="ex : XXXXXXXXX-D"
                 handleOnChange={handleChangeI}
                 classD = "DinputDFP"
                 classDF = "inputDbP DinputDbPF"
+                classL = "LabelF"
+                classLD= "LabelD"
                 SelDisplay={false}
                 />
                 <Input 
                 type="number"
                 text=""
-                labelDisplay={null}
+                labelDisplay={true}
                 InputDisplay={true}
                 name="celular"
                 placeholder="Insira o número do celular com DDD"
                 handleOnChange={handleChangeI}
                 classD = "DinputDFP"
                 classDF = "inputDbP DinputDbPF"
+                classL = "LabelF"
+                classLD= "LabelD"
                 SelDisplay={false}
                 />
                 <div className='DSelect'>
                     <Input 
                     type="text"
                     text=""
-                    labelDisplay={null}
+                    labelDisplay={true}
                     InputDisplay={false}
                     name="celular"
                     placeholder="Select"
                     handleOnChange={handleChangeI}
                     classD = "DinputDFP"
                     classDF = "inputDbP DinputDbPF"
+                    classL = "LabelF"
+                    classLD= "LabelD"
                     SelDisplay={true}
                     SelectionsI={Selections}
                     />
                     <Input 
                     type="text"
                     text=""
-                    labelDisplay={null}
+                    labelDisplay={true}
                     InputDisplay={false}
                     name="celular"
                     placeholder="Select"
                     handleOnChange={handleChangeI}
                     classD = "DinputDFP"
                     classDF = "inputDbP DinputDbPF"
+                    classL = "LabelF"
+                    classLD= "LabelD"
                     SelDisplay={true}
                     SelectionsI={Selections}
                     />

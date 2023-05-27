@@ -1,10 +1,12 @@
 import Select from '../selectDbP/selectDbP'
 import './css/inputDbP.css'
 
-var Input = ({ type, text, name, placeholder, handleOnChange, value, classD, classDF, labelDisplay, SelectionsI, SelDisplay, InputDisplay }) => {
+var Input = ({ type, text, name, placeholder, handleOnChange, value, classD, classDF, classL, classLD, labelDisplay, SelectionsI, SelDisplay, InputDisplay }) => {
     return (
         <div className={classD}>
-            { labelDisplay && <label className={classDF} htmlFor={name}>{text}:</label> }
+            <div className={classLD}>
+                { labelDisplay && <label className={classL} htmlFor={name}>{text}:</label> }
+            </div>
             {
                 InputDisplay &&  
                 <input
