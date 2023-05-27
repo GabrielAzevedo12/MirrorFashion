@@ -3,8 +3,8 @@ import './css/Div1.css'
 var DivDestaque = (props) => {
     return(
         <div className={props.DivDestaque.class} id={props.DivDestaque.id}>
-            {props.DivDestaque.filhos.F1}
             {props.DivDestaque.filhos.F2}
+            {props.DivDestaque.filhos.F1}
         </div>
     )
 }

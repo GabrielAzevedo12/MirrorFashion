@@ -1,0 +1,21 @@
+.DSelect {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.SelectK {
+    width: 30vw;
+    height: 4vh;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-radius: 2.5rem;
+    border-color: rgb(221, 210, 210);
+    background: radial-gradient(antiquewhite,rgb(122, 120, 120));
+    color: aliceblue;
+    font-size: 1rem;
+    color:black
+}
+.OpK {
+    font-size: 2rem;
+    color:black
+}

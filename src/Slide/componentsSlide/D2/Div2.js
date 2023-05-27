@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom';
 
 var DivLista = (props) => { 
     const [produtos,setProdutos] = useState([]), Navigate =  useNavigate();
-    console.log(produtos,"produtos")
     useEffect(() => {
         let [url,method,content] = ["http://localhost:5000/Produtos"+props.DivPrincipal.idGet+"/","GET","null"]; 
         Fetch(url,method,content,setProdutos,null,null)
@@ -43,6 +42,7 @@ var DivLista = (props) => {
                     </div>                
                 ))}
             </div>
+            {props.DivPrincipal.filhos.f4}
         </div>        
     )
 }
@@ -51,6 +51,8 @@ export default DivLista;
 
 //Rascunho
 /*
+{props.DivPrincipal.filhos.f3}
+
     <div className='liD2 lD21'>
         <img className='imgD2 imgD21 AimgD2' id='P1' src="./images/Produtos/P1.jpg" alt=""/> 
         <p className='figCD2 figCD21' onClick ={EPG}>

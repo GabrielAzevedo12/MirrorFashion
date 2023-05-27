@@ -10,11 +10,18 @@ import { useState,useEffect } from 'react';
 import { DivTF1A, DivTF2A } from "./funções/chamadas.js"
 
 let DivC1 = ({ DivC1pr }) => {   
-    const [datau,setDatau] = useState([]);
+    const [datau,setDatau] = useState([]),  [LDsc1,setLDsc1] = useState([]), [LDsc2,setLDsc2] = useState([]) ;
     useEffect(() => {
         let [url,method,content] = ["http://localhost:5000/Produtos/","GET","null"]; 
         Fetch(url,method,content,setDatau,null,null)
-    },[])
+
+        let [url2,method2,content2] = ["http://localhost:5000/LDsc1/","GET","null"]; 
+        Fetch(url2,method2,content2,setLDsc1,null,null)
+
+        let [url3,method3,content3] = ["http://localhost:5000/LDsc2/","GET","null"]; 
+        Fetch(url3,method3,content3,setLDsc2,null,null)
+
+    }, [])
     const   Navigate =  useNavigate(),
             EPG = async (e) => {
                 Navigate('/Produtos')
@@ -74,7 +81,9 @@ let DivC1 = ({ DivC1pr }) => {
                             n5 : {corpoJSX: <div className='liD2 lD25'> {DFilhosDi1.img5} <p className='figCD2 figCD25' >Nome e preço</p></div>},
                             n6 : {corpoJSX: <div className='liD2 lD26'> {DFilhosDi1.img6} <p className='figCD2 figCD26' >Nome e preço</p></div>},
                         }
-                    }
+                    },
+                    f3:"",
+                    f4: <LD11 ListaScrd={LDsc2}/>,
             }
             },
             DivPrincipal2 = {
@@ -98,7 +107,8 @@ let DivC1 = ({ DivC1pr }) => {
                             n5 : {corpoJSX: <div className='liD2 lD25'> {DFilhosDi2.img5} <p className='figCD2' >Nome e preço</p></div>},
                             n6 : {corpoJSX: <div className='liD2 lD26'> {DFilhosDi2.img6} <p className='figCD2' >Nome e preço</p></div>},
                         }
-                    }
+                    },
+                    f3: <LD11/>,
                     }
             },
             Div11D = {
@@ -130,7 +140,7 @@ let DivC1 = ({ DivC1pr }) => {
                 id: "Div1", 
                 filhos: {
                     F1: <Div11 Div11Destaque={Div11D}/>,
-                    F2: <LD11/>,
+                    F2: <LD11 ListaScrd={LDsc1}/>,
                     }
             },
             DivD2 = {

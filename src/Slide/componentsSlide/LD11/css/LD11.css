@@ -1,11 +1,12 @@
 .LD11 {
     top: 75vh;
     left: 45vw;
-    position: fixed;
+    position: absolute;
     display: flex; 
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    z-index: 1;
 }
 .LD11li {
     color: black;
