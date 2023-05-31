@@ -136,10 +136,10 @@
       "name": "Fuzz Cardigan ",
       "preço": "R$179,99",
       "namePreço": "Fuzz Cardigan  R$179,99",
-      "src": "./images/Produtos/P3.jpg",
-      "classD": "liD2 lD23",
-      "classImg": "imgD2 imgD23 AimgD2",
-      "classP": "figCD2 figCD23",
+      "src": "./images/Produtos/P4.jpg",
+      "classD": "liD2 lD24",
+      "classImg": "imgD2 imgD24 AimgD2",
+      "classP": "figCD2 figCD24",
       "altImg": "",
       "style": "",
       "id": "P"
@@ -224,73 +224,73 @@
       "name": "Fuzz Cardigan ",
       "preço": "R$179,99",
       "namePreço": "Fuzz Cardigan  R$179,99",
-      "src": "",
+      "src": "./images/Produtos/P7.jpg",
       "altImg": "",
       "classP": "figCD2 figCD21",
       "classImg": "imgD2 imgD21 AimgD2",
       "classD": "liD2 lD21",
       "style": "",
-      "id": "P1"
+      "id": "P7"
     },
     {
       "name": "Fuzz Cardigan ",
       "preço": "R$179,99",
       "namePreço": "Fuzz Cardigan  R$179,99",
-      "src": "",
+      "src": "./images/Produtos/P8.jpg",
       "altImg": "",
       "classP": "figCD2 figCD22",
       "classImg": "imgD2 imgD22 AimgD2",
       "classD": "liD2 lD22",
       "style": "",
-      "id": "P2"
+      "id": "P8"
     },
     {
       "name": "Fuzz Cardigan ",
       "preço": "R$179,99",
       "namePreço": "Fuzz Cardigan  R$179,99",
-      "src": "",
+      "src": "./images/Produtos/P9.jpg",
       "altImg": "",
       "classP": "figCD2 figCD23",
       "classImg": "imgD2 imgD23 AimgD2",
       "classD": "liD2 lD23",
       "style": "",
-      "id": "P3"
+      "id": "P9"
     },
     {
       "name": "Fuzz Cardigan ",
       "preço": "R$179,99",
       "namePreço": "Fuzz Cardigan  R$179,99",
-      "src": "",
+      "src": "./images/Produtos/P10.jpg",
       "altImg": "",
       "classP": "figCD2 figCD24",
       "classImg": "imgD2 imgD24 AimgD2",
       "classD": "liD2 lD24",
       "style": "",
-      "id": "P4"
+      "id": "P10"
     },
     {
       "name": "Fuzz Cardigan ",
       "preço": "R$179,99",
       "namePreço": "Fuzz Cardigan  R$179,99",
-      "src": "",
+      "src": "./images/Produtos/P11.jpg",
       "altImg": "",
       "classP": "figCD2 figCD25",
       "classImg": "imgD2 imgD25 AimgD2",
       "classD": "liD2 lD25",
       "style": "",
-      "id": "P5"
+      "id": "P11"
     },
     {
       "name": "Fuzz Cardigan ",
       "preço": "R$179,99",
       "namePreço": "Fuzz Cardigan  R$179,99",
-      "src": "",
+      "src": "./images/Produtos/P12.jpg",
       "altImg": "",
       "classP": "figCD2 figCD26",
       "classImg": "imgD2 imgD26 AimgD2",
       "classD": "liD2 lD26",
       "style": "",
-      "id": "P6"
+      "id": "P12"
     }
   ]
 }
