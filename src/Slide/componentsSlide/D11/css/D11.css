@@ -208,11 +208,6 @@
 }
 
 @media (max-width: 1024px) {
-  /*.imgdis {
-    display: flex;
-    align-items: center;
-    align-content: center;
-  }*/
   .Div1,
   .Div11,
   .D11F1 
@@ -255,8 +250,18 @@
   } 
 }
 
+@media (min-width: 426px) {
+    .imgdis {
+      display: none;
+    }
+}
+
 @media (max-width: 425px) {
-    
+    .imgdis {
+      display: flex;
+      align-items: center;
+      align-content: center;
+  }
 }
 
 @media (max-width: 375px) {
