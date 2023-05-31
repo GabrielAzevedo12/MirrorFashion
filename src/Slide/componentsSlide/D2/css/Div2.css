@@ -119,6 +119,9 @@
     }
   
     @media (max-width: 768px) {
+        .DivLista {
+            height: 110vh;
+        }
         #Div3 {
             top: 20vh;
         }
