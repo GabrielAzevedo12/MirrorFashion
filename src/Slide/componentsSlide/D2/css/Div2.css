@@ -120,7 +120,7 @@
   
     @media (max-width: 768px) {
         .DivLista {
-            top: 30vh;
+            top: 20vh;
         }
         .olD {
             min-width:  95vw;
