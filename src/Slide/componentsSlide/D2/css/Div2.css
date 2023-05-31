@@ -119,6 +119,9 @@
     }
   
     @media (max-width: 768px) {
+        .DivLista {
+            top: 30vh;
+        }
         .olD {
             min-width:  95vw;
             min-height: 120vh;
