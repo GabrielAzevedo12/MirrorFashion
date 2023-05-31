@@ -247,24 +247,31 @@
   } 
 }
 
-@media (min-width: 426px) {
+@media (min-width: 601px) {
     .imgdis {
       display: none;
     }
 }
 
-@media (max-width: 425px) {
-    .Div1,
-    .Div11,
-    .D11F1,
-    .imgd
-    {
-      height: 120vh;
-    }
+@media (max-width: 600px) {
     .imgdis {
       display: flex;
       align-items: center;
       align-content: center;
+  }
+}
+
+@media (min-width: 426px) {
+  
+}
+
+@media (max-width: 425px) {
+  .Div1,
+  .Div11,
+  .D11F1,
+  .imgd
+  {
+    height: 120vh;
   }
 }
 

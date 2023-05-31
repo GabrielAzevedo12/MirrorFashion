@@ -77,7 +77,7 @@ let DivC1 = ({ DivC1pr }) => {
                         },
                     }, 
                     f2: {
-                        class:"olD2",
+                        class:"olD2 olD",
                         filhos : {
                             n1 : {corpoJSX: <div className='liD2 lD21'> {DFilhosDi1.img1} <p className='figCD2 figCD21' onClick ={EPG}>Fuzz Cardigan  R$179,99</p></div>},
                             n2 : {corpoJSX: <div className='liD2 lD22'> {DFilhosDi1.img2} <p className='figCD2 figCD22' onClick ={EPG}>Nome e preço</p></div>},
@@ -102,7 +102,7 @@ let DivC1 = ({ DivC1pr }) => {
                         },
                     }, 
                     f2: {
-                        class:"olD22",
+                        class:"olD22 olD",
                         filhos : {
                             n1 : {corpoJSX: <div className='liD2 lD21'> {DFilhosDi2.img1} <p className='figCD2' >Fuzz Cardigan R$179,99</p></div>},
                             n2 : {corpoJSX: <div className='liD2 lD22'> {DFilhosDi2.img2} <p className='figCD2' >Nome e preço</p></div>},
