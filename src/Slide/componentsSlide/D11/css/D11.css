@@ -232,15 +232,12 @@
 @media (max-width: 768px) {
   .Div1,
   .Div11,
-  .D11F1 
+  .D11F1,
+  .imgd
   {
     width: 100vw;
     height: 180vh;
   }
-  .imgd {
-  width: 100vw;
-  height: 180vh;
-    }
   .imgd:not(:hover) {
     animation-name: -imgdhover1;
     animation-duration: 1.5s;
@@ -257,6 +254,13 @@
 }
 
 @media (max-width: 425px) {
+    .Div1,
+    .Div11,
+    .D11F1,
+    .imgd
+    {
+      height: 120vh;
+    }
     .imgdis {
       display: flex;
       align-items: center;
