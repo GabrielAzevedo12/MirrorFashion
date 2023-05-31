@@ -16,30 +16,281 @@
   "profile": {
     "name": "typicode"
   },
+  "LDsc3": [
+    {
+      "name": "",
+      "class": "LD11",
+      "id": "LD11",
+      "lis": [
+        {
+          "Sibling": "previousSibling",
+          "value": "o1",
+          "scrdm": "1",
+          "class": "LHli LD11li LD11li1",
+          "id": "old22li1"
+        },
+        {
+          "Sibling": "previousSibling",
+          "value": "o2",
+          "scrdm": "2",
+          "class": "LHli LD11li LD11li2",
+          "id": "old22li2"
+        },
+        {
+          "Sibling": "previousSibling",
+          "value": "o3",
+          "scrdm": "3",
+          "class": "LHli LD11li LD11li3",
+          "id": "old22li3"
+        }
+      ]
+    }
+  ],
+  "LDsc2": [
+    {
+      "name": "",
+      "class": "LD11",
+      "id": "LD11",
+      "lis": [
+        {
+          "Sibling": "previousSibling",
+          "value": "o1",
+          "scrdm": "1",
+          "class": "LHli LD11li LD11li1",
+          "id": "old2li1"
+        },
+        {
+          "Sibling": "previousSibling",
+          "value": "o2",
+          "scrdm": "2",
+          "class": "LHli LD11li LD11li2",
+          "id": "old2li2"
+        },
+        {
+          "Sibling": "previousSibling",
+          "value": "o3",
+          "scrdm": "3",
+          "class": "LHli LD11li LD11li3",
+          "id": "old2li3"
+        }
+      ]
+    }
+  ],
+  "LDsc1": [
+    {
+      "name": "",
+      "class": "LD11",
+      "id": "LD11",
+      "lis": [
+        {
+          "Sibling": "nextSibling",
+          "value": "o1",
+          "scrdm": "1",
+          "class": "LHli LD11li LD11li1",
+          "id": "LD11li1"
+        },
+        {
+          "Sibling": "nextSibling",
+          "value": "o2",
+          "scrdm": "2",
+          "class": "LHli LD11li LD11li2",
+          "id": "LD11li2"
+        },
+        {
+          "Sibling": "nextSibling",
+          "value": "o3",
+          "scrdm": "3",
+          "class": "LHli LD11li LD11li3",
+          "id": "LD11li3"
+        }
+      ]
+    }
+  ],
+  "Selections1": [
+    {
+      "name": "",
+      "class": "SelectK",
+      "options": [
+        {
+          "value": "o1",
+          "class": "OpK"
+        },
+        {
+          "value": "o2",
+          "class": "OpK"
+        },
+        {
+          "value": "o3",
+          "class": "OpK"
+        },
+        {
+          "value": "o4",
+          "class": "OpK"
+        }
+      ]
+    }
+  ],
+  "ProdutosPag": [],
+  "ProdutosP": [
+    {
+      "name": "Fuzz Cardigan ",
+      "preço": "R$179,99",
+      "namePreço": "Fuzz Cardigan  R$179,99",
+      "src": "./images/Produtos/P3.jpg",
+      "classD": "liD2 lD23",
+      "classImg": "imgD2 imgD23 AimgD2",
+      "classP": "figCD2 figCD23",
+      "altImg": "",
+      "style": "",
+      "id": "P"
+    }
+  ],
   "Produtos": [
     {
-      "src": "./images/Produtos/P2.jpg",
-      "class": "P2",
-      "style": "null",
-      "id": "P1",
-      "name": "Fuzz Cardigan",
-      "preço": "R$179,99"
+      "name": "Fuzz Cardigan ",
+      "preço": "R$179,99",
+      "namePreço": "Fuzz Cardigan  R$179,99",
+      "src": "./images/Produtos/P1.jpg",
+      "classD": "liD2 lD21",
+      "classImg": "imgD2 imgD21 AimgD2",
+      "classP": "figCD2 figCD21",
+      "altImg": "",
+      "style": "",
+      "id": "P1"
     },
     {
-      "id": "P2",
+      "name": "Fuzz Cardigan ",
+      "preço": "R$179,99",
+      "namePreço": "Fuzz Cardigan  R$179,99",
       "src": "./images/Produtos/P2.jpg",
-      "class": "P2",
-      "style": "null",
-      "name": "Fuzz Cardigan",
-      "preço": "R$179,99"
+      "altImg": "",
+      "classP": "figCD2 figCD22",
+      "classImg": "imgD2 imgD22 AimgD2",
+      "classD": "liD2 lD22",
+      "style": "",
+      "id": "P2"
     },
     {
-      "id": "P3",
+      "name": "Fuzz Cardigan ",
+      "preço": "R$179,99",
+      "namePreço": "Fuzz Cardigan  R$179,99",
       "src": "./images/Produtos/P3.jpg",
-      "class": "P3",
-      "style": "null",
-      "name": "Fuzz Cardigan",
-      "preço": "R$179,99"
+      "altImg": "",
+      "classP": "figCD2 figCD23",
+      "classImg": "imgD2 imgD23 AimgD2",
+      "classD": "liD2 lD23",
+      "style": "",
+      "id": "P3"
+    },
+    {
+      "name": "Fuzz Cardigan ",
+      "preço": "R$179,99",
+      "namePreço": "Fuzz Cardigan  R$179,99",
+      "src": "./images/Produtos/P4.jpg",
+      "altImg": "",
+      "classP": "figCD2 figCD24",
+      "classImg": "imgD2 imgD24 AimgD2",
+      "classD": "liD2 lD24",
+      "style": "",
+      "id": "P4"
+    },
+    {
+      "name": "Fuzz Cardigan ",
+      "preço": "R$179,99",
+      "namePreço": "Fuzz Cardigan  R$179,99",
+      "src": "./images/Produtos/P5.jpg",
+      "altImg": "",
+      "classP": "figCD2 figCD25",
+      "classImg": "imgD2 imgD25 AimgD2",
+      "classD": "liD2 lD25",
+      "style": "",
+      "id": "P5"
+    },
+    {
+      "name": "Fuzz Cardigan ",
+      "preço": "R$179,99",
+      "namePreço": "Fuzz Cardigan  R$179,99",
+      "src": "./images/Produtos/P6.jpg",
+      "altImg": "",
+      "classP": "figCD2 figCD26",
+      "classImg": "imgD2 imgD26 AimgD2",
+      "classD": "liD2 lD26",
+      "style": "",
+      "id": "P6"
+    }
+  ],
+  "Produtos2": [
+    {
+      "name": "Fuzz Cardigan ",
+      "preço": "R$179,99",
+      "namePreço": "Fuzz Cardigan  R$179,99",
+      "src": "",
+      "altImg": "",
+      "classP": "figCD2 figCD21",
+      "classImg": "imgD2 imgD21 AimgD2",
+      "classD": "liD2 lD21",
+      "style": "",
+      "id": "P1"
+    },
+    {
+      "name": "Fuzz Cardigan ",
+      "preço": "R$179,99",
+      "namePreço": "Fuzz Cardigan  R$179,99",
+      "src": "",
+      "altImg": "",
+      "classP": "figCD2 figCD22",
+      "classImg": "imgD2 imgD22 AimgD2",
+      "classD": "liD2 lD22",
+      "style": "",
+      "id": "P2"
+    },
+    {
+      "name": "Fuzz Cardigan ",
+      "preço": "R$179,99",
+      "namePreço": "Fuzz Cardigan  R$179,99",
+      "src": "",
+      "altImg": "",
+      "classP": "figCD2 figCD23",
+      "classImg": "imgD2 imgD23 AimgD2",
+      "classD": "liD2 lD23",
+      "style": "",
+      "id": "P3"
+    },
+    {
+      "name": "Fuzz Cardigan ",
+      "preço": "R$179,99",
+      "namePreço": "Fuzz Cardigan  R$179,99",
+      "src": "",
+      "altImg": "",
+      "classP": "figCD2 figCD24",
+      "classImg": "imgD2 imgD24 AimgD2",
+      "classD": "liD2 lD24",
+      "style": "",
+      "id": "P4"
+    },
+    {
+      "name": "Fuzz Cardigan ",
+      "preço": "R$179,99",
+      "namePreço": "Fuzz Cardigan  R$179,99",
+      "src": "",
+      "altImg": "",
+      "classP": "figCD2 figCD25",
+      "classImg": "imgD2 imgD25 AimgD2",
+      "classD": "liD2 lD25",
+      "style": "",
+      "id": "P5"
+    },
+    {
+      "name": "Fuzz Cardigan ",
+      "preço": "R$179,99",
+      "namePreço": "Fuzz Cardigan  R$179,99",
+      "src": "",
+      "altImg": "",
+      "classP": "figCD2 figCD26",
+      "classImg": "imgD2 imgD26 AimgD2",
+      "classD": "liD2 lD26",
+      "style": "",
+      "id": "P6"
     }
   ]
 }
