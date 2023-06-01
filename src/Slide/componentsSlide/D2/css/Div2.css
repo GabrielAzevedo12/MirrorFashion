@@ -4,6 +4,7 @@
     justify-content: center; 
     flex-wrap: nowrap;
     width: 100vw;
+    height: 110vh;
 }
 .olD
 {
@@ -117,7 +118,7 @@
   
     @media (max-width: 768px) {
         .DivLista {
-            
+            height: 120vh;
         }
         .olD {
             min-width:  95vw;
