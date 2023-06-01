@@ -22,13 +22,13 @@
   align-items: stretch;
 }
 /*---------------------------------------------------------------------------------------------------------------------*/
-.Div1 {
+#Div1 {
   background: linear-gradient(antiquewhite,black,darksalmon);
 }
-.Div2 {
+#Div2 {
   background: linear-gradient(black,antiquewhite,darksalmon);
 }
-.Div3 {
+#Div3 {
   background: linear-gradient(darksalmon,antiquewhite,black)
 }
 /*---------------------------------------------------------------------------------------------------------------------*/
