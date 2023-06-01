@@ -122,11 +122,11 @@
         }
         .olD {
             min-width:  95vw;
-         
+            width:  95vw;
         }
         .liD2,
         .imgD2 {
-            
+            width:  95vw;
         }
         .liD2 {
             box-shadow: 0px 0px 0px 0px, 0px 0px 0px 0px, 0px 0px 0px 0px;
