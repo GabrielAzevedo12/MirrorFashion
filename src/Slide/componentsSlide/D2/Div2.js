@@ -6,14 +6,14 @@ import { useNavigate } from 'react-router-dom';
 var DivLista = (props) => { 
     const [produtos,setProdutos] = useState([]), Navigate =  useNavigate();
     useEffect(() => {
-        let [url,method,content] = ["http://localhost:5000/Produtos"+props.DivPrincipal.idGet+"/","GET","null"]; 
+        let [url,method,content] = ["https://9lez4p-5000.csb.app/Produtos"+props.DivPrincipal.idGet+"/","GET","null"]; 
         Fetch(url,method,content,setProdutos,null,null)
     },[])
     const  EPG = async (e) => {
         Navigate('/Produtos')
         const [text, id, name, preço, classd, classi,alti] = [e.target.textContent, e.target.previousSibling.id, e.target.textContent.split("  ")[0], e.target.textContent.split("  ")[1], e.target.parentElement.className, e.target.previousSibling.className, e.target.previousSibling.alt]; 
             console.log(id)
-        let [url,method,content] = [`http://localhost:5000/ProdutosP/P`,"PUT",{ 
+        let [url,method,content] = [`https://9lez4p-5000.csb.app/ProdutosP/P`,"PUT",{ 
             name: name+" ",
             preço: preço,
             namePreço:  text ? text : "",
@@ -37,7 +37,7 @@ var DivLista = (props) => {
                     <div className={Produto.classD}>
                         <img className={Produto.classImg} id={Produto.id} src={Produto.src} alt={Produto.altImg}/> 
                         <p className={Produto.classP} onClick = {EPG}>
-                            {Produto.namePreço}
+                            {Produto.namePreço} 
                         </p>
                     </div>                
                 ))}
