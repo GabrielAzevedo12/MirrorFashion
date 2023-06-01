@@ -126,6 +126,7 @@
         }
         .liD2,
         .imgD2 {
+            min-width: 95vw;
             width:  95vw;
         }
         .liD2 {
