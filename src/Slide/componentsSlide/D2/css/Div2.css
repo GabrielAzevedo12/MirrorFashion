@@ -122,6 +122,9 @@
         .DivLista {
             height: 120vh;
         }
+        #Div2 {
+            top: 10vh;
+        }
         #Div3 {
             top: 20vh;
         }
