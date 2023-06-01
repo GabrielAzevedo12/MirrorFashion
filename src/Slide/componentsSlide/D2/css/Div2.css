@@ -55,7 +55,7 @@
     box-shadow: 0px 0px 0px 0px antiquewhite,0px 0px 0px 0px black;
 }
 .figCD2 {
-    font-size: 2.2em;
+    font-size: 2.2rem;
     font-weight: 900;
     color: black;
     display: flex;
@@ -142,7 +142,7 @@
   
     @media (max-width: 440px) {
         .figCD2 {
-            font-size: 1.2em;
+            font-size: 1.6rem;
         }
     }
   
