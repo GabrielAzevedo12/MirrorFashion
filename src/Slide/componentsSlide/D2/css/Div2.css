@@ -4,11 +4,8 @@
     justify-content: center; 
     flex-wrap: nowrap;
     width: 100vw;
-    height: 120vh;
-    top: 10vh;
 }
-.olD2,
-.olD22
+.olD
 {
     display: flex;
     flex-direction: row;
@@ -19,7 +16,6 @@
     overflow-x: hidden;
     box-shadow: 0px 0px 50px 50px black;
     width: 100vw;
-    height: 100vh;
 }
 .olD22 {
     box-shadow: 0px 0px 50px 50px black;
@@ -120,20 +116,11 @@
   
     @media (max-width: 768px) {
         .DivLista {
-            height: 120vh;
-        }
-        #Div4,
-        #Div2 {
-            top: 25vh;
-        }
-        #Div3 {
-            top: 28vh;
+            
         }
         .olD {
             min-width:  95vw;
-            min-height: 110vh;
             width:  95vw;
-            height: 110vh;
         }
         .liD2,
         .imgD2 {
