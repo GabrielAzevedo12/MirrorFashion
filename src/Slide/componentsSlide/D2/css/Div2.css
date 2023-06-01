@@ -65,7 +65,8 @@
 .figD2 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 .DimgD2 {
     display: flex;
@@ -139,8 +140,10 @@
         
     }
   
-    @media (max-width: 425px) {
-        
+    @media (max-width: 440px) {
+        .figCD2 {
+            font-size: 1.2em;
+        }
     }
   
     @media (max-width: 375px) {
