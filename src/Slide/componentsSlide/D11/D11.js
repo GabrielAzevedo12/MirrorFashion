@@ -13,7 +13,6 @@ var Div11 = ({Div11Destaque}) => {
 
 export default Div11;
 
-//TESTE
 //Rascunho 
 //          |
 //          |
