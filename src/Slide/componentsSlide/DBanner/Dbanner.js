@@ -4,11 +4,15 @@ const Dbanner = () => {
   return (
     <>
       <div className="DbannerPrincipal">
-        <div className="DbannerTíd1">
-          <p className="bannerTíd1"> Sejá Bem Vindo a Mirror Fashion</p>
+        <div className="DbannerTíd1 DbannerTíd">
+          <p className="bannerTíd1 bannerTíd1A">
+            {" "}
+            Sejá Bem Vindo a Mirror Fashion
+          </p>
         </div>
-        <div className="DbannerTíd2">
-          <p className="bannerTíd2">A Maior Loja de Roupas de todo Brasil</p>
+        <span className="bannerSpan bannerSpanA" ></span>
+        <div className="DbannerTíd2 DbannerTíd">
+          <p className="bannerTíd2"></p>
         </div>
       </div>
     </>
@@ -16,3 +20,5 @@ const Dbanner = () => {
 };
 
 export { Dbanner };
+
+/*A Maior Loja de Roupas de todo Brasil*/

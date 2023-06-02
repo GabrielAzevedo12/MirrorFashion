@@ -1,8 +1,4 @@
 import $ from "../../../Funções/Query/$";
-import { P } from "../BD/OP";
-import { Style } from "../../D11/stylesPreDef/Styles";
-import { EF } from "../../D11/ElementosFilhosD11/EF";
-import React from "react";
 
 let [w, h] = [window.innerWidth, window.innerHeight];
 let f = {
@@ -233,45 +229,51 @@ let f = {
     over: {
       AolD: (e) => {
         /*  
+        
                 f.a.fD21.a1();  
                 f.a.imgD2.awh($('.imgD21'));                                
                 f.a.header.a1();
                 f.a.Lheader.a1();
                 f.a.Listah.a1();
             */
+
+        console.log("AolD disparado");
+
         const Pai = e.target.parentElement.parentElement;
         const DateClassP = Pai.className.split(" ");
 
-        let AnalClass = (db, cons, ação, ação2) => {
-          for (let date of db) {
-            if (date === cons) {
-              //Exc ação
-              ação();
-            } else {
-              ação2();
-              console.log("O dado " + cons + " não existe !");
+        const Ref = {
+          AnalClass: (db, cons, ação, ação2) => {
+            for (let date of db) {
+              if (date === cons) {
+                //Exc ação
+                ação();
+              } else {
+                ação2();
+                console.log("O dado " + cons + " não existe !");
+              }
             }
-          }
+          },
+
+          AddClass: (elemento, name) => {
+            elemento.classList.add(name);
+          },
+
+          RmClass: (elemento, name) => {
+            elemento.classList.remove(name);
+          },
+
+          UpClass1: () => {
+            Ref.RmClass(Pai, "IAolD");
+            Ref.AddClass(Pai, "AolD");
+          },
+
+          UpClass2: () => {
+            Ref.AddClass(Pai, "AolD");
+          },
         };
 
-        const AddClass = (elemento, name) => {
-          elemento.classList.add(name);
-        };
-
-        const RmClass = (elemento, name) => {
-          elemento.classList.remove(name);
-        };
-
-        const UpClass1 = () => {
-          RmClass(Pai, "IAolD");
-          AddClass(Pai, "AolD");
-        };
-
-        const UpClass2 = () => {
-          AddClass(Pai, "AolD");
-        };
-
-        AnalClass(DateClassP, "IAolD", UpClass1, UpClass2);
+        Ref.AnalClass(DateClassP, "IAolD", Ref.UpClass1, Ref.UpClass2);
 
         console.log("AolD disparado");
       },

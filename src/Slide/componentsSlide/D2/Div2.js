@@ -64,7 +64,7 @@ var DivLista = (props) => {
               src={Produto.src}
               alt={Produto.altImg}
               onMouseOver={f["events"]["over"][Produto.over]}
-              onMouseOut={f["events"]["out"][Produto.out]}
+              /*onMouseOut={f["events"]["out"][Produto.out]}*/
             />
             <p className={Produto.classP} onClick={EPG}>
               {Produto.namePreço}
