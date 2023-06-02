@@ -1,51 +1,81 @@
-import './css/Div2.css';
-import { useState, useEffect } from 'react';
-import { Fetch } from '../../Funções/teste/Fetch';
-import { useNavigate } from 'react-router-dom';
+import "./css/Div2.css";
+import { useState, useEffect } from "react";
+import { Fetch } from "../../Funções/teste/Fetch";
+import { useNavigate } from "react-router-dom";
+import { f } from "./funções/f.js";
 
-var DivLista = (props) => { 
-    const [produtos,setProdutos] = useState([]), Navigate =  useNavigate();
-    useEffect(() => {
-        let [url,method,content] = ["https://9lez4p-5000.csb.app/Produtos"+props.DivPrincipal.idGet+"/","GET","null"]; 
-        Fetch(url,method,content,setProdutos,null,null)
-    },[])
-    const  EPG = async (e) => {
-        Navigate('/Produtos')
-        const [text, id, name, preço, classd, classi,alti] = [e.target.textContent, e.target.previousSibling.id, e.target.textContent.split("  ")[0], e.target.textContent.split("  ")[1], e.target.parentElement.className, e.target.previousSibling.className, e.target.previousSibling.alt]; 
-            console.log(id)
-        let [url,method,content] = [`https://9lez4p-5000.csb.app/ProdutosP/P`,"PUT",{ 
-            name: name+" ",
-            preço: preço,
-            namePreço:  text ? text : "",
-            src: "./images/Produtos/"+id+".jpg",
-            classD: classd,
-            classImg: classi,
-            classP: e.target.className,
-            altImg: alti,
-            style: "",
-          }]; 
-        
-        Fetch(url,method,content,null,null,null) 
-        
-        console.log('EPG foi executada')
-        }
-    return(
-        <div className={props.DivPrincipal.class} id={props.DivPrincipal.id}>
-            <h1 className={props.DivPrincipal.filhos.f1.class}>{props.DivPrincipal.filhos.f1.filhos.textContent}</h1>
-            <div className={props.DivPrincipal.filhos.f2.class}>    
-            {produtos.map((Produto) => (
-                    <div className={Produto.classD}>
-                        <img className={Produto.classImg} id={Produto.id} src={Produto.src} alt={Produto.altImg}/> 
-                        <p className={Produto.classP} onClick = {EPG}>
-                            {Produto.namePreço} 
-                        </p>
-                    </div>                
-                ))}
-            </div>
-            {props.DivPrincipal.filhos.f3}
-        </div>        
-    )
-}
+var DivLista = (props) => {
+  const [produtos, setProdutos] = useState([]),
+    Navigate = useNavigate();
+  useEffect(() => {
+    let [url, method, content] = [
+      "https://9lez4p-5000.csb.app/Produtos" + props.DivPrincipal.idGet + "/",
+      "GET",
+      "null",
+    ];
+    Fetch(url, method, content, setProdutos, null, null);
+  }, []);
+  const EPG = async (e) => {
+    Navigate("/Produtos");
+    const [text, id, name, preço, classd, classi, alti] = [
+      e.target.textContent,
+      e.target.previousSibling.id,
+      e.target.textContent.split("  ")[0],
+      e.target.textContent.split("  ")[1],
+      e.target.parentElement.className,
+      e.target.previousSibling.className,
+      e.target.previousSibling.alt,
+    ];
+    console.log(id);
+    let [url, method, content] = [
+      `https://9lez4p-5000.csb.app/ProdutosP/P`,
+      "PUT",
+      {
+        name: name + " ",
+        preço: preço,
+        namePreço: text ? text : "",
+        src: "./images/Produtos/" + id + ".jpg",
+        classD: classd,
+        classImg: classi,
+        classP: e.target.className,
+        altImg: alti,
+        style: "",
+      },
+    ];
+
+    Fetch(url, method, content, null, null, null);
+
+    console.log("EPG foi executada");
+  };
+  return (
+    <div className={props.DivPrincipal.class} id={props.DivPrincipal.id}>
+      <h1
+        className={props.DivPrincipal.filhos.f1.class}
+        id={props.DivPrincipal.filhos.f1.id}
+      >
+        {props.DivPrincipal.filhos.f1.filhos.textContent}
+      </h1>
+      <div className={props.DivPrincipal.filhos.f2.class}>
+        {produtos.map((Produto) => (
+          <div className={Produto.classD}>
+            <img
+              className={Produto.classImg}
+              id={Produto.id}
+              src={Produto.src}
+              alt={Produto.altImg}
+              onMouseOver={f["events"]["over"][Produto.over]}
+              onMouseOut={f["events"]["out"][Produto.out]}
+            />
+            <p className={Produto.classP} onClick={EPG}>
+              {Produto.namePreço}
+            </p>
+          </div>
+        ))}
+      </div>
+      {props.DivPrincipal.filhos.f3}
+    </div>
+  );
+};
 
 export default DivLista;
 
@@ -128,7 +158,7 @@ let TFU = async () => {
         let e = $('.ProdutosImg');
         e.src = './images/' + inf.src
     })*/
-       /*for(var i=1;i < 7;i++) {
+/*for(var i=1;i < 7;i++) {
                     var e = $('.imgD2'+i)
                     if(i === 1) {
                         continue

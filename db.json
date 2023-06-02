@@ -136,10 +136,10 @@
       "name": "Fuzz Cardigan ",
       "preço": "R$179,99",
       "namePreço": "Fuzz Cardigan  R$179,99",
-      "src": "./images/Produtos/P3.jpg",
-      "classD": "liD2 lD23",
-      "classImg": "imgD2 imgD23 AimgD2",
-      "classP": "figCD2 figCD23",
+      "src": "./images/Produtos/P8.jpg",
+      "classD": "liD2 lD22",
+      "classImg": "imgD2 imgD22 AimgD2",
+      "classP": "figCD2 figCD22",
       "altImg": "",
       "style": "",
       "id": "P"
@@ -156,6 +156,8 @@
       "classP": "figCD2 figCD21",
       "altImg": "",
       "style": "",
+      "over": "Aold",
+      "out": "IAolD",
       "id": "P1"
     },
     {
@@ -168,6 +170,8 @@
       "classImg": "imgD2 imgD22 AimgD2",
       "classD": "liD2 lD22",
       "style": "",
+      "over": "Aold",
+      "out": "IAolD",
       "id": "P2"
     },
     {
@@ -180,6 +184,8 @@
       "classImg": "imgD2 imgD23 AimgD2",
       "classD": "liD2 lD23",
       "style": "",
+      "over": "AolD",
+      "out": "IAolD",
       "id": "P3"
     },
     {
@@ -192,6 +198,8 @@
       "classImg": "imgD2 imgD24 AimgD2",
       "classD": "liD2 lD24",
       "style": "",
+      "over": "Aold",
+      "out": "IAolD",
       "id": "P4"
     },
     {
@@ -204,6 +212,8 @@
       "classImg": "imgD2 imgD25 AimgD2",
       "classD": "liD2 lD25",
       "style": "",
+      "over": "Aold",
+      "out": "IAolD",
       "id": "P5"
     },
     {
@@ -216,6 +226,8 @@
       "classImg": "imgD2 imgD26 AimgD2",
       "classD": "liD2 lD26",
       "style": "",
+      "over": "Aold",
+      "out": "IAolD",
       "id": "P6"
     }
   ],
@@ -230,6 +242,8 @@
       "classImg": "imgD2 imgD21 AimgD2",
       "classD": "liD2 lD21",
       "style": "",
+      "over": "Aold",
+      "out": "IAolD",
       "id": "P7"
     },
     {
@@ -242,6 +256,8 @@
       "classImg": "imgD2 imgD22 AimgD2",
       "classD": "liD2 lD22",
       "style": "",
+      "over": "Aold",
+      "out": "IAolD",
       "id": "P8"
     },
     {
@@ -254,6 +270,8 @@
       "classImg": "imgD2 imgD23 AimgD2",
       "classD": "liD2 lD23",
       "style": "",
+      "over": "Aold",
+      "out": "IAolD",
       "id": "P9"
     },
     {
@@ -266,6 +284,8 @@
       "classImg": "imgD2 imgD24 AimgD2",
       "classD": "liD2 lD24",
       "style": "",
+      "over": "Aold",
+      "out": "IAolD",
       "id": "P10"
     },
     {
@@ -278,6 +298,8 @@
       "classImg": "imgD2 imgD25 AimgD2",
       "classD": "liD2 lD25",
       "style": "",
+      "over": "Aold",
+      "out": "IAolD",
       "id": "P11"
     },
     {
@@ -290,6 +312,8 @@
       "classImg": "imgD2 imgD26 AimgD2",
       "classD": "liD2 lD26",
       "style": "",
+      "over": "Aold",
+      "out": "IAolD",
       "id": "P12"
     }
   ]
