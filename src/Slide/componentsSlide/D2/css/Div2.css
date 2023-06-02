@@ -1,187 +1,219 @@
 .DivLista {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    flex-wrap: nowrap;
-    width: 100vw;
-    height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100vw;
+  height: 120vh;
 }
-.olD
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
-    background: transparent;
-    padding: 5px;
-    overflow-x: hidden;
-    box-shadow: 0px 0px 50px 50px black;
-    width: 100vw;
-    height: 100vh;
+.olD {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  background: transparent;
+  padding: 5px;
+  overflow-x: hidden;
+  box-shadow: 0px 0px 50px 50px black;
+  width: 100vw;
+  height: 100vh;
 }
 .olD22 {
-    box-shadow: 0px 0px 50px 50px black;
+  box-shadow: 0px 0px 50px 50px black;
 }
 .liD2 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    background: radial-gradient(black -50%,antiquewhite);
-    box-shadow: 0px 0px 100px 100px antiquewhite, 0px 0px 100px 100px darksalmon, 0px 0px 100px 100px black;
-    padding-right: 5vh;
-    border-radius: 20px;
-    min-width:  40vw;
-    min-height: 85vh;
-    width:  40vw;
-    height: 85vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  background: radial-gradient(black -50%, antiquewhite);
+  box-shadow: 0px 0px 100px 100px antiquewhite, 0px 0px 100px 100px darksalmon,
+    0px 0px 100px 100px black;
+  padding-right: 5vh;
+  border-radius: 20px;
+  min-width: 40vw;
+  min-height: 85vh;
+  width: 40vw;
+  height: 85vh;
 }
-.TíD, 
+.TíD,
 .TíD2 {
-    min-width:  100vw;
-    min-height: 10vh;
-    width:  100vw;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    color: wheat;
-    font-weight: 900;
-    font-size: 3em;
-    box-shadow: 0px 0px 100px 100px antiquewhite,0px 0px 200px 200px black;
-    border-radius: 10px;
+  min-width: 100vw;
+  min-height: 10vh;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  color: wheat;
+  font-weight: 900;
+  font-size: 3em;
+  box-shadow: 0px 0px 100px 100px antiquewhite, 0px 0px 200px 200px black;
+  border-radius: 10px;
 }
 .TíD2 {
-    box-shadow: 0px 0px 0px 0px antiquewhite,0px 0px 0px 0px black;
+  box-shadow: 0px 0px 0px 0px antiquewhite, 0px 0px 0px 0px black;
 }
 .figCD2 {
-    font-size: 2.2rem;
-    font-weight: 900;
-    color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .figD2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
 }
 .DimgD2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    box-shadow: 0px 0px 300px 150px black;
-    border-radius: 20px;
-    min-width:  30vw;
-    min-height: 85vh;
-    width:  40vw;
-    height: 85vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: 0px 0px 300px 150px black;
+  border-radius: 20px;
+  min-width: 30vw;
+  min-height: 85vh;
+  width: 40vw;
+  height: 85vh;
 }
 .imgD2 {
-    border-radius: 20px;
-    min-width:  30vw;
-    min-height: 85vh;
-    width:  30vw;
-    height: 85vh;
-    background-repeat: no-repeat;
-    background-size: cover;
+  border-radius: 20px;
+  min-width: 30vw;
+  min-height: 85vh;
+  width: 30vw;
+  height: 85vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #P1 {
-    background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4));
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.2) 40%,
+    rgba(0, 0, 0, 0.2) 80%,
+    rgba(0, 0, 0, 0.4)
+  );
 }
 #P2 {
-    background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4));
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.2) 40%,
+    rgba(0, 0, 0, 0.2) 80%,
+    rgba(0, 0, 0, 0.4)
+  );
 }
 #P3 {
-    background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4));
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.2) 40%,
+    rgba(0, 0, 0, 0.2) 80%,
+    rgba(0, 0, 0, 0.4)
+  );
 }
 
 /*---------------------------------------------------------------------------------------------------------------------*/
-    @media (min-width: 1500px) {
-  
-    }
-  
-    @media (min-width: 1025px) {
-   
-    }
-  
-     @media (max-width: 1024px) {   
-        .imgD2 {
-            width: 50vw;
-          }
-          .liD2 {
-            width: 60vw;
-            margin-right: 10vw;
-          }
-    }
-  
-    @media (max-width: 768px) {
-        .DivLista {
-            
-        }
-        .olD {
-            min-width:  95vw;
-            width:  95vw;
-        }
-        .liD2,
-        .imgD2 {
-            min-width: 95vw;
-            width:  95vw;
-        }
-        .liD2 {
-            box-shadow: 0px 0px 0px 0px, 0px 0px 0px 0px, 0px 0px 0px 0px;
-            margin: 0;
-        }
-    }
+@media (min-width: 1500px) {
+}
 
-    @media (max-width : 600px) {
-        
-    }
-  
-    @media (max-width: 440px) {
-        .figCD2 {
-            font-size: 1.6rem;
-        }
-    }
-  
-    @media (max-width: 375px) {
-        
-    }
-  
-    @media (max-width: 320px) {
-  
-    }
+@media (min-width: 1025px) {
+}
+
+@media (max-width: 1024px) {
+  .imgD2 {
+    width: 50vw;
+  }
+  .liD2 {
+    width: 60vw;
+    margin-right: 10vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .DivLista {
+  }
+  .olD {
+    min-width: 95vw;
+    width: 95vw;
+  }
+  .liD2,
+  .imgD2 {
+    min-width: 95vw;
+    width: 95vw;
+  }
+  .liD2 {
+    box-shadow: 0px 0px 0px 0px, 0px 0px 0px 0px, 0px 0px 0px 0px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+}
+
+@media (max-width: 440px) {
+  .figCD2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 375px) {
+}
+
+@media (max-width: 320px) {
+}
 
 /*----------------------------------------------------------------------------------------------------------*/
 /*Animações*/
 .AimgD2:hover {
-    animation-name: AimgD2;
-    animation-duration: 1.5s;
-    animation-iteration-count: 1;
+  animation-name: AimgD2;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
 }
 .AimgD2:hover {
-    width:  45vw;
-    height: 100vh;
-    border-radius: 100px;
-    box-shadow: 0px 0px 300px 260px black,0px 0px 200px 150px antiquewhite,0px 0px 400px 400px black;
-    right: 5vw;
-}  
+  z-index: 1;
+  width: 40vw;
+  min-height: 100vh;
+  height: 100vh;
+  border-radius: 100px;
+  box-shadow: 0px 0px 300px 260px black, 0px 0px 200px 150px antiquewhite,
+    0px 0px 400px 400px black;
+  right: 5vw;
+}
+.AolD {
+  animation-name: AolD;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
 @keyframes AimgD2 {
-    from {
-        width:  30vw;
-        height: 85vh;
-        border-radius: 0px;
-        box-shadow: 0px 0px 0px 0px black,0px 0px 0px 0px antiquewhite,0px 0px 0px 0px black;
-        right: 0vw;
-    }
-    to {
-        width:  45vw;
-        height: 100vh;
-        right: 5vw;
-        border-radius: 100px;
-        box-shadow: 0px 0px 300px 260px black,0px 0px 200px 150px antiquewhite,0px 0px 400px 400px black;
-    }
+  from {
+    width: 30vw;
+    height: 85vh;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px 0px black, 0px 0px 0px 0px antiquewhite,
+      0px 0px 0px 0px black;
+    right: 0vw;
+  }
+  to {
+    width: 40vw;
+    height: 100vh;
+    min-height: 100vh;
+    right: 5vw;
+    border-radius: 100px;
+    box-shadow: 0px 0px 300px 260px black, 0px 0px 200px 150px antiquewhite,
+      0px 0px 400px 400px black;
+  }
+}
+
+@keyframes AolD {
+  from {
+    height: 100vh;
+  }
+  to {
+    height: 115vh;
+  }
 }
 /*----------------------------------------------------------------------------------------------------------*/
