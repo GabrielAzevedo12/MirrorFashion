@@ -2,39 +2,39 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Slide from './Slide/slide';
-import SlideApp from './SlideApp/slideApp'
-import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
-import ErrorPag from './ErrorPag/ErrorPag'
+import SlideApp from './SlideApp/slideApp';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import ErrorPag from './ErrorPag/ErrorPag';
 import Produtos from './Slide/componentsSlide/Produtos/Produtos';
 import EP from './Slide/componentsSlide/EP/EP';
 import { f } from './funções/chamadas/chamadas';
 import DFormPag from './Slide/componentsSlide/DFormPag/DFormPag';
 
-const root = ReactDOM.createRoot(document.getElementById('root')); root.className = 'root' ;
-var router = 
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.className = 'root';
+var router = (
   <Router>
     <Routes>
-      <Route element={<SlideApp/>}>
-          <Route path='/' index element={<Slide/>}/>
-          <Route path='/Produtos'  element={<Produtos/>}/>
-          <Route path='/FormDbProd'  element={<EP/>}/>
-          <Route path='/FormPag'  element={<DFormPag/>}/>
-          <Route errorElement={<ErrorPag/>}/>
+      <Route element={<SlideApp />}>
+        <Route path="/" index element={<Slide />} />
+        <Route path="/Produtos" element={<Produtos />} />
+        <Route path="/FormDbProd" element={<EP />} />
+        <Route path="/FormPag" element={<DFormPag />} />
+        <Route errorElement={<ErrorPag />} />
       </Route>
     </Routes>
   </Router>
-
-root.render(
-  <React.StrictMode>
-    {router}
-  </React.StrictMode>
 );
 
+root.render(<React.StrictMode>{router}</React.StrictMode>);
+
+//stackblitzs
+//stackblitzs
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals1(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals1
 
-export {f}
+export { f };
 
 //testeVim
 /*
