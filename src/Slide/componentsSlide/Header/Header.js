@@ -17,7 +17,7 @@ var Header = () => {
         w : window.innerWidth
     };
  return (
-  <div className="Dheader">
+  <div className="Dheader" >
     <div className="PesquisaD">
       <form className="FormPesquisa">
         <input id="Pesquisa" name="Pesquisa" type="search" placeHolder=" Busque Produtos " style={{display: "none"}}/>
