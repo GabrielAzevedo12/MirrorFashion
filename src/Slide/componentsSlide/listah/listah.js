@@ -27,11 +27,13 @@ var Listah = () => {
            },
             ExListahText = (e) => {
 		console.log("ExListahText foi esta sendo executada")   
-		console.log(e.target)   
+		console.log(e.target.parentElement.parentElement)   
+		//typeA (( {"remove","add"}
+		//E = ElementoHtml		    
 		/*   
 		console.log( '.' + e.target.id );   
 		*/
-		const ElExi = e.target.previousSibling   ;
+		const ElExi = e.target.parentElement.parentElement.previousSibling   ;
 
 		const AnáliseClass = (DataBase,Dado,ExecuteAção1,ExecuteAção2) => {
 			for ( let el of DataBase ) {

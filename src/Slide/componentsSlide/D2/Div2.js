@@ -3,20 +3,39 @@ import { useState, useEffect } from "react";
 import { Fetch } from "../../Funções/teste/Fetch";
 import { useNavigate } from "react-router-dom";
 import { f } from "./funções/f.js";
+import LD11 from "../LD11/LD11";
 
 var DivLista = (props) => {
-  const [produtos, setProdutos] = useState([]),
-    Navigate = useNavigate();
+  const 
+  [produtos, setProdutos] = useState([]),
+  [LDsc2, setLDsc2] = useState([]),
+
+  Navigate = useNavigate();
+
   useEffect(() => {
-    let [url, method, content] = [
-      "https://9lez4p-5000.csb.app/Produtos" + props.DivPrincipal.idGet + "/",
+    const 
+    [url, method, content] = [
+      "http://localhost:5000/Produtos" + props.DivPrincipal.idGet + "/",
+      "GET",
+      "null",
+    ],
+    [url2, method2, content2] = [
+      "http://localhost:5000/LDsc" + props.DivPrincipal.idGetLDsc + "/",
       "GET",
       "null",
     ];
-    Fetch(url, method, content, setProdutos, null, null);
-  }, []);
+
+  Fetch(url, method, content, setProdutos, null, null);
+  Fetch(url2, method2, content2, setLDsc2, null, null);  
+
+  }, 
+  []);
+  
+
   const EPG = async (e) => {
+
     Navigate("/Produtos");
+
     const [text, id, name, preço, classd, classi, alti] = [
       e.target.textContent,
       e.target.previousSibling.id,
@@ -26,9 +45,11 @@ var DivLista = (props) => {
       e.target.previousSibling.className,
       e.target.previousSibling.alt,
     ];
-    console.log(id);
-    let [url, method, content] = [
-      `https://9lez4p-5000.csb.app/ProdutosP/P`,
+
+  console.log(id);
+
+  let [url, method, content] = [
+      `http://localhost:5000/ProdutosP/P`,
       "PUT",
       {
         name: name + " ",
@@ -43,9 +64,10 @@ var DivLista = (props) => {
       },
     ];
 
-    Fetch(url, method, content, null, null, null);
+  Fetch(url, method, content, null, null, null);
 
-    console.log("EPG foi executada");
+  console.log("EPG foi executada");
+
   };
   return (
     <div className={props.DivPrincipal.class} id={props.DivPrincipal.id}>
@@ -72,7 +94,7 @@ var DivLista = (props) => {
           </div>
         ))}
       </div>
-      {props.DivPrincipal.filhos.f3}
+      <LD11 ListaScrd={LDsc2} />
     </div>
   );
 };
@@ -80,6 +102,10 @@ var DivLista = (props) => {
 export default DivLista;
 
 //Rascunho
+/*
+  {props.DivPrincipal.filhos.f3}
+  9lez4p-5000.csb.app
+*/
 /*
 {props.DivPrincipal.filhos.f3}
 
