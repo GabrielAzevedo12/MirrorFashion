@@ -28,20 +28,6 @@ let DivC1 = ({ DivC1pr }) => {
       "null",
     ];
     Fetch(url2, method2, content2, setLDsc1, null, null);
-
-    /*let [url3, method3, content3] = [
-      "http://localhost:5000/LDsc2/",
-      "GET",
-      "null",
-    ];
-    Fetch(url3, method3, content3, setLDsc2, null, null);
-
-    let [url4, method4, content4] = [
-      "http://localhost:5000/LDsc3/",
-      "GET",
-      "null",
-    ];
-    Fetch(url4, method4, content4, setLDsc3, null, null);*/
   }, []);
   const 
     // i (( I(6) - {0}
@@ -73,6 +59,21 @@ let DivC1 = ({ DivC1pr }) => {
 
 export default DivC1;
 /*
+  let [url3, method3, content3] = [
+      "http://localhost:5000/LDsc2/",
+      "GET",
+      "null",
+    ];
+    Fetch(url3, method3, content3, setLDsc2, null, null);
+
+    let [url4, method4, content4] = [
+      "http://localhost:5000/LDsc3/",
+      "GET",
+      "null",
+    ];
+    Fetch(url4, method4, content4, setLDsc3, null, null);
+  }, []);
+
     [LDsc2, setLDsc2] = useState([]),
     [LDsc3, setLDsc3] = useState([]);
 EPG = async (e) => {
