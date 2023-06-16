@@ -130,10 +130,39 @@
       ]
     }
   ],
+  "ReactComponentes1": {
+    "id": "Div1",
+    "class": "Div1 Div",
+    "name": "DivD",
+    "filhos": {
+      "Div11_Hook": {
+        "prop_Div11Destaque": "Div11D"
+      },
+      "LD11": {
+        "prop_ListaScrd": "LDsc1",
+        "display": "true"
+      }
+    }
+  },
   "ReactComponentes": [
     {
       "id": "Div1",
       "class": "Div1 Div",
+      "name": "DivD",
+      "filhos": {
+        "Div11_Hook": {
+          "prop_Div11Destaque": "Div11D"
+        },
+        "LD11": {
+          "prop_ListaScrd": "LDsc1",
+          "display": "true"
+        }
+      }
+    },
+    {
+      "id": "Div4",
+      "class": "Div1 Div",
+      "name": "DivD2",
       "filhos": {
         "Div11_Hook": {
           "prop_Div11Destaque": "Div11D"
@@ -151,10 +180,10 @@
       "name": "Fuzz Cardigan ",
       "preço": "R$179,99",
       "namePreço": "Fuzz Cardigan  R$179,99",
-      "src": "./images/Produtos/P6.jpg",
-      "classD": "liD2 lD26",
-      "classImg": "imgD2 imgD26 AimgD2",
-      "classP": "figCD2 figCD26",
+      "src": "./images/Produtos/P1.jpg",
+      "classD": "liD2 lD21",
+      "classImg": "imgD2 imgD21 AimgD2",
+      "classP": "figCD2 figCD21",
       "altImg": "",
       "style": "",
       "id": "P"

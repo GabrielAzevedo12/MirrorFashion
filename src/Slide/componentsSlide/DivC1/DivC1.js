@@ -1,4 +1,5 @@
 import DivDestaque from "../D1/Div1";
+import DivDestaque_Copia from "../D1/Div1_copia1.js";
 import DivLista from "../D2/Div2.js";
 import { Fetch } from "../../Funções/teste/Fetch.js";
 import Div11 from "../D11/D11";
@@ -11,8 +12,7 @@ import { DivPrincipal1 } from "./objetos/DivPrincipal1";
 import { DivPrincipal2 } from "./objetos/DivPrincipal2";
 
 let DivC1 = ({ DivC1pr }) => {
-  const [datau, setDatau] = useState([]),
-    [LDsc1, setLDsc1] = useState([]);
+  const [datau, setDatau] = useState([]), [LDsc1, setLDsc1] = useState([]);
 
   useEffect(() => {
     let [url, method, content] = [
@@ -60,6 +60,10 @@ let DivC1 = ({ DivC1pr }) => {
 
 export default DivC1;
 /*
+
+  <DivDestaque_Copia DivDestaque_id={"Div1"} />
+  <DivDestaque DivDestaque={DivD} />
+
   const ObjTesteDiv1 = {
       'LDsc1':{LDsc1}
     };
