@@ -46,6 +46,11 @@ let DivC1 = ({ DivC1pr }) => {
         F1: <Div11 Div11Destaque={Div11D2} />,
       },
     };
+
+    const ObjTesteDiv1 = {
+      'LDsc1':{LDsc1}
+    };
+
   return (
     <div className={DivC1pr.class} id={DivC1pr.id}>
       <DivDestaque DivDestaque={DivD} />

@@ -130,6 +130,21 @@
       ]
     }
   ],
+  "ReactComponentes": [
+    {
+      "id":"Div1",
+      "class": "Div1 Div",
+      "filhos": {
+        "Div11_Hook": {
+          "prop_Div11Destaque": "Div11D"
+        },
+        "LD11": {
+          "prop_ListaScrd": "LDsc1",
+          "display": "true" 
+        }
+      }
+    }
+  ],
   "ProdutosPag": [],
   "ProdutosP": [
     {
