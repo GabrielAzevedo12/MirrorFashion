@@ -47,10 +47,6 @@ let DivC1 = ({ DivC1pr }) => {
       },
     };
 
-    const ObjTesteDiv1 = {
-      'LDsc1':{LDsc1}
-    };
-
   return (
     <div className={DivC1pr.class} id={DivC1pr.id}>
       <DivDestaque DivDestaque={DivD} />
@@ -64,6 +60,10 @@ let DivC1 = ({ DivC1pr }) => {
 
 export default DivC1;
 /*
+  const ObjTesteDiv1 = {
+      'LDsc1':{LDsc1}
+    };
+
   let [url3, method3, content3] = [
       "http://localhost:5000/LDsc2/",
       "GET",
