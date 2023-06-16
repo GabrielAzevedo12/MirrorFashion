@@ -35,6 +35,7 @@
 
 .bannerSpanA {
   /*animation-name: bannerSpanA;*/
+
   animation-duration: 2s;
   animation-iteration-count: infinite;
   width: 1vw;
@@ -188,4 +189,34 @@
     box-shadow: 0px 0px 0px 0px, 0px 0px 0px 0px;
     background: black;
   }
+}
+
+.gridTD {
+  display: grid;
+  /*grid-template-columns: 3fr 1fr 1fr;*/
+  grid-template-areas:
+    "destaque destaque destaque destaque destaque"
+    "subdestaque1 subdestaque1 subdestaque1 subdestaque2 subdestaque2";
+}
+.gridTF1 {
+  background-color: pink;
+  grid-area: destaque;
+}
+.gridTF2 {
+  background-color: darkblue;
+  grid-area: subdestaque1;
+}
+.gridTF3 {
+  background-color: rebeccapurple;
+  grid-area: subdestaque2;
+}
+.gridTF4 {
+  background-color: white;
+}
+.gridTF5 {
+  background-color: wheat;
+}
+.gridTF {
+  min-height: 40vh;
+  min-width: 45vh;
 }
