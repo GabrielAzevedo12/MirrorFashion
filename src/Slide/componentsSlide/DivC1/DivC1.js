@@ -60,6 +60,33 @@ let DivC1 = ({ DivC1pr }) => {
 
 export default DivC1;
 /*
+  
+     let Analise_Array = (array) => {
+        if (array)  {
+
+         for(let x of array) {
+            if ( x["id"] === { DivDestaque_id } ) {
+
+                console.log("O array "+x+" foi encontrado ...")
+                console.log("Portanto está sendo definido")
+
+                return x;
+            }
+            else {
+                console.log("O array "+x+" não foi encontrado ...")
+            }
+        }
+
+     }
+     }
+
+     let Defi_Array = () => {
+        if(ReacComp) {
+        Analise_Array(ReacComp);
+        }
+     }
+     let index_DivDestaque = Findindex(ReactComp,DivDestaque_id,"id","Object")  ;
+     let DivD_Prop = Defi_Array();
 
   <DivDestaque_Copia DivDestaque_id={"Div1"} />
   <DivDestaque DivDestaque={DivD} />
@@ -119,7 +146,9 @@ EPG = async (e) => {
       "classP": "figCD2 figCD21",
       "classImg": "figCD2 figCD21",
 */
-/*const DivTF1A = () => {
+
+/*
+const DivTF1A = () => {
         let e1 = $("#DivTF1"), e2 = $("#DivTF2")  ;
         e1.classList.add("DivTF1A");
         e2.classList.add("DivTF2A");
