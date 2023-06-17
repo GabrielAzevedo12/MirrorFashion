@@ -20,7 +20,10 @@
     "backend": {
       "name": "backend",
       "command": "npm run backend",
-      "runAtStart": false
+      "runAtStart": false,
+      "preview": {
+        "port": 5000
+      }
     },
     "build": {
       "name": "build",
