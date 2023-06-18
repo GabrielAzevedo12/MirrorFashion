@@ -6,34 +6,27 @@ import { f } from "./funções/f.js";
 import LD11 from "../LD11/LD11";
 
 var DivLista = (props) => {
-  const 
-  [produtos, setProdutos] = useState([]),
-  [LDsc2, setLDsc2] = useState([]),
-
-  Navigate = useNavigate();
+  const [produtos, setProdutos] = useState([]),
+    [LDsc2, setLDsc2] = useState([]),
+    Navigate = useNavigate();
 
   useEffect(() => {
-    const 
-    [url, method, content] = [
-      "http://localhost:5000/Produtos" + props.DivPrincipal.idGet + "/",
-      "GET",
-      "null",
-    ],
-    [url2, method2, content2] = [
-      "http://localhost:5000/LDsc" + props.DivPrincipal.idGetLDsc + "/",
-      "GET",
-      "null",
-    ];
+    const [url, method, content] = [
+        "http://localhost:5000/Produtos" + props.DivPrincipal.idGet + "/",
+        "GET",
+        "null",
+      ],
+      [url2, method2, content2] = [
+        "http://localhost:5000/LDsc" + props.DivPrincipal.idGetLDsc + "/",
+        "GET",
+        "null",
+      ];
 
-  Fetch(url, method, content, setProdutos, null, null);
-  Fetch(url2, method2, content2, setLDsc2, null, null);  
-
-  }, 
-  []);
-  
+    Fetch(url, method, content, setProdutos, null, null);
+    Fetch(url2, method2, content2, setLDsc2, null, null);
+  }, []);
 
   const EPG = async (e) => {
-
     Navigate("/Produtos");
 
     const [text, id, name, preço, classd, classi, alti] = [
@@ -46,9 +39,9 @@ var DivLista = (props) => {
       e.target.previousSibling.alt,
     ];
 
-  console.log(id);
+    console.log(id);
 
-  let [url, method, content] = [
+    let [url, method, content] = [
       `http://localhost:5000/ProdutosP/P`,
       "PUT",
       {
@@ -64,10 +57,9 @@ var DivLista = (props) => {
       },
     ];
 
-  Fetch(url, method, content, null, null, null);
+    Fetch(url, method, content, null, null, null);
 
-  console.log("EPG foi executada");
-
+    console.log("EPG foi executada");
   };
   return (
     <div className={props.DivPrincipal.class} id={props.DivPrincipal.id}>
@@ -85,7 +77,7 @@ var DivLista = (props) => {
               id={Produto.id}
               src={Produto.src}
               alt={Produto.altImg}
-              onMouseOver={f["events"]["over"][Produto.over]}
+              /*onMouseOver={f["events"]["over"][Produto.over]}*/
               /*onMouseOut={f["events"]["out"][Produto.out]}*/
             />
             <p className={Produto.classP} onClick={EPG}>

@@ -3,9 +3,9 @@
   flex-direction: column;
   align-items: center;
   align-content: center;
-  justify-content: stretch;
+  justify-content: center;
   min-height: 100vh;
-  height: 120vh;
+  height: 260vh;
   background-color: black;
 }
 .DbannerTíd {
@@ -192,31 +192,273 @@
 }
 
 .gridTD {
+  position: absolute;
   display: grid;
   /*grid-template-columns: 3fr 1fr 1fr;*/
   grid-template-areas:
     "destaque destaque destaque destaque destaque"
-    "subdestaque1 subdestaque1 subdestaque1 subdestaque2 subdestaque2";
+    "destaque destaque destaque destaque destaque"
+    "destaque destaque destaque destaque destaque"
+    "destaque destaque destaque destaque destaque"
+    "destaque destaque destaque destaque destaque"
+    "destaque destaque destaque destaque destaque"
+    "destaque destaque destaque destaque destaque"
+    "destaque destaque destaque destaque destaque"
+    "destaque destaque destaque destaque destaque"
+    "destaque destaque destaque destaque destaque"
+    "destaque destaque destaque destaque destaque"
+    "subdestaque1 subdestaque1 subdestaque1 subdestaque1 subdestaque2"
+    "subdestaque1 subdestaque1 subdestaque1 subdestaque1 subdestaque2"
+    "subdestaque1 subdestaque1 subdestaque1 subdestaque1 subdestaque2"
+    "subdestaque1 subdestaque1 subdestaque1 subdestaque1 subdestaque2"
+    "subdestaque1 subdestaque1 subdestaque1 subdestaque1 subdestaque2"
+    "subdestaque1 subdestaque1 subdestaque1 subdestaque1 subdestaque2"
+    "subdestaque1 subdestaque1 subdestaque1 subdestaque1 subdestaque2"
+    "subdestaque1 subdestaque1 subdestaque1 subdestaque1 subdestaque2"
+    "subdestaque1 subdestaque1 subdestaque1 subdestaque1 subdestaque2"
+    "subdestaque1 subdestaque1 subdestaque1 subdestaque1 subdestaque2"
+    "subdestaque4 subdestaque3 subdestaque3 subdestaque3 subdestaque2"
+    "subdestaque4 subdestaque3 subdestaque3 subdestaque3 subdestaque2"
+    "subdestaque4 subdestaque3 subdestaque3 subdestaque3 subdestaque2"
+    "subdestaque4 subdestaque3 subdestaque3 subdestaque3 ."
+    "subdestaque4 subdestaque3 subdestaque3 subdestaque3 ."
+    "subdestaque4 subdestaque3 subdestaque3 subdestaque3 ."
+    "subdestaque4 subdestaque3 subdestaque3 subdestaque3 ."
+    "subdestaque4 subdestaque3 subdestaque3 subdestaque3 ."
+    "subdestaque4 subdestaque3 subdestaque3 subdestaque3 ."
+    "subdestaque4 subdestaque3 subdestaque3 subdestaque3 ."
+    "subdestaque4 subdestaque3 subdestaque3 subdestaque3 ."
+    "subdestaque4 subdestaque3 subdestaque3 subdestaque3 ."
+    "subdestaque4 subdestaque3 subdestaque3 subdestaque3 .";
+
+  min-height: 220vh;
+  min-width: 95vw;
+}
+.gridTF {
+  position: relative;
+  display: grid;
+  align-items: center;
+  /*align-items: center;
+  align-content: center;
+  justify-content: center;*/
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
 }
 .gridTF1 {
   background-color: pink;
   grid-area: destaque;
+  /*grid-template-areas: "destaque1 destaque1 destaque1 destaque1 destaque1  destaque2 destaque2 destaque2 destaque2 destaque2";*/
+  display: flex;
+  min-width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 .gridTF2 {
   background-color: darkblue;
   grid-area: subdestaque1;
+  display: flex;
+  flex-direction: row;
+  /*min-height: 30vh;*/
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 .gridTF3 {
   background-color: rebeccapurple;
   grid-area: subdestaque2;
+  display: flex;
+  flex-direction: column;
+  /*min-height: 30vh;*/
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 .gridTF4 {
   background-color: white;
+  grid-area: subdestaque3;
 }
 .gridTF5 {
   background-color: wheat;
+  grid-area: subdestaque4;
 }
-.gridTF {
-  min-height: 40vh;
-  min-width: 45vh;
+.animation1_gridTF1 {
+  animation-name: animation1_gridTF1;
+  animation-duration: 1.5s;
+  animation-iteration-count: 20;
+}
+.animation1_gridTF2 {
+  animation-name: animation1_gridTF2;
+  animation-duration: 1.5s;
+  animation-iteration-count: 20;
+}
+.animation1_gridTF3 {
+  animation-name: animation1_gridTF3;
+  animation-duration: 1.5s;
+  animation-iteration-count: 20;
+}
+.animation1_gridTF4 {
+  animation-name: animation1_gridTF4;
+  animation-duration: 1.5s;
+  animation-iteration-count: 20;
+}
+.animation1_gridTF5 {
+  animation-name: animation1_gridTF5;
+  animation-duration: 1.5s;
+  animation-iteration-count: 20;
+}
+
+@keyframes animation1_gridTF1 {
+  0% {
+    opacity: 0%;
+    left: -100vw;
+  }
+  100% {
+    opacity: 100%;
+    left: 0;
+  }
+}
+
+@keyframes animation1_gridTF2 {
+  0% {
+    opacity: 0%;
+    left: -70vw;
+  }
+  100% {
+    opacity: 100%;
+    left: 0;
+  }
+}
+
+@keyframes animation1_gridTF3 {
+  0% {
+    opacity: 0%;
+    top: -100vh;
+  }
+  100% {
+    top: 0;
+    opacity: 100%;
+  }
+}
+
+@keyframes animation1_gridTF4 {
+  0% {
+    opacity: 0%;
+    bottom: -40vh;
+  }
+  100% {
+    opacity: 100%;
+    bottom: 0;
+  }
+}
+
+@keyframes animation1_gridTF5 {
+  0% {
+    opacity: 0%;
+    left: -40vw;
+  }
+  100% {
+    opacity: 100%;
+    left: 0;
+  }
+}
+
+.gridTN {
+  position: relative;
+  /*align-items: center;
+  align-content: center;
+  justify-content: center;*/
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  height: 95%;
+  min-width: 100%;
+}
+
+.gridTN2 {
+  position: relative;
+  /*align-items: center;
+  align-content: center;
+  justify-content: center;*/
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  min-height: 95%;
+  min-width: 100%;
+}
+
+.gridTN3 {
+  position: relative;
+  /*align-items: center;
+  align-content: center;
+  justify-content: center;*/
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  min-height: 100%;
+  min-width: 95%;
+}
+
+.gridTN11 {
+  background-color: whitesmoke;
+  /*margin-left: 2.5vw;*/
+  /*height: 90%;
+  width: 80rem;*/
+  /*grid-area: destaque1;*/
+}
+.gridTN12 {
+  background-color: red;
+  /*margin-left: 2.5vw;*/
+  /*height: 90%;
+  width: 80rem;*/
+  /*grid-area: destaque2;*/
+}
+.gridTN13 {
+  background-color: coral;
+  /*margin-left: 2.5vw;*/
+  /*height: 90%;
+  width: 80rem;*/
+  /*grid-area: destaque1;*/
+}
+
+.gridTN21 {
+  background-color: violet;
+  /*margin-left: 2.5vw;*/
+  /*height: 90%;
+  width: 80rem;*/
+  /*grid-area: destaque1;*/
+}
+.gridTN22 {
+  background-color: yellow;
+  /*margin-left: 2.5vw;*/
+  /*height: 90%;
+  width: 80rem;*/
+  /*grid-area: destaque2;*/
+}
+.gridTN23 {
+  background-color: springgreen;
+  /*margin-left: 2.5vw;*/
+  /*height: 90%;
+  width: 80rem;*/
+  /*grid-area: destaque1;*/
+}
+
+.gridTN31 {
+  background-color: aqua;
+  /*margin-left: 2.5vw;*/
+  /*height: 90%;
+  width: 80rem;*/
+  /*grid-area: destaque1;*/
+}
+.gridTN32 {
+  background-color: blue;
+  /*margin-left: 2.5vw;*/
+  /*height: 90%;
+  width: 80rem;*/
+  /*grid-area: destaque2;*/
+}
+.gridTN33 {
+  background-color: aquamarine;
+  /*margin-left: 2.5vw;*/
+  /*height: 90%;
+  width: 80rem;*/
+  /*grid-area: destaque1;*/
 }
