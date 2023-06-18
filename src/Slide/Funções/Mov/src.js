@@ -56,7 +56,7 @@ var srcrdg = (Incre, ElementoScroll, TypeScroll) => {
     } else if (TypeScroll === "scrollTop") {
       ElementoScroll.scrollTo({
         left: 0,
-        top: ScrollTotal,
+        top: 0,
         behavior: "smooth",
       });
     }

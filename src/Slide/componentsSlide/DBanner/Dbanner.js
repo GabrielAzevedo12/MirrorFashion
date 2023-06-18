@@ -50,10 +50,26 @@ const Dbanner = () => {
             </div>
           </div>
           <div className="gridTF4 gridTF animation1_gridTF animation1_gridTF4">
-            subdestaque3
+            <div className="gridTN41 gridTN4 animation1_gridTN animation1_gridTN41">
+              subdestaque31
+            </div>
+            <div className="gridTN42 gridTN4 animation1_gridTN animation1_gridTN42">
+              subdestaque32
+            </div>
+            <div className="gridTN43 gridTN4 animation1_gridTN animation1_gridTN43">
+              subdestaque33
+            </div>
           </div>
           <div className="gridTF5 gridTF animation1_gridTF animation1_gridTF5">
-            subdestaque4
+            <div className="gridTN51 gridTN5 animation1_gridTN animation1_gridTN51">
+              subdestaque41
+            </div>
+            <div className="gridTN52 gridTN5 animation1_gridTN animation1_gridTN52">
+              subdestaque42
+            </div>
+            <div className="gridTN53 gridTN5 animation1_gridTN animation1_gridTN53">
+              subdestaque43
+            </div>
           </div>
         </div>
       </div>
