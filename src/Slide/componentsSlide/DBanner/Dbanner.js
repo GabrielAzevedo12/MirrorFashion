@@ -1,4 +1,10 @@
 import "./css/Dbanner.css";
+import {
+  Adicionar_class,
+  Aumentar_ElementoPai,
+  Diminuir_ElementoPai,
+  gridTN11,
+} from "./f/f.js";
 //Fase : Teste
 const Dbanner = () => {
   const display_none = { display: "none" };
@@ -17,7 +23,11 @@ const Dbanner = () => {
         </div>
         <div className="gridTD">
           <div className="gridTF1 gridTF animation1_gridTF animation1_gridTF1">
-            <div className="gridTN11 gridTN animation1_gridTN animation1_gridTN11">
+            <div
+              className="gridTN11 gridTN animation1_gridTN animation1_gridTN11"
+              onMouseOver={gridTN11.Disparar_Evento_Quando.Over}
+              onMouseOut={gridTN11.Disparar_Evento_Quando.Out}
+            >
               destaque1
             </div>
             <div className="gridTN12 gridTN animation1_gridTN animation1_gridTN12">
