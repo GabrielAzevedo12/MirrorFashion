@@ -93,15 +93,6 @@ var teste_srcrdg2 = () => {
     srcrdg(w,$(".gridTF1"),"scrollLeft")    
 }
 
-var teste_srcrdg13 = () => {
-    const w = 100/100*$(".gridTF3").clientHeight;
-    srcrdg(w,$(".gridTF3"),"scrollTop")    
-}
-var teste_srcrdg23 = () => {
-    const w = -100/100*window.innerHeight;
-    srcrdg(w,$(".gridTF3"),"scrollTop")    
-}
-
 var teste_srcrdg12 = () => {
     const w = 100/100*$(".gridTF2").clientWidth;
     srcrdg(w,$(".gridTF2"),"scrollLeft")    
@@ -109,6 +100,15 @@ var teste_srcrdg12 = () => {
 var teste_srcrdg22 = () => {
     const w = -100/100*$(".gridTF2").clientWidth;
     srcrdg(w,$(".gridTF2"),"scrollLeft")    
+}
+
+var teste_srcrdg13 = () => {
+    const w = 100/100*$(".gridTF3").clientHeight;
+    srcrdg(w,$(".gridTF3"),"scrollTop")    
+}
+var teste_srcrdg23 = () => {
+    const w = -100/100*window.innerHeight;
+    srcrdg(w,$(".gridTF3"),"scrollTop")    
 }
 
  */

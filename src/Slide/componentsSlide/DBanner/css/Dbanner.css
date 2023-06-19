@@ -232,7 +232,7 @@
     "subdestaque4 subdestaque3 subdestaque3 subdestaque3 .";
 
   min-height: 220vh;
-  min-width: 95vw;
+  min-width: 90vw;
 }
 .gridTF {
   position: relative;
@@ -250,9 +250,12 @@
   grid-area: destaque;
   /*grid-template-areas: "destaque1 destaque1 destaque1 destaque1 destaque1  destaque2 destaque2 destaque2 destaque2 destaque2";*/
   display: flex;
-  min-width: 100%;
+  min-width: 90%;
   overflow-x: scroll;
   overflow-y: hidden;
+}
+::-webkit-scrollbar-thumb {
+  background: black;
 }
 .gridTF2 {
   background-color: darkblue;

@@ -42,7 +42,7 @@ var DivLista = (props) => {
     console.log(id);
 
     let [url, method, content] = [
-      `http://localhost:5000/ProdutosP/P`,
+      `https://illcbe-5000.csb.app/ProdutosP/P`,
       "PUT",
       {
         name: name + " ",
