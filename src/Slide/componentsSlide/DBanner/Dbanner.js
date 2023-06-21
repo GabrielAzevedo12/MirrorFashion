@@ -12,7 +12,7 @@ const Dbanner = () => {
     <>
       <div className="DbannerPrincipal">
         <div className="DbannerTíd1 DbannerTíd" style={display_none}>
-          <p className="bannerTíd1 bannerTíd1A">
+          <p className="bannerTíd1 bannerTíd1A" style={display_none}>
             {" "}
             Sejá Bem Vindo a Mirror Fashion
           </p>
@@ -22,6 +22,14 @@ const Dbanner = () => {
           <p className="bannerTíd2"></p>
         </div>
         <div className="gridTD">
+          <div className="gridTFT gridTF animation1_gridTF animation1_gridTFT">
+            <div className="gridTNT1 gridTN animation1_gridTN animation1_gridTNT1">
+              Título grid
+            </div>
+            <div className="gridTNT2 gridTN animation1_gridTN animation1_gridTNT2">
+              Título grid 2
+            </div>
+          </div>
           <div className="gridTF1 gridTF animation1_gridTF animation1_gridTF1">
             <div
               className="gridTN11 gridTN animation1_gridTN animation1_gridTN11"
@@ -121,4 +129,10 @@ var teste_srcrdg23 = () => {
     srcrdg(w,$(".gridTF3"),"scrollTop")    
 }
 
+<div className="gridTH1 gridTH animation1_gridTH animation1_gridTH1">
+          <h1 className="gridTFH11 gridTFH animation1_gridTFH animation1_gridTFH11">
+            título Dbanner
+          </h1>
+</div>
+        
  */

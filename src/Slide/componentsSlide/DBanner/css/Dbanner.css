@@ -196,6 +196,11 @@
   display: grid;
   /*grid-template-columns: 3fr 1fr 1fr;*/
   grid-template-areas:
+    "titulo titulo titulo titulo titulo"
+    "titulo titulo titulo titulo titulo"
+    "titulo titulo titulo titulo titulo"
+    "titulo titulo titulo titulo titulo"
+    "titulo titulo titulo titulo titulo"
     "destaque destaque destaque destaque destaque"
     "destaque destaque destaque destaque destaque"
     "destaque destaque destaque destaque destaque"
@@ -245,6 +250,26 @@
   text-align: center;
   font-size: 3rem;
   font-weight: 500;
+  box-shadow: 0px 0px 50px 50px black;
+}
+.gridTFT {
+  background-color: darkolivegreen;
+  grid-area: titulo;
+  /*grid-template-areas: "destaque1 destaque1 destaque1 destaque1 destaque1  destaque2 destaque2 destaque2 destaque2 destaque2";*/
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.gridTFT {
+  background-color: darkolivegreen;
+  grid-area: titulo;
+  /*grid-template-areas: "destaque1 destaque1 destaque1 destaque1 destaque1  destaque2 destaque2 destaque2 destaque2 destaque2";*/
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+::-webkit-scrollbar-thumb {
+  background: black;
 }
 .gridTF1 {
   background-color: pink;
@@ -291,6 +316,11 @@
   flex-direction: row;
   /*min-height: 30vh;*/
   overflow-x: scroll;
+  overflow-y: hidden;
+}
+.gridTF {
+  background-color: black;
+  overflow-x: hidden;
   overflow-y: hidden;
 }
 .animation1_gridTF1 {
@@ -434,6 +464,21 @@
   min-width: 100%;
 }
 
+.gridTNT1 {
+  background-color: aqua;
+  /*margin-left: 2.5vw;*/
+  /*height: 90%;
+  width: 80rem;*/
+  /*grid-area: destaque1;*/
+}
+.gridTNT2 {
+  background-color: teal;
+  /*margin-left: 2.5vw;*/
+  /*height: 90%;
+  width: 80rem;*/
+  /*grid-area: destaque1;*/
+}
+
 .gridTN11 {
   background-color: whitesmoke;
   /*margin-left: 2.5vw;*/
@@ -556,14 +601,26 @@
 }
 */
 
-.animation1_gridTF1:hover {
-  animation-name: animation1_gridTF1;
+.animation1_gridTF:hover {
+  animation-name: animation1_gridTF;
   animation-duration: 1s;
   animation-iteration-count: 1;
 
   width: 110%;
   height: 110%;
   z-index: 1;
+
+  box-shadow: 0px 0px 100px 100px black;
+}
+
+.animation1_gridTF:not(hover) {
+  animation-name: animation1_gridTF_inverso;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
 @keyframes animation1_gridTN {
@@ -577,14 +634,29 @@
   }
 }
 
-@keyframes animation1_gridTF1 {
+@keyframes animation1_gridTF {
   0% {
     height: 100%;
     width: 100%;
+    box-shadow: 0px 0px 50px 50px black;
   }
   100% {
     width: 110%;
     height: 110%;
     z-index: 1;
+    box-shadow: 0px 0px 100px 100px black;
+  }
+}
+
+@keyframes animation1_gridTF_inverso {
+  0% {
+    width: 110%;
+    height: 110%;
+    z-index: 1;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
   }
 }
