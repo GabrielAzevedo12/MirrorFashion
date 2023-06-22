@@ -89,6 +89,25 @@ const Dbanner = () => {
               subdestaque43
             </div>
           </div>
+          <div className="gridTF6 gridTF animation1_gridTF animation1_gridTF6">
+            <h1 className="gridTN61 gridTN6 animation1_gridTN animation1_gridTN61">
+              Temos Moda de Verão
+            </h1>
+            <h1 className="gridTN62 gridTN6 animation1_gridTN animation1_gridTN62">
+              Temos Moda de Inverno
+            </h1>
+          </div>
+          <div className="gridTF7 gridTF animation1_gridTF animation1_gridTF7">
+            <div className="gridTN71 gridTN7 animation1_gridTN animation1_gridTN71 tídivo">
+              fVerão
+            </div>
+            <div className="gridTN72 gridTN7 animation1_gridTN animation1_gridTN72 tídivo">
+              fInverno
+            </div>
+            <div className="gridTN73 gridTN7 animation1_gridTN animation1_gridTN73 tídivo">
+              foutono
+            </div>
+          </div>
         </div>
       </div>
     </>

@@ -5,7 +5,7 @@
   align-content: center;
   justify-content: center;
   min-height: 100vh;
-  height: 400vh;
+  height: 1000vh;
   background-color: black;
 }
 .DbannerTíd {
@@ -222,23 +222,28 @@
     "subdestaque1 subdestaque1 subdestaque1 subdestaque1 subdestaque2"
     "subdestaque1 subdestaque1 subdestaque1 subdestaque1 subdestaque2"
     "subdestaque1 subdestaque1 subdestaque1 subdestaque1 subdestaque2"
-    "subdestaque4 subdestaque3 subdestaque3 subdestaque3 subdestaque2"
-    "subdestaque4 subdestaque3 subdestaque3 subdestaque3 subdestaque2"
-    "subdestaque4 subdestaque3 subdestaque3 subdestaque3 subdestaque2"
-    "subdestaque4 subdestaque3 subdestaque3 subdestaque3 ."
-    "subdestaque4 subdestaque3 subdestaque3 subdestaque3 ."
-    "subdestaque4 subdestaque3 subdestaque3 subdestaque3 ."
-    "subdestaque4 subdestaque3 subdestaque3 subdestaque3 ."
-    "subdestaque4 subdestaque3 subdestaque3 subdestaque3 ."
-    "subdestaque4 subdestaque3 subdestaque3 subdestaque3 ."
-    "subdestaque4 subdestaque3 subdestaque3 subdestaque3 ."
-    "subdestaque4 subdestaque3 subdestaque3 subdestaque3 ."
-    "subdestaque4 subdestaque3 subdestaque3 subdestaque3 ."
-    "subdestaque4 subdestaque3 subdestaque3 subdestaque3 .";
+    "subdestaque4 subdestaque4 subdestaque4 subdestaque3 subdestaque2"
+    "subdestaque4 subdestaque4 subdestaque4 subdestaque3 subdestaque2"
+    "subdestaque4 subdestaque4 subdestaque4 subdestaque3 subdestaque2"
+    "subdestaque4 subdestaque4 subdestaque4 subdestaque3 ."
+    "subdestaque4 subdestaque4 subdestaque4 subdestaque3 ."
+    "subdestaque4 subdestaque4 subdestaque4 subdestaque3 ."
+    "subdestaque4 subdestaque4 subdestaque4 subdestaque3 ."
+    "subdestaque4 subdestaque4 subdestaque4 subdestaque3 ."
+    "subdestaque4 subdestaque4 subdestaque4 subdestaque3 ."
+    "subdestaque4 subdestaque4 subdestaque4 subdestaque3 ."
+    "subdestaque4 subdestaque4 subdestaque4 subdestaque3 ."
+    "subdestaque4 subdestaque4 subdestaque4 subdestaque3 ."
+    "subdestaque4 subdestaque4 subdestaque4 subdestaque3 ."
+    "subdestaque5 subdestaque6 subdestaque6 subdestaque6 subdestaque6"
+    "subdestaque5 subdestaque6 subdestaque6 subdestaque6 subdestaque6"
+    "subdestaque5 subdestaque6 subdestaque6 subdestaque6 subdestaque6"
+    "subdestaque5 subdestaque6 subdestaque6 subdestaque6 subdestaque6"
+    "subdestaque5 subdestaque6 subdestaque6 subdestaque6 subdestaque6"
+    "subdestaque5 subdestaque6 subdestaque6 subdestaque6 subdestaque6";
 
-  min-height: 350vh;
+  min-height: 700vh;
   min-width: 90vw;
-  width: 95vw;
 }
 .gridTF {
   position: relative;
@@ -317,6 +322,24 @@
   /*min-height: 30vh;*/
   overflow-x: scroll;
   overflow-y: hidden;
+}
+.gridTF6 {
+  background-color: springgreen;
+  grid-area: subdestaque5;
+  display: flex;
+  flex-direction: row;
+  /*min-height: 30vh;*/
+  /*overflow-x: scroll;*/
+  /*overflow-y: hidden;*/
+}
+.gridTF7 {
+  background-color: blue;
+  grid-area: subdestaque6;
+  display: flex;
+  flex-direction: row;
+  /*min-height: 30vh;*/
+  /*overflow-x: scroll;*/
+  /*overflow-y: hidden;*/
 }
 .gridTF {
   background-color: black;
@@ -414,6 +437,7 @@
   font-weight: 500;
   height: 95%;
   min-width: 100%;
+  border-radius: 25px;
 }
 
 .gridTN2 {
@@ -426,6 +450,7 @@
   font-weight: 500;
   min-height: 95%;
   min-width: 100%;
+  border-radius: 25px;
 }
 
 .gridTN3 {
@@ -436,8 +461,9 @@
   text-align: center;
   font-size: 3rem;
   font-weight: 500;
-  min-height: 100%;
+  min-height: 60%;
   min-width: 95%;
+  border-radius: 25px;
 }
 
 .gridTN4 {
@@ -448,8 +474,10 @@
   text-align: center;
   font-size: 3rem;
   font-weight: 500;
-  min-height: 100%;
+  min-height: 46%;
   min-width: 95%;
+  border-radius: 25px;
+  background-size: 120%;
 }
 
 .gridTN5 {
@@ -460,10 +488,36 @@
   text-align: center;
   font-size: 3rem;
   font-weight: 500;
-  min-height: 95%;
+  min-height: 90%;
   min-width: 100%;
+  border-radius: 25px;
 }
 
+.gridTN6 {
+  position: relative;
+  /*align-items: center;
+  align-content: center;
+  justify-content: center;*/
+  text-align: center;
+  font-size: 7rem;
+  font-weight: 700;
+  border-radius: 25px;
+  color: white;
+  min-width: 100%;
+}
+.gridTN7 {
+  position: relative;
+  /*align-items: center;
+  align-content: center;
+  justify-content: center;*/
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 700;
+  border-radius: 25px;
+  min-height: 90%;
+  min-width: 100%;
+  color: white;
+}
 .gridTNT1 {
   background-color: aqua;
   /*margin-left: 2.5vw;*/
@@ -481,7 +535,14 @@
 
 .gridTN11 {
   background-color: whitesmoke;
-  background-image: url(/project/MirrorFashion/public/images/striped-blouse-fashion.jpg);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.2) 40%,
+      rgba(0, 0, 0, 0.2) 80%,
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(/project/MirrorFashion/public/images/striped-blouse-fashion.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   /*margin-left: 2.5vw;*/
@@ -506,7 +567,14 @@
 
 .gridTN21 {
   background-color: violet;
-  background-image: url(/project/MirrorFashion/public/images/pink-neon-lights-fashion-model.jpg);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.2) 40%,
+      rgba(0, 0, 0, 0.2) 80%,
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(/project/MirrorFashion/public/images/pink-neon-lights-fashion-model.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   /*margin-left: 2.5vw;*/
@@ -531,9 +599,16 @@
 
 .gridTN31 {
   background-color: aqua;
-  background-image: url(/project/MirrorFashion/public/images/mens-stylish-formalwear.jpg);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.2) 40%,
+      rgba(0, 0, 0, 0.2) 80%,
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(/project/MirrorFashion/public/images/mens-stylish-formalwear.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 150%;
   /*margin-left: 2.5vw;*/
   /*height: 90%;
   width: 80rem;*/
@@ -556,9 +631,15 @@
 
 .gridTN41 {
   background-color: darkcyan;
-  background-image: url(/project/MirrorFashion/public/images/woman-in-pink-silk.jpg);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.2) 40%,
+      rgba(0, 0, 0, 0.2) 80%,
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(/project/MirrorFashion/public/images/woman-in-pink-silk.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
   /*margin-left: 2.5vw;*/
   /*height: 90%;
   width: 80rem;*/
@@ -566,6 +647,15 @@
 }
 .gridTN42 {
   background-color: slategrey;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.2) 40%,
+      rgba(0, 0, 0, 0.2) 80%,
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(/project/MirrorFashion/public/images/fashion-model-looks-at-camera.jpg);
+  background-repeat: no-repeat;
   /*margin-left: 2.5vw;*/
   /*height: 90%;
   width: 80rem;*/
@@ -581,9 +671,16 @@
 
 .gridTN51 {
   background-color: brown;
-  background-image: url(/project/MirrorFashion/public/images/pink-neon-lights-fashion-model.jpg);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.2) 40%,
+      rgba(0, 0, 0, 0.2) 80%,
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(/project/MirrorFashion/public/images/pink-fur-fabulous-fashion.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   /*margin-left: 2.5vw;*/
   /*height: 90%;
   width: 80rem;*/
@@ -603,7 +700,32 @@
   width: 80rem;*/
   /*grid-area: destaque1;*/
 }
-
+.gridTN61 {
+  background: black;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /*margin-left: 2.5vw;*/
+  /*height: 90%;
+  width: 80rem;*/
+  /*grid-area: destaque1;*/
+}
+.gridTN71 {
+  background-color: brown;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.2) 40%,
+      rgba(0, 0, 0, 0.2) 80%,
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(/project/MirrorFashion/public/images/woman-in-summer-floral-fashion.jpg);
+  background-repeat: no-repeat;
+  background-size: 150%;
+  /*margin-left: 2.5vw;*/
+  /*height: 90%;
+  width: 80rem;*/
+  /*grid-area: destaque1;*/
+}
 /*
 .animation1_gridTN:hover {
   animation-name: animation1_gridTN;
