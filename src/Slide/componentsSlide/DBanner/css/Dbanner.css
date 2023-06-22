@@ -5,7 +5,7 @@
   align-content: center;
   justify-content: center;
   min-height: 100vh;
-  height: 260vh;
+  height: 400vh;
   background-color: black;
 }
 .DbannerTíd {
@@ -236,7 +236,7 @@
     "subdestaque4 subdestaque3 subdestaque3 subdestaque3 ."
     "subdestaque4 subdestaque3 subdestaque3 subdestaque3 .";
 
-  min-height: 220vh;
+  min-height: 350vh;
   min-width: 90vw;
   width: 95vw;
 }
@@ -481,6 +481,9 @@
 
 .gridTN11 {
   background-color: whitesmoke;
+  background-image: url(/project/MirrorFashion/public/images/striped-blouse-fashion.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   /*margin-left: 2.5vw;*/
   /*height: 90%;
   width: 80rem;*/
@@ -503,6 +506,9 @@
 
 .gridTN21 {
   background-color: violet;
+  background-image: url(/project/MirrorFashion/public/images/pink-neon-lights-fashion-model.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   /*margin-left: 2.5vw;*/
   /*height: 90%;
   width: 80rem;*/
@@ -525,6 +531,9 @@
 
 .gridTN31 {
   background-color: aqua;
+  background-image: url(/project/MirrorFashion/public/images/mens-stylish-formalwear.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   /*margin-left: 2.5vw;*/
   /*height: 90%;
   width: 80rem;*/
@@ -547,6 +556,9 @@
 
 .gridTN41 {
   background-color: darkcyan;
+  background-image: url(/project/MirrorFashion/public/images/woman-in-pink-silk.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   /*margin-left: 2.5vw;*/
   /*height: 90%;
   width: 80rem;*/
@@ -569,6 +581,9 @@
 
 .gridTN51 {
   background-color: brown;
+  background-image: url(/project/MirrorFashion/public/images/pink-neon-lights-fashion-model.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   /*margin-left: 2.5vw;*/
   /*height: 90%;
   width: 80rem;*/
