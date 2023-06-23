@@ -1,4 +1,9 @@
 import "./css/Dbanner.css";
+import "./css/DbannerA.css";
+import "./css/gridTD.css";
+import "./css/gridTDA.css";
+import "./css/gridTD2.css";
+import "./css/gridTD2A.css";
 import {
   Adicionar_class,
   Aumentar_ElementoPai,
@@ -23,12 +28,12 @@ const Dbanner = () => {
         </div>
         <div className="gridTD">
           <div className="gridTFT gridTF animation1_gridTF animation1_gridTFT">
-            <div className="gridTNT1 gridTN animation1_gridTN animation1_gridTNT1">
-              Título grid
-            </div>
-            <div className="gridTNT2 gridTN animation1_gridTN animation1_gridTNT2">
+            <h1 className="gridTNT1 gridTN animation1_gridTN animation1_gridTNT1">
+              Sejá Bem Vindo a Mirror Fashion
+            </h1>
+            <h1 className="gridTNT2 gridTN animation1_gridTN animation1_gridTNT2">
               Título grid 2
-            </div>
+            </h1>
           </div>
           <div className="gridTF1 gridTF animation1_gridTF animation1_gridTF1">
             <div
@@ -126,6 +131,24 @@ const Dbanner = () => {
             <h1 className="gridTN92 gridTN9 animation1_gridTN animation1_gridTN92">
               Venha Conferir os Nossos Modelos
             </h1>
+          </div>
+        </div>
+        <div className="gridTD2">
+          <div className="gridTDF1 gridTDF animation1_gridTDF animation1_gridTDF1">
+            <div className="gridTDFN1 gridTN animation1_gridTDFN animation1_gridTDFN1">
+              teste0
+            </div>
+            <div className="gridTDFN2 gridTN animation1_gridTDFN animation1_gridTDFN2">
+              teste1
+            </div>
+          </div>
+          <div className="gridTDF2 gridTDF animation1_gridTDF animation1_gridTDF2">
+            <div className="gridTDF2N1 gridTN animation1_gridTDF2N animation1_gridTDF2N1">
+              teste2
+            </div>
+            <div className="gridTDF2N2 gridTN animation1_gridTDFN animation1_gridTDF2N2">
+              teste3
+            </div>
           </div>
         </div>
       </div>

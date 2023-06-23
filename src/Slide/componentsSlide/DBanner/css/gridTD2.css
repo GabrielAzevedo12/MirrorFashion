@@ -1,0 +1,28 @@
+.gridTD2 {
+  display: none;
+  grid-template-areas:
+    "gridTDF1 gridTDF1 gridTDF1 gridTDF2"
+    "gridTDF1 gridTDF1 gridTDF1 gridTDF2"
+    "gridTDF1 gridTDF1 gridTDF1 gridTDF2"
+    "gridTDF1 gridTDF1 gridTDF1 gridTDF2";
+  height: 50%;
+  min-width: 90vw;
+}
+.gridTDF {
+}
+.gridTDF1 {
+  background-color: slateblue;
+  grid-area: gridTDF1;
+  /*grid-template-areas: "destaque1 destaque1 destaque1 destaque1 destaque1  destaque2 destaque2 destaque2 destaque2 destaque2";*/
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+.gridTDF2 {
+  background-color: cornflowerblue;
+  grid-area: gridTDF2;
+  /*grid-template-areas: "destaque1 destaque1 destaque1 destaque1 destaque1  destaque2 destaque2 destaque2 destaque2 destaque2";*/
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}

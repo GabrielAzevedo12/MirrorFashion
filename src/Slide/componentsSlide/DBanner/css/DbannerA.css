@@ -1,0 +1,162 @@
+.bannerSpanA {
+  /*animation-name: bannerSpanA;*/
+
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  width: 1vw;
+  height: 1vh;
+  bottom: 0vh;
+  left: -45vw;
+}
+
+.bannerTíd1A {
+  position: relative;
+  /*animation-name: bannerTíd1A;*/
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  border-radius: 10px;
+  left: -90vw;
+}
+
+@keyframes bannerSpanA {
+  0% {
+    width: 1vw;
+    height: 1vh;
+    bottom: 0vh;
+    left: -45vw;
+    background-color: aqua;
+    box-shadow: 0px 0px 50px 50px aquamarine, 0px 0px 50px 50px black;
+  }
+  10% {
+    width: 80vw;
+    height: 1vh;
+    bottom: 0;
+    left: 0;
+  }
+  25% {
+    width: 1vw;
+    height: 1vh;
+    bottom: 0;
+    left: 45vw;
+    background-color: blue;
+    box-shadow: 0px 0px 50px 50px blue, 0px 0px 50px 50px black;
+  }
+  35% {
+    width: 1vw;
+    height: 30vh;
+    bottom: 30vh;
+    left: 45vw;
+  }
+  45% {
+    width: 1vw;
+    height: 1vh;
+    bottom: 30vh;
+    left: 45vw;
+    background-color: violet;
+    box-shadow: 0px 0px 50px 50px violet, 0px 0px 50px 50px black;
+  }
+  55% {
+    width: 80vw;
+    height: 1vh;
+    bottom: 30vh;
+    left: 0;
+  }
+  65% {
+    width: 1vw;
+    height: 1vh;
+    bottom: 30vh;
+    left: -45vw;
+    background-color: tomato;
+    box-shadow: 0px 0px 50px 50px tomato, 0px 0px 50px 50px black;
+  }
+  75% {
+    width: 1vw;
+    height: 30vh;
+    bottom: 15vh;
+    left: -45vw;
+  }
+  85% {
+    width: 1vw;
+    height: 1vh;
+    bottom: 0vh;
+    left: -45vw;
+    background-color: tan;
+    box-shadow: 0px 0px 50px 50px tan, 0px 0px 50px 50px black;
+  }
+  /*95% {
+    width: 1vw;
+    height: 1vh;
+    bottom: 30vh;
+    left: -45vw;
+  }*/
+  100% {
+    width: 1vw;
+    height: 1vh;
+    bottom: 0vh;
+    left: -45vw;
+    background-color: aqua;
+    box-shadow: 0px 0px 50px 50px black, 0px 0px 50px 50px aquamarine;
+  }
+}
+
+@keyframes bannerTíd1A {
+  0% {
+    left: -90vw;
+    opacity: 0%;
+    size: 0%;
+    color: white;
+    font-size: 5rem;
+    box-shadow: 0px 0px 0px 0px, 0px 0px 0px 0px;
+    background: black;
+  }
+  25% {
+    left: -45vw;
+    opacity: 0%;
+    size: 0%;
+    color: white;
+    font-size: 5rem;
+    box-shadow: 0px 0px 0px 0px, 0px 0px 0px 0px;
+    background: black;
+  }
+  50% {
+    opacity: 100%;
+    left: 0vw;
+    size: 100%;
+    color: aquamarine;
+    font-size: 5.5rem;
+    box-shadow: 0px 0px 400px 400px black, 0px 0px 200px 200px aqua;
+    background: radial-gradient(black);
+  }
+  75% {
+    opacity: 100%;
+    left: 0vw;
+    size: 100%;
+    color: aquamarine;
+    font-size: 5.5rem;
+    box-shadow: 0px 0px 400px 400px black, 0px 0px 300px 300px aqua;
+    background: radial-gradient(black);
+  }
+  85% {
+    opacity: 0%;
+    left: -45vw;
+    size: 0%;
+    color: aquamarine;
+    font-size: 5.5rem;
+    box-shadow: 0px 0px 0px 0px, 0px 0px 0px 0px;
+    background: radial-gradient(black);
+  }
+  100% {
+    size: 0%;
+    left: -90vw;
+    color: white;
+    opacity: 0%;
+    font-size: 5rem;
+    box-shadow: 0px 0px 0px 0px, 0px 0px 0px 0px;
+    background: black;
+  }
+}
+
+/*.animation1_gridTF8 {
+  width: 200%;
+  z-index: 1;
+}*/
