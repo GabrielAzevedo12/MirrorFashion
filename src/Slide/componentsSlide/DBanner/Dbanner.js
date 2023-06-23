@@ -89,24 +89,43 @@ const Dbanner = () => {
               subdestaque43
             </div>
           </div>
-          <div className="gridTF6 gridTF animation1_gridTF animation1_gridTF6">
+          <div className="gridTF6 gridTF animation1_gridTF6">
             <h1 className="gridTN61 gridTN6 animation1_gridTN animation1_gridTN61">
               Temos Moda de Verão
             </h1>
-            <h1 className="gridTN62 gridTN6 animation1_gridTN animation1_gridTN62">
-              Temos Moda de Inverno
+            <h1 className="gridTN92 gridTN9 animation1_gridTN animation1_gridTN92">
+              Os Melhores Estilos Para Você
             </h1>
           </div>
-          <div className="gridTF7 gridTF animation1_gridTF animation1_gridTF7">
+          <div className="gridTF7 gridTF animation1_gridTF7">
             <div className="gridTN71 gridTN7 animation1_gridTN animation1_gridTN71 tídivo">
-              fVerão
+              fVerão1
             </div>
             <div className="gridTN72 gridTN7 animation1_gridTN animation1_gridTN72 tídivo">
-              fInverno
+              fVerão2
             </div>
             <div className="gridTN73 gridTN7 animation1_gridTN animation1_gridTN73 tídivo">
-              foutono
+              fverão3
             </div>
+          </div>
+          <div className="gridTF8 gridTF animation1_gridTF8">
+            <div className="gridTN81 gridTN8 animation1_gridTN animation1_gridTN81 tídivo">
+              fInverno1
+            </div>
+            <div className="gridTN82 gridTN8 animation1_gridTN animation1_gridTN82 tídivo">
+              fInverno2
+            </div>
+            <div className="gridTN83 gridTN8 animation1_gridTN animation1_gridTN83 tídivo">
+              fInverno3
+            </div>
+          </div>
+          <div className="gridTF9 gridTF animation1_gridTF9">
+            <h1 className="gridTN92 gridTN9 animation1_gridTN animation1_gridTN92">
+              Temos Moda de Inverno
+            </h1>
+            <h1 className="gridTN92 gridTN9 animation1_gridTN animation1_gridTN92">
+              Venha Conferir os Nossos Modelos
+            </h1>
           </div>
         </div>
       </div>
