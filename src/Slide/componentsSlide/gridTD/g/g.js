@@ -1,4 +1,4 @@
-import "./css/3.css";
+/*import "./css/3.css";*/
 import {
   Adicionar_class,
   Aumentar_ElementoPai,
@@ -6,31 +6,31 @@ import {
   gridTN11,
 } from "../../DBanner/f/f.js";
 //Fase : Teste
-const GridTD3 = () => {
+const GridTDG = ({ PropsGridTDG }) => {
   const display_none = { display: "none" };
   return (
-    <div className="gridTD3">
-      <div className="gridTD3F1 gridTD3F animation1_gridTD3F animation1_gridTD3F1">
-        <div className="gridTD3FN1 gridTND3F1 animation1_gridTD3FN animation1_gridTD3FN1">
-          verão
+    <div className={PropsGridTDG.Pai.class}>
+      <div className={PropsGridTDG.Pai.f1.class}>
+        <div className={PropsGridTDG.Pai.f1.n1.class}>
+          {PropsGridTDG.Pai.f1.n1.text}
         </div>
-        <div className="gridTD3FN2 gridTND3F1 animation1_gridTD3FN animation1_gridTD3FN2">
-          teste1
+        <div className={PropsGridTDG.Pai.f1.n2.class}>
+          {PropsGridTDG.Pai.f1.n2.text}
         </div>
       </div>
-      <div className="gridTD3F2 gridTD3F animation1_gridTD3F animation1_gridTD3F2">
-        <h1 className="gridTD3F2N1 gridTND3F2 animation1_gridTD3F2N animation1_gridTD3F2N1">
-          Temos Moda de Verão
+      <div className={PropsGridTDG.Pai.f2.class}>
+        <h1 className={PropsGridTDG.Pai.f2.n1.class}>
+          {PropsGridTDG.Pai.f2.n1.text}
         </h1>
-        <h1 className="gridTD3F2N2 gridTND3F2 animation1_gridTD3FN animation1_gridTD3F2N2">
-          teste3
+        <h1 className={PropsGridTDG.Pai.f2.n2.class}>
+          {PropsGridTDG.Pai.f2.n2.text}
         </h1>
       </div>
     </div>
   );
 };
 
-export { GridTD3 };
+export { GridTDG };
 
 /*A Maior Loja de Roupas de todo Brasil*/
 /*

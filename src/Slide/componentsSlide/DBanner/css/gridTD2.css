@@ -2,17 +2,18 @@
   display: grid;
   position: relative;
   grid-template-areas:
-    "gridTD2F2 gridTD2F1 gridTD2F1 gridTD2F1 gridTD2F1"
-    "gridTD2F2 gridTD2F1 gridTD2F1 gridTD2F1 gridTD2F1"
-    "gridTD2F2 gridTD2F1 gridTD2F1 gridTD2F1 gridTD2F1"
-    "gridTD2F2 gridTD2F1 gridTD2F1 gridTD2F1 gridTD2F1";
+    ". . . . ."
+    "gridTD2F1 gridTD2F1 gridTD2F1 gridTD2F1 gridTD2F2"
+    "gridTD2F1 gridTD2F1 gridTD2F1 gridTD2F1 gridTD2F2"
+    "gridTD2F1 gridTD2F1 gridTD2F1 gridTD2F1 gridTD2F2"
+    "gridTD2F1 gridTD2F1 gridTD2F1 gridTD2F1 gridTD2F2";
   height: 200vh;
   min-width: 90vw;
 }
 .gridTD2F {
 }
 .gridTD2F1 {
-  background-color: black;
+  background-color: white;
   grid-area: gridTD2F1;
   /*grid-template-areas: "destaque1 destaque1 destaque1 destaque1 destaque1  destaque2 destaque2 destaque2 destaque2 destaque2";*/
   display: flex;
@@ -20,7 +21,7 @@
   overflow-y: hidden;
 }
 .gridTD2F2 {
-  background-color: black;
+  background-color: white;
   grid-area: gridTD2F2;
   /*grid-template-areas: "destaque1 destaque1 destaque1 destaque1 destaque1  destaque2 destaque2 destaque2 destaque2 destaque2";*/
   display: flex;
@@ -34,7 +35,7 @@
   font-size: 7rem;
   font-weight: 700;
   border-radius: 25px;
-  color: white;
+  color: black;
   min-height: 100%;
   min-width: 100%;
 }
@@ -46,12 +47,12 @@
       rgba(0, 0, 0, 0.2) 80%,
       rgba(0, 0, 0, 0.4)
     ),
-    url(/project/MirrorFashion/public/images/blonde-woman-in-denim.jpg);
+    url(/project/MirrorFashion/public/images/man-on-stool-in-hoodie-and-sweatpants.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .gridTD2F {
-  box-shadow: 0px 0px 100px 100px black;
+  box-shadow: 0px 0px 150px 150px white;
   z-index: 1;
 }

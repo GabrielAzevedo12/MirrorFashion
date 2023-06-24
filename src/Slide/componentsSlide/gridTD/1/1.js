@@ -21,8 +21,8 @@ const GridTD1 = () => {
       <div className="gridTF1 gridTF animation1_gridTF animation1_gridTF1">
         <div
           className="gridTN11 gridTN animation1_gridTN animation1_gridTN11"
-          onMouseOver={gridTN11.Disparar_Evento_Quando.Over}
-          onMouseOut={gridTN11.Disparar_Evento_Quando.Out}
+          /*onMouseOver={gridTN11.Disparar_Evento_Quando.Over}
+          onMouseOut={gridTN11.Disparar_Evento_Quando.Out}*/
         >
           destaque1
         </div>

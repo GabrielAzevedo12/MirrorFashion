@@ -12,8 +12,9 @@ import {
   gridTN11,
 } from "./f/f.js";
 import { GridTD1 } from "../gridTD/1/1.js";
-import { GridTD2 } from "../gridTD/2/2.js";
-import { GridTD3 } from "../gridTD/3/3.js";
+import { GridTDG } from "../gridTD/g/g.js";
+import { gridTD2_props } from "./o/griTD2";
+import { gridTD3_props } from "./o/griTD3";
 //Fase : Teste
 const Dbanner = () => {
   const display_none = { display: "none" };
@@ -23,8 +24,8 @@ const Dbanner = () => {
         <GridTD1 />
       </div>
       <div className="DbannerPrincipal2">
-        <GridTD2 />
-        <GridTD3 />
+        <GridTDG PropsGridTDG={gridTD2_props} />
+        <GridTDG PropsGridTDG={gridTD3_props} />
       </div>
     </>
   );
