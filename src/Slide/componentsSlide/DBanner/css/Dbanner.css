@@ -1,13 +1,19 @@
-.DbannerPrincipal {
+.DbannerPrincipal1,
+.DbannerPrincipal2 {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
   flex-wrap: wrap;
   /*align-items: center;
   align-content: center;
   justify-content: center;*/
-  min-height: 100vh;
-  height: 2500vh;
+  height: 700vh;
   background-color: black;
+}
+.DbannerPrincipal2 {
+  position: relative;
+  top: 0vh;
+  height: 1000vh;
 }
 .DbannerTíd {
   display: flex;

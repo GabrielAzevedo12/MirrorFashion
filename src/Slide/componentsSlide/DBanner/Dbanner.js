@@ -4,19 +4,75 @@ import "./css/gridTD.css";
 import "./css/gridTDA.css";
 import "./css/gridTD2.css";
 import "./css/gridTD2A.css";
+import "./css/gridTD3.css";
 import {
   Adicionar_class,
   Aumentar_ElementoPai,
   Diminuir_ElementoPai,
   gridTN11,
 } from "./f/f.js";
+import { GridTD1 } from "../gridTD/1/1.js";
+import { GridTD2 } from "../gridTD/2/2.js";
+import { GridTD3 } from "../gridTD/3/3.js";
 //Fase : Teste
 const Dbanner = () => {
   const display_none = { display: "none" };
   return (
     <>
-      <div className="DbannerPrincipal">
-        <div className="DbannerTíd1 DbannerTíd" style={display_none}>
+      <div className="DbannerPrincipal1">
+        <GridTD1 />
+      </div>
+      <div className="DbannerPrincipal2">
+        <GridTD2 />
+        <GridTD3 />
+      </div>
+    </>
+  );
+};
+
+export { Dbanner };
+
+/*A Maior Loja de Roupas de todo Brasil*/
+/*
+
+Testes :
+
+var teste_srcrdg1 = () => {
+    const w = 100/100*$(".gridTF1").clientWidth;
+    srcrdg(w,$(".gridTF1"),"scrollLeft")    
+}
+var teste_srcrdg2 = () => {
+    const w = -100/100*$(".gridTF1").clientWidth;
+    srcrdg(w,$(".gridTF1"),"scrollLeft")    
+}
+
+var teste_srcrdg12 = () => {
+    const w = 100/100*$(".gridTF2").clientWidth;
+    srcrdg(w,$(".gridTF2"),"scrollLeft")    
+}
+var teste_srcrdg22 = () => {
+    const w = -100/100*$(".gridTF2").clientWidth;
+    srcrdg(w,$(".gridTF2"),"scrollLeft")    
+}
+
+var teste_srcrdg13 = () => {
+    const w = 100/100*$(".gridTF3").clientHeight;
+    srcrdg(w,$(".gridTF3"),"scrollTop")    
+}
+var teste_srcrdg23 = () => {
+    const w = -100/100*window.innerHeight;
+    srcrdg(w,$(".gridTF3"),"scrollTop")    
+}
+
+<div className="gridTH1 gridTH animation1_gridTH animation1_gridTH1">
+          <h1 className="gridTFH11 gridTFH animation1_gridTFH animation1_gridTFH11">
+            título Dbanner
+          </h1>
+</div>
+        
+ */
+/*
+ <div className="DbannerTíd1 DbannerTíd" style={display_none}>
           <p className="bannerTíd1 bannerTíd1A" style={display_none}>
             {" "}
             Sejá Bem Vindo a Mirror Fashion
@@ -26,6 +82,7 @@ const Dbanner = () => {
         <div className="DbannerTíd2 DbannerTíd" style={display_none}>
           <p className="bannerTíd2"></p>
         </div>
+        
         <div className="gridTD">
           <div className="gridTFT gridTF animation1_gridTF animation1_gridTFT">
             <h1 className="gridTNT1 gridTN animation1_gridTN animation1_gridTNT1">
@@ -133,67 +190,23 @@ const Dbanner = () => {
             </h1>
           </div>
         </div>
+        
         <div className="gridTD2">
-          <div className="gridTDF1 gridTDF animation1_gridTDF animation1_gridTDF1">
-            <div className="gridTDFN1 gridTN animation1_gridTDFN animation1_gridTDFN1">
-              teste0
+          <div className="gridTD2F1 gridTD2F animation1_gridTD2F animation1_gridTD2F1">
+            <div className="gridTD2FN1 gridTND2F1 animation1_gridTD2FN animation1_gridTD2FN1">
+              foutono
             </div>
-            <div className="gridTDFN2 gridTN animation1_gridTDFN animation1_gridTDFN2">
+            <div className="gridTD2FN2 gridTND2F1 animation1_gridTD2FN animation1_gridTD2FN2">
               teste1
             </div>
           </div>
-          <div className="gridTDF2 gridTDF animation1_gridTDF animation1_gridTDF2">
-            <div className="gridTDF2N1 gridTN animation1_gridTDF2N animation1_gridTDF2N1">
-              teste2
-            </div>
-            <div className="gridTDF2N2 gridTN animation1_gridTDFN animation1_gridTDF2N2">
+          <div className="gridTD2F2 gridTD2F animation1_gridTD2F animation1_gridTD2F2">
+            <h1 className="gridTD2F2N1 gridTND2F2 animation1_gridTD2F2N animation1_gridTD2F2N1">
+              Temos Moda de Outono
+            </h1>
+            <h1 className="gridTD2F2N2 gridTND2F2 animation1_gridTD2FN animation1_gridTD2F2N2">
               teste3
-            </div>
+            </h1>
           </div>
         </div>
-      </div>
-    </>
-  );
-};
-
-export { Dbanner };
-
-/*A Maior Loja de Roupas de todo Brasil*/
-/*
-
-Testes :
-
-var teste_srcrdg1 = () => {
-    const w = 100/100*$(".gridTF1").clientWidth;
-    srcrdg(w,$(".gridTF1"),"scrollLeft")    
-}
-var teste_srcrdg2 = () => {
-    const w = -100/100*$(".gridTF1").clientWidth;
-    srcrdg(w,$(".gridTF1"),"scrollLeft")    
-}
-
-var teste_srcrdg12 = () => {
-    const w = 100/100*$(".gridTF2").clientWidth;
-    srcrdg(w,$(".gridTF2"),"scrollLeft")    
-}
-var teste_srcrdg22 = () => {
-    const w = -100/100*$(".gridTF2").clientWidth;
-    srcrdg(w,$(".gridTF2"),"scrollLeft")    
-}
-
-var teste_srcrdg13 = () => {
-    const w = 100/100*$(".gridTF3").clientHeight;
-    srcrdg(w,$(".gridTF3"),"scrollTop")    
-}
-var teste_srcrdg23 = () => {
-    const w = -100/100*window.innerHeight;
-    srcrdg(w,$(".gridTF3"),"scrollTop")    
-}
-
-<div className="gridTH1 gridTH animation1_gridTH animation1_gridTH1">
-          <h1 className="gridTFH11 gridTFH animation1_gridTFH animation1_gridTFH11">
-            título Dbanner
-          </h1>
-</div>
-        
- */
+*/
