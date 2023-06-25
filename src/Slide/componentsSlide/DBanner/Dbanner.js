@@ -1,10 +1,13 @@
 import "./css/Dbanner.css";
 import "./css/DbannerA.css";
-import "./css/gridTD.css";
-import "./css/gridTDA.css";
-import "./css/gridTD2.css";
-import "./css/gridTD2A.css";
-import "./css/gridTD3.css";
+import "./../gridTD/1/css/gridTD.css";
+import "./../gridTD/1/css/gridTDA.css";
+import "./../gridTD/2/css/gridTD2.css";
+import "./../gridTD/2/css/gridTD2A.css";
+import "./../gridTD/3/css/gridTD3.css";
+import "./../gridTD/3/css/gridTD3A.css";
+import "./../gridTD/4/css/gridTD4.css";
+import "./../gridTD/4/css/gridTD4A.css";
 import {
   Adicionar_class,
   Aumentar_ElementoPai,
@@ -15,6 +18,7 @@ import { GridTD1 } from "../gridTD/1/1.js";
 import { GridTDG } from "../gridTD/g/g.js";
 import { gridTD2_props } from "./o/griTD2";
 import { gridTD3_props } from "./o/griTD3";
+import { gridTD4_props } from "./o/griTD4";
 //Fase : Teste
 const Dbanner = () => {
   const display_none = { display: "none" };
@@ -26,6 +30,7 @@ const Dbanner = () => {
       <div className="DbannerPrincipal2">
         <GridTDG PropsGridTDG={gridTD2_props} />
         <GridTDG PropsGridTDG={gridTD3_props} />
+        <GridTDG PropsGridTDG={gridTD4_props} />
       </div>
     </>
   );

@@ -7,12 +7,12 @@ const gridTD2_props = {
       n1: {
         class:
           "gridTD2FN1 gridTND2F1 animation1_gridTD2FN animation1_gridTD2FN1",
-        text: "foutono",
+        text: "Inverno",
       },
       n2: {
         class:
           "gridTD2FN2 gridTND2F1 animation1_gridTD2FN animation1_gridTD2FN2",
-        text: "teste1",
+        text: "Inverno",
       },
     },
     f2: {
@@ -21,12 +21,12 @@ const gridTD2_props = {
       n1: {
         class:
           "gridTD2F2N1 gridTND2F2 animation1_gridTD2F2N animation1_gridTD2F2N1",
-        text: "Temos Moda de Outono",
+        text: "Temos Moda de Inverno",
       },
       n2: {
         class:
           "gridTD2F2N2 gridTND2F2 animation1_gridTD2FN animation1_gridTD2F2N2",
-        text: "teste3",
+        text: "Os melhores Modelos",
       },
     },
   },

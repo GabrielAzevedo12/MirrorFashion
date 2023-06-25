@@ -1,0 +1,17 @@
+
+f3: {
+      class: "gridTF2 gridTF animation1_gridTF animation1_gridTF2",
+      text: "",
+      n1: {
+        class: "gridTN31 gridTN3 animation1_gridTN animation1_gridTN31",
+        text: "subdestaque21",
+      },
+      n2: {
+        class: "gridTN32 gridTN3 animation1_gridTN animation1_gridTN32",
+        text: "subdestaque22",
+      },
+       n3: {
+        class: "gridTN33 gridTN3 animation1_gridTN animation1_gridTN33",
+        text: "subdestaque23",
+      },
+    }

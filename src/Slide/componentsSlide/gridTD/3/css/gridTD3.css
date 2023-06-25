@@ -2,6 +2,7 @@
   display: grid;
   position: relative;
   grid-template-areas:
+    ". . . . ."
     "gridTD3F2 gridTD3F1 gridTD3F1 gridTD3F1 gridTD3F1"
     "gridTD3F2 gridTD3F1 gridTD3F1 gridTD3F1 gridTD3F1"
     "gridTD3F2 gridTD3F1 gridTD3F1 gridTD3F1 gridTD3F1"
@@ -46,7 +47,7 @@
       rgba(0, 0, 0, 0.2) 80%,
       rgba(0, 0, 0, 0.4)
     ),
-    url(/project/MirrorFashion/public/images/blonde-woman-in-denim.jpg);
+    url(/project/MirrorFashion/public/images/young-woman-in-red.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
