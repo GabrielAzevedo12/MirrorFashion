@@ -7,12 +7,12 @@
   /*align-items: center;
   align-content: center;
   justify-content: center;*/
-  height: 700vh;
+  height: 1000vh;
   background-color: black;
 }
 .DbannerPrincipal2 {
   position: relative;
-  top: 150vh;
+  top: 500vh;
   height: 1000vh;
 }
 .DbannerTíd {

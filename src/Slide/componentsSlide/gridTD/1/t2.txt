@@ -1,0 +1,10 @@
+g2 () {
+    v=(6 7 8 9 10 11)
+    for e in ${v[@]} 
+        do
+            cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/"  ;
+            #mkdir "gtf${e}" ; 
+            #cd "gtf${e}" ;
+            rm -rf "gtf${e}.js" ;
+        done    
+}

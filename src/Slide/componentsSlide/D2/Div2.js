@@ -12,12 +12,12 @@ var DivLista = (props) => {
 
   useEffect(() => {
     const [url, method, content] = [
-        "http://localhost:5000/Produtos" + props.DivPrincipal.idGet + "/",
+        "https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/Produtos" + props.DivPrincipal.idGet + "/",
         "GET",
         "null",
       ],
       [url2, method2, content2] = [
-        "http://localhost:5000/LDsc" + props.DivPrincipal.idGetLDsc + "/",
+        "https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/LDsc" + props.DivPrincipal.idGetLDsc + "/",
         "GET",
         "null",
       ];
@@ -42,7 +42,7 @@ var DivLista = (props) => {
     console.log(id);
 
     let [url, method, content] = [
-      `https://illcbe-5000.csb.app/ProdutosP/P`,
+      "https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/ProdutosP/P",
       "PUT",
       {
         name: name + " ",
@@ -133,13 +133,13 @@ background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,
   const [datau,setDatau] = useState([]);
     console.log(datau)
     useEffect(() => {
-        let [url,method,content] = ["http://localhost:5000/Produtos/","GET","null"]; 
+        let [url,method,content] = ["https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/Produtos/","GET","null"]; 
         Fetch(url,method,content,setDatau)
     },[])
 */
 /*
 let TFU = async () => {
-        const rsp = await fetch("http://localhost:5000/Produtos", {
+        const rsp = await fetch("https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/Produtos", {
             method : 'GET',
             Headers : {
                 'Contend-type' : 'application/json'
@@ -157,7 +157,7 @@ let TFU = async () => {
     "style": "null"
   }
 */
-/*fetch("http://localhost:5000/Produtos", {
+/*fetch("https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/Produtos", {
     method : 'GET',
     Headers : {
         'Contend-type' : 'application/json'
@@ -195,7 +195,7 @@ let TFU = async () => {
                 }*/
 /*
   let TFU = async () => {
-        const rsp = await fetch("http://localhost:5000/Produtos", {
+        const rsp = await fetch("https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/Produtos", {
             method : 'GET',
             Headers : {
                 'Contend-type' : 'application/json'
