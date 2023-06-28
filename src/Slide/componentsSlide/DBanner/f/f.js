@@ -59,6 +59,49 @@ const gridTN11 = {
   },
 };
 
+const gridTN6 = {
+  Disparar_Evento_Quando: {
+    Click: (e) => {
+      const el = e.target.parentElement ;
+      const irmão = el.previousSibling ;
+      const 
+      e1 = () => {
+        Remover_class(el,"for_posiçao1_of_gridTN7")
+        Adicionar_class(el,"for_posiçao2_of_gridTN7")
+
+        Adicionar_class(irmão,"for_posiçao1_of_gridTN6")
+        Remover_class(irmão,"for_posiçao2_of_gridTN6")
+      },
+      ne2 = () => {
+        Remover_class(el,"for_posiçao2_of_gridTN7")
+        Adicionar_class(el,"for_posiçao1_of_gridTN7")
+
+        Adicionar_class(irmão,"for_posiçao2_of_gridTN6")
+        Remover_class(irmão,"for_posiçao1_of_gridTN6")
+      };
+
+      Analise_class(e.target.classList, "for_posiçao1_of_gridTN6", e1, ne2)
+    },
+    Out: (e) => {
+      const Pai = e.target.parentElement;
+      Remover_class(Pai, "Animação_filhoFor_gridTF1");
+    },
+  },
+};
+
+const gridTN7 = {
+  Disparar_Evento_Quando: {
+    Over: (e) => {
+      const Pai = e.target.parentElement;
+      Adicionar_class(Pai, "Animação_filhoFor_gridTF1");
+    },
+    Out: (e) => {
+      const Pai = e.target.parentElement;
+      Remover_class(Pai, "Animação_filhoFor_gridTF1");
+    },
+  },
+};
+
 export {
   Adicionar_class,
   Aumentar_ElementoPai,
