@@ -8,12 +8,15 @@ const Remover_class = (e, name_class) => {
 
 const Analise_class = (db, name_class, s1, s2) => {
 
+    //console.log("Analise_class foi disparada")
+
     var quantidade_elementosDiferentes = 0 ;
-    const quantidade_elementosDiferentes_total = db.lenght - 1 ;
+    let quantidade_elementosDiferentes_total = db.lenght - 1 ;
 
-    for (const x of db) {
+    for (let x of db) {
 
-      if(x === name_class) {
+
+      if (x === name_class) {
 
         console.log("Existe o elemento")
         s1();
@@ -21,14 +24,15 @@ const Analise_class = (db, name_class, s1, s2) => {
       } else if (x !== name_class) {
 
         quantidade_elementosDiferentes = quantidade_elementosDiferentes + 1 ;
+        console.log(quantidade_elementosDiferentes + " elemento distinto")
 
         if (quantidade_elementosDiferentes === quantidade_elementosDiferentes_total) {
-
-        console.log("Não existe o elemento")
+  
+        console.log("Não existe o elemento");
         s2();
         break ;
 
-        }
+        } 
 
       }
 
@@ -63,18 +67,20 @@ const gridTN11 = {
 const gridTN7 = {
   Disparar_Evento_Quando: {
     Click: (e) => {
+
       console.log("gridTN7 foi disparada")
+
       const el = e.target.parentElement ;
-      const irmão = e.target.previousSibling ;
+      const irmão = el.previousSibling, db =  el.classList ;
       const 
-      e1 = () => {
+      s1 = () => {
         Remover_class(el,"for_posiçao1_of_gridTN7")
         Adicionar_class(el,"for_posiçao2_of_gridTN7")
 
         Adicionar_class(irmão,"for_posiçao1_of_gridTN6")
         Remover_class(irmão,"for_posiçao2_of_gridTN6")
       },
-      ne2 = () => {
+      s2 = () => {
         Remover_class(el,"for_posiçao2_of_gridTN7")
         Adicionar_class(el,"for_posiçao1_of_gridTN7")
 
@@ -82,7 +88,8 @@ const gridTN7 = {
         Remover_class(irmão,"for_posiçao1_of_gridTN6")
       };
 
-      Analise_class(e.target.classList, "for_posiçao1_of_gridTN7", e1, ne2)
+      console.log(el,irmão)
+      Analise_class(db, "for_posiçao1_of_gridTN7", s1, s2)
 
     },
     Out: (e) => {
