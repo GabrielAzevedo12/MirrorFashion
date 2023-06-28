@@ -7,6 +7,7 @@ const Remover_class = (e, name_class) => {
 };
 
 const Analise_class = (db, name_class, s1, s2) => {
+
     var quantidade_elementosDiferentes = 0 ;
     const quantidade_elementosDiferentes_total = db.lenght - 1 ;
 
@@ -17,7 +18,7 @@ const Analise_class = (db, name_class, s1, s2) => {
         console.log("Existe o elemento")
         s1();
 
-      } else if (x === name_class) {
+      } else if (x !== name_class) {
 
         quantidade_elementosDiferentes = quantidade_elementosDiferentes + 1 ;
 
@@ -59,11 +60,12 @@ const gridTN11 = {
   },
 };
 
-const gridTN6 = {
+const gridTN7 = {
   Disparar_Evento_Quando: {
     Click: (e) => {
+      console.log("gridTN7 foi disparada")
       const el = e.target.parentElement ;
-      const irmão = el.previousSibling ;
+      const irmão = e.target.previousSibling ;
       const 
       e1 = () => {
         Remover_class(el,"for_posiçao1_of_gridTN7")
@@ -80,7 +82,8 @@ const gridTN6 = {
         Remover_class(irmão,"for_posiçao1_of_gridTN6")
       };
 
-      Analise_class(e.target.classList, "for_posiçao1_of_gridTN6", e1, ne2)
+      Analise_class(e.target.classList, "for_posiçao1_of_gridTN7", e1, ne2)
+
     },
     Out: (e) => {
       const Pai = e.target.parentElement;
@@ -89,7 +92,7 @@ const gridTN6 = {
   },
 };
 
-const gridTN7 = {
+const gridTN6 = {
   Disparar_Evento_Quando: {
     Over: (e) => {
       const Pai = e.target.parentElement;
@@ -107,4 +110,7 @@ export {
   Aumentar_ElementoPai,
   Diminuir_ElementoPai,
   gridTN11,
+  gridTN7,
+  gridTN6,
+  Analise_class
 };
