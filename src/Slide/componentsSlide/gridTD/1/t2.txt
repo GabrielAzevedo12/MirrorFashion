@@ -1,10 +1,25 @@
 g2 () {
-    v=(6 7 8 9 10 11)
+
+    v=${1}
     for e in ${v[@]} 
         do
             cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/"  ;
             #mkdir "gtf${e}" ; 
             #cd "gtf${e}" ;
-            rm -rf "gtf${e}.js" ;
+            rm -rf "gtfh${e}.js" ;
         done    
+        
+}
+
+r () {
+
+  v=${1}
+
+  for e in ${v[@]}
+      do
+         n=${e}   
+         na="gtfh${e}"
+         ta="js"
+          . "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/b1" "${n}" "${na}" "${ta}" 
+      done 
 }

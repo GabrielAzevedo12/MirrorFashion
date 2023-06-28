@@ -2,7 +2,7 @@
 
 n=$[${1}-1]
 cont="
-const gridTF${1} = () {
+const gridTF${1} = () => {
 
     <div className='gridTF${1} gridTF animation1_gridTF animation1_gridTF${1}'>
             <div className='gridTN${1}1 gridTN${1} animation1_gridTN${1}animation1_gridTN${1}1'>
@@ -23,5 +23,3 @@ export { gridTF${1} }
 cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/gtf${1}" ;
 echo "${cont}" > ${2}.${3} ;
 cat ${2}.${3} ;
-
-
