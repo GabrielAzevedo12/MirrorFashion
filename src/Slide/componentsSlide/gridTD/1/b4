@@ -1,14 +1,17 @@
+#!/bin/bash
 
-.gridTF11 {
+n=$[${1}-1]    
+cont="
+.gridTF${1} {
 background-color: wheat;
-grid-area: subdestaque10;
+grid-area: subdestaque${n};
 display: flex;
 flex-direction: row;
 overflow-x: scroll;
 overflow-y: hidden;
 height: 100vh;
 }
-.gridTN11 {
+.gridTN${1} {
 position: relative;
 text-align: center;
 font-size: 3rem;
@@ -17,10 +20,10 @@ min-height: 100%;
 min-width: 100%;
 border-radius: 25px;
 }
-.gridTN111 {
+.gridTN${1}1 {
 background-color: brown;
 }
-.gridTN112 {
+.gridTN${1}2 {
 background-color: tomato;
 /*background-image: 
 linear-gradient(
@@ -32,7 +35,7 @@ url(/workspace/MirrorFashion/public/images/pink-fur-fabulous-fashion.jpg);*/
 background-repeat: no-repeat;
 background-size: 140%;
 }
-.gridTN113 {
+.gridTN${1}3 {
 background-color: darkblue;
 /*background-image: 
 linear-gradient(
@@ -43,4 +46,8 @@ rgba(0,0,0,0.4)),
 url(/workspace/MirrorFashion/public/images/pink-fur-fabulous-fashion.jpg);*/
 background-repeat: no-repeat;
 background-size: 140%;
-}
+}"
+
+cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/gtf${1}/css" ;
+echo "${cont}" > ${2}.${3} ;
+cat ${2}.${3} ;

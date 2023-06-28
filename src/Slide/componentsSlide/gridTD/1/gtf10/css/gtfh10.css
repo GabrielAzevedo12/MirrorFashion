@@ -6,7 +6,7 @@ display: flex;
 flex-direction: row;
 overflow-x: scroll;
 overflow-y: hidden;
-height: 250vh;
+height: 100vh;
 }
 .gridTN10 {
 position: relative;
@@ -32,7 +32,7 @@ url(/workspace/MirrorFashion/public/images/pink-fur-fabulous-fashion.jpg);*/
 background-repeat: no-repeat;
 background-size: 140%;
 }
-.gridT93 {
+.gridTN103 {
 background-color: darkblue;
 /*background-image: 
 linear-gradient(

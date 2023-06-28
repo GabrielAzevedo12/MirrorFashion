@@ -86,3 +86,19 @@ background-size:140%;
 cd $PWD &
 echo "${cont}" > ${nameArq}.${tipoArq} &
 cat ${nameArq}.${tipoArq} &
+
+#------------------------------------------------------------------------------------------------------
+
+#!/bin/bash
+
+n=$[${1}-1]
+const="import '../../Dbanner/f/f.js'
+"
+
+cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/gtf${1}" ;
+mkdir css ;
+cd css ;
+echo "${cont}" > ${2}.${3} ;
+cat ${2}.${3} ;
+
+#------------------------------------------------------------------------------------------------------

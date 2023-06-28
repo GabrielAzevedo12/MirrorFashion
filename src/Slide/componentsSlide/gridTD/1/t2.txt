@@ -46,14 +46,9 @@ r3 () {
 
     for e in ${v[@]}
         do
-            cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/gtf${e}" ;
-            rm -rf "gtf${e}.css" ;
+            cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/gtf${e}/css" ;
+            rm -rf "gtfhF${e}.js" ;
             ls -la ;
-
-            cd "/workspace/MirrorFashion/" ;
-            rm -rf "gtf${e}.js" "gtf${e}"  ;
-            ls -la ;
-
         done 
 
 }
@@ -115,3 +110,43 @@ r5 () {
 
 }
 
+r6 () {
+
+  v=${1}
+
+  for e in ${v[@]}
+      do
+         n=${e}   
+         na="gtfh${e}"
+         ta="js"
+          . "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/b3" "${n}" "${na}" "${ta}" 
+      done 
+
+}
+
+r7 () {
+
+  v=${1}
+
+  for e in ${v[@]}
+        do
+            n=${e}   
+            na="gtfh${e}"
+            ta="css"
+             . "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/b4" "${n}" "${na}" "${ta}" 
+        done 
+
+}
+
+r8 () {
+
+  v=${1}
+
+  for e in ${v[@]}
+      do
+         n=${e}   
+         na="gtfhF${e}"
+         ta="js"
+          . "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/b5" "${n}" "${na}" "${ta}" 
+      done 
+}

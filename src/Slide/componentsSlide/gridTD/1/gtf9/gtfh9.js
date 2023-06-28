@@ -3,7 +3,7 @@ import './css/gtfh9.css'
 
 const GridTF9 = () => {
 return (
-    <div className='gridTF9 gridTF animation1_gridTF animation1_gridTF9'>
+    <div className='gridTF9 gridTF animation1_gridTF animation1_gridTF9 gd5'>
             <div className='gridTN91 gridTN9 animation1_gridTN9animation1_gridTN91'>
               subdestaque81
             </div>

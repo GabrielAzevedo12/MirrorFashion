@@ -1,0 +1,10 @@
+#!/bin/bash
+
+n=$[${1}-1]
+cont=" import '../../Dbanner/f/f.js' "
+
+cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/gtf${1}" ;
+mkdir f ;
+cd f ;
+echo "${cont}" > ${2}.${3} ;
+cat ${2}.${3} ;
