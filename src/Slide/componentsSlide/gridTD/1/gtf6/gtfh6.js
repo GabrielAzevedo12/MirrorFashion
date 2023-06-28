@@ -1,4 +1,6 @@
 
+import './css/gtfh6.css'
+
 const GridTF6 = () => {
 return (
     <div className='gridTF6 gridTF animation1_gridTF animation1_gridTF6'>

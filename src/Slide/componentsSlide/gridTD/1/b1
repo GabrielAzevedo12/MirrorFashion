@@ -2,6 +2,8 @@
 
 n=$[${1}-1]
 cont="
+import './css/gtfh${1}.css'
+
 const GridTF${1} = () => {
 return (
     <div className='gridTF${1} gridTF animation1_gridTF animation1_gridTF${1}'>

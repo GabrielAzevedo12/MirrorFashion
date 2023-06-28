@@ -1,4 +1,6 @@
 
+import './css/gtfh8.css'
+
 const GridTF8 = () => {
 return (
     <div className='gridTF8 gridTF animation1_gridTF animation1_gridTF8'>

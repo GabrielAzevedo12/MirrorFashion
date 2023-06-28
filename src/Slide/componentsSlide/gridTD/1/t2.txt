@@ -22,4 +22,96 @@ r () {
          ta="js"
           . "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/b1" "${n}" "${na}" "${ta}" 
       done 
+
 }
+
+r2 () {
+
+  v=${1}
+
+  for e in ${v[@]}
+      do
+        cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/gtf${e}" ;
+        mkdir css ;
+        cd css ;
+        touch gtf${e}.css ;
+        ls -la ;
+      done 
+
+}
+
+r3 () {
+
+  v=${1}
+
+    for e in ${v[@]}
+        do
+            cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/gtf${e}" ;
+            rm -rf "gtf${e}.css" ;
+            ls -la ;
+
+            cd "/workspace/MirrorFashion/" ;
+            rm -rf "gtf${e}.js" "gtf${e}"  ;
+            ls -la ;
+
+        done 
+
+}
+
+r4 () {
+
+  v=${1}
+
+    for e in ${v[@]}
+        do
+
+          cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/gtf${e}" ;
+          rm -rf "gtf${e}.css" ;
+          ls -la ;
+
+        done 
+
+}
+ 
+
+r5 () {
+
+  v=${1}
+
+    for e in ${v[@]}
+        do
+            n=${e}   
+            na="gtfh${e}"
+            ta="css"
+             . "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/b2" "${n}" "${na}" "${ta}" 
+        done 
+
+   for e in ${v[@]}
+        do
+
+          cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/gtf${e}/css" ;
+          rm -rf "gtf${e}.js" ;
+          ls -la ;
+
+        done  
+
+    for e in ${v[@]}
+        do
+
+          cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/gtf${e}" ;
+          rm -rf "gtf${e}.js" "gtf${e}h.js" ;
+          ls -la ;
+
+        done  
+
+        for e in ${v[@]}
+        do
+
+          cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/gtf${e}/css" ;
+          rm -rf "gtf${e}.css" "gtfh${e}.js" ;
+          ls -la ;
+
+        done  
+
+}
+
