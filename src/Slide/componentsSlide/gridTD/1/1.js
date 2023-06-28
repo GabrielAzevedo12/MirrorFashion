@@ -1,4 +1,9 @@
 import "./css/1.css";
+import "./gtf6/gtfh6";
+import "./gtf7/gtfh7";
+import "./gtf8/gtfh8";
+import "./gtf9/gtfh9";
+import "./gtf10/gtfh10";
 import {
   Adicionar_class,
   Aumentar_ElementoPai,

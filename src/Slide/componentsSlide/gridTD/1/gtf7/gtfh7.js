@@ -1,5 +1,5 @@
 
-const gridTF7 = () => {
+const GridTF7 = () => {
 
     <div className='gridTF7 gridTF animation1_gridTF animation1_gridTF7'>
             <div className='gridTN71 gridTN7 animation1_gridTN7animation1_gridTN71'>
@@ -14,5 +14,5 @@ const gridTF7 = () => {
     </div>
 }
 
-export { gridTF7 }
+export { GridTF7 }
 
