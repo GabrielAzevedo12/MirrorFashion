@@ -1,6 +1,6 @@
 
 const GridTF9 = () => {
-
+return (
     <div className='gridTF9 gridTF animation1_gridTF animation1_gridTF9'>
             <div className='gridTN91 gridTN9 animation1_gridTN9animation1_gridTN91'>
               subdestaque81
@@ -12,6 +12,7 @@ const GridTF9 = () => {
               subdestaque83
           </div>
     </div>
+    )
 }
 
 export { GridTF9 }

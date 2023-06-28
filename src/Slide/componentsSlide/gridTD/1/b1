@@ -3,7 +3,7 @@
 n=$[${1}-1]
 cont="
 const GridTF${1} = () => {
-
+return (
     <div className='gridTF${1} gridTF animation1_gridTF animation1_gridTF${1}'>
             <div className='gridTN${1}1 gridTN${1} animation1_gridTN${1}animation1_gridTN${1}1'>
               subdestaque${n}1
@@ -15,6 +15,7 @@ const GridTF${1} = () => {
               subdestaque${n}3
           </div>
     </div>
+    )
 }
 
 export { GridTF${1} }

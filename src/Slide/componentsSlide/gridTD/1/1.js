@@ -10,6 +10,12 @@ import {
   Diminuir_ElementoPai,
   gridTN11,
 } from "../../DBanner/f/f.js";
+import { GridTF10 } from "./gtf10/gtfh10";
+import { GridTF7 } from "./gtf7/gtfh7";
+import { GridTF6 } from "./gtf6/gtfh6";
+import { GridTF8 } from "./gtf8/gtfh8";
+import { GridTF9 } from "./gtf9/gtfh9";
+import { GridTF11 } from "./gtf11/gtfh11";
 //Fase : Teste
 const GridTD1 = () => {
   const display_none = { display: "none" };
@@ -82,6 +88,12 @@ const GridTD1 = () => {
           subdestaque43
         </div>
       </div>
+      <GridTF6/>
+      <GridTF7/>
+      <GridTF8/>
+      <GridTF9/>
+      <GridTF10/>
+      <GridTF11/>
     </div>
   );
 };

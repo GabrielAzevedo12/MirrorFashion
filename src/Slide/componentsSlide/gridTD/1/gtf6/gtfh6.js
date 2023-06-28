@@ -1,6 +1,6 @@
 
-const gridTF6 = () => {
-
+const GridTF6 = () => {
+return (
     <div className='gridTF6 gridTF animation1_gridTF animation1_gridTF6'>
             <div className='gridTN61 gridTN6 animation1_gridTN6animation1_gridTN61'>
               subdestaque51
@@ -12,7 +12,8 @@ const gridTF6 = () => {
               subdestaque53
           </div>
     </div>
+    )
 }
 
-export { gridTF6 }
+export { GridTF6 }
 
