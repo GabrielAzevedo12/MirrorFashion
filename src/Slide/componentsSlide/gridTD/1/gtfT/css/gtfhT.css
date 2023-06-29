@@ -1,5 +1,5 @@
     .gridTFT {
-      background-color: darkolivegreen;
+      background-color: black;
       grid-area: titulo;
       /*grid-template-areas: "destaque1 destaque1 destaque1 destaque1 destaque1  destaque2 destaque2 destaque2 destaque2 destaque2";*/
       display: flex;
@@ -8,10 +8,6 @@
       overflow-y: hidden;
       width: 100vw;
       }
-    .gridTNT {
-      min-width: 100%;
-      min-height: 70%;
-    }
     .gridTNT1 {
       background: radial-gradient(gray -200%, black);
       font-size: 7rem;
@@ -27,4 +23,9 @@
       background-color: blue;
       font-size: 8rem;
       font-weight: 700;
+    }
+    .gridTNT {
+      min-width: 100%;
+      min-height: 70%;
+      background: radial-gradient(gray -400%, black);;
     }

@@ -1,5 +1,5 @@
 .gridTF2 {
-    background-color: rgb(33, 33, 56);
+    background-color: black;
     grid-area: subdestaque1;
     display: flex;
     flex-direction: row;
