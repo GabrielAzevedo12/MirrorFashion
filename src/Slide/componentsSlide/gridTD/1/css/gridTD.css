@@ -32,35 +32,7 @@
   box-shadow: 0px 0px 50px 50px black;
 }
 /*------------------------------------------------------------------------------------------------------------------------------------*/
-.gridTFT {
-  background-color: darkolivegreen;
-  grid-area: titulo;
-  /*grid-template-areas: "destaque1 destaque1 destaque1 destaque1 destaque1  destaque2 destaque2 destaque2 destaque2 destaque2";*/
-  display: flex;
 
-  overflow-x: scroll;
-  overflow-y: hidden;
-  width: 100vw;
-}
-.gridTF1 {
-  background-color: pink;
-  grid-area: destaque;
-  /*grid-template-areas: "destaque1 destaque1 destaque1 destaque1 destaque1  destaque2 destaque2 destaque2 destaque2 destaque2";*/
-  display: flex;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  height: 200vh;
-}
-.gridTF2 {
-  background-color: rgb(33, 33, 56);
-  grid-area: subdestaque1;
-  display: flex;
-  flex-direction: row;
-  /*min-height: 30vh;*/
-  overflow-x: scroll;
-  overflow-y: hidden;
-  height: 200vh;
-}
 .gridTF3 {
   background-color: rebeccapurple;
   grid-area: subdestaque2;
@@ -110,32 +82,6 @@
 
 /*------------------------------------------------------------------------------------------------------------------------------------*/
 
-.gridTN {
-  position: relative;
-  /*align-items: center;
-  align-content: center;
-  justify-content: center;*/
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 500;
-  height: 95%;
-  min-width: 100%;
-  border-radius: 25px;
-}
-
-.gridTN2 {
-  position: relative;
-  /*align-items: center;
-  align-content: center;
-  justify-content: center;*/
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 500;
-  min-height: 95%;
-  min-width: 100%;
-  border-radius: 25px;
-}
-
 .gridTN3 {
   position: relative;
   /*align-items: center;
@@ -178,103 +124,6 @@
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------------*/
-
-.gridTNT {
-min-width: 100%;
-min-height: 70%;
-}
-.gridTNT1 {
-  background: radial-gradient(gray -200%, black);
-  font-size: 7rem;
-  font-weight: 700;
-  color: gray;
-  /*margin-left: 2.5vw;*/
-  /*height: 90%;
-  width: 80rem;*/
-  /*grid-area: destaque1;*/
-}
-.gridTNT2 {
-  background-color: teal;
-  font-size: 8rem;
-  font-weight: 700;
-  /*margin-left: 2.5vw;*/
-  /*height: 90%;
-  width: 80rem;*/
-  /*grid-area: destaque1;*/
-}
-.gridTNT3 {
-  background-color: blue;
-  font-size: 8rem;
-  font-weight: 700;
-  /*margin-left: 2.5vw;*/
-  /*height: 90%;
-  width: 80rem;*/
-  /*grid-area: destaque1;*/
-}
-
-.gridTN1 {
-  background-color: whitesmoke;
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.2) 40%,
-      rgba(0, 0, 0, 0.2) 80%,
-      rgba(0, 0, 0, 0.4)
-    ),
-    url(/workspace/MirrorFashion/public/images/striped-blouse-fashion.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  /*margin-left: 2.5vw;*/
-  /*height: 90%;
-  width: 80rem;*/
-  /*grid-area: destaque1;*/
-}
-.gridTN12 {
-  background-color: red;
-  /*margin-left: 2.5vw;*/
-  /*height: 90%;
-  width: 80rem;*/
-  /*grid-area: destaque2;*/
-}
-.gridTN13 {
-  background-color: coral;
-  /*margin-left: 2.5vw;*/
-  /*height: 90%;
-  width: 80rem;*/
-  /*grid-area: destaque1;*/
-}
-
-.gridTN21 {
-  background-color: violet;
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.2) 40%,
-      rgba(0, 0, 0, 0.2) 80%,
-      rgba(0, 0, 0, 0.4)
-    ),
-    url(/workspace/MirrorFashion/public/images/pink-neon-lights-fashion-model.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  /*margin-left: 2.5vw;*/
-  /*height: 90%;
-  width: 80rem;*/
-  /*grid-area: destaque1;*/
-}
-.gridTN22 {
-  background-color: yellow;
-  /*margin-left: 2.5vw;*/
-  /*height: 90%;
-  width: 80rem;*/
-  /*grid-area: destaque2;*/
-}
-.gridTN23 {
-  background-color: springgreen;
-  /*margin-left: 2.5vw;*/
-  /*height: 90%;
-  width: 80rem;*/
-  /*grid-area: destaque1;*/
-}
 
 .gridTN31 {
   background-color: aqua;
