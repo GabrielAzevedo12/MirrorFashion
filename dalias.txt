@@ -1,0 +1,4 @@
+dalias () {
+     alias a='ls -la' 
+     alias c='clear' 
+}

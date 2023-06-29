@@ -51,10 +51,10 @@ background-size: 140%;
     animation-iteration-count: 1;
   
     z-index: 2;
-    height: 110%;
-    width: 120%;
+    height: 120%;
+    width: 130%;
     left: 40vw;
-    top: 0;
+    top: -5vh;
   }
   
   .for_posiçao1_of_gridTN6 {
@@ -79,39 +79,42 @@ background-size: 140%;
     25% {
       left: -40vw;
       top: 10vh;
-      z-index: 2
+      z-index: 2;
     }
     50% {
       top: 20vh;
-      z-index: 2
+      z-index: 2;
+      rotate: 20deg;
     }
     75% {
       z-index: 2;
-      height: 110%;
-      width: 120%;    
-      left: 0;
-      top: -10vh;
+      height: 120%;
+      width: 130%;    
+      left: 40vw;
+      top: -20vh;
+      rotate: -20deg;
     }
     100% {
       z-index: 2;
-      height: 110%;
-      width: 120%;
+      height: 120%;
+      width: 130%;
       left: 40vw;
-      top: 0;
+      top: -5vh;
+      rotate: 0deg;
     }
   }
   
   @keyframes for_posiçao1_of_gridTN6 {
     0% {
     z-index: 2;
-    height: 110%;
-    width: 120%;
+    height: 120%;
+    width: 130%;
     left: 40vw;
     top: 0;
     }
     25% {
     z-index: 1;
-    left: -40vw;
+    left: 80vw;
     top: -10vh;
     }
     50% {
