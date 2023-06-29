@@ -1,7 +1,8 @@
 
+/*#import*/
 import './css/gtfh6.css'
 import './css/gtfh6A.css'
-
+/*#Hook*/
 const GridTF6 = () => {
 return (
     <div className='gridTF6 gridTF animation1_gridTF animation1_gridTF6'>
@@ -17,6 +18,6 @@ return (
     </div>
     )
 }
-
+/*#Export*/
 export { GridTF6 }
 
