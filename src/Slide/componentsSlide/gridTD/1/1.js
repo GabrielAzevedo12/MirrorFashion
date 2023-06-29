@@ -1,9 +1,4 @@
 import "./css/1.css";
-import "./gtf6/gtfh6";
-import "./gtf7/gtfh7";
-import "./gtf8/gtfh8";
-import "./gtf9/gtfh9";
-import "./gtf10/gtfh10";
 import {
   Adicionar_class,
   Aumentar_ElementoPai,
@@ -16,6 +11,11 @@ import { GridTF6 } from "./gtf6/gtfh6";
 import { GridTF8 } from "./gtf8/gtfh8";
 import { GridTF9 } from "./gtf9/gtfh9";
 import { GridTF11 } from "./gtf11/gtfh11";
+import { GridTF1 } from "./gtf1/gtfh1";
+import { GridTF2 } from "./gtf2/gtfh2";
+import { GridTF3 } from "./gtf3/gtfh3";
+import { GridTF4 } from "./gtf4/gtfh4";
+import { GridTF5 } from "./gtf5/gtfh5";
 //Fase : Teste
 const GridTD1 = () => {
   const display_none = { display: "none" };
@@ -29,65 +29,11 @@ const GridTD1 = () => {
           Título grid 2
         </h1>
       </div>
-      <div className="gridTF1 gridTF animation1_gridTF animation1_gridTF1">
-        <div
-          className="gridTN1 gridTN animation1_gridTN animation1_gridTN11"
-          /*onMouseOver={gridTN11.Disparar_Evento_Quando.Over}
-          onMouseOut={gridTN11.Disparar_Evento_Quando.Out}*/
-        >
-          destaque1
-        </div>
-        <div className="gridTN12 gridTN animation1_gridTN animation1_gridTN12">
-          destaque2
-        </div>
-        <div className="gridTN13 gridTN animation1_gridTN animation1_gridTN13">
-          destaque3
-        </div>
-      </div>
-      <div className="gridTF2 gridTF animation1_gridTF animation1_gridTF2">
-        <div className="gridTN21 gridTN2 animation1_gridTN animation1_gridTN21">
-          subdestaque11
-        </div>
-        <div className="gridTN22 gridTN2 animation1_gridTN animation1_gridTN22">
-          subdestaque12
-        </div>
-        <div className="gridTN23 gridTN2 animation1_gridTN animation1_gridTN23">
-          subdestaque13
-        </div>
-      </div>
-      <div className="gridTF3 gridTF animation1_gridTF animation1_gridTF3">
-        <div className="gridTN31 gridTN3 animation1_gridTN animation1_gridTN31">
-          subdestaque21
-        </div>
-        <div className="gridTN32 gridTN3 animation1_gridTN animation1_gridTN32">
-          subdestaque22
-        </div>
-        <div className="gridTN33 gridTN3 animation1_gridTN animation1_gridTN33">
-          subdestaque23
-        </div>
-      </div>
-      <div className="gridTF4 gridTF animation1_gridTF animation1_gridTF4">
-        <div className="gridTN41 gridTN4 animation1_gridTN animation1_gridTN41">
-          subdestaque31
-        </div>
-        <div className="gridTN42 gridTN4 animation1_gridTN animation1_gridTN42">
-          subdestaque32
-        </div>
-        <div className="gridTN43 gridTN4 animation1_gridTN animation1_gridTN43">
-          subdestaque33
-        </div>
-      </div>
-      <div className="gridTF5 gridTF animation1_gridTF animation1_gridTF5">
-        <div className="gridTN51 gridTN5 animation1_gridTN animation1_gridTN51">
-          subdestaque41
-        </div>
-        <div className="gridTN52 gridTN5 animation1_gridTN animation1_gridTN52">
-          subdestaque42
-        </div>
-        <div className="gridTN53 gridTN5 animation1_gridTN animation1_gridTN53">
-          subdestaque43
-        </div>
-      </div>
+      <GridTF1/>
+      <GridTF2/>
+      <GridTF3/>
+      <GridTF4/>
+      <GridTF5/>
       <GridTF6/>
       <GridTF7/>
       <GridTF8/>

@@ -20,7 +20,7 @@ return (
     /*onDragStart={gridTN.gridTN4.Disparar_Evento_Quando.DragStart}*/
     /*onDragOver={gridTN.gridTN4.Disparar_Evento_Quando.DragOver*/>
             <div 
-            className='gridTN41 gridTN4 animation1_gridTN4animation1_gridTN41'
+            className='gridTN41 gridTN4 animation1_gridTN4 animation1_gridTN41'
             /*onClick={gridTN.gridTN4.Disparar_Evento_Quando.Click}*/
             /*onMouseOut={gridTN.gridTN4.Disparar_Evento_Quando.Out}*/
             /*onMouseOver={gridTN.gridTN4.Disparar_Evento_Quando.Over}*/
@@ -30,7 +30,7 @@ return (
             /*onDragOver={gridTN.gridTN4.Disparar_Evento_Quando.DragOver*/>
               subdestaque31
             </div>
-            <div className='gridTN42 gridTN4 animation1_gridTN4animation1_gridTN42'
+            <div className='gridTN42 gridTN4 animation1_gridTN4 animation1_gridTN42'
             /*onClick={gridTN.gridTN4.Disparar_Evento_Quando.Click}*/
             /*onMouseOut={gridTN.gridTN4.Disparar_Evento_Quando.Out}*/
             /*onMouseOver={gridTN.gridTN4.Disparar_Evento_Quando.Over}*/
@@ -40,7 +40,7 @@ return (
             /*onDragOver={gridTN.gridTN4.Disparar_Evento_Quando.DragOver*/>
               subdestaque32
             </div>
-            <div className='gridTN43 gridTN4 animation1_gridTN4animation1_gridTN43'
+            <div className='gridTN43 gridTN4 animation1_gridTN4 animation1_gridTN43'
             /*onClick={gridTN.gridTN4.Disparar_Evento_Quando.Click}*/
             /*onMouseOut={gridTN.gridTN4.Disparar_Evento_Quando.Out}*/
             /*onMouseOver={gridTN.gridTN4.Disparar_Evento_Quando.Over}*/
