@@ -1,5 +1,5 @@
-
 import './css/gtfh7.css'
+import './css/gtfh7A.css'
 import {
   Adicionar_class,
   Aumentar_ElementoPai,

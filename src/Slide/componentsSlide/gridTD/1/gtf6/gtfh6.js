@@ -1,5 +1,6 @@
 
 import './css/gtfh6.css'
+import './css/gtfh6A.css'
 
 const GridTF6 = () => {
 return (

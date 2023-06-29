@@ -75,21 +75,21 @@ const gridTN7 = {
       const irmão = el.previousSibling, db =  el.classList ;
       const 
       s1 = () => {
-        Remover_class(el,"for_posiçao1_of_gridTN7")
-        Adicionar_class(el,"for_posiçao2_of_gridTN7")
+        Remover_class(el,"for_posiçao1_of_gridTF7")
+        Adicionar_class(el,"for_posiçao2_of_gridTF7")
 
-        Adicionar_class(irmão,"for_posiçao1_of_gridTN6")
-        Remover_class(irmão,"for_posiçao2_of_gridTN6")
+        Adicionar_class(irmão,"for_posiçao1_of_gridTF6")
+        Remover_class(irmão,"for_posiçao2_of_gridTF6")
       },
       s2 = () => {
-        Remover_class(el,"for_posiçao2_of_gridTN7")
-        Adicionar_class(el,"for_posiçao1_of_gridTN7")
+        Remover_class(el,"for_posiçao2_of_gridTF7")
+        Adicionar_class(el,"for_posiçao1_of_gridTF7")
 
-        Adicionar_class(irmão,"for_posiçao2_of_gridTN6")
-        Remover_class(irmão,"for_posiçao1_of_gridTN6")
+        Adicionar_class(irmão,"for_posiçao2_of_gridTF6")
+        Remover_class(irmão,"for_posiçao1_of_gridTF6")
       };
       console.log(el,irmão)
-      Analise_class(db, "for_posiçao1_of_gridTN7", s1, s2)
+      Analise_class(db, "for_posiçao1_of_gridTF7", s1, s2)
 
     },
     Out: (e) => {

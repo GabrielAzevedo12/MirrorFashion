@@ -150,3 +150,15 @@ r8 () {
           . "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/b5" "${n}" "${na}" "${ta}" 
       done 
 }
+r9 () {
+
+  v=${1}
+
+  for e in ${v[@]}
+      do
+         n=${e}   
+         na="gtfh${e}A"
+         ta="css"
+          . "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/b6" "${n}" "${na}" "${ta}" 
+      done 
+}
