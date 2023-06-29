@@ -16,19 +16,13 @@ import { GridTF2 } from "./gtf2/gtfh2";
 import { GridTF3 } from "./gtf3/gtfh3";
 import { GridTF4 } from "./gtf4/gtfh4";
 import { GridTF5 } from "./gtf5/gtfh5";
+import { GridTFT } from "./gtfT/gtfhT";
 //Fase : Teste
 const GridTD1 = () => {
   const display_none = { display: "none" };
   return (
     <div className="gridTD">
-      <div className="gridTFT gridTF animation1_gridTF animation1_gridTFT">
-        <h1 className="gridTNT1 gridTN animation1_gridTN animation1_gridTNT1">
-          Sejá Bem Vindo a Mirror Fashion
-        </h1>
-        <h1 className="gridTNT2 gridTN animation1_gridTN animation1_gridTNT2">
-          Título grid 2
-        </h1>
-      </div>
+      <GridTFT/>
       <GridTF1/>
       <GridTF2/>
       <GridTF3/>
