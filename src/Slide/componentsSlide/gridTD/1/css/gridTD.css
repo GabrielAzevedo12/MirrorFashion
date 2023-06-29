@@ -40,6 +40,7 @@
 
   overflow-x: scroll;
   overflow-y: hidden;
+  width: 100vw;
 }
 .gridTF1 {
   background-color: pink;
@@ -51,7 +52,7 @@
   height: 200vh;
 }
 .gridTF2 {
-  background-color: darkblue;
+  background-color: rgb(33, 33, 56);
   grid-area: subdestaque1;
   display: flex;
   flex-direction: row;
@@ -178,11 +179,13 @@
 
 /*------------------------------------------------------------------------------------------------------------------------------------*/
 
+.gridTNT {
+min-width: 100%;
+min-height: 70%;
+}
 .gridTNT1 {
   background: radial-gradient(gray -200%, black);
   font-size: 7rem;
-  width: 100%;
-  height: 50%;
   font-weight: 700;
   color: gray;
   /*margin-left: 2.5vw;*/
@@ -193,8 +196,15 @@
 .gridTNT2 {
   background-color: teal;
   font-size: 8rem;
-  width: 100%;
-  height: 50%;
+  font-weight: 700;
+  /*margin-left: 2.5vw;*/
+  /*height: 90%;
+  width: 80rem;*/
+  /*grid-area: destaque1;*/
+}
+.gridTNT3 {
+  background-color: blue;
+  font-size: 8rem;
   font-weight: 700;
   /*margin-left: 2.5vw;*/
   /*height: 90%;
