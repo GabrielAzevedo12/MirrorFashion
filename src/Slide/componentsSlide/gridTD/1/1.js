@@ -1,4 +1,5 @@
 import "./css/1.css";
+import "./css/gridTD.css";
 import {
   Adicionar_class,
   Aumentar_ElementoPai,

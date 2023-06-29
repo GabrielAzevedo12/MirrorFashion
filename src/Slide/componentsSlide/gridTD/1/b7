@@ -240,8 +240,8 @@ echo "Entrando na pasta gtf${1} ... "
 cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/gtf${1}" ;
 
 echo "Colocando o conteudo js no arquivo gtfh${1}.js ... "
-echo -e "${cont4}" > ${na}.${ta} ;
-#echo -e "${cont}" > ${na}.${ta} ;
+#echo -e "${cont4}" > ${na}.${ta} ;
+echo -e "${cont}" > ${na}.${ta} ;
 
 echo "Exibindo o conteudo do arquivo gtfh${1}.js ... "
 cat ${na}.$ta ;
