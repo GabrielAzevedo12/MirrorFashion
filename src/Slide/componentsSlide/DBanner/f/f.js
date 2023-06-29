@@ -8,10 +8,8 @@ const Remover_class = (e, name_class) => {
 
 const Analise_class = (db, name_class, s1, s2) => {
 
-    //console.log("Analise_class foi disparada")
-
     var quantidade_elementosDiferentes = 0 ;
-    let quantidade_elementosDiferentes_total = db.lenght ;
+    let quantidade_elementosDiferentes_total = db["length"] ;
 
     for (let x of db) {
 
@@ -26,13 +24,16 @@ const Analise_class = (db, name_class, s1, s2) => {
         quantidade_elementosDiferentes = quantidade_elementosDiferentes + 1 ;
         console.log(quantidade_elementosDiferentes + " elemento distinto")
 
-        if (quantidade_elementosDiferentes === db.lenght) {
-  
+        if (quantidade_elementosDiferentes === quantidade_elementosDiferentes_total) {
+          
+        console.log("Todos os elementos são distintos de " + name_class)  
         console.log("Não existe o elemento");
         s2();
         break ;
 
-        } 
+        } else {
+          continue
+        }
 
       }
 
@@ -87,7 +88,6 @@ const gridTN7 = {
         Adicionar_class(irmão,"for_posiçao2_of_gridTN6")
         Remover_class(irmão,"for_posiçao1_of_gridTN6")
       };
-
       console.log(el,irmão)
       Analise_class(db, "for_posiçao1_of_gridTN7", s1, s2)
 
