@@ -67,7 +67,7 @@ background-size: 140%;
     z-index: 1;
     height: 100%;
     width: 100%;
-    left: 40vw;
+    left: -40vw;
     top: 0vh; 
   }
   
@@ -123,14 +123,14 @@ background-size: 140%;
       z-index: 1;
       height: 100%;
       width: 100%;
-      left: 40vw;
+      left: -40vw;
       top: 10vh;
     }
     100% {
       z-index: 1;
       height: 100%;
       width: 100%;
-      left: 40vw;
+      left: -40vw;
       top: 0vh;
     }
   }

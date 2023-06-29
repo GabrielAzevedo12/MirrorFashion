@@ -12,7 +12,7 @@ import {
 
 const GridTF7 = () => {
 return (
-    <div className='gridTF7 gridTF animation1_gridTF animation1_gridTF7'>
+    <div className='gridTF7 gridTF animation1_gridTF animation1_gridTF7 for_posiçao1_of_gridTN7'>
             <div className='gridTN71 gridTN7 animation1_gridTN7animation1_gridTN71' onClick={gridTN7.Disparar_Evento_Quando.Click}>
               subdestaque61
             </div>

@@ -11,7 +11,7 @@ const Analise_class = (db, name_class, s1, s2) => {
     //console.log("Analise_class foi disparada")
 
     var quantidade_elementosDiferentes = 0 ;
-    let quantidade_elementosDiferentes_total = db.lenght - 1 ;
+    let quantidade_elementosDiferentes_total = db.lenght ;
 
     for (let x of db) {
 
@@ -26,7 +26,7 @@ const Analise_class = (db, name_class, s1, s2) => {
         quantidade_elementosDiferentes = quantidade_elementosDiferentes + 1 ;
         console.log(quantidade_elementosDiferentes + " elemento distinto")
 
-        if (quantidade_elementosDiferentes === quantidade_elementosDiferentes_total) {
+        if (quantidade_elementosDiferentes === db.lenght) {
   
         console.log("Não existe o elemento");
         s2();
