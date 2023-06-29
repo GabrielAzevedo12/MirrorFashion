@@ -1,14 +1,7 @@
-#!/bin/bash
-#na=gtfh${1}A
+ /*!*/
 
-n=$[${1}-1]
-na=${2}
-ta=${3}
-
-cont=" /*!*/
-
-.for_posiçao2_of_gridTF${1} {
-    animation-name: for_posiçao2_of_gridTF${1};
+.for_posiçao2_of_gridTF2 {
+    animation-name: for_posiçao2_of_gridTF2;
     animation-duration: 1s;
     animation-iteration-count: 1;
   
@@ -20,8 +13,8 @@ cont=" /*!*/
     rotate: 0deg;
   }
   
-  .for_posiçao1_of_gridTF${1} {
-    animation-name: for_posiçao1_of_gridTF${1};
+  .for_posiçao1_of_gridTF2 {
+    animation-name: for_posiçao1_of_gridTF2;
     animation-duration: 1s;
     animation-iteration-count: 1;
   
@@ -32,7 +25,7 @@ cont=" /*!*/
     top: 0vh; 
   }
   
-  @keyframes for_posiçao2_of_gridTF${1} {
+  @keyframes for_posiçao2_of_gridTF2 {
     0% {
       z-index: 1;
       height: 100%;
@@ -67,7 +60,7 @@ cont=" /*!*/
     }
   }
   
-  @keyframes for_posiçao1_of_gridTF${1} {
+  @keyframes for_posiçao1_of_gridTF2 {
     0% {
      z-index: 2;
       height: 110%;
@@ -98,8 +91,4 @@ cont=" /*!*/
       top: 0vh;
     }
   }
-  /*!*/ "
-
-cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/gtf${1}/css" ;
-echo "${cont}" > ${na}.${ta} ;
-cat ${na}.${ta} ;
+  /*!*/ 
