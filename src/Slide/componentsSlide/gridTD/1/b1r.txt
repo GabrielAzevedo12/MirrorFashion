@@ -1,0 +1,2 @@
+/*onDragStart={gridTN.gridTN${1}.Disparar_Evento_Quando.DragStart}*/
+/*onDragOver={gridTN.gridTN${1}.Disparar_Evento_Quando.DragOver}*/
