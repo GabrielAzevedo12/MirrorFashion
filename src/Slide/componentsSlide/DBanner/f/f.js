@@ -469,7 +469,9 @@ const gridTN = {
     },
   },
   gridTNB3 : {
+
     Disparar_Evento_Quando: {
+
       Click: (e) => {
   
         console.log("gridTNB3 foi disparada")
@@ -528,6 +530,8 @@ const gridTN = {
         },
 
         db =  irmão2.classList ;
+
+        Analise_class_p(db, name_class, soluções) ;
      
   
       },
