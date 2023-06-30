@@ -1,5 +1,6 @@
 #!/bin/bash
 #commit e push
+#ex :  . cpg "." "teste cpg" "main"
 cpg () {
 
      add=${1};
@@ -8,7 +9,7 @@ cpg () {
 
      git add ${add} ;
      git commit -m "${message}" ;
-     git push -u origin "${branch}" ;
+#     git push -u origin "${branch}" ;
      git push ;
      git status ;
      git log ;
