@@ -19,20 +19,20 @@ const Analise_class_p = (db, name_class, soluções) => {
     if (x === name_class['p1']) {
 
       console.log("Existe o elemento " + " name_class['p1']")
-      soluções['1']();
+      soluçoes['1']();
       break;
 
     } else if (x === name_class['p2']) {
 
       console.log("Existe o elemento " + " name_class['p2']")
-      soluções['2']();
+      soluçoes['2']();
       break ; 
 
     }
     else if (x === name_class['p3']) {
 
       console.log("Existe o elemento " + " name_class['p3']")
-      soluções['3']();
+      soluçoes['3']();
       break ;
 
     }
@@ -481,7 +481,7 @@ const gridTN = {
         irmão3 = irmão2.nextSibling,
         irmão1 = irmão2.previousSibling,
 
-        name_class = {
+        name_class_gridTNB3 = {
           p1: () => {
 
               //primeira posição -> segunda posição 
@@ -523,7 +523,7 @@ const gridTN = {
           },
         },
 
-        soluções = {
+        soluçoes_gridTNB3 = {
           1:"for_posiçao2_of_gridTF7_m1",
           2:"for_posiçao3_of_gridTF7_m1",
           3:"for_posiçao1_of_gridTF7_m1",
@@ -531,7 +531,7 @@ const gridTN = {
 
         db =  irmão2.classList ;
 
-        Analise_class_p(db, name_class, soluções) ;
+        Analise_class_p(db, name_class_gridTNB3, soluçoes_gridTNB3) ;
      
   
       },
