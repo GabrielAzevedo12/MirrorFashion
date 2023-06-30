@@ -97,12 +97,12 @@
 
 .for_posiçao2_of_gridTF6_m1 {
   animation-name: for_posiçao2_of_gridTF6_m1;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-iteration-count: 1;
 
   z-index: 2;
-  height: 120%;
-  width: 130%;
+  width: 50vw;
+  height: 120vh;   
   left: 33vw;
   top: -5vh;
 }
@@ -110,32 +110,30 @@
 @keyframes for_posiçao2_of_gridTF6_m1 {
   0% {
     z-index: 1;
-    height: 100%;
-    width: 100%;    
+    width: 33vw;
+    height: 100vh;    
     left: 0vw;
   }
   25% {
     left: -33vw;
-    top: 10vh;
     z-index: 2;
   }
   50% {
-    top: 20vh;
-    z-index: 2;
+    top: 40vh;
     rotate: 20deg;
   }
   75% {
     z-index: 2;
-    height: 120%;
-    width: 130%;    
+    width: 50vw;
+    height: 120vh;   
     left: 33vw;
     top: -20vh;
     rotate: -20deg;
   }
   100% {
     z-index: 2;
-    height: 120%;
-    width: 130%;
+    width: 50vw;
+    height: 120vh;   
     left: 33vw;
     top: -5vh;
     rotate: 0deg;

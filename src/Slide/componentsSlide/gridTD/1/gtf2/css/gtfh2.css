@@ -7,6 +7,7 @@
     overflow-x: scroll;
     overflow-y: hidden;
     height: 200vh;
+    width: 60vw; 
   }
   .gridTN2 {
     position: relative;

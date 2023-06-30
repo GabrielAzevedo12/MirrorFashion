@@ -8,7 +8,7 @@ const Remover_class = (e, name_class) => {
   e.classList.remove(name_class);
 };
 
-const Analise_class_p = (db, name_class, soluções) => {
+const Analise_class_p = (db, name_class, soluçoes) => {
 
   var quantidade_elementosDiferentes = 0 ;
   let quantidade_elementosDiferentes_total = db["length"] ;
@@ -16,11 +16,11 @@ const Analise_class_p = (db, name_class, soluções) => {
   for (let x of db) {
 
 
-    if (x === name_class['p1']) {
+    if (x === name_class['p1'] || x === null) {
 
       console.log("Existe o elemento " + " name_class['p1']")
       soluçoes['1']();
-      break;
+      break ;
 
     } else if (x === name_class['p2']) {
 
@@ -481,8 +481,8 @@ const gridTN = {
         irmão3 = irmão2.nextSibling,
         irmão1 = irmão2.previousSibling,
 
-        name_class_gridTNB3 = {
-          p1: () => {
+        soluçoes_gridTNB3 = {
+          1: () => {
 
               //primeira posição -> segunda posição 
 
@@ -495,7 +495,7 @@ const gridTN = {
               Remover_class(irmão3,"for_posiçao3_of_gridTF8_m1")
 
           },
-          p2: () => {
+          2: () => {
 
               //segunda posição -> terceira posição
                
@@ -508,7 +508,7 @@ const gridTN = {
               Remover_class(irmão3,"for_posiçao1_of_gridTF8_m1")
 
           },
-          p3: () => {
+          3: () => {
 
               //terceira posição -> primeira posição
 
@@ -523,10 +523,10 @@ const gridTN = {
           },
         },
 
-        soluçoes_gridTNB3 = {
-          1:"for_posiçao2_of_gridTF7_m1",
-          2:"for_posiçao3_of_gridTF7_m1",
-          3:"for_posiçao1_of_gridTF7_m1",
+        name_class_gridTNB3 = {
+          p1:"for_posiçao2_of_gridTF7_m1",
+          p2:"for_posiçao3_of_gridTF7_m1",
+          p3:"for_posiçao1_of_gridTF7_m1",
         },
 
         db =  irmão2.classList ;

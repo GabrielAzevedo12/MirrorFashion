@@ -1,0 +1,65 @@
+.gridTF3 {
+    background-color: black;
+    grid-area: subdestaque2;
+    display: flex;
+    flex-direction: column;
+    /*min-height: 30vh;*/
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 200vh;
+    width: 40vw; 
+  }
+.gridTN3 {
+  position: relative;
+  /*align-items: center;
+  align-content: center;
+  justify-content: center;*/
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  min-height: 90%;
+  min-width: 95%;
+  border-radius: 25px;
+  background-size: 160%;
+}
+.gridTN31 {
+  background-color: aqua;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.2) 40%,
+    rgba(0, 0, 0, 0.2) 80%,
+    rgba(0, 0, 0, 0.4)
+  ),
+  url(/workspace/MirrorFashion/public/images/mens-stylish-formalwear.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gridTN32 {
+  background-color: blue;
+  /*
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.2) 40%,
+    rgba(0, 0, 0, 0.2) 80%,
+    rgba(0, 0, 0, 0.4)
+  ),
+  url(/workspace/MirrorFashion/public/images/mens-stylish-formalwear.jpg);
+  background-repeat: no-repeat;
+  */
+}
+.gridTN33 {
+  background-color: aquamarine;
+  /*
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.2) 40%,
+    rgba(0, 0, 0, 0.2) 80%,
+    rgba(0, 0, 0, 0.4)
+  ),
+  url(/workspace/MirrorFashion/public/images/mens-stylish-formalwear.jpg);
+  background-repeat: no-repeat;
+  */
+}
