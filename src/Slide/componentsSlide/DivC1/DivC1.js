@@ -16,14 +16,14 @@ let DivC1 = ({ DivC1pr }) => {
 
   useEffect(() => {
     let [url, method, content] = [
-      "http://localhost:5000/Produtos/",
+      "https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/Produtos/",
       "GET",
       "null",
     ];
     Fetch(url, method, content, setDatau, null, null);
 
     let [url2, method2, content2] = [
-      "http://localhost:5000/LDsc1/",
+      "https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/LDsc1/",
       "GET",
       "null",
     ];
@@ -96,14 +96,14 @@ export default DivC1;
     };
 
   let [url3, method3, content3] = [
-      "http://localhost:5000/LDsc2/",
+      "https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/LDsc2/",
       "GET",
       "null",
     ];
     Fetch(url3, method3, content3, setLDsc2, null, null);
 
     let [url4, method4, content4] = [
-      "http://localhost:5000/LDsc3/",
+      "https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/LDsc3/",
       "GET",
       "null",
     ];
@@ -125,7 +125,7 @@ EPG = async (e) => {
       console.log(id);
 
       let [url, method, content] = [
-        `http://localhost:5000/Produtos/P1`,
+        `https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/Produtos/P1`,
         "PUT",
         {
           name: name + " ",
@@ -172,7 +172,7 @@ const DivTF1A = () => {
             Navigate('/Produtos')
             const [text,id,name,preço] = [e.target.textContent, e.target.id, e.target.textContent.split("  ")[0], e.target.textContent.split("  ")[1]]; 
             console.log(preço);
-            let [url,method,content] = ["http://localhost:5000/Produtos/P1","PUT",{
+            let [url,method,content] = ["https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/Produtos/P1","PUT",{
                 name: name+" ",
                 preço: preço,
                 namePreço:  text ? text : "",
@@ -189,7 +189,7 @@ const DivTF1A = () => {
             EP2 = async (e) => {
                     Navigate('/Produtos')
                     const text = e.target.textContent
-                    let [url,method,content] = ["http://localhost:5000/Produtos/P1","PUT",{
+                    let [url,method,content] = ["https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/Produtos/P1","PUT",{
                         name: "Fuzz Cardigan ",
                         preço: "R$179,99",
                         namePreço:  text ? text : "",
@@ -205,7 +205,7 @@ const DivTF1A = () => {
             EP3 = async (e) => {
                     Navigate('/Produtos')
                     const text = e.target.textContent
-                    let [url,method,content] = ["http://localhost:5000/Produtos/P1","PUT",{
+                    let [url,method,content] = ["https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/Produtos/P1","PUT",{
                         name: "Fuzz Cardigan ",
                         preço: "R$179,99",
                         namePreço:  text ? text : "",

@@ -1,0 +1,67 @@
+#!/bin/bash
+
+nt=$[${1}-1]
+na=${2}
+ta=${3}
+cont="/*#import*/
+import './css/gtfh${1}.css'
+import './css/gtfh${1}A.css'
+import {
+  Adicionar_class,
+  Aumentar_ElementoPai,
+  Diminuir_ElementoPai,
+  gridTN,
+  Analise_class
+} from '../../../DBanner/f/f.js'
+/*#Hook*/
+const GridTF${1} = () => {
+return (
+    <div className='gridTF${1} gridTF animation1_gridTF animation1_gridTF${1}'
+    /*onClick={gridTN.gridTN${1}.Disparar_Evento_Quando.Click}*/
+    /*onMouseOut={gridTN.gridTN${1}.Disparar_Evento_Quando.Out}*/
+    /*onMouseOver={gridTN.gridTN${1}.Disparar_Evento_Quando.Over}*/
+    /*onDrag={gridTN.gridTN${1}.Disparar_Evento_Quando.Drag}*/
+    /*onDrop={gridTN.gridTN${1}.Disparar_Evento_Quando.Drop}*/
+    /*onDragStart={gridTN.gridTN${1}.Disparar_Evento_Quando.DragStart}*/
+    /*onDragOver={gridTN.gridTN${1}.Disparar_Evento_Quando.DragOver*/>
+            <div 
+            className='gridTN${1}1 gridTN${1} animation1_gridTN${1}animation1_gridTN${1}1'
+            /*onClick={gridTN.gridTN${1}.Disparar_Evento_Quando.Click}*/
+            /*onMouseOut={gridTN.gridTN${1}.Disparar_Evento_Quando.Out}*/
+            /*onMouseOver={gridTN.gridTN${1}.Disparar_Evento_Quando.Over}*/
+            /*onDrag={gridTN.gridTN${1}.Disparar_Evento_Quando.Drag}*/
+            /*onDrop={gridTN.gridTN${1}.Disparar_Evento_Quando.Drop}*/
+            /*onDragStart={gridTN.gridTN${1}.Disparar_Evento_Quando.DragStart}*/
+            /*onDragOver={gridTN.gridTN${1}.Disparar_Evento_Quando.DragOver*/>
+              subdestaque${nt}1
+            </div>
+            <div className='gridTN${1}2 gridTN${1} animation1_gridTN${1}animation1_gridTN${1}2'
+            /*onClick={gridTN.gridTN${1}.Disparar_Evento_Quando.Click}*/
+            /*onMouseOut={gridTN.gridTN${1}.Disparar_Evento_Quando.Out}*/
+            /*onMouseOver={gridTN.gridTN${1}.Disparar_Evento_Quando.Over}*/
+            /*onDrag={gridTN.gridTN${1}.Disparar_Evento_Quando.Drag}*/
+            /*onDrop={gridTN.gridTN${1}.Disparar_Evento_Quando.Drop}*/
+            /*onDragStart={gridTN.gridTN${1}.Disparar_Evento_Quando.DragStart}*/
+            /*onDragOver={gridTN.gridTN${1}.Disparar_Evento_Quando.DragOver*/>
+              subdestaque${nt}2
+            </div>
+            <div className='gridTN${1}3 gridTN${1} animation1_gridTN${1}animation1_gridTN${1}3'
+            /*onClick={gridTN.gridTN${1}.Disparar_Evento_Quando.Click}*/
+            /*onMouseOut={gridTN.gridTN${1}.Disparar_Evento_Quando.Out}*/
+            /*onMouseOver={gridTN.gridTN${1}.Disparar_Evento_Quando.Over}*/
+            /*onDrag={gridTN.gridTN${1}.Disparar_Evento_Quando.Drag}*/
+            /*onDrop={gridTN.gridTN${1}.Disparar_Evento_Quando.Drop}*/
+            /*onDragStart={gridTN.gridTN${1}.Disparar_Evento_Quando.DragStart}*/
+            /*onDragOver={gridTN.gridTN${1}.Disparar_Evento_Quando.DragOver*/>
+              subdestaque${nt}3
+          </div>
+    </div>
+    )
+}
+/*#Export*/
+export { GridTF${1} }
+"
+
+cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/gtf${1}" ;
+echo "${cont}" > ${na}.${ta} ;
+cat ${na}.$ta ;

@@ -4,57 +4,20 @@
   /*grid-template-columns: 3fr 1fr 1fr;*/
   grid-template-areas:
     "titulo titulo titulo titulo titulo"
-    "titulo titulo titulo titulo titulo"
-    "titulo titulo titulo titulo titulo"
-    "titulo titulo titulo titulo titulo"
-    "titulo titulo titulo titulo titulo"
-    "destaque destaque destaque destaque destaque"
-    "destaque destaque destaque destaque destaque"
-    "destaque destaque destaque destaque destaque"
-    "destaque destaque destaque destaque destaque"
-    "destaque destaque destaque destaque destaque"
-    "destaque destaque destaque destaque destaque"
-    "destaque destaque destaque destaque destaque"
-    "destaque destaque destaque destaque destaque"
-    "destaque destaque destaque destaque destaque"
     "destaque destaque destaque destaque destaque"
     "destaque destaque destaque destaque destaque"
     "subdestaque1 subdestaque1 subdestaque1 subdestaque2 subdestaque2"
-    "subdestaque1 subdestaque1 subdestaque1 subdestaque2 subdestaque2"
-    "subdestaque1 subdestaque1 subdestaque1 subdestaque2 subdestaque2"
-    "subdestaque1 subdestaque1 subdestaque1 subdestaque2 subdestaque2"
-    "subdestaque1 subdestaque1 subdestaque1 subdestaque2 subdestaque2"
-    "subdestaque1 subdestaque1 subdestaque1 subdestaque2 subdestaque2"
-    "subdestaque1 subdestaque1 subdestaque1 subdestaque2 subdestaque2"
-    "subdestaque1 subdestaque1 subdestaque1 subdestaque2 subdestaque2"
-    "subdestaque1 subdestaque1 subdestaque1 subdestaque2 subdestaque2"
-    "subdestaque1 subdestaque1 subdestaque1 subdestaque2 subdestaque2"
-    "subdestaque3 subdestaque3 subdestaque4 subdestaque4 subdestaque4"
-    "subdestaque3 subdestaque3 subdestaque4 subdestaque4 subdestaque4"
-    "subdestaque3 subdestaque3 subdestaque4 subdestaque4 subdestaque4"
-    "subdestaque3 subdestaque3 subdestaque4 subdestaque4 subdestaque4"
-    "subdestaque3 subdestaque3 subdestaque4 subdestaque4 subdestaque4"
-    "subdestaque3 subdestaque3 subdestaque4 subdestaque4 subdestaque4"
-    "subdestaque3 subdestaque3 subdestaque4 subdestaque4 subdestaque4"
     "subdestaque3 subdestaque3 subdestaque4 subdestaque4 subdestaque4"
     ". . . . ."
     ". . . . ."
-    ". . . . ."
-    "subdestaque5 subdestaque6 subdestaque6 subdestaque6 subdestaque6"
-    "subdestaque5 subdestaque6 subdestaque6 subdestaque6 subdestaque6"
-    "subdestaque5 subdestaque6 subdestaque6 subdestaque6 subdestaque6"
-    "subdestaque5 subdestaque6 subdestaque6 subdestaque6 subdestaque6"
-    "subdestaque5 subdestaque6 subdestaque6 subdestaque6 subdestaque6"
-    "subdestaque5 subdestaque6 subdestaque6 subdestaque6 subdestaque6"
-    "subdestaque5 subdestaque6 subdestaque6 subdestaque6 subdestaque6"
-    "subdestaque5 subdestaque6 subdestaque6 subdestaque6 subdestaque6"
-    "subdestaque5 subdestaque6 subdestaque6 subdestaque6 subdestaque6"
-    "subdestaque5 subdestaque6 subdestaque6 subdestaque6 subdestaque6"
-    "subdestaque5 subdestaque6 subdestaque6 subdestaque6 subdestaque6"
-    "subdestaque5 subdestaque6 subdestaque6 subdestaque6 subdestaque6";
+    "subdestaque5 subdestaque5 subdestaque6 subdestaque6 subdestaque7"
+    "subdestaque8 subdestaque8 subdestaque8 subdestaque8 ."
+    ". subdestaque9 subdestaque9 subdestaque9 subdestaque9"
+    "subdestaque10 subdestaque10 subdestaque10 subdestaque10 .";
 
-  min-height: 1300vh;
+  min-height: 700vh;
   min-width: 90vw;
+  gap: 10px;
 }
 .gridTF {
   position: relative;
@@ -68,32 +31,8 @@
   font-weight: 500;
   box-shadow: 0px 0px 50px 50px black;
 }
-.gridTFT {
-  background-color: darkolivegreen;
-  grid-area: titulo;
-  /*grid-template-areas: "destaque1 destaque1 destaque1 destaque1 destaque1  destaque2 destaque2 destaque2 destaque2 destaque2";*/
-  display: flex;
+/*------------------------------------------------------------------------------------------------------------------------------------*/
 
-  overflow-x: scroll;
-  overflow-y: hidden;
-}
-.gridTF1 {
-  background-color: pink;
-  grid-area: destaque;
-  /*grid-template-areas: "destaque1 destaque1 destaque1 destaque1 destaque1  destaque2 destaque2 destaque2 destaque2 destaque2";*/
-  display: flex;
-  overflow-x: scroll;
-  overflow-y: hidden;
-}
-.gridTF2 {
-  background-color: darkblue;
-  grid-area: subdestaque1;
-  display: flex;
-  flex-direction: row;
-  /*min-height: 30vh;*/
-  overflow-x: scroll;
-  overflow-y: hidden;
-}
 .gridTF3 {
   background-color: rebeccapurple;
   grid-area: subdestaque2;
@@ -102,6 +41,7 @@
   /*min-height: 30vh;*/
   overflow-x: hidden;
   overflow-y: scroll;
+  height: 200vh;
 }
 .gridTF4 {
   background-color: white;
@@ -111,6 +51,7 @@
   /*min-height: 30vh;*/
   overflow-x: hidden;
   overflow-y: scroll;
+  height: 250vh;
 }
 .gridTF5 {
   background-color: wheat;
@@ -120,6 +61,7 @@
   /*min-height: 30vh;*/
   overflow-x: scroll;
   overflow-y: hidden;
+  height: 250vh;
 }
 .gridTF6 {
   background-color: springgreen;
@@ -130,37 +72,15 @@
   /*overflow-y: hidden;*/
 }
 
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
 .gridTF {
   background-color: black;
   overflow-x: hidden;
   overflow-y: hidden;
 }
 
-.gridTN {
-  position: relative;
-  /*align-items: center;
-  align-content: center;
-  justify-content: center;*/
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 500;
-  height: 95%;
-  min-width: 100%;
-  border-radius: 25px;
-}
-
-.gridTN2 {
-  position: relative;
-  /*align-items: center;
-  align-content: center;
-  justify-content: center;*/
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 500;
-  min-height: 95%;
-  min-width: 100%;
-  border-radius: 25px;
-}
+/*------------------------------------------------------------------------------------------------------------------------------------*/
 
 .gridTN3 {
   position: relative;
@@ -170,7 +90,7 @@
   text-align: center;
   font-size: 3rem;
   font-weight: 500;
-  min-height: 75%;
+  min-height: 90%;
   min-width: 95%;
   border-radius: 25px;
   background-size: 160%;
@@ -184,7 +104,7 @@
   text-align: center;
   font-size: 3rem;
   font-weight: 500;
-  min-height: 55%;
+  min-height: 50%;
   min-width: 80%;
   border-radius: 25px;
   background-size: 150%;
@@ -198,111 +118,12 @@
   text-align: center;
   font-size: 3rem;
   font-weight: 500;
-  min-height: 90%;
-  min-width: 100%;
-  border-radius: 25px;
-}
-
-.gridTN6 {
-  position: relative;
-  /*align-items: center;
-  align-content: center;
-  justify-content: center;*/
-  text-align: center;
-  font-size: 7rem;
-  font-weight: 700;
-  border-radius: 25px;
-  color: white;
   min-height: 100%;
   min-width: 100%;
-}
-.gridTNT1 {
-  background: radial-gradient(gray -200%, black);
-  font-size: 7rem;
-  width: 100%;
-  height: 50%;
-  font-weight: 700;
-  color: gray;
-  /*margin-left: 2.5vw;*/
-  /*height: 90%;
-  width: 80rem;*/
-  /*grid-area: destaque1;*/
-}
-.gridTNT2 {
-  background-color: teal;
-  font-size: 8rem;
-  width: 100%;
-  height: 50%;
-  font-weight: 700;
-  /*margin-left: 2.5vw;*/
-  /*height: 90%;
-  width: 80rem;*/
-  /*grid-area: destaque1;*/
+  border-radius: 25px;
 }
 
-.gridTN11 {
-  background-color: whitesmoke;
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.2) 40%,
-      rgba(0, 0, 0, 0.2) 80%,
-      rgba(0, 0, 0, 0.4)
-    ),
-    url(/project/MirrorFashion/public/images/striped-blouse-fashion.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  /*margin-left: 2.5vw;*/
-  /*height: 90%;
-  width: 80rem;*/
-  /*grid-area: destaque1;*/
-}
-.gridTN12 {
-  background-color: red;
-  /*margin-left: 2.5vw;*/
-  /*height: 90%;
-  width: 80rem;*/
-  /*grid-area: destaque2;*/
-}
-.gridTN13 {
-  background-color: coral;
-  /*margin-left: 2.5vw;*/
-  /*height: 90%;
-  width: 80rem;*/
-  /*grid-area: destaque1;*/
-}
-
-.gridTN21 {
-  background-color: violet;
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.2) 40%,
-      rgba(0, 0, 0, 0.2) 80%,
-      rgba(0, 0, 0, 0.4)
-    ),
-    url(/project/MirrorFashion/public/images/pink-neon-lights-fashion-model.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  /*margin-left: 2.5vw;*/
-  /*height: 90%;
-  width: 80rem;*/
-  /*grid-area: destaque1;*/
-}
-.gridTN22 {
-  background-color: yellow;
-  /*margin-left: 2.5vw;*/
-  /*height: 90%;
-  width: 80rem;*/
-  /*grid-area: destaque2;*/
-}
-.gridTN23 {
-  background-color: springgreen;
-  /*margin-left: 2.5vw;*/
-  /*height: 90%;
-  width: 80rem;*/
-  /*grid-area: destaque1;*/
-}
+/*------------------------------------------------------------------------------------------------------------------------------------*/
 
 .gridTN31 {
   background-color: aqua;
@@ -313,7 +134,7 @@
       rgba(0, 0, 0, 0.2) 80%,
       rgba(0, 0, 0, 0.4)
     ),
-    url(/project/MirrorFashion/public/images/mens-stylish-formalwear.jpg);
+    url(/workspace/MirrorFashion/public/images/mens-stylish-formalwear.jpg);
   background-repeat: no-repeat;
   /*margin-left: 2.5vw;*/
   /*height: 90%;
@@ -344,7 +165,7 @@
       rgba(0, 0, 0, 0.2) 80%,
       rgba(0, 0, 0, 0.4)
     ),
-    url(/project/MirrorFashion/public/images/woman-in-pink-silk.jpg);
+    url(/workspace/MirrorFashion/public/images/woman-in-pink-silk.jpg);
   background-repeat: no-repeat;
   /*margin-left: 2.5vw;*/
   /*height: 90%;
@@ -360,7 +181,7 @@
       rgba(0, 0, 0, 0.2) 80%,
       rgba(0, 0, 0, 0.4)
     ),
-    url(/project/MirrorFashion/public/images/fashion-model-looks-at-camera.jpg);
+    url(/workspace/MirrorFashion/public/images/fashion-model-looks-at-camera.jpg);
   background-repeat: no-repeat;
   /*margin-left: 2.5vw;*/
   /*height: 90%;
@@ -384,9 +205,9 @@
       rgba(0, 0, 0, 0.2) 80%,
       rgba(0, 0, 0, 0.4)
     ),
-    url(/project/MirrorFashion/public/images/pink-fur-fabulous-fashion.jpg);
+    url(/workspace/MirrorFashion/public/images/pink-fur-fabulous-fashion.jpg);
   background-repeat: no-repeat;
-  background-size: 120%;
+  background-size: 140%;
   /*margin-left: 2.5vw;*/
   /*height: 90%;
   width: 80rem;*/
@@ -406,3 +227,6 @@
   width: 80rem;*/
   /*grid-area: destaque1;*/
 }
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+

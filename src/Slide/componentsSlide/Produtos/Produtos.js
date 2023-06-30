@@ -10,7 +10,7 @@ var Produtos = () => {
   console.log([datau, img]);
   useEffect(() => {
     let [url, method, content] = [
-      "http://localhost:5000/ProdutosP/",
+      "https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/ProdutosP/",
       "GET",
       "null",
     ];
