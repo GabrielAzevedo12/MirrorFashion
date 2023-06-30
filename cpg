@@ -1,0 +1,18 @@
+#!/bin/bash
+
+cpg () {
+
+     add=${1};
+     message=${2};
+     branch=${3};
+
+     git add ${add} ;
+     git commit -m "${message}" ;
+     git push -u origin "${branch}" ;
+     git status ;
+     git log ;
+
+}
+
+cpg ${1} ${2} ${3}
+
