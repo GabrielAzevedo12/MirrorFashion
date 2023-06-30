@@ -66,14 +66,7 @@
   overflow-y: hidden;
   height: 250vh;
 }
-.gridTF6 {
-  background-color: springgreen;
-  grid-area: subdestaque5;
-  display: flex;
-  /*min-height: 30vh;*/
-  /*overflow-x: scroll;*/
-  /*overflow-y: hidden;*/
-}
+
 
 /*------------------------------------------------------------------------------------------------------------------------------------*/
 

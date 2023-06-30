@@ -1,4 +1,4 @@
-
+/*#s*/
 .gridTF6 {
 background-color: wheat;
 grid-area: subdestaque5;
@@ -6,6 +6,7 @@ display: flex;
 flex-direction: row;
 overflow-x: scroll;
 overflow-y: hidden;
+width: 33vw;
 height: 100vh;
 }
 .gridTN6 {
@@ -44,94 +45,4 @@ url(/workspace/MirrorFashion/public/images/pink-fur-fabulous-fashion.jpg);*/
 background-repeat: no-repeat;
 background-size: 140%;
 }
-/*----------------------------------------------------------------------------------------------*/
-.for_posiçao2_of_gridTF6 {
-    animation-name: for_posiçao2_of_gridTF6;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-  
-    z-index: 2;
-    height: 120%;
-    width: 130%;
-    left: 40vw;
-    top: -5vh;
-  }
-  
-  .for_posiçao1_of_gridTF6 {
-    animation-name: for_posiçao1_of_gridTF6;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-  
-     z-index: 1;
-     height: 100%;
-     width: 100%;
-     left: 0;
-     top: 0;
-  }
-  
-  @keyframes for_posiçao2_of_gridTF6 {
-    0% {
-      z-index: 1;
-      height: 100%;
-      width: 100%;    
-      left: 0vw;
-    }
-    25% {
-      left: -40vw;
-      top: 10vh;
-      z-index: 2;
-    }
-    50% {
-      top: 20vh;
-      z-index: 2;
-      rotate: 20deg;
-    }
-    75% {
-      z-index: 2;
-      height: 120%;
-      width: 130%;    
-      left: 40vw;
-      top: -20vh;
-      rotate: -20deg;
-    }
-    100% {
-      z-index: 2;
-      height: 120%;
-      width: 130%;
-      left: 40vw;
-      top: -5vh;
-      rotate: 0deg;
-    }
-  }
-  
-  @keyframes for_posiçao1_of_gridTF6 {
-    0% {
-    z-index: 2;
-    height: 120%;
-    width: 130%;
-    left: 40vw;
-    top: 0;
-    }
-    25% {
-    z-index: 1;
-    left: 80vw;
-    top: -10vh;
-    }
-    50% {
-     top: -20vh;
-    }
-    75% {
-      z-index: 1;
-      height: 100%;
-      width: 100%;
-      left: 0;
-      top: 10vh;
-    }
-    100% {
-      z-index: 1;
-      height: 100%;
-      width: 100%;
-      left: 0;
-      top: 0;
-    }
-  }
+/*#e*/

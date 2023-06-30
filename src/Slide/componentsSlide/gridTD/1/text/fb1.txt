@@ -1,70 +1,47 @@
-pi = () => {
+.for_posiçao2_of_gridTF7_m1 {
+    animation-name: for_posiçao2_of_gridTF7_m1;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+  
+    z-index: 2;
+    height: 120%;
+    width: 130%;
+    left: 0;
+    top: -5vh; 
+    rotate: 0deg;
+  }
 
-    //el = irmão2
-    //terceira posição -> primeira posição
-  Adicionar_class(irmão1,"for_posiçao1_of_gridTF6_m1")  
-  Adicionar_class(irmão2,"for_posiçao2_of_gridTF7_m1")
-  Adicionar_class(irmão3,"for_posiçao3_of_gridTF8_m1")
-
-  Remover_class(irmão1,"for_posiçao3_of_gridTF6_m1")  
-  Remover_class(irmão2,"for_posiçao1_of_gridTF7_m1")
-  Remover_class(irmão3,"for_posiçao2_of_gridTF8_m1")
-
-        },
-1d3pi = () => {
-
-  //el = irmão2
-  //primeira posição -> segunda posição 
-  Adicionar_class(irmão1,"for_posiçao2_of_gridTF6_m1")  
-  Adicionar_class(irmão2,"for_posiçao3_of_gridTF7_m1")
-  Adicionar_class(irmão3,"for_posiçao1_of_gridTF8_m1")
-
-  Remover_class(irmão1,"for_posiçao1_of_gridTF6_m1")  
-  Remover_class(irmão2,"for_posiçao2_of_gridTF7_m1")
-  Remover_class(irmão3,"for_posiçao3_of_gridTF8_m1")
-
-},
-2d3pi = () => {
-
-  //el = irmão2
-  //segunda posição -> terceira posição 
-  Adicionar_class(irmão1,"for_posiçao3_of_gridTF6_m1")  
-  Adicionar_class(irmão2,"for_posiçao1_of_gridTF7_m1")
-  Adicionar_class(irmão3,"for_posiçao2_of_gridTF8_m1")
-
-  Remover_class(irmão1,"for_posiçao2_of_gridTF6_m1")  
-  Remover_class(irmão2,"for_posiçao3_of_gridTF7_m1")
-  Remover_class(irmão3,"for_posiçao1_of_gridTF8_m1")
-
-};
-
-    const Analise_class_p = (db, name_class, soluções) => {
-
-    var quantidade_elementosDiferentes = 0 ;
-    let quantidade_elementosDiferentes_total = db["length"] ;
-
-    for (let x of db) {
-
-
-      if (x === name_class['p1']) {
-
-        console.log("Existe o elemento " + " name_class['p1']")
-        soluções['1']();
-        break;
-
-      } else if (x === name_class['p2']) {
-
-        console.log("Existe o elemento " + " name_class['p2']")
-        soluções['2']();
-        break ; 
-
-      }
-      else if (x === name_class['p3']) {
-
-        console.log("Existe o elemento " + " name_class['p3']")
-        soluções['3']();
-        break ;
-
-      }
+  @keyframes for_posiçao2_of_gridTF7_m1 {
+    0% {
+      z-index: 1;
+      height: 100%;
+      width: 100%;    
+      left: -33vw;
     }
-};
+    25% {
+      left: -66vw;
+      top: 10vh;
+      z-index: 2
+    }
+    50% {
+      top: 20vh;
+      z-index: 2;
+      rotate: 20deg;
+    }
+    75% {
+      z-index: 2;
+      height: 120%;
+      width: 130%;    
+      left: 0;
+      top: -20vh;
+      rotate: -20deg;
+    }
+    100% {
+      z-index: 2;
+      height: 120%;
+      width: 130%;
+      left: 0;
+      top: -5vh;
+      rotate: 0deg;
+    }
+  }
