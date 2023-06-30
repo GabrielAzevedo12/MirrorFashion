@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#commit e push
 cpg () {
 
      add=${1};
