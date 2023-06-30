@@ -8,6 +8,37 @@ const Remover_class = (e, name_class) => {
   e.classList.remove(name_class);
 };
 
+const Analise_class_p = (db, name_class, soluções) => {
+
+  var quantidade_elementosDiferentes = 0 ;
+  let quantidade_elementosDiferentes_total = db["length"] ;
+
+  for (let x of db) {
+
+
+    if (x === name_class['p1']) {
+
+      console.log("Existe o elemento " + " name_class['p1']")
+      soluções['1']();
+      break;
+
+    } else if (x === name_class['p2']) {
+
+      console.log("Existe o elemento " + " name_class['p2']")
+      soluções['2']();
+      break ; 
+
+    }
+    else if (x === name_class['p3']) {
+
+      console.log("Existe o elemento " + " name_class['p3']")
+      soluções['3']();
+      break ;
+
+    }
+  }
+};
+
 const Analise_class = (db, name_class, s1, s2) => {
 
     var quantidade_elementosDiferentes = 0 ;
@@ -441,27 +472,63 @@ const gridTN = {
     Disparar_Evento_Quando: {
       Click: (e) => {
   
-        console.log("gridTNB foi disparada")
-  
-        const el = $(".gridTF7") ;
-        const irmão = el.nextSibling, db =  el.classList ;
+        console.log("gridTNB3 foi disparada")
+
         const 
-        s1 = () => {
-          Remover_class(el,"for_posiçao1_of_gridTF7")
-          Adicionar_class(el,"for_posiçao2_of_gridTF7")
-  
-          Adicionar_class(irmão,"for_posiçao1_of_gridTF6")
-          Remover_class(irmão,"for_posiçao2_of_gridTF6")
+        irmão2 = $(".gridTF7"),
+        irmão3 = irmão2.nextSibling,
+        irmão1 = irmão2.previousSibling,
+
+        name_class = {
+          p1: () => {
+
+              //primeira posição -> segunda posição 
+
+              Adicionar_class(irmão1,"for_posiçao2_of_gridTF6_m1")  
+              Adicionar_class(irmão2,"for_posiçao3_of_gridTF7_m1")
+              Adicionar_class(irmão3,"for_posiçao1_of_gridTF8_m1")
+            
+              Remover_class(irmão1,"for_posiçao1_of_gridTF6_m1")  
+              Remover_class(irmão2,"for_posiçao2_of_gridTF7_m1")
+              Remover_class(irmão3,"for_posiçao3_of_gridTF8_m1")
+
+          },
+          p2: () => {
+
+              //segunda posição -> terceira posição
+               
+              Adicionar_class(irmão1,"for_posiçao3_of_gridTF6_m1")  
+              Adicionar_class(irmão2,"for_posiçao1_of_gridTF7_m1")
+              Adicionar_class(irmão3,"for_posiçao2_of_gridTF8_m1")
+                      
+              Remover_class(irmão1,"for_posiçao2_of_gridTF6_m1")  
+              Remover_class(irmão2,"for_posiçao3_of_gridTF7_m1")
+              Remover_class(irmão3,"for_posiçao1_of_gridTF8_m1")
+
+          },
+          p3: () => {
+
+              //terceira posição -> primeira posição
+
+              Adicionar_class(irmão1,"for_posiçao1_of_gridTF6_m1")  
+              Adicionar_class(irmão2,"for_posiçao2_of_gridTF7_m1")
+              Adicionar_class(irmão3,"for_posiçao3_of_gridTF8_m1")
+                      
+              Remover_class(irmão1,"for_posiçao3_of_gridTF6_m1")  
+              Remover_class(irmão2,"for_posiçao1_of_gridTF7_m1")
+              Remover_class(irmão3,"for_posiçao2_of_gridTF8_m1")              
+
+          },
         },
-        s2 = () => {
-          Remover_class(el,"for_posiçao2_of_gridTF7")
-          Adicionar_class(el,"for_posiçao1_of_gridTF7")
-  
-          Adicionar_class(irmão,"for_posiçao2_of_gridTF6")
-          Remover_class(irmão,"for_posiçao1_of_gridTF6")
-        };
-        console.log(el,irmão)
-        Analise_class(db, "for_posiçao1_of_gridTF7", s1, s2)
+
+        soluções = {
+          1:"for_posiçao2_of_gridTF7_m1",
+          2:"for_posiçao3_of_gridTF7_m1",
+          3:"for_posiçao1_of_gridTF7_m1",
+        },
+
+        db =  irmão2.classList ;
+     
   
       },
       Over: (e) => {
