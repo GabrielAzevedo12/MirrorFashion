@@ -1,6 +1,6 @@
 #!/bin/bash
 #commit e push
-#ex :  . cpg "." "$(date)" "main"
+#ex :  . "/workspace/MirrorFashion/cpg" "/workspace/MirrorFashion/cpg" "$(date)" "main"
 cpg () {
 
      add=${1};
