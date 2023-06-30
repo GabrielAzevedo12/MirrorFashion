@@ -331,7 +331,7 @@ const gridTN = {
       }
     },
   },
-  gridTNB : {
+  gridTNB1 : {
     Disparar_Evento_Quando: {
       Click: (e) => {
   
@@ -339,6 +339,112 @@ const gridTN = {
   
         const el = $(".gridTF7") ;
         const irmão = el.previousSibling, db =  el.classList ;
+        const 
+        s1 = () => {
+          Remover_class(el,"for_posiçao1_of_gridTF7")
+          Adicionar_class(el,"for_posiçao2_of_gridTF7")
+  
+          Adicionar_class(irmão,"for_posiçao1_of_gridTF6")
+          Remover_class(irmão,"for_posiçao2_of_gridTF6")
+        },
+        s2 = () => {
+          Remover_class(el,"for_posiçao2_of_gridTF7")
+          Adicionar_class(el,"for_posiçao1_of_gridTF7")
+  
+          Adicionar_class(irmão,"for_posiçao2_of_gridTF6")
+          Remover_class(irmão,"for_posiçao1_of_gridTF6")
+        };
+        console.log(el,irmão)
+        Analise_class(db, "for_posiçao1_of_gridTF7", s1, s2)
+  
+      },
+      Over: (e) => {
+        console.log(e.target)
+        const el = e.target.parentElement;
+      },
+      Out: (e) => {
+        const Pai = e.target.parentElement;
+        Remover_class(Pai, "Animação_filhoFor_gridTF1");
+      },
+      Drag: (e) => {
+        console.log(e.target)
+        const el = e.target.parentElement;
+      },
+      Drop: (e) => {
+        console.log(e.target)
+        const el = e.target.parentElement;
+      },
+      DragStart: (e) => {
+        console.log(e.target)
+        const el = e.target.parentElement;
+      },
+      DragOver: (e) => {
+        console.log(e.target)
+        const el = e.target.parentElement;
+      }
+    },
+  },
+  gridTNB2 : {
+    Disparar_Evento_Quando: {
+      Click: (e) => {
+  
+        console.log("gridTNB foi disparada")
+  
+        const el = $(".gridTF7") ;
+        const irmão = el.previousSibling, db =  el.classList ;
+        const 
+        s1 = () => {
+          Remover_class(el,"for_posiçao1_of_gridTF7")
+          Adicionar_class(el,"for_posiçao2_of_gridTF7")
+  
+          Adicionar_class(irmão,"for_posiçao1_of_gridTF6")
+          Remover_class(irmão,"for_posiçao2_of_gridTF6")
+        },
+        s2 = () => {
+          Remover_class(el,"for_posiçao2_of_gridTF7")
+          Adicionar_class(el,"for_posiçao1_of_gridTF7")
+  
+          Adicionar_class(irmão,"for_posiçao2_of_gridTF6")
+          Remover_class(irmão,"for_posiçao1_of_gridTF6")
+        };
+        console.log(el,irmão)
+        Analise_class(db, "for_posiçao1_of_gridTF7", s1, s2)
+  
+      },
+      Over: (e) => {
+        console.log(e.target)
+        const el = e.target.parentElement;
+      },
+      Out: (e) => {
+        const Pai = e.target.parentElement;
+        Remover_class(Pai, "Animação_filhoFor_gridTF1");
+      },
+      Drag: (e) => {
+        console.log(e.target)
+        const el = e.target.parentElement;
+      },
+      Drop: (e) => {
+        console.log(e.target)
+        const el = e.target.parentElement;
+      },
+      DragStart: (e) => {
+        console.log(e.target)
+        const el = e.target.parentElement;
+      },
+      DragOver: (e) => {
+        console.log(e.target)
+        const el = e.target.parentElement;
+      }
+    },
+  },
+  gridTNB3 : {
+    Disparar_Evento_Quando: {
+      Click: (e) => {
+  
+        console.log("gridTNB foi disparada")
+  
+        const el = $(".gridTF7") ;
+        const irmão = el.nextSibling, db =  el.classList ;
         const 
         s1 = () => {
           Remover_class(el,"for_posiçao1_of_gridTF7")
