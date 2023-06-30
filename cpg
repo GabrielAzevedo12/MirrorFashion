@@ -1,6 +1,6 @@
 #!/bin/bash
 #commit e push
-#ex :  . cpg "." "teste cpg" "main"
+#ex :  . cpg "." "$(date)" "main"
 cpg () {
 
      add=${1};

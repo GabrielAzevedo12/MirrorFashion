@@ -1,5 +1,5 @@
 /*#Comentários*/
-  //Funções gtfB
+  //Funções_teste gtfB
 
   /*#Obj_Main*/  
   const gtfB_funções = {
@@ -9,6 +9,6 @@
     }
   }
 
-  /*#Export*/
-  export { gtfB_funções }
+  /*Teste*/
+  gtfB_funções.teste() ;
   

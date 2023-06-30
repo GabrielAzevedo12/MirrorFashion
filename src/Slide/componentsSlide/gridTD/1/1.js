@@ -18,6 +18,7 @@ import { GridTF3 } from "./gtf3/gtfh3";
 import { GridTF4 } from "./gtf4/gtfh4";
 import { GridTF5 } from "./gtf5/gtfh5";
 import { GridTFT } from "./gtfT/gtfhT";
+import { GridTFB } from "./gtfB/gtfhB.js";
 //Fase : Teste
 const GridTD1 = () => {
   const display_none = { display: "none" };
@@ -29,6 +30,7 @@ const GridTD1 = () => {
       <GridTF3/>
       <GridTF4/>
       <GridTF5/>
+      <GridTFB/>
       <GridTF6/>
       <GridTF7/>
       <GridTF8/>

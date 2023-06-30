@@ -1,6 +1,7 @@
 /*#import*/
 import './css/gtfhB.css'
 import './css/gtfhBA.css'
+import { gtfB_funções } from './f/gtfhFB.js'
 import {
   Adicionar_class,
   Aumentar_ElementoPai,
@@ -28,7 +29,7 @@ return (
             /*onDrop={gridTN.gridTNB.Disparar_Evento_Quando.Drop}*/
             /*onDragStart={gridTN.gridTNB.Disparar_Evento_Quando.DragStart}*/
             /*onDragOver={gridTN.gridTNB.Disparar_Evento_Quando.DragOver*/>
-              subdestaque-11
+              B1
             </div>
             <div className='gridTNB2 gridTNB animation1_gridTNB animation1_gridTNB2'
             /*onClick={gridTN.gridTNB.Disparar_Evento_Quando.Click}*/
@@ -38,7 +39,7 @@ return (
             /*onDrop={gridTN.gridTNB.Disparar_Evento_Quando.Drop}*/
             /*onDragStart={gridTN.gridTNB.Disparar_Evento_Quando.DragStart}*/
             /*onDragOver={gridTN.gridTNB.Disparar_Evento_Quando.DragOver*/>
-              subdestaque-12
+              B2
             </div>
             <div className='gridTNB3 gridTNB animation1_gridTNB animation1_gridTNB3'
             /*onClick={gridTN.gridTNB.Disparar_Evento_Quando.Click}*/
@@ -48,7 +49,7 @@ return (
             /*onDrop={gridTN.gridTNB.Disparar_Evento_Quando.Drop}*/
             /*onDragStart={gridTN.gridTNB.Disparar_Evento_Quando.DragStart}*/
             /*onDragOver={gridTN.gridTNB.Disparar_Evento_Quando.DragOver*/>
-              subdestaque-13
+              B3
           </div>
     </div>
     )
