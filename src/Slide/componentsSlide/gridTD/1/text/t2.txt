@@ -176,3 +176,86 @@ r10 () {
       done 
 
 }
+
+r11 () {
+
+  v=${1}
+
+  for e in ${v[@]}
+      do
+          n=${e}
+          code "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/bash/b${n}"  
+      done 
+
+}
+
+r12 () {
+
+  v=${1}
+
+  cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1" ;
+  mkdir "bash" ;
+
+  for e in ${v[@]}
+      do
+          n=${e}
+          cp -rf "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/b${n}"  "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/bash"
+      done 
+
+}
+
+r13 () {
+
+  v=${1}
+
+  for e in ${v[@]}
+      do
+          n=${e}
+          rm -rf "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/b${n}"  
+      done 
+
+  cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1" ;
+  a ;      
+
+}
+
+r14 () {
+
+  v=${1}
+
+  cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1" ;
+  mkdir "text" ;
+
+  copiar () {
+
+    a=${1}
+
+    for e in ${a[@]}
+        do
+            n=${e}
+            cp -rf "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/t${n}.txt"  "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/text"
+        done 
+
+    cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/text" ;
+    a ;
+  }
+
+  remover () {
+
+    a2=${1}
+
+    for e in ${a2[@]}
+        do
+            n=${e}
+            rm -rf "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/t${n}.txt"  
+        done 
+
+    cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1" ;
+    a ;            
+
+  }
+
+  copiar "${v}" ;
+  remover "${v}" ;
+
+}
