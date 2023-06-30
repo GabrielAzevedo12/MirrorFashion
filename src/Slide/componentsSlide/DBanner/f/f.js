@@ -1,3 +1,5 @@
+import {$} from "../../../Funções/Query/query"
+
 const Adicionar_class = (e, name_class) => {
   e.classList.add(name_class);
 };
@@ -328,7 +330,60 @@ const gridTN = {
         const el = e.target.parentElement;
       }
     },
-  }
+  },
+  gridTNB : {
+    Disparar_Evento_Quando: {
+      Click: (e) => {
+  
+        console.log("gridTNB foi disparada")
+  
+        const el = $(".gridTF7") ;
+        const irmão = el.previousSibling, db =  el.classList ;
+        const 
+        s1 = () => {
+          Remover_class(el,"for_posiçao1_of_gridTF7")
+          Adicionar_class(el,"for_posiçao2_of_gridTF7")
+  
+          Adicionar_class(irmão,"for_posiçao1_of_gridTF6")
+          Remover_class(irmão,"for_posiçao2_of_gridTF6")
+        },
+        s2 = () => {
+          Remover_class(el,"for_posiçao2_of_gridTF7")
+          Adicionar_class(el,"for_posiçao1_of_gridTF7")
+  
+          Adicionar_class(irmão,"for_posiçao2_of_gridTF6")
+          Remover_class(irmão,"for_posiçao1_of_gridTF6")
+        };
+        console.log(el,irmão)
+        Analise_class(db, "for_posiçao1_of_gridTF7", s1, s2)
+  
+      },
+      Over: (e) => {
+        console.log(e.target)
+        const el = e.target.parentElement;
+      },
+      Out: (e) => {
+        const Pai = e.target.parentElement;
+        Remover_class(Pai, "Animação_filhoFor_gridTF1");
+      },
+      Drag: (e) => {
+        console.log(e.target)
+        const el = e.target.parentElement;
+      },
+      Drop: (e) => {
+        console.log(e.target)
+        const el = e.target.parentElement;
+      },
+      DragStart: (e) => {
+        console.log(e.target)
+        const el = e.target.parentElement;
+      },
+      DragOver: (e) => {
+        console.log(e.target)
+        const el = e.target.parentElement;
+      }
+    },
+  },
 }
 
 export {
@@ -338,3 +393,4 @@ export {
   gridTN,
   Analise_class
 };
+
