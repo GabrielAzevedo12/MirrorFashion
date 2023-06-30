@@ -230,12 +230,64 @@ return (
 export { GridTF${1} }
 "  
 #-------------------------------------------------------------------------------------------------------------------------------
+
+cont6=".gridTF${1}
+{
+background-color:wheat;
+grid-area:subdestaque4;
+display:flex;
+flex-direction:row;
+overflow-x:scroll;
+overflow-y:hidden;
+height:250vh;
+}
+.gridTN${1}
+{
+position:relative;
+text-align:center;
+font-size:3rem;
+font-weight:500;
+min-height:100%;
+min-width:100%;
+border-radius:25px;
+}
+.gridTN${1}1
+{
+background-color:brown;
+}
+.gridTN${1}2
+{
+background-color:tomato;
+background-image:
+linear-gradient(0deg,rgba(0,0,0,0.6),
+rgba(0,0,0,0.2)40%,rgba(0,0,0,0.2)80%,
+rgba(0,0,0,0.4)),
+url(/workspace/MirrorFashion/public/images/pink-fur-fabulous-fashion.jpg);
+background-repeat:no-repeat;
+background-size:140%;
+}
+.gridT${n}3
+{
+background-color:darkblue;
+background-image:
+linear-gradient(0deg,rgba(0,0,0,0.6),
+rgba(0,0,0,0.2)40%,rgba(0,0,0,0.2)80%,
+rgba(0,0,0,0.4)),
+url(/workspace/MirrorFashion/public/images/pink-fur-fabulous-fashion.jpg);
+background-repeat:no-repeat;
+background-size:140%;
+}"
+
+#-------------------------------------------------------------------------------------------------------------------------------
+
 echo  "Entrando no dir /workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/ ... " ;
 cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/" ;
 
 echo "Criando a pasta gtf${1} ... "
 mkdir gtf${1} ;
+
 #-------------------------------------------------------------------------------------------------------------------------------
+
 echo "Entrando na pasta gtf${1} ... "
 cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/gtf${1}" ;
 
@@ -249,7 +301,9 @@ cat ${na}.$ta ;
 echo "Criando as pastas css e f ... "
 mkdir css f;
 ls -la ;
+
 #-------------------------------------------------------------------------------------------------------------------------------
+
 echo "Entrando na pasta css ... "
 cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/gtf${1}/css" ;
 
@@ -257,12 +311,17 @@ echo "Criando os arquivos gtfh${1}.css e gtfh${1}A.css  ... "
 touch "gtfh${1}.css" "gtfh${1}A.css" ;
 ls -la ;
 
+echo "Colocando o conteudo css no arquivo gtfh${1}.css ... "
+echo -e "${cont6}" > gtfh${1}.css ;
+
 echo "Colocando o conteudo da animação no arquivo gtfh${1}A.css ... "
 echo -e "${cont2}" > gtfh${1}A.css ;
 
-echo "Exibindo o conteudo do arquivo gtfh${1}A.css ... "
-cat gtfh${1}A.css ;
+echo "Exibindo o conteudo do arquivo gtfh${1}.css e gtfh${1}A.css  ... "
+cat gtfh${1}A.css gtfh${1}.css ;
+
 #-------------------------------------------------------------------------------------------------------------------------------
+
 echo "Entrando na pasta f ... "
 cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/gtf${1}/f" ;
 
@@ -275,3 +334,21 @@ echo -e "${cont3}" > gtfhF${1}.js ;
 
 echo "Exibindo o conteudo do arquivo gtfhF${1}.js ... "
 cat gtfhF${1}.js ;
+
+#-------------------------------------------------------------------------------------------------------------------------------
+
+iteration_b7 () {
+
+  v=${1}
+
+  for e in ${v[@]}
+      do
+         n=${e}   
+         na="gtfh${n}"
+         ta="js"
+          . "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/bash/b7" "${n}" "${na}" "${ta}" 
+      done 
+
+}
+
+#-------------------------------------------------------------------------------------------------------------------------------
