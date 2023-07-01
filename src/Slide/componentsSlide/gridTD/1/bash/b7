@@ -667,4 +667,29 @@ mkdir css f;
 ls -la ;
 
 }
+
+sucessor () {
+
+n=${1};  
+n2=$[1+${n}];
+
+echo  -e "${n2}" ;
+
+}
+
+dropCont () {
+
+cont=${1};  
+arq=${2};
+dir=${3};
+
+cd "${dir}" ;
+echo  -e "${cont}" > ${arq} ;
+
+#cont="voce esta neste dir /workspace/MirrorFashion/";  arq="dropContt.txt"; dir="/workspace/MirrorFashion/"; dropCont "${cont}" "${arq}" "${dir}";
+#dropCont "${cont}" "${arq}" "${dir}"
+}
+
+
+
 #-------------------------------------------------------------------------------------------------------------------------------

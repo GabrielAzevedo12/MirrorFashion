@@ -1,0 +1,139 @@
+#!/bin/bash
+
+na=${1}
+ta=${2}
+ta2=${3}
+
+#-------------------------------------------------------------------------------------------------------------------------------
+
+iteration_b7 () {
+
+  v=${1}
+
+  for e in ${v[@]}
+      do
+         n=${e}   
+         na="gtfh${n}"
+         ta1="js"
+         ta2="css"
+          . "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/bash/b7" "${n}" "${na}" "${ta1}" "${ta2}" 
+      done 
+
+}
+
+#-------------------------------------------------------------------------------------------------------------------------------
+
+CriarDirFeArqs () {
+
+na=${1}  
+contF=${2}
+contFTeste=${3}
+dir=${4}
+
+echo  "Entrando no dir ${dir} ... " ;
+cd "${dir}" ;
+
+echo "Criando a pasta f ... "
+mkdir f ;
+
+echo "Entrando na pasta f ... "
+cd "${dir}/f" ;
+
+echo "Criando o arquivo ${na}F.js e ${na}FTeste.js  ... "
+touch "${na}F.js" "${na}FTeste.js" ;
+ls -la ;
+
+echo "Colocando o conteudo de funções no arquivo ${na}F.js e teste em  ${na}FTeste.js ... "
+echo -e "${contF}" > ${na}F.js ;
+echo -e "${contFTeste}" > ${na}FTeste.js ;
+
+echo "Exibindo o conteudo do arquivo ${na}F.js e ${na}FTeste.js ... "
+cat "${na}F.js" "${na}FTeste.js" ;
+
+echo "Executando o arquivo ${na}FTeste.js ... "
+node "${na}FTeste.js" ;
+
+}
+
+CriarDirCssArqs () {
+
+na=${1}  
+ta=${2}  
+contCss=${3}
+contCssA=${4}
+dir=${5}
+
+echo  "Entrando no dir ${dir} ... " ;
+cd "${dir}" ;
+
+echo "Criando a pasta ${ta} ... "
+mkdir ${ta} ;
+
+echo "Entrando na pasta css ... "
+cd "${dir}/${ta}" ;
+
+echo "Criando os arquivos ${na}.${ta} e ${na}A.${ta}  ... "
+touch "${na}.${ta2}" "${na}A.${ta}" ;
+ls -la ;
+
+echo "Colocando o conteudo css no arquivo ${na}.${ta} ... "
+echo -e "${contCss}" > ${na}.${ta} ;
+
+echo "Colocando o conteudo da animação no arquivo ${na}A.${ta} ... "
+echo -e "${contCssA}" > ${na}A.${ta} ;
+
+echo "Exibindo o conteudo do arquivo ${na}.${ta} e ${na}A.${ta}  ... "
+cat ${na}A.${ta2} ${na}.${ta2} ;
+
+}
+
+
+CriarDirCompParqs () {
+
+na=${1}  
+contCP=${2}
+contCFA=${3}
+dir=${4}
+
+echo  "Entrando no dir ${dir} ... " ;
+cd "${dir}" ;
+
+echo "Criando a pasta ${na} ... "
+mkdir ${na} ;
+
+echo "Entrando na pasta ${na} ... "
+cd "${dir}/${na}" ;
+
+echo "Colocando o conteudo js no arquivo ${na}.js ... "
+echo -e "${contCP}" > ${na}.${ta} ;
+
+echo "Exibindo o conteudo do arquivo ${na}.js ... "
+cat ${na}.${ta} ;
+
+echo "Criando as pastas css e f ... "
+mkdir css f;
+ls -la ;
+
+}
+
+sucessor () {
+
+n=${1};  
+n2=$[1+${n}];
+
+echo  -e "${n2}" ;
+
+}
+
+dropCont () {
+
+cont=${1};  
+arq=${2};
+dir=${3};
+
+cd "${dir}" ;
+echo  -e "${cont}" > ${arq} ;
+
+#cont="voce esta neste dir /workspace/MirrorFashion/";  arq="dropContt.txt"; dir="/workspace/MirrorFashion/"; dropCont "${cont}" "${arq}" "${dir}";
+#dropCont "${cont}" "${arq}" "${dir}"
+}
