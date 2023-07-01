@@ -103,7 +103,7 @@
   z-index: 2;
   width: 50vw;
   height: 120vh;   
-  left: 33vw;
+  left: 23vw;
   top: -5vh;
 }
 
@@ -126,7 +126,7 @@
     z-index: 2;
     width: 50vw;
     height: 120vh;   
-    left: 33vw;
+    left: 23vw;
     top: -20vh;
     rotate: -20deg;
   }
@@ -134,7 +134,7 @@
     z-index: 2;
     width: 50vw;
     height: 120vh;   
-    left: 33vw;
+    left: 23vw;
     top: -5vh;
     rotate: 0deg;
   }

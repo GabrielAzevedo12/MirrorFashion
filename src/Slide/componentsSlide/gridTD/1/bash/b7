@@ -3,6 +3,8 @@
 nt=$[${1}-1]
 na=${2}
 ta=${3}
+ta2=${4}
+
 #-------------------------------------------------------------------------------------------------------------------------------
 
 cont="/*#import*/
@@ -211,7 +213,7 @@ return (
             /*onDrag={gridTN.gridTN${1}.Disparar_Evento_Quando.Drag}*/
             /*onDrop={gridTN.gridTN${1}.Disparar_Evento_Quando.Drop}*/
             /*onDragStart={gridTN.gridTN${1}.Disparar_Evento_Quando.DragStart}*/
-            /*onDragOver={gridTN.gridTN${1}.Disparar_Evento_Quando.DragOver*/>
+            /*onDragOver={gridTN.gridTN${1}.Disparar_Evento_Quando.DragOver} */>
                Sejá Bem Vindo a Mirror Fashion
             </h1>
             <div className='gridTN${1}2 gridTN${1} animation1_gridTN${1} animation1_gridTN${1}2'
@@ -221,7 +223,7 @@ return (
             /*onDrag={gridTN.gridTN${1}.Disparar_Evento_Quando.Drag}*/
             /*onDrop={gridTN.gridTN${1}.Disparar_Evento_Quando.Drop}*/
             /*onDragStart={gridTN.gridTN${1}.Disparar_Evento_Quando.DragStart}*/
-            /*onDragOver={gridTN.gridTN${1}.Disparar_Evento_Quando.DragOver*/>
+            /*onDragOver={gridTN.gridTN${1}.Disparar_Evento_Quando.DragOver} */>
               Título grid 2
             </h1>
             <h1 className='gridTN${1}3 gridTN${1} animation1_gridTN${1} animation1_gridTN${1}3'
@@ -231,7 +233,7 @@ return (
             /*onDrag={gridTN.gridTN${1}.Disparar_Evento_Quando.Drag}*/
             /*onDrop={gridTN.gridTN${1}.Disparar_Evento_Quando.Drop}*/
             /*onDragStart={gridTN.gridTN${1}.Disparar_Evento_Quando.DragStart}*/
-            /*onDragOver={gridTN.gridTN${1}.Disparar_Evento_Quando.DragOver*/>
+            /*onDragOver={gridTN.gridTN${1}.Disparar_Evento_Quando.DragOver} */>
               Título grid 3
           </h1>
     </div>
@@ -243,8 +245,9 @@ export { GridTF${1} }
 
 #-------------------------------------------------------------------------------------------------------------------------------
 
-cont6=".gridTF${1}
-{
+cont6="/*#CSS*/
+/*#P1*/
+.gridTF${1} {
 background-color:wheat;
 grid-area:gridTF${1};
 display:flex;
@@ -253,8 +256,10 @@ overflow-x:scroll;
 overflow-y:hidden;
 height:250vh;
 }
-.gridTN${1}
-{
+/*P1#*/
+
+/*#P2*/
+.gridTN${1} {
 position:relative;
 text-align:center;
 font-size:3rem;
@@ -263,12 +268,16 @@ min-height:100%;
 min-width:100%;
 border-radius:25px;
 }
-.gridTN${1}1
-{
+/*P2#*/
+
+/*#P3*/
+.gridTN${1}1 {
 background-color:brown;
 }
-.gridTN${1}2
-{
+/*P3#*/
+
+/*#P4*/ 
+.gridTN${1}2 {
 background-color:tomato;
 background-image:
 linear-gradient(0deg,rgba(0,0,0,0.6),
@@ -278,8 +287,10 @@ url(/workspace/MirrorFashion/public/images/pink-fur-fabulous-fashion.jpg);
 background-repeat:no-repeat;
 background-size:140%;
 }
-.gridTN${1}3
-{
+/*P4#*/
+
+/*#P5*/
+.gridTN${1}3 {
 background-color:darkblue;
 background-image:
 linear-gradient(0deg,rgba(0,0,0,0.6),
@@ -288,24 +299,201 @@ rgba(0,0,0,0.4)),
 url(/workspace/MirrorFashion/public/images/pink-fur-fabulous-fashion.jpg);
 background-repeat:no-repeat;
 background-size:140%;
-}"
+}
+/*P5#*/
 
+/*CSS#*/
+"
 #-------------------------------------------------------------------------------------------------------------------------------
 
   cont7="/*#Comentários*/
   //Funções_teste gtf${1}
+/*Comentários#*/
 
   /*#Obj_Main*/  
   const gtf${1}_funções = {
+
     /*#f1*/
     teste : () => {
         console.log('Esse é o objeto que contém métodos do hook gtf${1}')
     }
+    /*f1#*/
+
   }
+  /*Obj_Main#*/  
 
   /*Teste*/
   gtf${1}_funções.teste() ;
   " 
+
+#-------------------------------------------------------------------------------------------------------------------------------
+cont8="/*#Comentários*/
+// Este é o Hook GridTD${1}
+/*Comentários#*/
+
+/*#Imports*/
+
+import './css/1.css';
+import './css/gridTD.css';
+import {
+  Adicionar_class,
+  Aumentar_ElementoPai,
+  Diminuir_ElementoPai,
+  gridTN,
+} from '../../DBanner/f/f.js';
+import { GridTD${1}F1 } from './gtd${1}f1/gtd${1}fh1';
+import { GridTD${1}F2 } from './gtd${1}f2/gtd${1}fh2';
+import { GridTD${1}F3 } from './gtd${1}f3/gtd${1}fh3';
+import { GridTD${1}FB } from './gtd${1}fB/gtd${1}fhB.js'
+import { HerençaOf_GridTD${1} } from './hgtd${1}/hgtd${1}.js';
+
+/*Imports#*/
+
+//Fase : Teste
+
+/*#Hook*/
+
+const GridTD${1} = () => {
+
+  /*#EscopoGridTD${1}*/
+
+  const 
+  display_none = { display: 'none' },
+  Herença = {HerençaOf_GridTD${1}} ;
+
+  /*EscopoGridTD${1}#*/
+
+  /*#HookCont${1}*/
+  return (
+    <div className='gridTD${1}'>
+      <GridTD${1}FB Obj_Pai_Props={Herença}/>
+      <GridTD${1}F1 Obj_Pai_Props={Herença}/>
+      <GridTD${1}F2 Obj_Pai_Props={Herença}/>
+      <GridTD${1}F3 Obj_Pai_Props={Herença}/>
+    </div>
+  );
+  /*HookCont${1}#*/
+
+};
+
+/*Hook#*/
+
+/*#Exports*/
+
+export { GridTD1 };
+
+/*Exports#*/
+"
+
+#-------------------------------------------------------------------------------------------------------------------------------
+
+const9="
+.gridTD${1} {
+  position: absolute;
+  display: grid;
+  /*grid-template-columns: 3fr 1fr 1fr;*/
+  grid-template-areas:
+    ". . . . ."
+    "gridTFB gridTFB gridTFB gridTFB gridTFB"
+    ". . . . ."
+    ". GridTF6 GridTF7 GridTF8 ."
+    ". . . . .";
+
+  min-height: 500vh;
+  min-width: 90vw;
+  width: 100vw;
+  gap: 10px;
+}
+
+.gridTD${1}F {
+  position: relative;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  box-shadow: 0px 0px 50px 50px black;
+  background-color: black;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+"
+
+#-------------------------------------------------------------------------------------------------------------------------------
+
+const10="/*#imports*/
+import './css/gtfh${1}.css'
+import './css/gtfh${1}A.css'
+import { gtf${1}_funções } from './f/gtfhF${1}.js'
+import {
+  Adicionar_class,
+  Aumentar_ElementoPai,
+  Diminuir_ElementoPai,
+  gridTN,
+  Analise_class
+} from '../../../DBanner/f/f.js'
+/*Imports#*/
+
+/*#Hook*/
+const GridTF${1} = ({ Obj_Pai_Props }) => {
+
+/*#Hook_Escopo*/
+/*Hook_Escopo#*/
+
+/*#Hook_Conteudo*/  
+return (
+    <div className='gridTD${1}F${1} gridTD${1}F animation1_gridTD${1}F animation1_gridTD${1}F${1}'
+    /*onClick={gridTN.gridTN${1}.Disparar_Evento_Quando.Click}*/
+    /*onMouseOut={gridTN.gridTN${1}.Disparar_Evento_Quando.Out}*/
+    /*onMouseOver={gridTN.gridTN${1}.Disparar_Evento_Quando.Over}*/
+    /*onDrag={gridTN.gridTN${1}.Disparar_Evento_Quando.Drag}*/
+    /*onDrop={gridTN.gridTN${1}.Disparar_Evento_Quando.Drop}*/
+    /*onDragStart={gridTN.gridTN${1}.Disparar_Evento_Quando.DragStart}*/
+    /*onDragOver={gridTN.gridTN${1}.Disparar_Evento_Quando.DragOver} */>
+            <div 
+            className='gridTD${1}N${1}1 gridTD${1}N${1} animation1_gridTD${1}N${1} animation1_gridTD${1}N${1}1'
+            /*onClick={gridTN.gridTN${1}.Disparar_Evento_Quando.Click}*/
+            /*onMouseOut={gridTN.gridTN${1}.Disparar_Evento_Quando.Out}*/
+            /*onMouseOver={gridTN.gridTN${1}.Disparar_Evento_Quando.Over}*/
+            /*onDrag={gridTN.gridTN${1}.Disparar_Evento_Quando.Drag}*/
+            /*onDrop={gridTN.gridTN${1}.Disparar_Evento_Quando.Drop}*/
+            /*onDragStart={gridTN.gridTN${1}.Disparar_Evento_Quando.DragStart}*/
+            /*onDragOver={gridTN.gridTN${1}.Disparar_Evento_Quando.DragOver} */>
+              gridTD${1}N${1}1 
+            </div>
+            <div className='gridTD${1}N${1}2 gridTD${1}N${1} animation1_gridTD${1}N${1} animation1_gridTD${1}N${1}2'
+            /*onClick={gridTN.gridTN${1}.Disparar_Evento_Quando.Click}*/
+            /*onMouseOut={gridTN.gridTN${1}.Disparar_Evento_Quando.Out}*/
+            /*onMouseOver={gridTN.gridTN${1}.Disparar_Evento_Quando.Over}*/
+            /*onDrag={gridTN.gridTN${1}.Disparar_Evento_Quando.Drag}*/
+            /*onDrop={gridTN.gridTN${1}.Disparar_Evento_Quando.Drop}*/
+            /*onDragStart={gridTN.gridTN${1}.Disparar_Evento_Quando.DragStart}*/
+            /*onDragOver={gridTN.gridTN${1}.Disparar_Evento_Quando.DragOver} */>
+              gridTD${1}N${1}2
+            </div>
+            <div className='gridTD${1}N${1}3 gridTD${1}N${1} animation1_gridTD${1}N${1} animation1_gridTD${1}N${1}3'
+            /*onClick={gridTN.gridTN${1}.Disparar_Evento_Quando.Click}*/
+            /*onMouseOut={gridTN.gridTN${1}.Disparar_Evento_Quando.Out}*/
+            /*onMouseOver={gridTN.gridTN${1}.Disparar_Evento_Quando.Over}*/
+            /*onDrag={gridTN.gridTN${1}.Disparar_Evento_Quando.Drag}*/
+            /*onDrop={gridTN.gridTN${1}.Disparar_Evento_Quando.Drop}*/
+            /*onDragStart={gridTN.gridTN${1}.Disparar_Evento_Quando.DragStart}*/
+            /*onDragOver={gridTN.gridTN${1}.Disparar_Evento_Quando.DragOver} */>
+              gridTD${1}N${1}3
+          </div>
+    </div>
+    );
+/*Hook_Conteudo#/  
+
+}
+/*Hook#*/
+
+/*#Exports*/
+export { GridTF${1} }
+/*Exports#*/
+"  
 
 #-------------------------------------------------------------------------------------------------------------------------------
 
@@ -318,7 +506,7 @@ mkdir gtf${1} ;
 #-------------------------------------------------------------------------------------------------------------------------------
 
 echo "Entrando na pasta gtf${1} ... "
-cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/gtf${1}" ;
+cd "${dir}" ;
 
 echo "Colocando o conteudo js no arquivo gtfh${1}.js ... "
 #echo -e "${cont4}" > ${na}.${ta} ;
@@ -334,28 +522,28 @@ ls -la ;
 #-------------------------------------------------------------------------------------------------------------------------------
 
 echo "Entrando na pasta css ... "
-cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/gtf${1}/css" ;
+cd "${dir}/css" ;
 
 echo "Criando os arquivos gtfh${1}.css e gtfh${1}A.css  ... "
-touch "gtfh${1}.css" "gtfh${1}A.css" ;
+touch "${na}.${ta2}" "${na}A.${ta2}" ;
 ls -la ;
 
 echo "Colocando o conteudo css no arquivo gtfh${1}.css ... "
-echo -e "${cont6}" > gtfh${1}.css ;
+echo -e "${cont6}" > ${na}.${ta2} ;
 
 echo "Colocando o conteudo da animação no arquivo gtfh${1}A.css ... "
-echo -e "${cont2}" > gtfh${1}A.css ;
+echo -e "${cont2}" > ${na}A.${ta2} ;
 
 echo "Exibindo o conteudo do arquivo gtfh${1}.css e gtfh${1}A.css  ... "
-cat gtfh${1}A.css gtfh${1}.css ;
+cat ${na}A.${ta2} ${na}.${ta2} ;
 
 #-------------------------------------------------------------------------------------------------------------------------------
 
 echo "Entrando na pasta f ... "
-cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/gtf${1}/f" ;
+cd "${dir}/f" ;
 
 echo "Criando o arquivo gtfhF${1}.js e gtfhF${1}Teste.js  ... "
-touch "gtfhF${1}.js" "gtfhF${1}Teste.mjs" ;
+touch "gtfhF${1}.js" "gtfhF${1}Teste.js" ;
 ls -la ;
 
 echo "Colocando o conteudo de funções no arquivo gtfhF${1}.js e teste em  gtfhF${1}Teste.js ... "
@@ -378,10 +566,105 @@ iteration_b7 () {
       do
          n=${e}   
          na="gtfh${n}"
-         ta="js"
-          . "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/bash/b7" "${n}" "${na}" "${ta}" 
+         ta1="js"
+         ta2="css"
+          . "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/bash/b7" "${n}" "${na}" "${ta1}" "${ta2}" 
       done 
 
 }
 
+#-------------------------------------------------------------------------------------------------------------------------------
+
+CriarDirFeArqs () {
+
+na=${1}  
+contF=${2}
+contFTeste=${3}
+dir=${4}
+
+echo  "Entrando no dir ${dir} ... " ;
+cd "${dir}" ;
+
+echo "Criando a pasta f ... "
+mkdir f ;
+
+echo "Entrando na pasta f ... "
+cd "${dir}/f" ;
+
+echo "Criando o arquivo ${na}F.js e ${na}FTeste.js  ... "
+touch "${na}F.js" "${na}FTeste.js" ;
+ls -la ;
+
+echo "Colocando o conteudo de funções no arquivo ${na}F.js e teste em  ${na}FTeste.js ... "
+echo -e "${contF}" > ${na}F.js ;
+echo -e "${contFTeste}" > ${na}FTeste.js ;
+
+echo "Exibindo o conteudo do arquivo ${na}F.js e ${na}FTeste.js ... "
+cat "${na}F.js" "${na}FTeste.js" ;
+
+echo "Executando o arquivo ${na}FTeste.js ... "
+node "${na}FTeste.js" ;
+
+}
+
+CriarDirCssArqs () {
+
+na=${1}  
+ta=${2}  
+contCss=${3}
+contCssA=${4}
+dir=${5}
+
+echo  "Entrando no dir ${dir} ... " ;
+cd "${dir}" ;
+
+echo "Criando a pasta ${ta} ... "
+mkdir ${ta} ;
+
+echo "Entrando na pasta css ... "
+cd "${dir}/${ta}" ;
+
+echo "Criando os arquivos ${na}.${ta} e ${na}A.${ta}  ... "
+touch "${na}.${ta2}" "${na}A.${ta}" ;
+ls -la ;
+
+echo "Colocando o conteudo css no arquivo ${na}.${ta} ... "
+echo -e "${contCss}" > ${na}.${ta} ;
+
+echo "Colocando o conteudo da animação no arquivo ${na}A.${ta} ... "
+echo -e "${contCssA}" > ${na}A.${ta} ;
+
+echo "Exibindo o conteudo do arquivo ${na}.${ta} e ${na}A.${ta}  ... "
+cat ${na}A.${ta2} ${na}.${ta2} ;
+
+}
+
+
+CriarDirCompParqs () {
+
+na=${1}  
+contCP=${2}
+contCFA=${3}
+dir=${4}
+
+echo  "Entrando no dir ${dir} ... " ;
+cd "${dir}" ;
+
+echo "Criando a pasta ${na} ... "
+mkdir ${na} ;
+
+echo "Entrando na pasta ${na} ... "
+cd "${dir}/${na}" ;
+
+echo "Colocando o conteudo js no arquivo ${na}.js ... "
+echo -e "${contCP}" > ${na}.${ta} ;
+
+echo "Exibindo o conteudo do arquivo ${na}.js ... "
+cat ${na}.${ta} ;
+
+echo "Criando as pastas css e f ... "
+mkdir css f;
+ls -la ;
+
+}
 #-------------------------------------------------------------------------------------------------------------------------------

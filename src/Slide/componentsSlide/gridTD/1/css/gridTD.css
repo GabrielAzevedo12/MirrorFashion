@@ -13,13 +13,16 @@
     "gridTFB gridTFB gridTFB gridTFB gridTFB"
     ". . . . ."
     ". . . . ."
-    "subdestaque5 subdestaque5 subdestaque6 subdestaque6 subdestaque7"
+    ". subdestaque5 subdestaque6 subdestaque7 ."
+    ". . . . ."
+    ". . . . ."
     "subdestaque8 subdestaque8 subdestaque8 subdestaque8 ."
     ". subdestaque9 subdestaque9 subdestaque9 subdestaque9"
     "subdestaque10 subdestaque10 subdestaque10 subdestaque10 .";
 
-  min-height: 700vh;
+  min-height: 1000vh;
   min-width: 90vw;
+  min-width: 100vw;
   gap: 10px;
 }
 .gridTF {

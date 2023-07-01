@@ -154,7 +154,7 @@
   z-index: 1;
   width: 33vw;
   height: 100vh;   
-  left: 24vw;
+  left: 14vw;
   top: 0vh; 
 }
 
@@ -178,14 +178,14 @@
     z-index: 1;
     width: 33vw;
     height: 100vh;   
-    left: 24vw;
+    left: 14vw;
     top: 10vh;
   }
   100% {
     z-index: 1;
     width: 33vw;
     height: 100vh;   
-    left: 24vw;
+    left: 14vw;
     top: 0vh;
   }
 }

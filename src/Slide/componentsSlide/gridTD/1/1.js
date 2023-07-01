@@ -4,7 +4,7 @@ import {
   Adicionar_class,
   Aumentar_ElementoPai,
   Diminuir_ElementoPai,
-  gridTN11,
+  gridTN,
 } from "../../DBanner/f/f.js";
 import { GridTF10 } from "./gtf10/gtfh10";
 import { GridTF7 } from "./gtf7/gtfh7";
