@@ -306,25 +306,23 @@ background-size:140%;
 "
 #-------------------------------------------------------------------------------------------------------------------------------
 
-  cont7="/*#Comentários*/
-  //Funções_teste gtf${1}
+cont7="/*#Comentários*/
+//Funções_teste gtf${1}
 /*Comentários#*/
 
-  /*#Obj_Main*/  
-  const gtf${1}_funções = {
-
-    /*#f1*/
-    teste : () => {
-        console.log('Esse é o objeto que contém métodos do hook gtf${1}')
-    }
-    /*f1#*/
-
+/*#Obj_Main*/  
+const gtf${1}_funções = {
+  /*#f1*/
+  teste : () => {
+      console.log('Esse é o objeto que contém métodos do hook gtf${1}')
   }
-  /*Obj_Main#*/  
+  /*f1#*/
+}
+/*Obj_Main#*/  
 
-  /*Teste*/
-  gtf${1}_funções.teste() ;
-  " 
+/*Teste*/
+gtf${1}_funções.teste() ;
+" 
 
 #-------------------------------------------------------------------------------------------------------------------------------
 cont8="/*#Comentários*/

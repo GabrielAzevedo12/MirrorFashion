@@ -69,11 +69,7 @@ contCss=${3}
 contCssA=${4}
 dir=${5}
 
-echo  "Entrando no dir ${dir} ... " ;
-cd "${dir}" ;
-
-echo "Criando a pasta ${ta} ... "
-mkdir ${ta} ;
+CriarDir "${ta}" "${dir}"
 
 echo "Entrando na pasta css ... "
 cd "${dir}/${ta}" ;
@@ -137,6 +133,26 @@ cat ${arq} ;
 #dropCont "${cont}" "${arq}" "${dir}"
 }
 
+#Cria um arquivo e add um conteudo
+dropContG () {
+
+cont=${1};  
+narqs=${2};
+dir=${3};
+
+for e in ${narqs[@]} 
+  do 
+
+      dropCont "${e[0]}" "${e[1]}" "${dir}";
+
+  done
+
+#cont1="voce esta neste dir /workspace/MirrorFashion/ 1";  arq1="dropCont1.txt"; a1="${cont1} ${arq1}"
+#cont2="voce esta neste dir /workspace/MirrorFashion/ 2";  arq2="dropCont2.txt"; a2="${cont2} ${arq2}"
+#dir="/workspace/MirrorFashion/"; dropContG "${a1} ${a2}" "${dir}" ;
+}
+
+
 #Cria um diretório em um determinado local
 CriarDir () {
 
@@ -167,7 +183,7 @@ for e in ${ndirs[@]}
 
   done
 
-#ndir1="CriarDirteste1"; ndir2="CriarDirteste2" ; dir="/workspace/MirrorFashion/"; CriarDirG "${ndir1} ${ndir2}" "${dir}";
+#ndir1="CriarDirteste1"; ndir2="CriarDirteste2" ; dir="/workspace/MirrorFashion/"; CriarDirG "'${ndir1} b' ${ndir2}" "${dir}";
 #CriarDirG "${ndir1} ${ndir2}" "${dir}";
 }
 
@@ -186,4 +202,19 @@ for e in ${no[@]}
 
 #ndir1="CriarDirteste1"; ndir2="CriarDirteste2" ; dir="/workspace/MirrorFashion/"; rmg "${ndir1} ${ndir2}" "${dir}";
 #rmg "${ndir1} ${ndir2}" "${dir}";
+}
+
+ia () {
+
+a=${1};
+
+for e in ${a[@]} 
+  do 
+
+      echo ${e[1]} ;
+
+  done
+
+#a1=('a' 'c') ; a2=('b' 'd')
+#ia "${a1} ${a2}"
 }
