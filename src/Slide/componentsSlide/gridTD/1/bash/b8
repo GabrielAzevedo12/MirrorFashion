@@ -6,7 +6,7 @@ ta2=${3}
 
 #-------------------------------------------------------------------------------------------------------------------------------
 
-iteration_b7 () {
+iteration_b8 () {
 
   v=${1}
 
@@ -16,13 +16,17 @@ iteration_b7 () {
          na="gtfh${n}"
          ta1="js"
          ta2="css"
-          . "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/bash/b7" "${n}" "${na}" "${ta1}" "${ta2}" 
+          . "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/1/bash/b8" "${n}" "${na}" "${ta1}" "${ta2}" 
       done 
 
 }
 
 #-------------------------------------------------------------------------------------------------------------------------------
 
+#Cria um diretório chamado f(funções) contendo dois arquivos js  
+#e add um dado conteudo aos dois arquivos.
+#Sendo que um arquivo vai conter as funções e o outro irá realizar
+#realizar testes da mesma.
 CriarDirFeArqs () {
 
 na=${1}  
@@ -55,6 +59,8 @@ node "${na}FTeste.js" ;
 
 }
 
+#Cria um diretório chamado css contendo dois arquivos css  
+#e add um dado conteudo aos dois arquivos. 
 CriarDirCssArqs () {
 
 na=${1}  
@@ -116,6 +122,7 @@ ls -la ;
 
 }
 
+#Exibe o sucessor de um dado numero natural
 sucessor () {
 
 n=${1};  
@@ -125,6 +132,7 @@ echo  -e "${n2}" ;
 
 }
 
+#Cria um arquivo e add um conteudo
 dropCont () {
 
 cont=${1};  
@@ -136,4 +144,17 @@ echo  -e "${cont}" > ${arq} ;
 
 #cont="voce esta neste dir /workspace/MirrorFashion/";  arq="dropContt.txt"; dir="/workspace/MirrorFashion/"; dropCont "${cont}" "${arq}" "${dir}";
 #dropCont "${cont}" "${arq}" "${dir}"
+}
+
+CriarDir () {
+
+ndir=${1};  
+dir=${2};
+
+cd "${dir}" ;
+mkdir "${ndir}" ;
+ls -la | grep "${ndir}" ; 
+
+#ndir="CriarDirteste"; dir="/workspace/MirrorFashion/"; CriarDir "${ndir}" "${dir}";
+#CriarDir "${ndir}" "${dir}";
 }
