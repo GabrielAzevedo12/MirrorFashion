@@ -204,18 +204,20 @@ for e in ${no[@]}
 #rmg "${ndir1} ${ndir2}" "${dir}";
 }
 
+#Exibe um índice de um dado array
 ia () {
 
 a=${1};
 i=0;
+index=${2}
 for e in ${a[@]} 
   do
-      if [ ${i} -eq 1 ] ; then
+      if [ ${i} -eq ${index} ] ; then
              echo "${e}" ;
       fi
       i=$[i+1];
   done
 
-#a1=('a' 'c') ; a2=('b' 'd')
-#ia "a b"
+#a1="'a' 'c' 'd'" ; a2="'b' 'd'"
+#ia "${a1}" "2"
 }
