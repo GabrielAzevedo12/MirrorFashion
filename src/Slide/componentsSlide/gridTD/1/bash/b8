@@ -123,7 +123,7 @@ dir=${3};
 echo  "Entrando no dir ${dir} ... " ;
 cd "${dir}" ;
 
-echo "Colocando o conteudo dentro do arquivo ... "
+echo "Colocando o conteudo dentro do arquivo ${arq} ... "
 echo  -e "${cont}" > ${arq} ;
 
 echo "Exibindo o conteudo do arquivo ${arq} ... "
@@ -136,22 +136,28 @@ cat ${arq} ;
 #Cria um arquivo e add um conteudo
 dropContG () {
 
-cont=${1};  
-narqs=${2};
+narqs=${1};
+nconts=${2};
 dir=${3};
+co=${4};
 
-for e in ${narqs[@]} 
+for i in ${co[@]} 
   do 
 
-      dropCont "${e[0]}" "${e[1]}" "${dir}";
+      arquivo=$(ia "${narqs}" "${i}") ;
+      conteudo=$(ia "${nconts}" "${i}") ; 
+      dropCont "${conteudo}" "${arquivo}" "${dir}" ;
 
   done
 
-#cont1="voce esta neste dir /workspace/MirrorFashion/ 1";  arq1="dropCont1.txt"; a1="${cont1} ${arq1}"
-#cont2="voce esta neste dir /workspace/MirrorFashion/ 2";  arq2="dropCont2.txt"; a2="${cont2} ${arq2}"
-#dir="/workspace/MirrorFashion/"; dropContG "${a1} ${a2}" "${dir}" ;
+#cont1='voce esta neste dir /workspace/MirrorFashion/ 1';  arq1='dropCont1.txt'; a1="'${cont1}' '${arq1}'"
+#cont2='voce esta neste dir /workspace/MirrorFashion/ 2';  arq2='dropCont2.txt'; a2="'${cont2}' '${arq2}'"
+#a1="'voce esta neste dir /workspace/MirrorFashion/ 1' 'voce esta neste dir /workspace/MirrorFashion/ 2'";
+#a2="'dropCont2.txt' 'dropCont2.txt'" ;
+#co="0 1" ;
+#dir="/workspace/MirrorFashion/" ; dropContG "${a1}" "${a2}" "${dir}" "0 1" ;
 }
-
+#"voce esta neste dir /n/ /workspace/MirrorFashion/ 1"
 
 #Cria um diretório em um determinado local
 CriarDir () {
