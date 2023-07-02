@@ -245,7 +245,7 @@ for e in ${arraystring[@]}
 
 echo "${s}" ;
 
-#juntastring "voce esta neste dir /workspace/MirrorFashion/ 1"
+#t=$(juntastring "voce esta neste dir /workspace/MirrorFashion/ 1") ; echo "${t}"
 
 }
 
