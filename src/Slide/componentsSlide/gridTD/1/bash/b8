@@ -139,7 +139,9 @@ cont=${1};
 arq=${2};
 dir=${3};
 
+echo  "Entrando no dir ${dir} ... " ;
 cd "${dir}" ;
+echo "Colocando o conteudo dentro do arquivo ... "
 echo  -e "${cont}" > ${arq} ;
 
 #cont="voce esta neste dir /workspace/MirrorFashion/";  arq="dropContt.txt"; dir="/workspace/MirrorFashion/"; dropCont "${cont}" "${arq}" "${dir}";
@@ -151,8 +153,11 @@ CriarDir () {
 ndir=${1};  
 dir=${2};
 
+echo  "Entrando no dir ${dir} ... " ;
 cd "${dir}" ;
+echo "Criando a pasta ${na} ... "
 mkdir "${ndir}" ;
+echo "Criando a ${ndir} ... "
 ls -la | grep "${ndir}" ; 
 
 #ndir="CriarDirteste"; dir="/workspace/MirrorFashion/"; CriarDir "${ndir}" "${dir}";
