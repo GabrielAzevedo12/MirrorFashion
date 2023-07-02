@@ -204,7 +204,7 @@ for e in ${no[@]}
 #rmg "${ndir1} ${ndir2}" "${dir}";
 }
 
-#Exibe um índice de um dado array
+#Exibe um valor de um índice de um array qualquer
 ia () {
 
 a=${1};
@@ -218,6 +218,6 @@ for e in ${a[@]}
       i=$[i+1];
   done
 
-#a1="'a' 'c' 'd'" ; a2="'b' 'd'"
-#ia "${a1}" "2"
+#a1="'a' 'c' 'd'" ; a2="'b' 'd'" ;
+#v=$(ia "${a1}" "2") ; echo ${v}
 }
