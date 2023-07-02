@@ -127,6 +127,7 @@ echo "Colocando o conteudo dentro do arquivo ${arq} ... "
 echo  -e "${cont}" > ${arq} ;
 
 echo "Exibindo o conteudo do arquivo ${arq} ... "
+cat ${arq} | tr "." " " > ${arq} ;
 cat ${arq} ;
 
 #cont="voce esta neste dir /workspace/MirrorFashion/";  arq="dropContt.txt"; dir="/workspace/MirrorFashion/"; dropCont "${cont}" "${arq}" "${dir}";
@@ -142,6 +143,7 @@ dir=${3};
 co=${4};
 
 for i in ${co[@]} 
+
   do 
 
       arquivo=$(ia "${narqs}" "${i}") ;
@@ -150,14 +152,14 @@ for i in ${co[@]}
 
   done
 
+
 #cont1='voce esta neste dir /workspace/MirrorFashion/ 1';  arq1='dropCont1.txt'; a1="'${cont1}' '${arq1}'"
 #cont2='voce esta neste dir /workspace/MirrorFashion/ 2';  arq2='dropCont2.txt'; a2="'${cont2}' '${arq2}'"
-#a1="'voce esta neste dir /workspace/MirrorFashion/ 1' 'voce esta neste dir /workspace/MirrorFashion/ 2'";
-#a2="'dropCont2.txt' 'dropCont2.txt'" ;
-#co="0 1" ;
-#dir="/workspace/MirrorFashion/" ; dropContG "${a1}" "${a2}" "${dir}" "0 1" ;
+a2="'voce esta neste dir /workspace/MirrorFashion/ 1' 'voce esta neste dir /workspace/MirrorFashion/ 2'";
+a1="dropCont1.txt dropCont2.txt" ;
+co="0 1" ;
+dir="/workspace/MirrorFashion/" ;  dropContG "${a1}" "${a2}" "${dir}" "0 1" ;
 }
-#"voce esta neste dir /n/ /workspace/MirrorFashion/ 1"
 
 #Cria um diretório em um determinado local
 CriarDir () {
@@ -227,3 +229,23 @@ for e in ${a[@]}
 #a1="'a' 'c' 'd'" ; a2="'b' 'd'" ;
 #v=$(ia "${a1}" "2") ; echo ${v}
 }
+
+juntastring () {
+
+arraystring=${1}
+s="";
+
+for e in ${arraystring[@]} 
+
+  do 
+
+      s="${s} ${e}"
+
+  done
+
+echo "${s}" ;
+
+#juntastring "voce esta neste dir /workspace/MirrorFashion/ 1"
+
+}
+
