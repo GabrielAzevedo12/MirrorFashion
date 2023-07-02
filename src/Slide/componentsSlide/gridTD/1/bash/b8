@@ -155,7 +155,9 @@ for i in ${co[@]}
 
 #cont1='voce esta neste dir /workspace/MirrorFashion/ 1';  arq1='dropCont1.txt'; a1="'${cont1}' '${arq1}'"
 #cont2='voce esta neste dir /workspace/MirrorFashion/ 2';  arq2='dropCont2.txt'; a2="'${cont2}' '${arq2}'"
-a2="'voce esta neste dir /workspace/MirrorFashion/ 1' 'voce esta neste dir /workspace/MirrorFashion/ 2'";
+c1='voce esta neste dir /workspace/MirrorFashion/ 1'; 
+c2='voce esta neste dir /workspace/MirrorFashion/ 2';
+c="${c1} ${c2}"
 a1="dropCont1.txt dropCont2.txt" ;
 co="0 1" ;
 dir="/workspace/MirrorFashion/" ;  dropContG "${a1}" "${a2}" "${dir}" "0 1" ;
@@ -245,7 +247,29 @@ for e in ${arraystring[@]}
 
 echo "${s}" ;
 
-#t=$(juntastring "voce esta neste dir /workspace/MirrorFashion/ 1") ; echo "${t}"
+#t=$(juntastring 'voce esta neste dir /workspace/MirrorFashion/ 1') ; echo "${t}"
 
 }
 
+ExibeElArray () {
+
+a=${1}
+
+
+for e in ${a[@]} 
+
+  do 
+
+      echo -e "${e}" ;
+
+  done
+
+
+#t=$(juntastring 'voce esta neste dir /workspace/MirrorFashion/ 1') ; echo "${t}"
+
+}
+
+#c1="voce esta neste dir /workspace/MirrorFashion/ 1"; 
+#c2="voce esta neste dir /workspace/MirrorFashion/ 2";
+#c="${c1} ${c2}" ;
+#ExibeElArray "${c}"
