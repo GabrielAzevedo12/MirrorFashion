@@ -101,24 +101,9 @@ contCP=${2}
 contCFA=${3}
 dir=${4}
 
-echo  "Entrando no dir ${dir} ... " ;
-cd "${dir}" ;
-
-echo "Criando a pasta ${na} ... "
-mkdir ${na} ;
-
-echo "Entrando na pasta ${na} ... "
-cd "${dir}/${na}" ;
-
-echo "Colocando o conteudo js no arquivo ${na}.js ... "
-echo -e "${contCP}" > ${na}.${ta} ;
-
-echo "Exibindo o conteudo do arquivo ${na}.js ... "
-cat ${na}.${ta} ;
-
-echo "Criando as pastas css e f ... "
-mkdir css f;
-ls -la ;
+CriarDir "${na}" "${dir}"
+dropCont "${contCP}" "${na}.${ta} " "${dir}/${na}"
+CriarDirG "css f" "${dir}/${na}"
 
 }
 
@@ -141,13 +126,18 @@ dir=${3};
 
 echo  "Entrando no dir ${dir} ... " ;
 cd "${dir}" ;
+
 echo "Colocando o conteudo dentro do arquivo ... "
 echo  -e "${cont}" > ${arq} ;
+
+echo "Exibindo o conteudo do arquivo ${arq} ... "
+cat ${arq} ;
 
 #cont="voce esta neste dir /workspace/MirrorFashion/";  arq="dropContt.txt"; dir="/workspace/MirrorFashion/"; dropCont "${cont}" "${arq}" "${dir}";
 #dropCont "${cont}" "${arq}" "${dir}"
 }
 
+#Cria um diretório em um determinado local
 CriarDir () {
 
 ndir=${1};  
@@ -162,4 +152,38 @@ ls -la | grep "${ndir}" ;
 
 #ndir="CriarDirteste"; dir="/workspace/MirrorFashion/"; CriarDir "${ndir}" "${dir}";
 #CriarDir "${ndir}" "${dir}";
+}
+
+#Cria vários diretórios em um determinado local
+CriarDirG () {
+
+ndirs=${1};  
+dir=${2};
+
+for e in ${ndirs[@]} 
+  do 
+
+      CriarDir "${e}" "${dir}" ;
+
+  done
+
+#ndir1="CriarDirteste1"; ndir2="CriarDirteste2" ; dir="/workspace/MirrorFashion/"; CriarDirG "${ndir1} ${ndir2}" "${dir}";
+#CriarDirG "${ndir1} ${ndir2}" "${dir}";
+}
+
+#Remove vários arquivos em um determinado local
+rmg () {
+
+no=${1};  
+dir=${2};
+
+for e in ${no[@]} 
+  do 
+
+      rm -rf "${e}"  ;
+
+  done
+
+#ndir1="CriarDirteste1"; ndir2="CriarDirteste2" ; dir="/workspace/MirrorFashion/"; rmg "${ndir1} ${ndir2}" "${dir}";
+#rmg "${ndir1} ${ndir2}" "${dir}";
 }
