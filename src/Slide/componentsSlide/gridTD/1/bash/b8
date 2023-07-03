@@ -63,29 +63,22 @@ node "${na}FTeste.js" ;
 #e add um dado conteudo aos dois arquivos. 
 CriarDirCssArqs () {
 
-na=${1}  
-ta=${2}  
-contCss=${3}
-contCssA=${4}
-dir=${5}
+na=${1}  #Nome padrão do arquivo
+ta=${2}  #Tipo de arquivo
+contCss=${3} #Conteudo arquivo
+contCssA=${4} #Conteudo arquivo
+dir=${5} #Diretório
 
 CriarDir "${ta}" "${dir}"
 
 echo "Entrando na pasta css ... "
-cd "${dir}/${ta}" ;
+dir="${dir}/${ta}"
+cd "${dir}" ;
 
-echo "Criando os arquivos ${na}.${ta} e ${na}A.${ta}  ... "
-touch "${na}.${ta2}" "${na}A.${ta}" ;
+echo "Criando os arquivos ${na}.${ta}, ${na}A.${ta} e colocando seus respectivos conteudos  ... "
+dropCont "${contCss}" "${na}.${ta}" "${dir}" ;
+dropCont "${contCssA}" "${na}A.${ta}" "${dir}" ;
 ls -la ;
-
-echo "Colocando o conteudo css no arquivo ${na}.${ta} ... "
-echo -e "${contCss}" > ${na}.${ta} ;
-
-echo "Colocando o conteudo da animação no arquivo ${na}A.${ta} ... "
-echo -e "${contCssA}" > ${na}A.${ta} ;
-
-echo "Exibindo o conteudo do arquivo ${na}.${ta} e ${na}A.${ta}  ... "
-cat ${na}A.${ta2} ${na}.${ta2} ;
 
 }
 
@@ -127,7 +120,6 @@ echo "Colocando o conteudo dentro do arquivo ${arq} ... "
 echo  -e "${cont}" > ${arq} ;
 
 echo "Exibindo o conteudo do arquivo ${arq} ... "
-cat ${arq} | tr "." " " > ${arq} ;
 cat ${arq} ;
 
 #cont="voce esta neste dir /workspace/MirrorFashion/";  arq="dropContt.txt"; dir="/workspace/MirrorFashion/"; dropCont "${cont}" "${arq}" "${dir}";
@@ -137,30 +129,25 @@ cat ${arq} ;
 #Cria um arquivo e add um conteudo
 dropContG () {
 
-narqs=${1};
-nconts=${2};
-dir=${3};
-co=${4};
+c=${1};
+dir=${2};
+co=${3};
 
 for i in ${co[@]} 
 
   do 
 
-      arquivo=$(ia "${narqs}" "${i}") ;
-      conteudo=$(ia "${nconts}" "${i}") ; 
+      arquivo=$(ExibeElArrayString "${c}" "#a${i}" "%a${i}") ;
+      conteudo=$(ExibeElArrayString "${c}" "#c${i}" "%c${i}") ; 
       dropCont "${conteudo}" "${arquivo}" "${dir}" ;
 
   done
 
 
-#cont1='voce esta neste dir /workspace/MirrorFashion/ 1';  arq1='dropCont1.txt'; a1="'${cont1}' '${arq1}'"
-#cont2='voce esta neste dir /workspace/MirrorFashion/ 2';  arq2='dropCont2.txt'; a2="'${cont2}' '${arq2}'"
-#c1='voce esta neste dir /workspace/MirrorFashion/ 1'; 
-#c2='voce esta neste dir /workspace/MirrorFashion/ 2';
-#c="${c1} ${c2}"
-#a1="dropCont1.txt dropCont2.txt" ;
-#co="0 1" ;
-#dir="/workspace/MirrorFashion/" ;  dropContG "${a1}" "${a2}" "${dir}" "0 1" ;
+#cont1="#c1 voce esta neste dir /workspace/MirrorFashion/ 1 %c1";  arq1='#a1 dropCont1.txt %a1'; a1="${cont1} ${arq1}"
+#cont2="#c2 voce esta neste dir /workspace/MirrorFashion/ 2 %c2";  arq2='#a2 dropCont2.txt %a2'; a2="${cont2} ${arq2}"
+#dir="/workspace/MirrorFashion/" ;  dropContG "${a1} ${a2}" "${dir}" "1 2" ;
+
 }
 
 #Cria um diretório em um determinado local
@@ -178,6 +165,7 @@ ls -la | grep "${ndir}" ;
 
 #ndir="CriarDirteste"; dir="/workspace/MirrorFashion/"; CriarDir "${ndir}" "${dir}";
 #CriarDir "${ndir}" "${dir}";
+
 }
 
 #Cria vários diretórios em um determinado local
@@ -254,10 +242,10 @@ echo "${s}" ;
 ExibeElArrayString () {
 
 a=${1}
-l=${2}
+ss=${2}
+se=${3}
 
-s1=""
-s2=""
+s=""
 
 c=0
 
@@ -265,31 +253,39 @@ for e in ${a[@]}
 
   do 
 
-      if [ ${e} = ${l} ] ; then
+      if [ ${e} = ${ss} ] ; then
+
           c=1 ;
-      elif  [ ${e1} != ${l} ] ; then 
-          s1="${s1} ${e}" ;
+          continue ;
+
+   elif  [ ${e} = ${se} ] ; then 
+
+          c=0 ;
+          break ;
+          
       fi   ;
 
+
       if [ ${c} -eq 1 ] ; then
-        s2="${s2} ${e}" ;
-      fi   ;
+
+          s="${s} ${e}" ;
+
+      fi   ;  
 
   done
 
-#echo -e "${s1}" ;
-echo -e "${s2}" ;
+  echo -e "${s}" ;
 
 #t=$(ExibeElArrayString "${c}" '1y') ; echo "${t}"
-#c1="voce esta neste dir /workspace/MirrorFashion/ 1 *"; 
+#c1="#1 voce esta neste dir /workspace/MirrorFashion/ 1 %1 #2 dropCont1.txt %2"; 
 #c2="voce esta neste dir /workspace/MirrorFashion/ 2";
 #c="${c1} ${c2}" ;
-#ExibeElArrayString "${c}" '*'
+#v2=$(ExibeElArrayString "${c}" "#2" "%2") ; v1=$(ExibeElArrayString "${c}" "#1" "%1")
 
 }
 
 #Analisa se dois elementos são iguais 
-AnaEl() {
+AnaliseEl() {
 
 e1=${1} ;
 e2=${2} ;
