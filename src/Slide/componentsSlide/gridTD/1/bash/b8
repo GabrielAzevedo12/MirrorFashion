@@ -82,6 +82,16 @@ ls -la ;
 
 }
 
+CriaDirCssArqs2 () {
+arq1="#a1 css.css %a1";
+arq2="#a2 cssA.css %a2"; 
+
+contCss="#c1 .css {} %c1";  a1="${contCss} ${arq1}" ;
+contCssA="#c2 .cssA {} %c2"; a2="${contCssA} ${arq2}" ;
+
+dir="$PWD" ;  
+dropContG "${a1} ${a2}" "${dir}" "1 2" ;
+}
 
 CriarDirCompParqs () {
 
@@ -126,7 +136,7 @@ cat ${arq} ;
 #dropCont "${cont}" "${arq}" "${dir}"
 }
 
-#Cria um arquivo e add um conteudo
+#Cria vários arquivos e add seus respectivos conteudos
 dropContG () {
 
 c=${1};
