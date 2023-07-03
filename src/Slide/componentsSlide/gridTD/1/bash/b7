@@ -424,7 +424,7 @@ const9="
 const10="/*#imports*/
 import './css/gtfh${1}.css'
 import './css/gtfh${1}A.css'
-import { gtf${1}_funções } from './f/gtfhF${1}.js'
+import { gtf${1}_funções } from './f/gtfh${1}F.js'
 import {
   Adicionar_class,
   Aumentar_ElementoPai,

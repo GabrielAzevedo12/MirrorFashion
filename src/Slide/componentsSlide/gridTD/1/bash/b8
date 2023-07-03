@@ -59,6 +59,61 @@ node "${na}FTeste.js" ;
 
 }
 
+CriarDirFeArqs2 () {
+
+dir="${PWD}";
+
+CriarDir "f" "${dir}"
+dir="${PWD}/f";
+
+arq1="#a1 gtfh${1}F.js %a1";
+arq2="#a2 gtfh${1}FTeste.js %a2"; 
+
+cont1="#c1 
+/*#Comentários*/
+//Funções_teste gtf${1}
+/*Comentários#*/
+
+/*#Obj_Main*/  
+const gtf${1}_funções = {
+  /*#f1*/
+  teste : () => {
+      console.log('Esse é o objeto que contém métodos do hook gtf${1}')
+  }
+  /*f1#*/
+}
+/*Obj_Main#*/  
+
+/*#Export*/
+export {gtf${1}_funções}
+/*Export#*/
+ %c1";  
+
+cont2="#c2 
+/*#Comentários*/
+//Funções_teste gtf${1}
+/*Comentários#*/
+
+/*#Obj_Main*/  
+const gtf${1}_funções = {
+  /*#f1*/
+  teste : () => {
+      console.log('Esse é o objeto que contém métodos do hook gtf${1}')
+  }
+  /*f1#*/
+}
+/*Obj_Main#*/  
+
+/*Teste*/
+gtf${1}_funções.teste() ;
+ %c2";
+
+a1="${cont1} ${arq1}" ; a2="${cont2} ${arq2}" ;
+ 
+dropContG "${a1} ${a2}" "${dir}" "1 2" ;
+
+}
+
 #Cria um diretório chamado css contendo dois arquivos css  
 #e add um dado conteudo aos dois arquivos. 
 CriarDirCssArqs () {
