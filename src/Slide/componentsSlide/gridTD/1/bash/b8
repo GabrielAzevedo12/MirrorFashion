@@ -119,7 +119,7 @@ CriarDirFeArqs3 () {
 dir="${PWD}";
 
 CriarDir "f" "${dir}"
-dir="${PWD}/f";
+dir="${dir}/f";
 
 arq1="#gtfh${1}F.js";
 arq2="gtfh${1}FTeste.js"; 
@@ -161,7 +161,7 @@ const gtf${1}_funções = {
 gtf${1}_funções.teste() ;
 ";
  
-dropCont "${cont1} ${arq1}" "${dir}" ;
+dropCont "${cont1}" "${arq1}" "${dir}" ;
 
 }
 
@@ -254,8 +254,8 @@ for i in ${co[@]}
 
   do 
 
-      arquivo=$(ExibeElArrayString "${c}" "#a${i}" "%a${i}") ;
-      conteudo=$(ExibeElArrayString "${c}" "#c${i}" "%c${i}") ; 
+      arquivo="$(ExibeElArrayString "${c}" "#a${i}" "%a${i}")" ;
+      conteudo="$(ExibeElArrayString "${c}" "#c${i}" "%c${i}")" ; 
       dropCont "${conteudo}" "${arquivo}" "${dir}" ;
 
   done
