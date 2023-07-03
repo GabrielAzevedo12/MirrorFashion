@@ -143,6 +143,7 @@ c=${1};
 dir=${2};
 co=${3};
 
+# i = Quantidade de arquivos que será criado com seus respectivos conteudos
 for i in ${co[@]} 
 
   do 
@@ -212,7 +213,7 @@ for e in ${no[@]}
 #rmg "${ndir1} ${ndir2}" "${dir}";
 }
 
-#Exibe um valor de um índice de um array qualquer
+#Exibe um valor de um dado índice de um array qualquer
 ia () {
 
 a=${1};
