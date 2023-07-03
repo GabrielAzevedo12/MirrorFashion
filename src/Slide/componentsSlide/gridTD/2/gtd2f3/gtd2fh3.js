@@ -12,7 +12,7 @@ import {
 /*Imports#*/
 
 /*#Hook*/
-const  GridTD1F3 = ({ Obj_Pai_Props }) => {
+const  GridTD2F3 = ({ Obj_Pai_Props }) => {
 
 /*#Hook_Escopo*/
 /*Hook_Escopo#*/
@@ -66,6 +66,6 @@ return (
 /*Hook#*/
 
 /*#Exports*/
-export {  GridTD1F3 }
+export {  GridTD2F3 }
 /*Exports#*/
 

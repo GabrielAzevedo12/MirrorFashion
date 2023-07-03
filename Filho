@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #-------------------------------------------------------------------------------------------------------------------------------
 
 conthookjsFilho="/*#imports*/
@@ -14,7 +16,7 @@ import {
 /*Imports#*/
 
 /*#Hook*/
-const  GridTD1F${1} = ({ Obj_Pai_Props }) => {
+const  GridTD${2}F${1} = ({ Obj_Pai_Props }) => {
 
 /*#Hook_Escopo*/
 /*Hook_Escopo#*/
@@ -68,7 +70,7 @@ return (
 /*Hook#*/
 
 /*#Exports*/
-export {  GridTD1F${1} }
+export {  GridTD${2}F${1} }
 /*Exports#*/
 "  
 
@@ -136,6 +138,23 @@ background-size:140%;
 
 #-------------------------------------------------------------------------------------------------------------------------------
 
+conthookjsFilhoF="/*#Comentários*/
+  //Funções gtf${1}
+
+  /*#Obj_Main*/  
+  const gtf${1}_funções = {
+    /*#f1*/
+    teste : () => {
+        console.log('Esse é o objeto que contém métodos do hook gtf${1}')
+    }
+  }
+
+  /*#Export*/
+  export { gtf${1}_funções }
+  " 
+
+#-------------------------------------------------------------------------------------------------------------------------------  
+
 dir1="/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/${2}" ;
 
 #${1} é o valor que irá variar
@@ -144,15 +163,18 @@ dir1="/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/${2}" ;
 CriarDir "gtd${2}f${1}" "${dir1}"
 dir1="${dir}/gtd${2}f${1}";
 
-CriarDir "css" "${dir1}"
+CriarDirG "css f" "${dir1}"
 dir2="${dir1}/css";
+dir3="${dir1}/f";
 
 arqFilhoJs="gtd${2}fh${1}.js";
 arqFilhoCss="gtd${2}fh${1}.css";
 arqFilhoCssA="gtd${2}fh${1}A.css"; 
+arqFilhoFJs="gtfh${1}F.js";
  
 dropCont "${conthookjsFilho}" "${arqFilhoJs}" "${dir1}" ;
 dropCont "${contcssFilho}" "${arqFilhoCss}" "${dir2}" ;
 dropCont "/*Animação do hook gtd${2}fh${1}*/" "${arqFilhoCss}" "${dir2}" ;
+dropCont "${conthookjsFilhoF}" "${arqFilhoFJs}" "${dir3}" ;
 
 #-------------------------------------------------------------------------------------------------------------------------------

@@ -54,7 +54,7 @@ const GridTD${1} = () => {
 
 /*#Exports*/
 
-export { GridTD1 };
+export { GridTD${1} };
 
 /*Exports#*/
 "
@@ -67,11 +67,11 @@ contcssPai="
   display: grid;
   /*grid-template-columns: 3fr 1fr 1fr;*/
   grid-template-areas:
-    ". . . . ."
-    "gridTFB gridTFB gridTFB gridTFB gridTFB"
-    ". . . . ."
-    ". GridTF6 GridTF7 GridTF8 ."
-    ". . . . .";
+    '. . . . .'
+    'gridTFB gridTFB gridTFB gridTFB gridTFB'
+    '. . . . .'
+    '. GridTF1' GridTF2 GridTF3 .'
+    '. . . . .';
 
   min-height: 500vh;
   min-width: 90vw;
@@ -96,12 +96,29 @@ contcssPai="
 "
 #-------------------------------------------------------------------------------------------------------------------------------
 
+conthookjsPaiObj="/*#Comentários*/
+  //Funções GridTD${1}
+
+  /*#Obj_Main*/  
+  const HerençaOf_GridTD${1} = {
+    /*#f1*/
+    teste : () => {
+        console.log('Esse é o objeto que contém métodos do hook GridTD${1} que serão herdados')
+    }
+  }
+
+  /*#Export*/
+  export { HerençaOf_GridTD${1} }
+  " 
+
+#-------------------------------------------------------------------------------------------------------------------------------
+
 dir1="/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD" ;
 
 CriarDir "${1}" "${dir1}"
 dir1="${dir}/${1}";
 
-CriarDir "css" "${dir1}"
+CriarDirG "css hgtd${1} f" "${dir1}"
 dir2="${dir1}/css";
 
 arqPaiJs="${1}.js";
@@ -110,3 +127,45 @@ arqPaiCss="${1}.css";
 dropCont "${conthookjsPai}" "${arqPaiJs}" "${dir1}" ;
 dropCont "${contcssPai}" "${arqPaiCss}" "${dir2}" ;
 
+#-------------------------------------------------------------------------------------------------------------------------------
+
+dir3="${dir1}/hgtd${1}" ;
+
+arqPaiJsObj="hgtd${1}.js";
+ 
+dropCont "${conthookjsPaiObj}" "${arqPaiJsObj}" "${dir3}" ;
+
+#-------------------------------------------------------------------------------------------------------------------------------
+
+iteration_Filho () {
+
+  v=${1}
+
+  for e in ${v[@]}
+      do
+         n=${e}   
+         c=2
+          . "/workspace/MirrorFashion/Filho" "${n}" "${c}" 
+      done 
+
+}
+
+iteration_Filho "1 2 3"
+
+ 
+#n=1; c=2; . "/workspace/MirrorFashion/Pai" "${c}" ;   
+
+#-------------------------------------------------------------------------------------------------------------------------------
+
+rmgtd2 () {
+
+  v=${1}
+
+  for e in ${v[@]}
+      do
+         n=${e}   
+          cd "/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD/2/gtd2f${n}"  ;
+          rm -rf 'css f'
+      done 
+
+}
