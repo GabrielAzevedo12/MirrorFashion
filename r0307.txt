@@ -1,0 +1,5 @@
+declare -A tarefas ;
+tarefas[DirPai]=false ;
+tarefas[ContPai]=false ;
+tarefas[DirFilho]=false ;
+tarefas[ContFilho]=false ;
