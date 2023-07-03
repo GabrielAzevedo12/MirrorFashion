@@ -121,11 +121,10 @@ dir="${PWD}";
 CriarDir "f" "${dir}"
 dir="${PWD}/f";
 
-arq1="#a1 gtfh${1}F.js %a1";
-arq2="#a2 gtfh${1}FTeste.js %a2"; 
+arq1="#gtfh${1}F.js";
+arq2="gtfh${1}FTeste.js"; 
 
-cont1="#c1 
-/*#Comentários*/
+cont1="/*#Comentários*/
 //Funções_teste gtf${1}
 /*Comentários#*/
 
@@ -142,10 +141,9 @@ const gtf${1}_funções = {
 /*#Export*/
 export {gtf${1}_funções}
 /*Export#*/
- %c1";  
+";  
 
-cont2="#c2 
-/*#Comentários*/
+cont2="/*#Comentários*/
 //Funções_teste gtf${1}
 /*Comentários#*/
 
@@ -161,11 +159,9 @@ const gtf${1}_funções = {
 
 /*Teste*/
 gtf${1}_funções.teste() ;
- %c2";
-
-a1="${cont1} ${arq1}" ; a2="${cont2} ${arq2}" ;
+";
  
-dropContG "${a1} ${a2}" "${dir}" "1 2" ;
+dropCont "${cont1} ${arq1}" "${dir}" ;
 
 }
 
