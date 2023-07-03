@@ -14,7 +14,7 @@ import {
 /*Imports#*/
 
 /*#Hook*/
-const GridTF${1} = ({ Obj_Pai_Props }) => {
+const  GridTD1F${1} = ({ Obj_Pai_Props }) => {
 
 /*#Hook_Escopo*/
 /*Hook_Escopo#*/
@@ -68,7 +68,7 @@ return (
 /*Hook#*/
 
 /*#Exports*/
-export { GridTF${1} }
+export {  GridTD1F${1} }
 /*Exports#*/
 "  
 
