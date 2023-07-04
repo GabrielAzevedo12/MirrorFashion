@@ -1,0 +1,32 @@
+av () {
+
+    v="${1}" ;
+    nv="${2}" ;
+    arq="${3}" ;
+    c="${v}${nv}" ;
+
+    #sed -i '1 s/"${v}"/"${c}"/' "${arq}" ;
+    #v="$(grep -n ' ' r0407.txt | cut -d':' -f 2)"; nv=" testesed3" ; arq="r0407.txt" ;
+    #av "${v}" "${nv}" "${arq}" 
+
+}
+
+b () {
+
+    arq="${1}";
+    dir="${2}";
+
+    cd "${dir}" ;
+    cat "${arq}" > "${arq}old" ;
+
+}
+
+    nexp="^<";
+    arqs="Pai";
+
+    grep "${nexp}" "${arqs}" ;
+    grep -n '[<][A-Z][a-z][a-z][a-z][A-Z][A-Z]' "1.js" ;
+    grep -n '[<][A-Z]' "1.js" ;
+    cat * | grep -n '#!/bin/bash' ;
+    sed '1~1 s/testesed/testesed2/' "r0407.txt" > "r0407new.txt" ;
+    cat "r0407new.txt" ;
