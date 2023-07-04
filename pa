@@ -1,0 +1,11 @@
+#!/bin/bash
+
+a=${1};
+
+for e in ${a[@]}
+    do
+        chmod a+x ${e} ;
+    done
+
+cd "$PWD";
+ls -la;    

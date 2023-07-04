@@ -1,0 +1,7 @@
+#!/bin/bash
+
+os=${1};
+arq=${2};
+ns=${3};
+
+sed -i "s/${os}/${ns}/" "${arq}"  ;
