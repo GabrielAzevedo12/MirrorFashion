@@ -1,4 +1,4 @@
-.gridTF4 {
+.gridTD1F4 {
     background-color: black;
     grid-area: subdestaque3;
     display: flex;
@@ -10,7 +10,7 @@
     width: 40vw;
   }
 
-.gridTN4 {
+.gridTD1N4 {
   position: relative;
   /*align-items: center;
   align-content: center;
@@ -24,7 +24,7 @@
   background-size: 150%;
 }
 
-.gridTN41 {
+.gridTD1N41 {
   background-color: darkcyan;
   background-image: linear-gradient(
       0deg,
@@ -38,7 +38,7 @@
   background-size: cover;
 }
 
-.gridTN42 {
+.gridTD1N42 {
   background-color: slategrey;
   background-image: linear-gradient(
       0deg,
@@ -52,7 +52,7 @@
   background-size: cover;
 }
 
-.gridTN43 {
+.gridTD1N43 {
   background-color: cornflowerblue;
   /*
   background-image: linear-gradient(

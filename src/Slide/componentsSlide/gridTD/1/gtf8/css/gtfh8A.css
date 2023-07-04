@@ -1,7 +1,7 @@
  /*!1*/
 
- .for_posiçao1_of_gridTF8_m1 {
-  animation-name: for_posiçao1_of_gridTF8_m1;
+ .for_posiçao1_of_gridTD1F8_m1 {
+  animation-name: for_posiçao1_of_gridTD1F8_m1;
   animation-duration: 1.5s;
   animation-iteration-count: 1;
 
@@ -12,7 +12,7 @@
   top: 0vh;
 }
 
-@keyframes for_posiçao1_of_gridTF8_m1 {
+@keyframes for_posiçao1_of_gridTD1F8_m1 {
   0% {
     z-index: 0;
     width: 33vw;
@@ -46,8 +46,8 @@
 
 /*!2*/
 
-.for_posiçao2_of_gridTF8 {
-  animation-name: for_posiçao2_of_gridTF8;
+.for_posiçao2_of_gridTD1F8 {
+  animation-name: for_posiçao2_of_gridTD1F8;
   animation-duration: 1s;
   animation-iteration-count: 1;
 
@@ -59,7 +59,7 @@
   rotate: 0deg;
 }
  
-@keyframes for_posiçao2_of_gridTF8 {
+@keyframes for_posiçao2_of_gridTD1F8 {
   0% {
     z-index: 1;
     height: 100%;

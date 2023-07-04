@@ -8,7 +8,7 @@
 /*#Imports*/
 
 import './css/1.css';
-import './css/gridTD.css';
+import './css/gridTD1.css';
 import {
   Adicionar_class,
   Aumentar_ElementoPai,
@@ -26,7 +26,7 @@ import { GridTF8 } from './gtf8/gtfh8';
 import { GridTF9 } from './gtf9/gtfh9';
 import { GridTF10 } from './gtf10/gtfh10';
 import { GridTF11 } from './gtf11/gtfh11';
-import { GridTFB } from './gtfB/gtfhB.js'
+import { GridTD1FB } from './gtfB/gtfhB.js'
 
 /*Imports#*/
 
@@ -45,7 +45,7 @@ const GridTD1 = () => {
 
   /*#HookCont1*/
   return (
-    <div className='gridTD'>
+    <div className='gridTD1'>
       <GridTF1/>
       <GridTF2/>
       <GridTF3/>
@@ -54,7 +54,7 @@ const GridTD1 = () => {
       <GridTF9/>
       <GridTF10/>
       <GridTF11/>
-      <GridTFB/>
+      <GridTD1FB/>
     </div>
   );
   /*HookCont1#*/

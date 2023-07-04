@@ -1,4 +1,4 @@
-.gridTF1 {
+.gridTD1F1 {
     background-color: black;
     grid-area: destaque;
     /*grid-template-areas: "destaque1 destaque1 destaque1 destaque1 destaque1  destaque2 destaque2 destaque2 destaque2 destaque2";*/
@@ -7,7 +7,7 @@
     overflow-y: hidden;
     height: 200vh;
   }
-  .gridTN {
+  .gridTD1N {
     position: relative;
     /*align-items: center;
     align-content: center;
@@ -19,7 +19,7 @@
     min-width: 100%;
     border-radius: 25px;
   }
-  .gridTN1 {
+  .gridTD1N1 {
     background-color: whitesmoke;
     background-image: linear-gradient(
         0deg,
@@ -32,7 +32,7 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .gridTN12 {
+  .gridTD1N12 {
     background-color: red;
     /*
     background-image: linear-gradient(
@@ -47,7 +47,7 @@
     background-size: cover;
     */
   }
-  .gridTN13 {
+  .gridTD1N13 {
     background-color: coral;
     /*
     background-image: linear-gradient(

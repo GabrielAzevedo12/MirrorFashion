@@ -1,4 +1,4 @@
-.gridTF3 {
+.gridTD1F3 {
     background-color: black;
     grid-area: subdestaque2;
     display: flex;
@@ -9,7 +9,7 @@
     height: 200vh;
     width: 40vw; 
   }
-.gridTN3 {
+.gridTD1N3 {
   position: relative;
   /*align-items: center;
   align-content: center;
@@ -22,7 +22,7 @@
   border-radius: 25px;
   background-size: 160%;
 }
-.gridTN31 {
+.gridTD1N31 {
   background-color: aqua;
   background-image: linear-gradient(
     0deg,
@@ -35,7 +35,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.gridTN32 {
+.gridTD1N32 {
   background-color: blue;
   /*
   background-image: linear-gradient(
@@ -49,7 +49,7 @@
   background-repeat: no-repeat;
   */
 }
-.gridTN33 {
+.gridTD1N33 {
   background-color: aquamarine;
   /*
   background-image: linear-gradient(

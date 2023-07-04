@@ -1,4 +1,4 @@
-.gridTF2 {
+.gridTD1F2 {
     background-color: black;
     grid-area: subdestaque1;
     display: flex;
@@ -9,7 +9,7 @@
     height: 200vh;
     width: 60vw; 
   }
-  .gridTN2 {
+  .gridTD1N2 {
     position: relative;
     /*align-items: center;
     align-content: center;
@@ -21,7 +21,7 @@
     min-width: 100%;
     border-radius: 25px;
   }
-  .gridTN21 {
+  .gridTD1N21 {
     background-color: violet;
     background-image: linear-gradient(
         0deg,
@@ -34,7 +34,7 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .gridTN22 {
+  .gridTD1N22 {
     background-color: yellow;
      /*
     background-image: linear-gradient(
@@ -49,7 +49,7 @@
     background-size: cover;
     */
   }
-  .gridTN23 {
+  .gridTD1N23 {
     background-color: springgreen;
      /*
     background-image: linear-gradient(

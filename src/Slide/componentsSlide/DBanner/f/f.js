@@ -83,10 +83,10 @@ const Diminuir_ElementoPai = (e) => {
   Remover_class(Pai, "Animação_filhoFor_gridTF1");
 };
 
-/*onMouseOver={gridTN11.Disparar_Evento_Quando.Over.Aumentar_ElementoPai}*/
+/*onMouseOver={gridTD1N11.Disparar_Evento_Quando.Over.Aumentar_ElementoPai}*/
 
-const gridTN = {
-  gridTN6 : {
+const gridTD1N = {
+  gridTD1N6 : {
     Disparar_Evento_Quando: {
       Click: (e) => {
         console.log(e.target)
@@ -118,11 +118,11 @@ const gridTN = {
       }
     },
   },
-   gridTN7 : {
+   gridTD1N7 : {
     Disparar_Evento_Quando: {
       Click: (e) => {
   
-        console.log("gridTN7 foi disparada")
+        console.log("gridTD1N7 foi disparada")
   
         const el = e.target.parentElement ;
         const irmão = el.previousSibling, db =  el.classList ;
@@ -171,11 +171,11 @@ const gridTN = {
       }
     },
   },
-   gridTN8 : {
+   gridTD1N8 : {
     Disparar_Evento_Quando: {
       Click: (e) => {
   
-        console.log("gridTN7 foi disparada")
+        console.log("gridTD1N7 foi disparada")
   
         const el = e.target.parentElement ;
         const irmão = el.previousSibling, db =  el.classList ;
@@ -224,11 +224,11 @@ const gridTN = {
       }
     },
   },
-   gridTN9 : {
+   gridTD1N9 : {
     Disparar_Evento_Quando: {
       Click: (e) => {
   
-        console.log("gridTN7 foi disparada")
+        console.log("gridTD1N7 foi disparada")
   
         const el = e.target.parentElement ;
         const irmão = el.previousSibling, db =  el.classList ;
@@ -277,11 +277,11 @@ const gridTN = {
       }
     },
   },
-   gridTN10 : {
+   gridTD1N10 : {
     Disparar_Evento_Quando: {
       Click: (e) => {
   
-        console.log("gridTN7 foi disparada")
+        console.log("gridTD1N7 foi disparada")
   
         const el = e.target.parentElement ;
         const irmão = el.previousSibling, db =  el.classList ;
@@ -330,7 +330,7 @@ const gridTN = {
       }
     },
   },
-   gridTN11 : {
+   gridTD1N11 : {
     Disparar_Evento_Quando: {
       Over: (e) => {
         const Pai = e.target.parentElement;
@@ -362,11 +362,11 @@ const gridTN = {
       }
     },
   },
-  gridTNB1 : {
+  gridTD1NB1 : {
     Disparar_Evento_Quando: {
       Click: (e) => {
   
-        console.log("gridTNB foi disparada")
+        console.log("gridTD1NB foi disparada")
   
         const el = $(".gridTF7") ;
         const irmão = el.previousSibling, db =  el.classList ;
@@ -415,11 +415,11 @@ const gridTN = {
       }
     },
   },
-  gridTNB2 : {
+  gridTD1NB2 : {
     Disparar_Evento_Quando: {
       Click: (e) => {
   
-        console.log("gridTNB foi disparada")
+        console.log("gridTD1NB foi disparada")
   
         const el = $(".gridTF7") ;
         const irmão = el.previousSibling, db =  el.classList ;
@@ -468,20 +468,20 @@ const gridTN = {
       }
     },
   },
-  gridTNB3 : {
+  gridTD1NB3 : {
 
     Disparar_Evento_Quando: {
 
       Click: (e) => {
   
-        console.log("gridTNB3 foi disparada")
+        console.log("gridTD1NB3 foi disparada")
 
         const 
         irmão2 = $(".gridTF7"),
         irmão3 = irmão2.nextSibling,
         irmão1 = irmão2.previousSibling,
 
-        soluçoes_gridTNB3 = {
+        soluçoes_gridTD1NB3 = {
           1: () => {
 
               //primeira posição -> segunda posição 
@@ -523,7 +523,7 @@ const gridTN = {
           },
         },
 
-        name_class_gridTNB3 = {
+        name_class_gridTD1NB3 = {
           p1:"for_posiçao2_of_gridTF7_m1",
           p2:"for_posiçao3_of_gridTF7_m1",
           p3:"for_posiçao1_of_gridTF7_m1",
@@ -531,7 +531,7 @@ const gridTN = {
 
         db =  irmão2.classList ;
 
-        Analise_class_p(db, name_class_gridTNB3, soluçoes_gridTNB3) ;
+        Analise_class_p(db, name_class_gridTD1NB3, soluçoes_gridTD1NB3) ;
      
   
       },
@@ -567,7 +567,7 @@ export {
   Adicionar_class,
   Aumentar_ElementoPai,
   Diminuir_ElementoPai,
-  gridTN,
+  gridTD1N,
   Analise_class
 };
 

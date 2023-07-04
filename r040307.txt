@@ -21,6 +21,8 @@ b () {
 
 }
 
+#Rascunho comando grep
+
     nexp="^<";
     arqs="Pai";
 
@@ -30,3 +32,89 @@ b () {
     cat * | grep -n '#!/bin/bash' ;
     sed '1~1 s/testesed/testesed2/' "r0407.txt" > "r0407new.txt" ;
     cat "r0407new.txt" ;
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------
+    . "/workspaces/MirrorFashion/esg" "GridTF" "1.js" "GridTD1F" 
+
+ai () {
+    
+    a=${1}
+
+    for e in ${a[@]}
+        do
+            ar=gtfh${e}.js ;
+
+            echo -e "Alterando o arquivo ${ar}" ;
+
+            cd "/workspaces/MirrorFashion/src/Slide/componentsSlide/gridTD/1/gtf${e}" ;   
+
+            . "/workspaces/MirrorFashion/esg" "gridTF" "${ar}" "gridTD1F" 
+            . "/workspaces/MirrorFashion/esg" "gridTN" "${ar}" "gridTD1N" 
+
+            echo -e "Exibindo o arquivo ${ar}" ;
+
+            cat "${ar}" ;
+    
+            grep "gridTD1F" "${ar}" ;
+            grep "gridTD1N" "${ar}" ;
+
+            echo -e "Alterando os arquivos gtfh${e}.css gtfh${e}A.css" ;
+
+            cd "/workspaces/MirrorFashion/src/Slide/componentsSlide/gridTD/1/gtf${e}/css" ;  
+
+            . "/workspaces/MirrorFashion/esg" "gridTF" "gtfh${e}.css" "gridTD1F" 
+            . "/workspaces/MirrorFashion/esg" "gridTN" "gtfh${e}.css" "gridTD1N" 
+
+            . "/workspaces/MirrorFashion/esg" "gridTF" "gtfh${e}A.css" "gridTD1F" 
+            . "/workspaces/MirrorFashion/esg" "gridTN" "gtfh${e}A.css" "gridTD1N" 
+
+            
+            echo -e "Exibindo o arquivo gtfh${e}.css" ;
+
+            cat "gtfh${e}.css" "gtfh${e}A.css" ;
+    
+            grep "gridTD1F" "gtfh${e}.css" ;
+            grep "gridTD1N" "gtfh${e}.css" ;
+            grep "gridTD1F" "gtfh${e}A.css" ;
+            grep "gridTD1N" "gtfh${e}A.css" ;
+
+        done
+
+} 
+
+
+ai2 () {
+    
+    s=${1};
+    ns=${2};
+    ar=${3};
+    d=${4};
+
+    #for e in ${a[@]}
+    #do
+    #done
+
+        echo -e "Alterando o arquivo ${ar}" ;
+
+        cd "${d}" ;   
+
+        . "/workspaces/MirrorFashion/esg" "${s}" "${ar}" "${ns}" 
+
+        echo -e "Exibindo o arquivo ${ar}" ;
+
+        cat "${ar}" ;
+
+        grep "${ns}" "${ar}" ;
+        grep "${ns}" "${ar}" ;    
+
+} 
+
+ai3 () {
+
+        s="gridTNB";
+        ns="gridTD1NB";
+        ar="gtfhB.js";
+        d="/workspaces/MirrorFashion/src/Slide/componentsSlide/gridTD/1/gtfB";
+
+        ai2 "${s}" "${ns}" "${ar}" "${d}" ;
+}

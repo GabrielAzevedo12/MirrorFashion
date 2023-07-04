@@ -1,5 +1,5 @@
 
-.gridTF8 {
+.gridTD1F8 {
 background-color: wheat;
 grid-area: subdestaque7;
 display: flex;
@@ -9,7 +9,7 @@ overflow-y: hidden;
 width: 33vw;
 height: 100vh;
 }
-.gridTN8 {
+.gridTD1N8 {
 position: relative;
 text-align: center;
 font-size: 3rem;
@@ -18,10 +18,10 @@ min-height: 100%;
 min-width: 100%;
 border-radius: 25px;
 }
-.gridTN81 {
+.gridTD1N81 {
 background-color: brown;
 }
-.gridTN82 {
+.gridTD1N82 {
 background-color: tomato;
 /*background-image: 
 linear-gradient(
@@ -33,7 +33,7 @@ url(/workspace/MirrorFashion/public/images/pink-fur-fabulous-fashion.jpg);*/
 background-repeat: no-repeat;
 background-size: 140%;
 }
-.gridTN83 {
+.gridTD1N83 {
 background-color: darkblue;
 /*background-image: 
 linear-gradient(
