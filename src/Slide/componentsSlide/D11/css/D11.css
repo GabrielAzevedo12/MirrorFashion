@@ -108,13 +108,13 @@
 /*---------------------------------------------------------------------------------------------------------------------*/
 .img111 {
   /*background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)),url("/vercel/path0/public/images/Destaques/D1.jpg"); '/project/MirrorFashion/src/Slide/componentsSlide/D11/css'*/
-  background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)),url("/workspace/MirrorFashion/public/images/Destaques/D1.jpg");
+  background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)),url("/workspaces/MirrorFashion/public/images/Destaques/D1.jpg");
 }
 .img112 {
-  background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)),url("/workspace/MirrorFashion/public/images/Destaques/D2.jpg");
+  background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)),url("/workspaces/MirrorFashion/public/images/Destaques/D2.jpg");
 }
 .img113 {
-  background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)),url("/workspace/MirrorFashion/public/images/Destaques/D3.jpg");
+  background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)),url("/workspaces/MirrorFashion/public/images/Destaques/D3.jpg");
 }
 /*---------------------------------------------------------------------------------------------------------------------*/
   @keyframes fadeIn {
@@ -218,13 +218,13 @@
   height: 180vh;
     }
   #img111 {
-    background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)),url("/workspace/MirrorFashion/public/images/fashion-model-in-fur.jpg");
+    background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)),url("/workspaces/MirrorFashion/public/images/fashion-model-in-fur.jpg");
   }
   #img112 {
-    background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)),url("/workspace/MirrorFashion/public/images/man-in-white-and-light-tan-outfit.jpg");
+    background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)),url("/workspaces/MirrorFashion/public/images/man-in-white-and-light-tan-outfit.jpg");
   }
   #img113 {
-    background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)),url("/workspace/MirrorFashion/public/images/young-woman-in-red.jpg");
+    background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)),url("/workspaces/MirrorFashion/public/images/young-woman-in-red.jpg");
   }
 
 }

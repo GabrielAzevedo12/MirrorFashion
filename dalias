@@ -3,8 +3,8 @@
 dalias () {
      alias a='ls -la' 
      alias c='clear' 
-     alias cS='cd "/workspace/MirrorFashion/src/Slide/componentsSlide"'
-     alias cS2='export CS="/workspace/MirrorFashion/src/Slide/componentsSlide" && export CSgtd="/workspace/MirrorFashion/src/Slide/componentsSlide/gridTD"'
+     alias cS='cd "/workspaces/MirrorFashion/src/Slide/componentsSlide"'
+     alias cS2='export CS="/workspaces/MirrorFashion/src/Slide/componentsSlide" && export CSgtd="/workspaces/MirrorFashion/src/Slide/componentsSlide/gridTD"'
 }
 
 dalias
