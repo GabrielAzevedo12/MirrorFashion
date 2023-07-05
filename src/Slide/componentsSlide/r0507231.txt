@@ -1,0 +1,15 @@
+pi () {
+
+    arq=${1};
+    dir=${2};
+
+    cd "${dir}" ;
+    cat "/workspaces/MirrorFashion/src/Slide/componentsSlide/r0507233.txt" > "${arq}" ;
+
+}
+
+
+arq1="r0507232.txt";
+dir1="workspaces/MirrorFashion/src/Slide/componentsSlide";
+
+pi "${arq1}" "${dir1}" ;

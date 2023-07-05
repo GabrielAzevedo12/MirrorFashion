@@ -1,0 +1,15 @@
+#!/bin/bash
+#laço for padrão
+
+    l () {
+
+    #a='${1}';
+    #f1='${2}';
+
+    for e in ${a[@]}
+    do
+        f1 '${e}' ;
+    done
+
+    }
+    
