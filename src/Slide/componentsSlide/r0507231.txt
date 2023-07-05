@@ -8,8 +8,18 @@ pi () {
 
 }
 
+pi2 () {
 
-arq1="r0507232.txt";
+    arq=${1};
+    dir=${2};
+
+    cd "${dir}" ;
+    cat "/workspaces/MirrorFashion/s" > "${arq}" ;
+
+}
+
+
+arq1="steste";
 dir1="workspaces/MirrorFashion/src/Slide/componentsSlide";
 
-pi "${arq1}" "${dir1}" ;
+pi2 "${arq1}" "${dir1}" ;

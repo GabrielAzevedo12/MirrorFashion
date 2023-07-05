@@ -1,0 +1,23 @@
+  #!bin/bash
+
+  a=${1};
+  arq=${2};
+  so=${3};
+  sa=${4};
+  dir=${5};
+
+ # for e in ${a[@]}
+ #       do
+ #       done
+    cd "${dir}" ;
+    sed -i -r "s/${so}/${sn}/g" "${arq}" ;
+    cat -n "${arq}" ;
+    egrep -H -n "sn" "${arq}" ;
+
+    #a=${1};
+    arq=st2;
+    so=2;
+    sn=3;
+    dir="/workspaces/MirrorFashion/src/Slide/componentsSlide";        
+     . "/workspaces/MirrorFashion/s" "" "${arq}" "${so}" "${sn}" "${dir}"
+    
