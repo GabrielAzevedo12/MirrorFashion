@@ -1,5 +1,7 @@
 .DbannerPrincipal1,
-.DbannerPrincipal2 {
+.DbannerPrincipal2,
+.DbannerPrincipal3
+ {
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-end;
@@ -10,10 +12,14 @@
   height: 1000vh;
   background-color: black;
 }
-.DbannerPrincipal2 {
+.DbannerPrincipal3 {
   position: relative;
   top: 500vh;
   height: 1000vh;
+}
+.DbannerPrincipal2 {
+  position: relative;
+  height: 500vh;
 }
 .DbannerTíd {
   display: flex;

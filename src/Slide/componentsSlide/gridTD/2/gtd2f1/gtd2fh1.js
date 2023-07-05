@@ -6,7 +6,7 @@ import {
   Adicionar_class,
   Aumentar_ElementoPai,
   Diminuir_ElementoPai,
-  gridTN,
+  gridTD1N,
   Analise_class
 } from '../../../DBanner/f/f.js'
 /*Imports#*/
@@ -20,49 +20,49 @@ const  GridTD2F1 = ({ Obj_Pai_Props }) => {
 /*#Hook_Conteudo*/  
 return (
     <div className='gridTD1_F1 gridTD1F animation1_gridTD1F animation1_gridTD1_F1'
-    /*onClick={gridTN.gridTN1.Disparar_Evento_Quando.Click}*/
-    /*onMouseOut={gridTN.gridTN1.Disparar_Evento_Quando.Out}*/
-    /*onMouseOver={gridTN.gridTN1.Disparar_Evento_Quando.Over}*/
-    /*onDrag={gridTN.gridTN1.Disparar_Evento_Quando.Drag}*/
-    /*onDrop={gridTN.gridTN1.Disparar_Evento_Quando.Drop}*/
-    /*onDragStart={gridTN.gridTN1.Disparar_Evento_Quando.DragStart}*/
-    /*onDragOver={gridTN.gridTN1.Disparar_Evento_Quando.DragOver} */>
+    /*onClick={gridTD1N.gridTD1N1.Disparar_Evento_Quando.Click}*/
+    /*onMouseOut={gridTD1N.gridTD1N1.Disparar_Evento_Quando.Out}*/
+    /*onMouseOver={gridTD1N.gridTD1N1.Disparar_Evento_Quando.Over}*/
+    /*onDrag={gridTD1N.gridTD1N1.Disparar_Evento_Quando.Drag}*/
+    /*onDrop={gridTD1N.gridTD1N1.Disparar_Evento_Quando.Drop}*/
+    /*onDragStart={gridTD1N.gridTD1N1.Disparar_Evento_Quando.DragStart}*/
+    /*onDragOver={gridTD1N.gridTD1N1.Disparar_Evento_Quando.DragOver} */>
             <div 
             className='gridTD1N1_1 gridTD1N1_g animation1_gridTD1N1 animation1_gridTD1N11'
-            /*onClick={gridTN.gridTN1.Disparar_Evento_Quando.Click}*/
-            /*onMouseOut={gridTN.gridTN1.Disparar_Evento_Quando.Out}*/
-            /*onMouseOver={gridTN.gridTN1.Disparar_Evento_Quando.Over}*/
-            /*onDrag={gridTN.gridTN1.Disparar_Evento_Quando.Drag}*/
-            /*onDrop={gridTN.gridTN1.Disparar_Evento_Quando.Drop}*/
-            /*onDragStart={gridTN.gridTN1.Disparar_Evento_Quando.DragStart}*/
-            /*onDragOver={gridTN.gridTN1.Disparar_Evento_Quando.DragOver} */>
+            /*onClick={gridTD1N.gridTD1N1.Disparar_Evento_Quando.Click}*/
+            /*onMouseOut={gridTD1N.gridTD1N1.Disparar_Evento_Quando.Out}*/
+            /*onMouseOver={gridTD1N.gridTD1N1.Disparar_Evento_Quando.Over}*/
+            /*onDrag={gridTD1N.gridTD1N1.Disparar_Evento_Quando.Drag}*/
+            /*onDrop={gridTD1N.gridTD1N1.Disparar_Evento_Quando.Drop}*/
+            /*onDragStart={gridTD1N.gridTD1N1.Disparar_Evento_Quando.DragStart}*/
+            /*onDragOver={gridTD1N.gridTD1N1.Disparar_Evento_Quando.DragOver} */>
               gridTD1N11 
             </div>
             <div className='gridTD1N1_2 gridTD1N1_g animation1_gridTD1N1 animation1_gridTD1N12'
-            /*onClick={gridTN.gridTN1.Disparar_Evento_Quando.Click}*/
-            /*onMouseOut={gridTN.gridTN1.Disparar_Evento_Quando.Out}*/
-            /*onMouseOver={gridTN.gridTN1.Disparar_Evento_Quando.Over}*/
-            /*onDrag={gridTN.gridTN1.Disparar_Evento_Quando.Drag}*/
-            /*onDrop={gridTN.gridTN1.Disparar_Evento_Quando.Drop}*/
-            /*onDragStart={gridTN.gridTN1.Disparar_Evento_Quando.DragStart}*/
-            /*onDragOver={gridTN.gridTN1.Disparar_Evento_Quando.DragOver} */>
+            /*onClick={gridTD1N.gridTD1N1.Disparar_Evento_Quando.Click}*/
+            /*onMouseOut={gridTD1N.gridTD1N1.Disparar_Evento_Quando.Out}*/
+            /*onMouseOver={gridTD1N.gridTD1N1.Disparar_Evento_Quando.Over}*/
+            /*onDrag={gridTD1N.gridTD1N1.Disparar_Evento_Quando.Drag}*/
+            /*onDrop={gridTD1N.gridTD1N1.Disparar_Evento_Quando.Drop}*/
+            /*onDragStart={gridTD1N.gridTD1N1.Disparar_Evento_Quando.DragStart}*/
+            /*onDragOver={gridTD1N.gridTD1N1.Disparar_Evento_Quando.DragOver} */>
               gridTD1N12
             </div>
             <div className='gridTD1N1_3 gridTD1N1_g animation1_gridTD1N1 animation1_gridTD1N13'
-            /*onClick={gridTN.gridTN1.Disparar_Evento_Quando.Click}*/
-            /*onMouseOut={gridTN.gridTN1.Disparar_Evento_Quando.Out}*/
-            /*onMouseOver={gridTN.gridTN1.Disparar_Evento_Quando.Over}*/
-            /*onDrag={gridTN.gridTN1.Disparar_Evento_Quando.Drag}*/
-            /*onDrop={gridTN.gridTN1.Disparar_Evento_Quando.Drop}*/
-            /*onDragStart={gridTN.gridTN1.Disparar_Evento_Quando.DragStart}*/
-            /*onDragOver={gridTN.gridTN1.Disparar_Evento_Quando.DragOver} */>
+            /*onClick={gridTD1N.gridTD1N1.Disparar_Evento_Quando.Click}*/
+            /*onMouseOut={gridTD1N.gridTD1N1.Disparar_Evento_Quando.Out}*/
+            /*onMouseOver={gridTD1N.gridTD1N1.Disparar_Evento_Quando.Over}*/
+            /*onDrag={gridTD1N.gridTD1N1.Disparar_Evento_Quando.Drag}*/
+            /*onDrop={gridTD1N.gridTD1N1.Disparar_Evento_Quando.Drop}*/
+            /*onDragStart={gridTD1N.gridTD1N1.Disparar_Evento_Quando.DragStart}*/
+            /*onDragOver={gridTD1N.gridTD1N1.Disparar_Evento_Quando.DragOver} */>
               gridTD1N13
           </div>
     </div>
     );
+}
 /*Hook_Conteudo#/  
 
-}
 /*Hook#*/
 
 /*#Exports*/

@@ -1,15 +1,42 @@
 #!/bin/bash
 #laço for padrão
 
+
+    f1 ;
+
     l () {
 
-    #a='${1}';
-    #f1='${2}';
+    a="${1}";
+    f1="${2}";
 
     for e in ${a[@]}
     do
-        f1 '${e}' ;
+        f1 "${e}" ;
     done
 
     }
+
+    f1 () {
+
+        i=${1} ;
+        
+        cd "/workspaces/MirrorFashion/src/Slide/componentsSlide/gridTD/2/gtd2f${i}" ;
+        sed -i -r '63 s/^$/}/g' "gtd2fh${i}.js" ;
+        cat -n "gtd2fh${i}.js";
+    }
     
+    l "1 2 3 B" "f1";
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    a="1 2 3";
+
+    for e in ${a[@]}
+        do
+            cd "/workspaces/MirrorFashion/src/Slide/componentsSlide/gridTD/2/gtd2f${e}" ;
+            sed -i -r 's/gridTN/gridTD1N/g' "gtd2fh${e}.js" ;
+            cat -n "gtd2fh${i}.js";
+            egrep -H -n "gridTD1N";
+        done
+
+        
