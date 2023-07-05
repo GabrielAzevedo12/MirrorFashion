@@ -1,28 +1,42 @@
 .gridTD1F2 {
-    background-color: black;
-    grid-area: subdestaque1;
-    display: flex;
-    flex-direction: row;
-    /*min-height: 30vh;*/
-    overflow-x: scroll;
-    overflow-y: hidden;
-    height: 200vh;
-    width: 60vw; 
-  }
-  .gridTD1N2 {
-    position: relative;
-    /*align-items: center;
+  background-color: black;
+  grid-area: subdestaque1;
+  display: flex;
+  flex-direction: row;
+  /*min-height: 30vh;*/
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 200vh;
+  width: 60vw;
+}
+.gridTD1N2 {
+  position: relative;
+  /*align-items: center;
     align-content: center;
     justify-content: center;*/
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 500;
-    min-height: 95%;
-    min-width: 100%;
-    border-radius: 25px;
-  }
-  .gridTD1N21 {
-    background-color: violet;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  min-height: 95%;
+  min-width: 100%;
+  border-radius: 25px;
+}
+.gridTD1N21 {
+  background-color: violet;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.2) 40%,
+      rgba(0, 0, 0, 0.2) 80%,
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(/project/MirrorFashion/public/images/pink-neon-lights-fashion-model.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gridTD1N22 {
+  background-color: yellow;
+  /*
     background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.6),
@@ -30,37 +44,23 @@
         rgba(0, 0, 0, 0.2) 80%,
         rgba(0, 0, 0, 0.4)
       ),
-      url(/workspaces/MirrorFashion/public/images/pink-neon-lights-fashion-model.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .gridTD1N22 {
-    background-color: yellow;
-     /*
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.2) 40%,
-        rgba(0, 0, 0, 0.2) 80%,
-        rgba(0, 0, 0, 0.4)
-      ),
-      url(/workspace/MirrorFashion/public/images/striped-blouse-fashion.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    */
-  }
-  .gridTD1N23 {
-    background-color: springgreen;
-     /*
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.2) 40%,
-        rgba(0, 0, 0, 0.2) 80%,
-        rgba(0, 0, 0, 0.4)
-      ),
-      url(/workspace/MirrorFashion/public/images/striped-blouse-fashion.jpg);
+      url(/project/MirrorFashion/public/images/striped-blouse-fashion.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     */
-  }
+}
+.gridTD1N23 {
+  background-color: springgreen;
+  /*
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.2) 40%,
+        rgba(0, 0, 0, 0.2) 80%,
+        rgba(0, 0, 0, 0.4)
+      ),
+      url(/project/MirrorFashion/public/images/striped-blouse-fashion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    */
+}

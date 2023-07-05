@@ -1,14 +1,14 @@
 /*---------------------------------------------------------------------------------------------------------------------*/
 .Div11 {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: hidden;
-    height: 95vh;
-    width: 100vw; 
-    min-height: 95vh;
-    min-width: 100vw;   
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  height: 95vh;
+  width: 100vw;
+  min-height: 95vh;
+  min-width: 100vw;
 }
 .Div11:hover {
   animation-name: Div11;
@@ -25,69 +25,69 @@
 }
 /*---------------------------------------------------------------------------------------------------------------------*/
 .D11F1 {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 95vh;
-    width: 100vw;
-    min-height: 95vh;
-    min-width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 95vh;
+  width: 100vw;
+  min-height: 95vh;
+  min-width: 100vw;
 }
-.D11F1:hover{
+.D11F1:hover {
   animation-name: D11F1;
   animation-duration: 2s;
   animation-iteration-count: 1;
   min-height: 105vh;
-} 
-/*---------------------------------------------------------------------------------------------------------------------*/
-.D11F11 {
-    background: transparent;
-  } 
-/*---------------------------------------------------------------------------------------------------------------------*/  
-.D11F12{
-  background: transparent/*linear-gradient(antiquewhite,darksalmon)*/;
 }
 /*---------------------------------------------------------------------------------------------------------------------*/
-.D11F13{
-     background: transparent/*linear-gradient(antiquewhite,black,darksalmon)*/;
+.D11F11 {
+  background: transparent;
+}
+/*---------------------------------------------------------------------------------------------------------------------*/
+.D11F12 {
+  background: transparent /*linear-gradient(antiquewhite,darksalmon)*/;
+}
+/*---------------------------------------------------------------------------------------------------------------------*/
+.D11F13 {
+  background: transparent /*linear-gradient(antiquewhite,black,darksalmon)*/;
 }
 /*---------------------------------------------------------------------------------------------------------------------*/
 .GoTriangleRight {
-    font-size: 4em;
-    position: fixed;
-    color: black;
-    top: 5em;
-    right: 0;
-  }
-  .GoTriangleRight:hover {
-    color: wheat;
-  }
-  .GoTriangleLeft {
-    font-size: 4em;
-    position: fixed;
-    color: black;
-    top: 5em;
-    left: 0;
-  }
-  .GoTriangleLeft:hover {
-    color: wheat;
-  }
-  .GoTriangleRightC {
-    width: 0;
-  }
-  .GoTriangleLeftC {
-    width: 0;
-  }
+  font-size: 4em;
+  position: fixed;
+  color: black;
+  top: 5em;
+  right: 0;
+}
+.GoTriangleRight:hover {
+  color: wheat;
+}
+.GoTriangleLeft {
+  font-size: 4em;
+  position: fixed;
+  color: black;
+  top: 5em;
+  left: 0;
+}
+.GoTriangleLeft:hover {
+  color: wheat;
+}
+.GoTriangleRightC {
+  width: 0;
+}
+.GoTriangleLeftC {
+  width: 0;
+}
 /*---------------------------------------------------------------------------------------------------------------------*/
-.imgd  {
+.imgd {
   animation-name: fadeIn;
   animation-duration: 3s;
   animation-iteration-count: 1;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 95vh; 
-  width: 90vw; 
+  height: 95vh;
+  width: 90vw;
   left: 0px;
 }
 .imgd:hover {
@@ -96,64 +96,86 @@
   animation-iteration-count: 1;
   box-shadow: 0px 0px 200px 240px black;
   border-radius: 120px;
-  width: 100vw; 
+  width: 100vw;
 }
 .imgd:not(:hover) {
   animation-name: -imgdhover1;
   animation-duration: 1.5s;
   animation-iteration-count: 1;
-  box-shadow: 0px 0px 50px 50px antiquewhite, 0px 0px 50px 50px darksalmon,0px 0px 50px 50px salmon,0px 0px 200px 200px black;
+  box-shadow: 0px 0px 50px 50px antiquewhite, 0px 0px 50px 50px darksalmon,
+    0px 0px 50px 50px salmon, 0px 0px 200px 200px black;
   border-radius: 70px;
 }
 /*---------------------------------------------------------------------------------------------------------------------*/
 .img111 {
   /*background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)),url("/vercel/path0/public/images/Destaques/D1.jpg"); '/project/MirrorFashion/src/Slide/componentsSlide/D11/css'*/
-  background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)),url("/workspaces/MirrorFashion/public/images/Destaques/D1.jpg");
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.2) 40%,
+      rgba(0, 0, 0, 0.2) 80%,
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("/project/MirrorFashion/public/images/Destaques/D1.jpg");
 }
 .img112 {
-  background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)),url("/workspaces/MirrorFashion/public/images/Destaques/D2.jpg");
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.2) 40%,
+      rgba(0, 0, 0, 0.2) 80%,
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("/project/MirrorFashion/public/images/Destaques/D2.jpg");
 }
 .img113 {
-  background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)),url("/workspaces/MirrorFashion/public/images/Destaques/D3.jpg");
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.2) 40%,
+      rgba(0, 0, 0, 0.2) 80%,
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("/project/MirrorFashion/public/images/Destaques/D3.jpg");
 }
 /*---------------------------------------------------------------------------------------------------------------------*/
-  @keyframes fadeIn {
-    from {
-      size: 0%;
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-      size: 100%;
-    }
+@keyframes fadeIn {
+  from {
+    size: 0%;
+    opacity: 0;
   }
-/*---------------------------------------------------------------------------------------------------------------------*/  
-  @keyframes D11F1 {
-    0% {
-      background: radial-gradient(darksalmon,black);
-      min-height: 95vh;
-   }
-    100% {
-      background: black ;
-      min-height: 105vh;
-    }
+  to {
+    opacity: 1;
+    size: 100%;
   }
+}
+/*---------------------------------------------------------------------------------------------------------------------*/
+@keyframes D11F1 {
+  0% {
+    background: radial-gradient(darksalmon, black);
+    min-height: 95vh;
+  }
+  100% {
+    background: black;
+    min-height: 105vh;
+  }
+}
 /*---------------------------------------------------------------------------------------------------------------------*/
 @keyframes Div11 {
-    from {
-      box-shadow: 0px 0px 110px 80px whitesmoke;
-      min-height: 95vh;
-    } 
-    to {
-      box-shadow: 0px 0px 200px 240px black;
-      min-height: 105vh;
-    }
+  from {
+    box-shadow: 0px 0px 110px 80px whitesmoke;
+    min-height: 95vh;
   }
+  to {
+    box-shadow: 0px 0px 200px 240px black;
+    min-height: 105vh;
+  }
+}
 /*---------------------------------------------------------------------------------------------------------------------*/
 @keyframes -Div11 {
   from {
     box-shadow: 0px 0px 200px 240px black;
-  } 
+  }
   to {
     box-shadow: 0px 0px 150px 80px black;
   }
@@ -163,39 +185,37 @@
   from {
     box-shadow: 0px 0px 110px 100px whitesmoke;
     border-radius: 70px;
-    width: 80vw; 
-  } 
+    width: 80vw;
+  }
   to {
     box-shadow: 0px 0px 200px 220px black;
     border-radius: 120px;
-    width: 100vw; 
+    width: 100vw;
   }
 }
 /*---------------------------------------------------------------------------------------------------------------------*/
 @keyframes -imgdhover1 {
-    from {
-      box-shadow: 0px 0px 200px 240px black;
-      border-radius: 120px;
-      width: 100vw;
-    } 
-    to {
-      box-shadow: 0px 0px 110px 100px black;
-      border-radius: 70px;
-      width: 80vw;
-    }
+  from {
+    box-shadow: 0px 0px 200px 240px black;
+    border-radius: 120px;
+    width: 100vw;
   }
+  to {
+    box-shadow: 0px 0px 110px 100px black;
+    border-radius: 70px;
+    width: 80vw;
+  }
+}
 /*---------------------------------------------------------------------------------------------------------------------*/
 @media (min-width: 1500px) {
-  .Div11 
-  .D11F1
-  {
+  .Div11 .D11F1 {
     width: 100vw;
     height: 95vh;
   }
   .imgd {
     width: 90vw;
     height: 95vh;
-      }
+  }
   .LHul {
     width: none;
   }
@@ -210,31 +230,49 @@
 @media (max-width: 1024px) {
   .Div1,
   .Div11,
-  .D11F1 
-  {
+  .D11F1 {
     height: 180vh;
   }
   .imgd {
-  height: 180vh;
-    }
+    height: 180vh;
+  }
   #img111 {
-    background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)),url("/workspaces/MirrorFashion/public/images/fashion-model-in-fur.jpg");
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.2) 40%,
+        rgba(0, 0, 0, 0.2) 80%,
+        rgba(0, 0, 0, 0.4)
+      ),
+      url("/project/MirrorFashion/public/images/fashion-model-in-fur.jpg");
   }
   #img112 {
-    background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)),url("/workspaces/MirrorFashion/public/images/man-in-white-and-light-tan-outfit.jpg");
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.2) 40%,
+        rgba(0, 0, 0, 0.2) 80%,
+        rgba(0, 0, 0, 0.4)
+      ),
+      url("/project/MirrorFashion/public/images/man-in-white-and-light-tan-outfit.jpg");
   }
   #img113 {
-    background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4)),url("/workspaces/MirrorFashion/public/images/young-woman-in-red.jpg");
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.2) 40%,
+        rgba(0, 0, 0, 0.2) 80%,
+        rgba(0, 0, 0, 0.4)
+      ),
+      url("/project/MirrorFashion/public/images/young-woman-in-red.jpg");
   }
-
 }
 
 @media (max-width: 768px) {
   .Div1,
   .Div11,
   .D11F1,
-  .imgd
-  {
+  .imgd {
     width: 100vw;
     height: 180vh;
   }
@@ -242,48 +280,45 @@
     animation-name: -imgdhover1;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
-    box-shadow: 0px 0px 0px 0px, 0px 0px 0px 0px, 0px 0px 0px 0px, 0px 0px 0px 0px;
+    box-shadow: 0px 0px 0px 0px, 0px 0px 0px 0px, 0px 0px 0px 0px,
+      0px 0px 0px 0px;
     border-radius: 70px;
-  } 
+  }
 }
 
 @media (min-width: 601px) {
-    .imgdis {
-      display: none;
-    }
+  .imgdis {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
-    .imgdis {
-      display: flex;
-      align-items: center;
-      align-content: center;
+  .imgdis {
+    display: flex;
+    align-items: center;
+    align-content: center;
   }
 }
 
 @media (min-width: 426px) {
-  
 }
 
 @media (max-width: 425px) {
   .Div1,
   .Div11,
   .D11F1,
-  .imgd
-  {
+  .imgd {
     height: 120vh;
   }
 }
 
 @media (max-width: 375px) {
-
 }
 
 @media (max-width: 320px) {
-
 }
 
-  /*
+/*
 .img111,
 .img112,
 .img113

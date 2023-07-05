@@ -1,37 +1,38 @@
-import './css/Dbanner.css';
-import './css/DbannerA.css';
-import './../gridTD/1/css/gridTD.css';
-import './../gridTD/1/css/gridTDA.css';
-import './../gridTD/2/css/gridTD2A.css';
-import './../gridTD/3/css/gridTD3.css';
-import './../gridTD/3/css/gridTD3A.css';
-import './../gridTD/4/css/gridTD4.css';
-import './../gridTD/4/css/gridTD4A.css';
+import "./css/Dbanner.css";
+import "./css/DbannerA.css";
+import "./../gridTD/1/css/gridTD.css";
+import "./../gridTD/1/css/gridTDA.css";
+import "./../gridTD/2/css/gridTD2A.css";
+import "./../gridTD/3/css/gridTD3.css";
+import "./../gridTD/3/css/gridTD3A.css";
+import "./../gridTD/4/css/gridTD4.css";
+import "./../gridTD/4/css/gridTD4A.css";
+import "./../gridTD/5/css/gridTD5.css";
 import {
   Adicionar_class,
   Aumentar_ElementoPai,
   Diminuir_ElementoPai,
   gridTN11,
-} from './f/f.js';
-import { GridTD1 } from '../gridTD/1/1.js';
-import { GridTDG } from '../gridTD/g/g.js';
-import { gridTD2_props } from './o/griTD2';
-import { gridTD3_props } from './o/griTD3';
-import { gridTD4_props } from './o/griTD4';
-import { gridTD5_props } from './o/griTD5';
-import { GridTD2 } from '../gridTD/2/2';
+} from "./f/f.js";
+import { GridTD1 } from "../gridTD/1/1.js";
+import { GridTDG } from "../gridTD/g/g.js";
+import { gridTD2_props } from "./o/griTD2";
+import { gridTD3_props } from "./o/griTD3";
+import { gridTD4_props } from "./o/griTD4";
+import { gridTD5_props } from "./o/griTD5";
+import { GridTD2 } from "../gridTD/2/2";
 //Fase : Teste
 const Dbanner = () => {
-  const display_none = { display: 'none' };
+  const display_none = { display: "none" };
   return (
     <>
-      <div className='DbannerPrincipal1'>
+      <div className="DbannerPrincipal1">
         <GridTD1 />
       </div>
-      <div className='DbannerPrincipal2'>
+      <div className="DbannerPrincipal2">
         <GridTD2 />
       </div>
-      <div className='DbannerPrincipal3'>
+      <div className="DbannerPrincipal3">
         <GridTDG PropsGridTDG={gridTD3_props} />
         <GridTDG PropsGridTDG={gridTD4_props} />
         <GridTDG PropsGridTDG={gridTD5_props} />
