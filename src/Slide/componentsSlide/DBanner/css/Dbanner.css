@@ -13,13 +13,13 @@
   background-color: black;
 }
 .DbannerPrincipal3 {
-  position: relative;
+  position: absolute;
   top: 500vh;
   height: 1000vh;
 }
 .DbannerPrincipal2 {
   position: relative;
-  height: 500vh;
+  height: 200vh;
 }
 .DbannerTíd {
   display: flex;
