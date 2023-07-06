@@ -1,31 +1,27 @@
-.gridTD1FB
-{
-background-color:black;
-grid-area:gridTD1FB;
-display:flex;
-flex-direction:row;
-height: 10vh;
-width: 100vw;
-color: aquamarine;
+.gridTD1FB {
+  background-color: pink;
+  grid-area: gridTD1FB;
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+  width: 100vw;
+  color: aquamarine;
 }
-.gridTD1NB
-{
-position:relative;
-text-align:center;
-font-size:3rem;
-font-weight:500;
-min-height:100%;
-min-width:33%;
-border-radius:25px;
+.gridTD1NB {
+  position: relative;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  min-height: 100%;
+  min-width: 33%;
+  border-radius: 25px;
 }
-.gridTD1NB1
-{
-background: radial-gradient(gray,black);
+.gridTD1NB1 {
+  background: radial-gradient(gray, black);
 }
-.gridTD1NB2
-{
-background: radial-gradient(gray,black);
-/*background-image:
+.gridTD1NB2 {
+  background: radial-gradient(gray, black);
+  /*background-image:
 linear-gradient(0deg,rgba(0,0,0,0.6),
 rgba(0,0,0,0.2)40%,rgba(0,0,0,0.2)80%,
 rgba(0,0,0,0.4)),
@@ -33,10 +29,9 @@ url(/workspace/MirrorFashion/public/images/pink-fur-fabulous-fashion.jpg);
 background-repeat:no-repeat;
 background-size:140%;*/
 }
-.gridTD1NB3
-{
-background: radial-gradient(gray,black);
-/*background-image:
+.gridTD1NB3 {
+  background: radial-gradient(gray, black);
+  /*background-image:
 linear-gradient(0deg,rgba(0,0,0,0.6),
 rgba(0,0,0,0.2)40%,rgba(0,0,0,0.2)80%,
 rgba(0,0,0,0.4)),

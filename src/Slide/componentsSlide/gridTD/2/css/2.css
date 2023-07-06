@@ -1,19 +1,18 @@
-
 .gridTD2 {
-  position: absolute;
+  position: relative;
   display: grid;
   /*grid-template-columns: 3fr 1fr 1fr;*/
   grid-template-areas:
-    '. . . . .'
-    'gridTFB gridTFB gridTFB gridTFB gridTFB'
-    '. . . . .'
-    '. GridTF1 GridTF2 GridTF3 .'
-    '. . . . .';
+    ". . . . ."
+    "gridTD2FB gridTD2FB gridTD2FB gridTD2FB gridTD2FB"
+    ". GridTF1 GridTF2 GridTF3 ."
+    ". . . . .";
 
-  min-height: 500vh;
+  min-height: 150vh;
   min-width: 90vw;
   width: 100vw;
   gap: 10px;
+  background-color: gray;
 }
 
 .gridTD2F {
@@ -24,10 +23,9 @@
   font-size: 3rem;
   font-weight: 500;
   box-shadow: 0px 0px 50px 50px black;
-  background-color: black;
+  background-color: darkblue;
   overflow-x: hidden;
   overflow-y: hidden;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------------*/
-

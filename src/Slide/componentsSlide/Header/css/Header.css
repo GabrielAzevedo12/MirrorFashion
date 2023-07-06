@@ -1,188 +1,184 @@
 .Dheader {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 100vw;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100vw;
 }
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .header {
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background: linear-gradient(black,transparent); 
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    height: 9vh;
-    min-height: 9vh;
-    width: 100vw;
-/*    box-shadow: 0px 0px 50px 50px black;*/
-    z-index: 1;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: linear-gradient(black, transparent);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 9vh;
+  min-height: 9vh;
+  width: 100vw;
+  /*    box-shadow: 0px 0px 50px 50px black;*/
+  z-index: 1;
 }
 .header:hover {
-    animation-name: myheader1;
-    animation-duration: 1.5s;
-    animation-iteration-count: 1;
-    box-shadow: 0px 0px 300px 260px black,0px 0px 200px 150px antiquewhite,0px 0px 300px 300px black;
-    background: black;
+  animation-name: myheader1;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  box-shadow: 0px 0px 300px 260px black, 0px 0px 200px 150px antiquewhite,
+    0px 0px 300px 300px black;
+  background: black;
 }
 .header:not(:hover) {
-    animation-name: -myheader1;
-    animation-duration: 1.5s;
-    animation-iteration-count: 1;
+  animation-name: -myheader1;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
 }
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .Lheader {
-    width: 8em;
-    height: 3em;
-    padding: 0.5em;
-    position: relative;
-    box-shadow: 0px 0px 0px 0px black,0px 0px 0px 0px antiquewhite;
-    display: flex;
-    height: 6vh;
-    min-height: 6vh;
+  width: 6em;
+  height: 3em;
+  padding: 0.5em;
+  position: relative;
+  box-shadow: 0px 0px 0px 0px black, 0px 0px 0px 0px antiquewhite;
+  display: flex;
+  height: 6vh;
+  min-height: 6vh;
 }
 .Lheader:hover {
-    animation-name: Lheader1;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    box-shadow: 0px 0px 300px 200px black,0px 0px 300px 250px antiquewhite;
+  animation-name: Lheader1;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  box-shadow: 0px 0px 300px 200px black, 0px 0px 300px 250px antiquewhite;
 }
 .Lheader:not(:hover) {
-    animation-name: Lheader2;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
+  animation-name: Lheader2;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
 }
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .HiOutlineViewList {
-    font-size: 3em;
-    margin-top: 0.2em;
-    margin-right: 0.2em;
-    color: wheat;
+  font-size: 3em;
+  margin-top: 0.2em;
+  margin-right: 0.2em;
+  color: wheat;
 }
 .VscSearch {
-    font-size: 4em;
-    color: wheat;
+  font-size: 4em;
+  color: wheat;
 }
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 #Pesquisa {
-    position: relative;
-    width: 100vw;
-    background: radial-gradient(darksalmon,antiquewhite,black);
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 900;
-    color: black;
+  position: relative;
+  width: 100vw;
+  background: radial-gradient(darksalmon, antiquewhite, black);
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  color: black;
 }
 .PesquisaA {
-    position: relative;
-    animation: PesquisaA;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    flex-direction: row;
-    justify-content: center;
-    height: 12vh;
-    width: 100vw;
-    box-shadow: 0px 0px 100px 100px black,0px 0px 100px 100px antiquewhite;
+  position: relative;
+  animation: PesquisaA;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  flex-direction: row;
+  justify-content: center;
+  height: 12vh;
+  width: 100vw;
+  box-shadow: 0px 0px 100px 100px black, 0px 0px 100px 100px antiquewhite;
 }
 .PesquisaAI {
-    position: relative;
-    animation: PesquisaAI;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    height: 0vh;
-    width: 0vw;
-    box-shadow: 0px 0px 0px 0px black,0px 0px 0px 0px antiquewhite;
+  position: relative;
+  animation: PesquisaAI;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  height: 0vh;
+  width: 0vw;
+  box-shadow: 0px 0px 0px 0px black, 0px 0px 0px 0px antiquewhite;
 }
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media (max-width : 1000px) {
-    .Lheader {
-        width: 6.5em;
-        height: 2.5em;
-        padding: 0.5em;
-    }
-    .HiOutlineViewList {
-        font-size: 3em;
-        margin-top: 0.2em;
-        margin-right: 0.1em;
-    
+@media (max-width: 1000px) {
+  .Lheader {
+    width: 6.5em;
+    height: 2.5em;
+    padding: 0.5em;
+  }
+  .HiOutlineViewList {
+    font-size: 3em;
+    margin-top: 0.2em;
+    margin-right: 0.1em;
   }
 }
 
 @keyframes myheader1 {
-    from{
-        box-shadow: 0px 0px 110px 65px black;
-	background: linear-gradient(black,transparent);  
-    } 
-    to {
-        box-shadow: 0px 0px 300px 260px black,0px 0px 200px 150px antiquewhite,0px 0px 300px 300px black;
-	background: black;
- 
-    }
+  from {
+    box-shadow: 0px 0px 110px 65px black;
+    background: linear-gradient(black, transparent);
+  }
+  to {
+    box-shadow: 0px 0px 300px 260px black, 0px 0px 200px 150px antiquewhite,
+      0px 0px 300px 300px black;
+    background: black;
+  }
 }
 
 @keyframes -myheader1 {
-    from{
-        box-shadow: 0px 0px 300px 260px black,0px 0px 200px 150px antiquewhite,0px 0px 300px 300px black;
-	background: black;
-
-    } 
-    to {
-        box-shadow: 0px 0px 110px 65px black;
-	background: transparent;
-
-    }
+  from {
+    box-shadow: 0px 0px 300px 260px black, 0px 0px 200px 150px antiquewhite,
+      0px 0px 300px 300px black;
+    background: black;
+  }
+  to {
+    box-shadow: 0px 0px 110px 65px black;
+    background: transparent;
+  }
 }
 
 @keyframes Lheader1 {
-    from 
-    {
-        box-shadow: 0px 0px 0px 0px black,0px 0px 0px 0px antiquewhite;
-    } 
-    to 
-    {
-        box-shadow: 0px 0px 300px 200px black,0px 0px 300px 250px antiquewhite;
-    }
+  from {
+    box-shadow: 0px 0px 0px 0px black, 0px 0px 0px 0px antiquewhite;
+  }
+  to {
+    box-shadow: 0px 0px 300px 200px black, 0px 0px 300px 250px antiquewhite;
+  }
 }
 
 @keyframes Lheader2 {
-    from 
-    {
-        box-shadow: 0px 0px 300px 200px black,0px 0px 300px 250px antiquewhite;
-    } 
-    to 
-    {
-        box-shadow: 0px 0px 0px 0px black,0px 0px 0px 0px antiquewhite;
-    }
+  from {
+    box-shadow: 0px 0px 300px 200px black, 0px 0px 300px 250px antiquewhite;
+  }
+  to {
+    box-shadow: 0px 0px 0px 0px black, 0px 0px 0px 0px antiquewhite;
+  }
 }
 /*---------------------------------------------------------------------------------------------------------------------*/
 
 @keyframes PesquisaA {
-    from{
-        width: 0vw;
-        height: 0vh;
-        box-shadow: 0px 0px 0px 0px black;
-    } 
-    to {
-        width: 100vw;
-        min-height: 12vh;
-        height: 12vh;
-        box-shadow: 0px 0px 100px 100px black,0px 0px 100px 100px antiquewhite;
-    }
+  from {
+    width: 0vw;
+    height: 0vh;
+    box-shadow: 0px 0px 0px 0px black;
+  }
+  to {
+    width: 100vw;
+    min-height: 12vh;
+    height: 12vh;
+    box-shadow: 0px 0px 100px 100px black, 0px 0px 100px 100px antiquewhite;
+  }
 }
 
 @keyframes PesquisaAI {
-    from{
-        width: 100vw;
-        min-height: 12vh;
-        height: 12vh;
-        box-shadow: 0px 0px 100px 100px black,0px 0px 100px 100px antiquewhite;
-    } 
-    to {
-        width: 0vw;
-        height: 0vh;
-        box-shadow: 0px 0px 0px 0px black;
-    }
+  from {
+    width: 100vw;
+    min-height: 12vh;
+    height: 12vh;
+    box-shadow: 0px 0px 100px 100px black, 0px 0px 100px 100px antiquewhite;
+  }
+  to {
+    width: 0vw;
+    height: 0vh;
+    box-shadow: 0px 0px 0px 0px black;
+  }
 }
 
 /*---------------------------------------------------------------------------------------------------------------------*/

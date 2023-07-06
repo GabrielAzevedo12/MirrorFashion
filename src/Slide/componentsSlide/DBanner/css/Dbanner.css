@@ -1,25 +1,20 @@
 .DbannerPrincipal1,
 .DbannerPrincipal2,
-.DbannerPrincipal3
- {
+.DbannerPrincipal3 {
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-end;
   flex-wrap: wrap;
-  /*align-items: center;
-  align-content: center;
-  justify-content: center;*/
   height: 1000vh;
   background-color: black;
-}
-.DbannerPrincipal3 {
-  position: absolute;
-  top: 500vh;
-  height: 1000vh;
 }
 .DbannerPrincipal2 {
   position: relative;
   height: 200vh;
+}
+.DbannerPrincipal3 {
+  position: relative;
+  height: 1000vh;
 }
 .DbannerTíd {
   display: flex;

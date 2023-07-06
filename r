@@ -1,67 +1,48 @@
-.gridTD5 {
-    display: grid;
-    position: relative;
-    grid-template-areas:
-      ". . . . ."
-      "gridTD5F1 gridTD5F1 gridTD5F1 gridTD5F1 gridTD5F2"
-      "gridTD5F1 gridTD5F1 gridTD5F1 gridTD5F1 gridTD5F2"
-      "gridTD5F1 gridTD5F1 gridTD5F1 gridTD5F1 gridTD5F2"
-      "gridTD5F1 gridTD5F1 gridTD5F1 gridTD5F1 gridTD5F2";
-    height: 250vh;
-    min-width: 100vw;
-  }
-  .gridTD5F {
-  }
-  .gridTD5F1 {
-    background-color: white;
-    grid-area: gridTD5F1;
-    /*grid-template-areas: "destaque1 destaque1 destaque1 destaque1 destaque1  destaque2 destaque2 destaque2 destaque2 destaque2";*/
-    display: flex;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    min-height: 250vh;
-    min-width: 60vw;
-  }
-  .gridTD5F2 {
-    background-color: white;
-    grid-area: gridTD5F2;
-    /*grid-template-areas: "destaque1 destaque1 destaque1 destaque1 destaque1  destaque2 destaque2 destaque2 destaque2 destaque2";*/
-    display: flex;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    min-height: 250vh;
-    min-width: 40vw;
-  }
-  .gridTND5F2,
-  .gridTND5F1 {
-    position: relative;
-    text-align: center;
-    font-size: 7rem;
-    font-weight: 700;
-    border-radius: 25px;
-    color: black;
-    min-height: 100%;
-    min-width: 100%;
-  }
-  .gridTD5FN1 {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.2) 40%,
-        rgba(0, 0, 0, 0.2) 80%,
-        rgba(0, 0, 0, 0.4)
-      ),
-      url(/workspaces/MirrorFashion/public/images/man-on-stool-in-hoodie-and-sweatpants.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100%;
-    min-width: 60vw;
-  }
-  
-  .gridTD5F {
-    box-shadow: 0px 0px 150px 150px white;
-    z-index: 1;
-    min-height: 100%;
-    min-width: 40vw;
-  }
-  
+/*#s*/
+.gridTD2_F1 {
+background-color: wheat;
+grid-area: subdestaque5;
+display: flex;
+flex-direction: row;
+overflow-x: scroll;
+overflow-y: hidden;
+width: 33vw;
+height: 100vh;
+}
+.gridTD2N_g {
+position: relative;
+text-align: center;
+font-size: 3rem;
+font-weight: 500;
+min-height: 100%;
+min-width: 100%;
+border-radius: 25px;
+}
+.gridTD2N_1 {
+background-color: brown;
+}
+.gridTD2N_2 {
+background-color: tomato;
+/*background-image: 
+linear-gradient(
+0deg,rgba(0,0,0,0.6),
+rgba(0,0,0,0.2)40%,
+rgba(0,0,0,0.2)80%,
+rgba(0,0,0,0.4)),
+url(/workspace/MirrorFashion/public/images/pink-fur-fabulous-fashion.jpg);*/
+background-repeat: no-repeat;
+background-size: 140%;
+}
+.gridTD2N_3 {
+background-color: darkblue;
+/*background-image: 
+linear-gradient(
+0deg,rgba(0,0,0,0.6),
+rgba(0,0,0,0.2)40%,
+rgba(0,0,0,0.2)80%,
+rgba(0,0,0,0.4)),
+url(/workspace/MirrorFashion/public/images/pink-fur-fabulous-fashion.jpg);*/
+background-repeat: no-repeat;
+background-size: 140%;
+}
+/*#e*/
