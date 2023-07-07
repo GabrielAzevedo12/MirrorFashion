@@ -10,7 +10,7 @@ var Produtos = () => {
   console.log([datau, img]);
   useEffect(() => {
     let [url, method, content] = [
-      "https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/ProdutosP/",
+      "https://j5gypk-5000.csb.app/ProdutosP/",
       "GET",
       "null",
     ];

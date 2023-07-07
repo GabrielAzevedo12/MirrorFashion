@@ -6,31 +6,31 @@ import Div11 from "../D11/D11";
 import LD11 from "../LD11/LD11";
 import { useState, useEffect } from "react";
 import { Dbanner } from "../DBanner/Dbanner.js";
-import { Div11D } from "./objetos/Div11D"
+import { Div11D } from "./objetos/Div11D";
 import { Div11D2 } from "./objetos/Div11D2";
 import { DivPrincipal1 } from "./objetos/DivPrincipal1";
 import { DivPrincipal2 } from "./objetos/DivPrincipal2";
 
 let DivC1 = ({ DivC1pr }) => {
-  const [datau, setDatau] = useState([]), [LDsc1, setLDsc1] = useState([]);
+  const [datau, setDatau] = useState([]),
+    [LDsc1, setLDsc1] = useState([]);
 
   useEffect(() => {
     let [url, method, content] = [
-      "https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/Produtos/",
+      "https://j5gypk-5000.csb.app/Produtos/",
       "GET",
       "null",
     ];
     Fetch(url, method, content, setDatau, null, null);
 
     let [url2, method2, content2] = [
-      "https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/LDsc1/",
+      "https://j5gypk-5000.csb.app/LDsc1/",
       "GET",
       "null",
     ];
     Fetch(url2, method2, content2, setLDsc1, null, null);
   }, []);
-  const 
-    // i (( I(6) - {0}
+  const // i (( I(6) - {0}
     DivD = {
       class: "Div1 Div",
       id: "Div1",
@@ -96,14 +96,14 @@ export default DivC1;
     };
 
   let [url3, method3, content3] = [
-      "https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/LDsc2/",
+      "https://j5gypk-5000.csb.app/LDsc2/",
       "GET",
       "null",
     ];
     Fetch(url3, method3, content3, setLDsc2, null, null);
 
     let [url4, method4, content4] = [
-      "https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/LDsc3/",
+      "https://j5gypk-5000.csb.app/LDsc3/",
       "GET",
       "null",
     ];
@@ -125,7 +125,7 @@ EPG = async (e) => {
       console.log(id);
 
       let [url, method, content] = [
-        `https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/Produtos/P1`,
+        `https://j5gypk-5000.csb.app/Produtos/P1`,
         "PUT",
         {
           name: name + " ",
@@ -172,7 +172,7 @@ const DivTF1A = () => {
             Navigate('/Produtos')
             const [text,id,name,preço] = [e.target.textContent, e.target.id, e.target.textContent.split("  ")[0], e.target.textContent.split("  ")[1]]; 
             console.log(preço);
-            let [url,method,content] = ["https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/Produtos/P1","PUT",{
+            let [url,method,content] = ["https://j5gypk-5000.csb.app/Produtos/P1","PUT",{
                 name: name+" ",
                 preço: preço,
                 namePreço:  text ? text : "",
@@ -189,7 +189,7 @@ const DivTF1A = () => {
             EP2 = async (e) => {
                     Navigate('/Produtos')
                     const text = e.target.textContent
-                    let [url,method,content] = ["https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/Produtos/P1","PUT",{
+                    let [url,method,content] = ["https://j5gypk-5000.csb.app/Produtos/P1","PUT",{
                         name: "Fuzz Cardigan ",
                         preço: "R$179,99",
                         namePreço:  text ? text : "",
@@ -205,7 +205,7 @@ const DivTF1A = () => {
             EP3 = async (e) => {
                     Navigate('/Produtos')
                     const text = e.target.textContent
-                    let [url,method,content] = ["https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/Produtos/P1","PUT",{
+                    let [url,method,content] = ["https://j5gypk-5000.csb.app/Produtos/P1","PUT",{
                         name: "Fuzz Cardigan ",
                         preço: "R$179,99",
                         namePreço:  text ? text : "",

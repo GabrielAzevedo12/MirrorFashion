@@ -12,12 +12,12 @@ var DivLista = (props) => {
 
   useEffect(() => {
     const [url, method, content] = [
-        "https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/Produtos" + props.DivPrincipal.idGet + "/",
+        "https://j5gypk-5000.csb.app/Produtos" + props.DivPrincipal.idGet + "/",
         "GET",
         "null",
       ],
       [url2, method2, content2] = [
-        "https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/LDsc" + props.DivPrincipal.idGetLDsc + "/",
+        "https://j5gypk-5000.csb.app/LDsc" + props.DivPrincipal.idGetLDsc + "/",
         "GET",
         "null",
       ];
@@ -42,7 +42,7 @@ var DivLista = (props) => {
     console.log(id);
 
     let [url, method, content] = [
-      "https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/ProdutosP/P",
+      "https://j5gypk-5000.csb.app/ProdutosP/P",
       "PUT",
       {
         name: name + " ",
@@ -133,13 +133,13 @@ background-image: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,
   const [datau,setDatau] = useState([]);
     console.log(datau)
     useEffect(() => {
-        let [url,method,content] = ["https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/Produtos/","GET","null"]; 
+        let [url,method,content] = ["https://j5gypk-5000.csb.app/Produtos/","GET","null"]; 
         Fetch(url,method,content,setDatau)
     },[])
 */
 /*
 let TFU = async () => {
-        const rsp = await fetch("https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/Produtos", {
+        const rsp = await fetch("https://j5gypk-5000.csb.app/Produtos", {
             method : 'GET',
             Headers : {
                 'Contend-type' : 'application/json'
@@ -157,7 +157,7 @@ let TFU = async () => {
     "style": "null"
   }
 */
-/*fetch("https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/Produtos", {
+/*fetch("https://j5gypk-5000.csb.app/Produtos", {
     method : 'GET',
     Headers : {
         'Contend-type' : 'application/json'
@@ -195,7 +195,7 @@ let TFU = async () => {
                 }*/
 /*
   let TFU = async () => {
-        const rsp = await fetch("https://5000-gabrielazev-mirrorfashi-ltxtws4x4y9.ws-us101.gitpod.io/Produtos", {
+        const rsp = await fetch("https://j5gypk-5000.csb.app/Produtos", {
             method : 'GET',
             Headers : {
                 'Contend-type' : 'application/json'

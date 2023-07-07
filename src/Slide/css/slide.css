@@ -26,7 +26,7 @@
   background: linear-gradient(antiquewhite, black);
 }
 #Div2 {
-  background: linear-gradient(black, antiquewhite, darksalmon);
+  background: radial-gradient(gray, black);
 }
 #Div3 {
   background: linear-gradient(black, antiquewhite);

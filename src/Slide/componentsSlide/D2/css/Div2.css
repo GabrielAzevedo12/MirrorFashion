@@ -4,7 +4,7 @@
   justify-content: center;
   flex-wrap: nowrap;
   width: 100vw;
-  height: 120vh;
+  height: 130vh;
 }
 .olD {
   display: flex;
@@ -16,10 +16,7 @@
   overflow-x: hidden;
   box-shadow: 0px 0px 50px 50px black;
   width: 100vw;
-  height: 100vh;
-}
-.olD22 {
-  box-shadow: 0px 0px 50px 50px black;
+  height: 115vh;
 }
 .liD2 {
   position: relative;
@@ -27,14 +24,11 @@
   flex-direction: column;
   align-items: center;
   align-content: center;
-  background: radial-gradient(black -50%, antiquewhite);
-  box-shadow: 0px 0px 100px 100px antiquewhite, 0px 0px 100px 100px darksalmon,
-    0px 0px 100px 100px black;
-  padding-right: 5vh;
+  background: transparent;
   border-radius: 20px;
-  min-width: 40vw;
+  min-width: 32vw;
   min-height: 85vh;
-  width: 40vw;
+  width: 30vw;
   height: 85vh;
 }
 .TíD,
@@ -48,16 +42,19 @@
   color: wheat;
   font-weight: 900;
   font-size: 3em;
-  box-shadow: 0px 0px 100px 100px antiquewhite, 0px 0px 200px 200px black;
   border-radius: 10px;
 }
 .TíD2 {
   box-shadow: 0px 0px 0px 0px antiquewhite, 0px 0px 0px 0px black;
 }
+/*
+.olD2 {
+  display: none;
+}*/
 .figCD2 {
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   font-weight: 900;
-  color: black;
+  color: whitesmoke;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -87,6 +84,7 @@
   height: 85vh;
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: 0px 0px 50px 50px black;
 }
 #P1 {
   background-image: linear-gradient(
