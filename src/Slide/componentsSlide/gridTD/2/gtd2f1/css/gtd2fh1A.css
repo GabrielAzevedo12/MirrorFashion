@@ -1,0 +1,141 @@
+/*!1*/
+
+.for_posiçao1_of_gridTD2_F1 {
+  animation-name: for_posiçao1_of_gridTD2_F1;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+@keyframes for_posiçao1_of_gridTD2_F1 {
+  0% {
+    z-index: 2;
+    height: 120%;
+    width: 130%;
+    left: 33vw;
+    top: 0;
+  }
+  25% {
+    z-index: 1;
+    left: 66vw;
+    top: -10vh;
+  }
+  50% {
+    top: -20vh;
+  }
+  75% {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 10vh;
+  }
+  100% {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+}
+
+/*!2*/
+
+.for_posiçao2_of_gridTD2_F1 {
+  animation-name: for_posiçao2_of_gridTD2_F1;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+
+  z-index: 2;
+  height: 120%;
+  width: 130%;
+  left: 33vw;
+  top: -5vh;
+}
+
+@keyframes for_posiçao2_of_gridTD2_F1 {
+  0% {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    left: 0vw;
+  }
+  25% {
+    left: -33vw;
+    top: 10vh;
+    z-index: 2;
+  }
+  50% {
+    top: 20vh;
+    z-index: 2;
+    rotate: 20deg;
+  }
+  75% {
+    z-index: 2;
+    height: 120%;
+    width: 130%;
+    left: 33vw;
+    top: -20vh;
+    rotate: -20deg;
+  }
+  100% {
+    z-index: 2;
+    height: 120%;
+    width: 130%;
+    left: 33vw;
+    top: -5vh;
+    rotate: 0deg;
+  }
+}
+
+/*!3*/
+
+.for_posiçao2_of_gridTD2_F1_m1 {
+  animation-name: for_posiçao2_of_gridTD2_F1_m1;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+
+  z-index: 2;
+  width: 50vw;
+  height: 120vh;
+  left: 23vw;
+  top: -5vh;
+}
+
+@keyframes for_posiçao2_of_gridTD2_F1_m1 {
+  0% {
+    z-index: 1;
+    width: 33vw;
+    height: 100vh;
+    left: 0vw;
+  }
+  25% {
+    left: -33vw;
+    z-index: 2;
+  }
+  50% {
+    top: 40vh;
+    rotate: 20deg;
+  }
+  75% {
+    z-index: 2;
+    width: 50vw;
+    height: 120vh;
+    left: 23vw;
+    top: -20vh;
+    rotate: -20deg;
+  }
+  100% {
+    z-index: 2;
+    width: 50vw;
+    height: 120vh;
+    left: 23vw;
+    top: -5vh;
+    rotate: 0deg;
+  }
+}

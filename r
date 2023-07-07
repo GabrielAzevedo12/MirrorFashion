@@ -1,48 +1,99 @@
-/*#s*/
-.gridTD2_F1 {
-background-color: wheat;
-grid-area: subdestaque5;
-display: flex;
-flex-direction: row;
-overflow-x: scroll;
-overflow-y: hidden;
-width: 33vw;
-height: 100vh;
+ /*!1*/
+
+ .for_posiçao1_of_gridTD2_F3_m1 {
+  animation-name: for_posiçao1_of_gridTD2_F3_m1;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+
+  z-index: 0;
+  width: 33vw;
+  height: 100vh; 
+  left: -85vw;
+  top: 0vh;
 }
-.gridTD2N_g {
-position: relative;
-text-align: center;
-font-size: 3rem;
-font-weight: 500;
-min-height: 100%;
-min-width: 100%;
-border-radius: 25px;
+
+@keyframes for_posiçao1_of_gridTD2_F3_m1 {
+  0% {
+    z-index: 0;
+    width: 33vw;
+    height: 100vh;   
+    left: 0;
+    top: 0;
+  }
+  25% {
+    z-index: 0;
+    left: 10vw;
+  }
+  50% {
+   width: 23vw;
+   height: 90vh;
+   top: -40vh;
+  }
+  75% {
+    width: 33vw;
+    height: 100vh; 
+    left: -95vw;
+    top: 10vh;
+  }
+  100% {
+    z-index: 0;
+    width: 33vw;
+    height: 100vh; 
+    left: -85vw;
+    top: 0vh;
+  }
 }
-.gridTD2N_1 {
-background-color: brown;
+
+/*!2*/
+
+.for_posiçao2_of_gridTD2_F3 {
+  animation-name: for_posiçao2_of_gridTD2_F3;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+
+  z-index: 2;
+  height: 120%;
+  width: 130%;
+  left: 0;
+  top: -5vh; 
+  rotate: 0deg;
 }
-.gridTD2N_2 {
-background-color: tomato;
-/*background-image: 
-linear-gradient(
-0deg,rgba(0,0,0,0.6),
-rgba(0,0,0,0.2)40%,
-rgba(0,0,0,0.2)80%,
-rgba(0,0,0,0.4)),
-url(/workspace/MirrorFashion/public/images/pink-fur-fabulous-fashion.jpg);*/
-background-repeat: no-repeat;
-background-size: 140%;
+ 
+@keyframes for_posiçao2_of_gridTD2_F3 {
+  0% {
+    z-index: 1;
+    height: 100%;
+    width: 100%;    
+    left: -40vw;
+  }
+  25% {
+    left: -80vw;
+    top: 10vh;
+    z-index: 2
+  }
+  50% {
+    top: 20vh;
+    z-index: 2;
+    rotate: 20deg;
+  }
+  75% {
+    z-index: 2;
+    height: 120%;
+    width: 130%;    
+    left: 0;
+    top: -20vh;
+    rotate: -20deg;
+  }
+  100% {
+    z-index: 2;
+    height: 120%;
+    width: 130%;
+    left: 0;
+    top: -5vh;
+    rotate: 0deg;
+  }
 }
-.gridTD2N_3 {
-background-color: darkblue;
-/*background-image: 
-linear-gradient(
-0deg,rgba(0,0,0,0.6),
-rgba(0,0,0,0.2)40%,
-rgba(0,0,0,0.2)80%,
-rgba(0,0,0,0.4)),
-url(/workspace/MirrorFashion/public/images/pink-fur-fabulous-fashion.jpg);*/
-background-repeat: no-repeat;
-background-size: 140%;
-}
-/*#e*/
+
+/*!3*/
+  
+   
