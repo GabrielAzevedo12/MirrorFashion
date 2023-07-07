@@ -14,6 +14,14 @@ const Exibir_class = (db) => {
   }
 };
 
+const window_Event_onscroll = () => {
+  const a1 = () => {
+    var Scroll_vertical = window.scrollY;
+    console.log(Scroll_vertical);
+  };
+  window.onscroll = a1();
+};
+
 const Analise_class_p = (db, name_class, soluçoes) => {
   var quantidade_elementosDiferentes = 0;
   let quantidade_elementosDiferentes_total = db["length"];
