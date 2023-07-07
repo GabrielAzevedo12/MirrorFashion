@@ -8,6 +8,12 @@ const Remover_class = (e, name_class) => {
   e.classList.remove(name_class);
 };
 
+const Exibir_class = (db) => {
+  for (let x of db) {
+    console.log(x);
+  }
+};
+
 const Analise_class_p = (db, name_class, soluçoes) => {
   var quantidade_elementosDiferentes = 0;
   let quantidade_elementosDiferentes_total = db["length"];
@@ -891,7 +897,7 @@ const gridTD2N = {
   },
   gridTD2NB3: {
     Disparar_Evento_Quando: {
-      Click: (e) => {
+      Click: () => {
         console.log("gridTD2NB3 foi disparada");
 
         const irmão2 = $(".gridTD2_F2"),

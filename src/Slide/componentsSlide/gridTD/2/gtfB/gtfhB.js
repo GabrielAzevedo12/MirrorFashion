@@ -37,7 +37,7 @@ const GridTD2FB = () => {
       </div>
       <div
         className="gridTD2NB2 gridTD2NB animation1_gridTNB animation1_gridTD2NB2"
-        onClick={gridTD2N.gridTD2NB2.Disparar_Evento_Quando.Click}
+        /*onClick={gridTD2N.gridTD2NB2.Disparar_Evento_Quando.Click}*/
         /*onClick={gridTD2N.gridTD2NB.Disparar_Evento_Quando.Click}*/
         /*onMouseOut={gridTD2N.gridTD2NB.Disparar_Evento_Quando.Out}*/
         /*onMouseOver={gridTD2N.gridTD2NB.Disparar_Evento_Quando.Over}*/
