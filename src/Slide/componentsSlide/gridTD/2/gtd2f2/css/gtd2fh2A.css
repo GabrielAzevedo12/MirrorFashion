@@ -93,8 +93,53 @@
     rotate: 0deg;
   }
 }
-
 /*!3*/
+
+.for_posiçao1_of_gridTD2_F2_m1 {
+  animation-name: for_posiçao1_of_gridTD2_F2_m1;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+
+  z-index: 0;
+  width: 33vw;
+  height: 100vh;
+  left: -35vw;
+  top: 0vh;
+}
+
+@keyframes for_posiçao1_of_gridTD2_F2_m1 {
+  0% {
+    z-index: 1;
+    width: 33vw;
+    height: 100vh;
+    left: 14vw;
+    top: 0vh;
+  }
+  25% {
+    z-index: 0;
+    left: 24vw;
+  }
+  50% {
+    width: 23vw;
+    height: 90vh;
+    top: -40vh;
+  }
+  75% {
+    width: 33vw;
+    height: 100vh;
+    left: -35vw;
+    top: 10vh;
+  }
+  100% {
+    z-index: 0;
+    width: 33vw;
+    height: 100vh;
+    left: -35vw;
+    top: 0vh;
+  }
+}
+
+/*!4*/
 
 .for_posiçao2_of_gridTD2_F2_m1 {
   animation-name: for_posiçao2_of_gridTD2_F2_m1;
@@ -144,7 +189,7 @@
   }
 }
 
-/*!4*/
+/*!5*/
 
 .for_posiçao3_of_gridTD2_F2_m1 {
   animation-name: for_posiçao3_of_gridTD2_F2_m1;
