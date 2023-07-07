@@ -28,12 +28,14 @@
     width: 23vw;
     height: 90vh;
     top: -40vh;
+    opacity: 80%;
   }
   75% {
     width: 33vw;
     height: 100vh;
     left: -95vw;
     top: 10vh;
+    opacity: 95%;
   }
   100% {
     z-index: 0;
@@ -41,6 +43,7 @@
     height: 100vh;
     left: -85vw;
     top: 0vh;
+    opacity: 100%;
   }
 }
 

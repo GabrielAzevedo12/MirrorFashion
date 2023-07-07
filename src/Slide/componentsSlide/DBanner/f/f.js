@@ -45,6 +45,38 @@ const Analise_class_p = (db, name_class, soluçoes) => {
   }
 };
 
+const onscroll_window = (db, name_cond, soluçoes) => {
+  const condiçao = undefined;
+
+  if (condiçao === name_cond["1"] || condiçao === null) {
+    console.log("Será executada a animação " + name_cond["1"]);
+    soluçoes["1"]();
+  } else if (condiçao === name_cond["2"]) {
+    console.log("Será executada a animação " + name_cond["2"]);
+    soluçoes["2"]();
+  } else if (condiçao === name_cond["3"]) {
+    console.log("Será executada a animação " + name_cond["3"]);
+    soluçoes["3"]();
+  }
+};
+
+const soluçoes_onscroll_window = {
+    1: () => {
+      Adicionar_class($(".DivAnimation_main"), "animaçao_scroll_1");
+    },
+    2: () => {
+      Adicionar_class($(".DivAnimation_main"), "animaçao_scroll_2");
+    },
+    3: () => {
+      Adicionar_class($(".DivAnimation_main"), "animaçao_scroll_3");
+    },
+  },
+  nameCond_onscroll_window = {
+    1: "animaçao_scroll_1",
+    2: "animaçao_scroll_2",
+    3: "animaçao_scroll_3",
+  };
+
 const Analise_class = (db, name_class, s1, s2) => {
   var quantidade_elementosDiferentes = 0;
   let quantidade_elementosDiferentes_total = db["length"];
