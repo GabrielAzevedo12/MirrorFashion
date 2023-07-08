@@ -21,6 +21,7 @@ import { gridTD3_props } from "./o/griTD3";
 import { gridTD4_props } from "./o/griTD4";
 import { gridTD5_props } from "./o/griTD5";
 import { GridTD2 } from "../gridTD/2/2";
+import { DivAnimationMain } from "../gridTD/mainAnimation/mainAnimation.js";
 //Fase : Teste
 const Dbanner = () => {
   const display_none = { display: "none" };
