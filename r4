@@ -1,0 +1,26 @@
+//Definição
+const Event_onDrag = () => {
+  $(".DivAnimation_main").ondrag = () => {
+    const d2 = () => {
+      console.log("a função d foi executada");
+      var posiçao = parseInt($(".DivAnimation_main").style.left),
+        upx = 10,
+        desloca = () => {
+          var desloca_t = posiçao + upx;
+          console.log(desloca_t, posiçao, upx);
+          $(".DivAnimation_main").style.left = desloca_t + "px";
+          console.log("deslocando mais " + desloca_t + "px");
+        };        
+      
+         if ($(".DivAnimation_main").style.left === '') {
+          $(".DivAnimation_main").style.left = '0px';
+      }
+      
+      //itere
+      desloca();
+    };
+    d2();
+  };
+};
+//Chamada
+Event_onDrag();

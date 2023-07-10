@@ -1,7 +1,7 @@
 /*#imports*/
 import "./css/mainAnimation.css";
 import "./css/mainAnimationA.css";
-/*import { DivAnimation_main_funções } from './f/mainAnimationF.js';*/
+import { Event_onDrag } from "./f/DivAnimationF.js";
 /*import {
   Adicionar_class,
   Aumentar_ElementoPai,
@@ -12,7 +12,7 @@ import "./css/mainAnimationA.css";
 /*Imports#*/
 
 /*#Hook*/
-export default function DivAnimationMain() {
+var DivAnimationMain = () => {
   /*#Hook_Escopo*/
   /*Hook_Escopo#*/
 
@@ -27,12 +27,15 @@ export default function DivAnimationMain() {
       /*onDrop={gridTN.gridTN${1}.Disparar_Evento_Quando.Drop}*/
       /*onDragStart={gridTN.gridTN${1}.Disparar_Evento_Quando.DragStart}*/
       /*onDragOver={gridTN.gridTN${1}.Disparar_Evento_Quando.DragOver}*/
-    ></div>
+      onDrag={Event_onDrag}
+    >
+      <p className="DivAnimation_main_paragrafro">Este é o DivAnimation_main</p>
+    </div>
   );
   /*Hook_Conteudo#*/
-}
+};
 /*Hook#*/
 
 /*#Exports*/
-
+export { DivAnimationMain };
 /*Exports#*/

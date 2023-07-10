@@ -14,13 +14,23 @@ const Exibir_class = (db) => {
   }
 };
 
-const window_Event_onscroll = () => {
+const window_Event_onscroll2 = () => {
+  $(".DivAnimation_main").style.left = "0px";
   window.onscroll = () => {
-    const a1 = () => {
-      var ys = window.scrollY;
-      console.log(ys);
+    const d2 = () => {
+      console.log("a função d foi executada");
+      var posiçao = parseInt($(".DivAnimation_main").style.left),
+        upx = 10,
+        desloca = () => {
+          var desloca_t = posiçao + upx;
+          console.log(desloca_t, posiçao, upx);
+          $(".DivAnimation_main").style.bottom = desloca_t + "px";
+          console.log("deslocando mais " + desloca_t + "px");
+        };
+      //itere
+      desloca();
     };
-    a1();
+    d2();
   };
 };
 
@@ -76,6 +86,23 @@ const soluçoes_onscroll_window = {
     2: "animaçao_scroll_2",
     3: "animaçao_scroll_3",
   };
+
+const d = () => {
+  const posiçao = $(".DivAnimation_main").style.left,
+    l = "10px",
+    upx = "1px",
+    desloca = () => {
+      $(".DivAnimation_main").style.left = posiçao + upx;
+    },
+    intervalo = (setInterval = (d, 500));
+
+  if (posiçao === l) {
+    clearInterval(intervalo);
+  } else if (posiçao < l) {
+    //itere
+    desloca();
+  }
+};
 
 const Analise_class = (db, name_class, s1, s2) => {
   var quantidade_elementosDiferentes = 0;

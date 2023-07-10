@@ -1,0 +1,14 @@
+.DivAnimation_main {
+  display: grid;
+  position: fixed;
+  align-items: center;
+  background-color: black;
+  width: 60vw;
+  height: 70vh;
+  top: -20px;
+  z-index: 3;
+}
+.DivAnimation_main_paragrafro {
+  font-size: 1rem;
+  color: aliceblue;
+}

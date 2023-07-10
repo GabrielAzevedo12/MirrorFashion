@@ -26,6 +26,7 @@ const Dbanner = () => {
   const display_none = { display: "none" };
   return (
     <>
+       <DivAnimationMain/>
       <div className="DbannerPrincipal1">
         <GridTD1 />
       </div>
