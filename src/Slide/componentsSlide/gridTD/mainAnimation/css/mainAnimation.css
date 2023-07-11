@@ -13,6 +13,9 @@
     "Seja Seja . . . ."
     ". . . . . .";
 }
+
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+
 .Seja,
 .Bem,
 .Vindo,
@@ -34,6 +37,8 @@
   grid-area: aMirrorFashion;
 }
 
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+
 .template_areas_mudança_1 {
   grid-template-areas:
     " . . Bem Bem . ."
@@ -49,6 +54,27 @@
     "aMirrorFashion aMirrorFashion aMirrorFashion aMirrorFashion aMirrorFashion aMirrorFashion"
     ". . . . . .";
 }
+
+/*
+Modelo:
+
+-1
+
+  "Seja Seja main_banner_2 main_banner_2 main_banner_3 main_banner_3"
+  ". . main_banner_2 main_banner_2 main_banner_3 main_banner_3";
+
+-2
+
+  "main_banner_1 main_banner_1 Bem Bem main_banner_3 main_banner_3"
+  "main_banner_1 main_banner_1 . . main_banner_3 main_banner_3";  
+  
+-3
+
+  "main_banner_1 main_banner_1 main_banner_2 main_banner_2 Vindo Vindo"
+  "main_banner_1 main_banner_1 main_banner_2 main_banner_2 . .";
+  
+*/
+
 /*
 .template_areas_mudança_3 {
   grid-template-areas:
@@ -56,3 +82,5 @@
     ". . aMirrorFashion aMirrorFashion . .";
 }
 */
+
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
