@@ -19,7 +19,7 @@ var DivAnimationMain = () => {
   /*#Hook_Conteudo*/
   return (
     <div
-      className="DivAnimation_main"
+      className="DivAnimation_main template_areas_1"
       /*onClick={gridTN.gridTN${1}.Disparar_Evento_Quando.Click}*/
       /*onMouseOut={gridTN.gridTN${1}.Disparar_Evento_Quando.Out}*/
       /*onMouseOver={gridTN.gridTN${1}.Disparar_Evento_Quando.Over}*/
@@ -29,7 +29,10 @@ var DivAnimationMain = () => {
       /*onDragOver={gridTN.gridTN${1}.Disparar_Evento_Quando.DragOver}*/
       onDrag={Event_onDrag}
     >
-      <p className="DivAnimation_main_paragrafro">Este é o DivAnimation_main</p>
+      <h1 className="Seja"> Seja </h1>
+      <h1 className="Bem"> Bem </h1>
+      <h1 className="Vindo"> Vindo </h1>
+      <h1 className="aMirrorFashion"> a MirrorFashion </h1>
     </div>
   );
   /*Hook_Conteudo#*/

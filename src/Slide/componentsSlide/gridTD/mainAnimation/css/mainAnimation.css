@@ -5,10 +5,31 @@
   background-color: black;
   width: 60vw;
   height: 70vh;
-  top: -20px;
+  top: -5px;
   z-index: 3;
 }
-.DivAnimation_main_paragrafro {
-  font-size: 1rem;
+.template_areas_1 {
+  grid-template-areas:
+    "Seja Seja Seja . . ."
+    ". . . . . .";
+}
+.Seja,
+.Bem,
+.Vindo,
+.aMirrorFashion {
+  font-size: 2rem;
   color: aliceblue;
+}
+
+.Seja {
+  grid-area: Seja;
+}
+.Bem {
+  grid-area: Bem;
+}
+.Vindo {
+  grid-area: Vindo;
+}
+.aMirrorFashion {
+  grid-area: aMirrorFashion;
 }
