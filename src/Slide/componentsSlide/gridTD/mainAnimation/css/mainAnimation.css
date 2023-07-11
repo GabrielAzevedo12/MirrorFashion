@@ -8,9 +8,9 @@
   top: -5px;
   z-index: 3;
 }
-.template_areas_1 {
+.template_areas_inicial {
   grid-template-areas:
-    "Seja Seja Seja . . ."
+    "Seja Seja . . . ."
     ". . . . . .";
 }
 .Seja,
@@ -33,3 +33,26 @@
 .aMirrorFashion {
   grid-area: aMirrorFashion;
 }
+
+.template_areas_mudança_1 {
+  grid-template-areas:
+    " . . Bem Bem . ."
+    ". . . . . .";
+}
+.template_areas_mudança_2 {
+  grid-template-areas:
+    ". . . . Vindo Vindo"
+    ". . . . . .";
+}
+.template_areas_mudança_3 {
+  grid-template-areas:
+    "aMirrorFashion aMirrorFashion aMirrorFashion aMirrorFashion aMirrorFashion aMirrorFashion"
+    ". . . . . .";
+}
+/*
+.template_areas_mudança_3 {
+  grid-template-areas:
+    " . . . . . ."
+    ". . aMirrorFashion aMirrorFashion . .";
+}
+*/
