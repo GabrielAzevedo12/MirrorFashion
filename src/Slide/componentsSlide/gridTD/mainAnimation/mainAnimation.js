@@ -34,11 +34,11 @@ var DivAnimationMain = () => {
       <h1 className="Vindo"> Vindo </h1>
       <h1 className="aMirrorFashion"> a MirrorFashion </h1>
 
-      <div className="DivAnimation_main_banner_1"> main banner 1 </div>
-      <div className="DivAnimation_main_banner_2"> main banner 2 </div>
-      <div className="DivAnimation_main_banner_3"> main banner 3 </div>
-      <div className="DivAnimation_main_banner_4"> main banner 4 </div>
-      <div className="DivAnimation_main_banner_5"> main banner 5 </div>
+      <div className="main_banner_1"> main banner 1 </div>
+      <div className="main_banner_2"> main banner 2 </div>
+      <div className="main_banner_3"> main banner 3 </div>
+      <div className="main_banner_4"> main banner 4 </div>
+      <div className="main_banner_5"> main banner 5 </div>
     </div>
   );
   /*Hook_Conteudo#*/
