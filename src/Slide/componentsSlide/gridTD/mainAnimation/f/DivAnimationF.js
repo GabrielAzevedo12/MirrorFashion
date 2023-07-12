@@ -187,10 +187,12 @@ const window_Event_onscroll = () => {
     };
 
   window.onscroll = () => {
+    let db = $(".DivAnimation_main").classList;
     const Exe_animaçao_DivAnimation = () => {
-        console.log("a função Exe_animaçao_DivMain foi executada");
-      },
-      db = DivAnimation_main.classList;
+      console.log("a função Exe_animaçao_DivMain foi executada");
+      Analise_class_p(db, nameCond_onscroll_window, soluçoes_onscroll_window);
+    };
+
     Exe_animaçao_DivAnimation();
   };
 };
