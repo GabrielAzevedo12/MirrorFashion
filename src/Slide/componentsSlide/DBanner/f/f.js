@@ -37,18 +37,17 @@ const window_Event_onscroll2 = () => {
 const Analise_class_p = (db, name_class, soluçoes) => {
   for (let x of db) {
     if (x === name_class["p1"] || x === null) {
-      console.log("Existe o elemento " + name_class['p1']);
+      console.log("Existe o elemento " + name_class["p1"]);
       soluçoes["1"]();
       break;
     } else if (x === name_class["p2"]) {
-      console.log("Existe o elemento " + name_class['p2']);
+      console.log("Existe o elemento " + name_class["p2"]);
       soluçoes["2"]();
       break;
     } else if (x === name_class["p3"]) {
-      console.log("Existe o elemento " + name_class['p3']);
+      console.log("Existe o elemento " + name_class["p3"]);
       soluçoes["3"]();
       break;
-    } 
     }
   }
 };
@@ -1044,6 +1043,7 @@ const gridTD2N = {
 
 export {
   Adicionar_class,
+  Remover_class,
   Aumentar_ElementoPai,
   Diminuir_ElementoPai,
   gridTD1N,
