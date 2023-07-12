@@ -37,8 +37,12 @@ var DivAnimationMain = () => {
       <div className="main_banner_1 displayNone main_banner_1_state_inical">
         main banner 1
       </div>
-      <div className="main_banner_2 displayNone">main banner 2</div>
-      <div className="main_banner_3 displayNone">main banner 3</div>
+      <div className="main_banner_2 displayNone main_banner_2_state_inical">
+        main banner 2
+      </div>
+      <div className="main_banner_3 displayNone main_banner_3_state_inical">
+        main banner 3
+      </div>
       <div className="main_banner_4 displayNone main_banner_4_state_inical">
         main banner 4
       </div>

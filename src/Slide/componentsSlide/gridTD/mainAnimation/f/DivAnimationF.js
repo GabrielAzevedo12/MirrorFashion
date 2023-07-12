@@ -1,4 +1,10 @@
 import { $ } from "../../../../Funções/Query/query";
+import {
+  Adicionar_class,
+  Aumentar_ElementoPai,
+  Diminuir_ElementoPai,
+  gridTN11,
+} from "../../../Dbanner/f/f.js";
 
 //---------------------------------------------------------------------------------------------------------------------------------------
 
@@ -114,5 +120,19 @@ const window_Event_onscroll3 = () => {
     d2();
   };
 };
+
+//---------------------------------------------------------------------------------------------------------------------------------------
+
+//Definição
+const window_Event_onscroll = () => {
+  window.onscroll = () => {
+    const Exe_animaçao_DivAnimation = () => {
+      console.log("a função Exe_animaçao_DivMain foi executada");
+    };
+    Exe_animaçao_DivAnimation();
+  };
+};
+
+//---------------------------------------------------------------------------------------------------------------------------------------
 
 export { Event_onDrag };
