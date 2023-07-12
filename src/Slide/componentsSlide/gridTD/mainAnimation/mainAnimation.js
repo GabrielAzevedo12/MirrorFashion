@@ -19,7 +19,7 @@ var DivAnimationMain = () => {
   /*#Hook_Conteudo*/
   return (
     <div
-      className="DivAnimation_main template_areas_state_inicial"
+      className="DivAnimation_main displayNone template_areas_state_inicial"
       /*onClick={gridTN.gridTN${1}.Disparar_Evento_Quando.Click}*/
       /*onMouseOut={gridTN.gridTN${1}.Disparar_Evento_Quando.Out}*/
       /*onMouseOver={gridTN.gridTN${1}.Disparar_Evento_Quando.Over}*/
