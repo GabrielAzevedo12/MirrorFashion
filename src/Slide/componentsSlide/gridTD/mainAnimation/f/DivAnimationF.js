@@ -4,6 +4,7 @@ import {
   Aumentar_ElementoPai,
   Diminuir_ElementoPai,
   gridTN11,
+  Analise_class_p,
 } from "../../../Dbanner/f/f.js";
 
 //---------------------------------------------------------------------------------------------------------------------------------------
@@ -125,6 +126,23 @@ const window_Event_onscroll3 = () => {
 
 //Definição
 const window_Event_onscroll = () => {
+  const soluçoes_onscroll_window = {
+      1: () => {
+        Adicionar_class($(".DivAnimation_main"), "animaçao_scroll_1");
+      },
+      2: () => {
+        Adicionar_class($(".DivAnimation_main"), "animaçao_scroll_2");
+      },
+      3: () => {
+        Adicionar_class($(".DivAnimation_main"), "animaçao_scroll_3");
+      },
+    },
+    nameCond_onscroll_window = {
+      1: "animaçao_scroll_1",
+      2: "animaçao_scroll_2",
+      3: "animaçao_scroll_3",
+    };
+
   window.onscroll = () => {
     const Exe_animaçao_DivAnimation = () => {
       console.log("a função Exe_animaçao_DivMain foi executada");
@@ -132,6 +150,8 @@ const window_Event_onscroll = () => {
     Exe_animaçao_DivAnimation();
   };
 };
+
+//---------------------------------------------------------------------------------------------------------------------------------------
 
 //---------------------------------------------------------------------------------------------------------------------------------------
 

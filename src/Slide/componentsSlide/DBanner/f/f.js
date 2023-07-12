@@ -35,21 +35,26 @@ const window_Event_onscroll2 = () => {
 };
 
 const Analise_class_p = (db, name_class, soluçoes) => {
-  var quantidade_elementosDiferentes = 0;
-  let quantidade_elementosDiferentes_total = db["length"];
-
   for (let x of db) {
     if (x === name_class["p1"] || x === null) {
-      console.log("Existe o elemento " + " name_class['p1']");
+      console.log("Existe o elemento " + name_class["p1"]);
       soluçoes["1"]();
       break;
     } else if (x === name_class["p2"]) {
-      console.log("Existe o elemento " + " name_class['p2']");
+      console.log("Existe o elemento " + name_class["p2"]);
       soluçoes["2"]();
       break;
     } else if (x === name_class["p3"]) {
-      console.log("Existe o elemento " + " name_class['p3']");
+      console.log("Existe o elemento " + name_class["p3"]);
       soluçoes["3"]();
+      break;
+    } else if (x === name_class["p4"]) {
+      console.log("Existe o elemento " + name_class["p4"]);
+      soluçoes["4"]();
+      break;
+    } else if (x === name_class["p5"]) {
+      console.log("Existe o elemento " + name_class["p5"]);
+      soluçoes["5"]();
       break;
     }
   }
