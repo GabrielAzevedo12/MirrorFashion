@@ -3,15 +3,10 @@
   position: fixed;
   align-items: center;
   background-color: black;
-  width: 60vw;
-  height: 70vh;
+  width: 100vw;
+  height: 90vh;
   top: -5px;
   z-index: 3;
-}
-.template_areas_inicial {
-  grid-template-areas:
-    "Seja Seja . . . ."
-    ". . . . . .";
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
@@ -22,6 +17,7 @@
 .aMirrorFashion {
   font-size: 2rem;
   color: aliceblue;
+  width: 33vw;
 }
 
 .Seja {
@@ -39,48 +35,112 @@
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
 
-.template_areas_mudança_1 {
+.template_areas_state_inicial {
   grid-template-areas:
-    " . . Bem Bem . ."
-    ". . . . . .";
+    "Seja Seja main_banner_2 main_banner_2 main_banner_3 main_banner_3"
+    ". . main_banner_2 main_banner_2 main_banner_3 main_banner_3";
 }
-.template_areas_mudança_2 {
+
+.template_areas_state_1 {
   grid-template-areas:
-    ". . . . Vindo Vindo"
-    ". . . . . .";
+    "main_banner_1 main_banner_1 Bem Bem main_banner_3 main_banner_3"
+    "main_banner_1 main_banner_1 . . main_banner_3 main_banner_3";
 }
-.template_areas_mudança_3 {
+
+.template_areas_state_2 {
   grid-template-areas:
-    "aMirrorFashion aMirrorFashion aMirrorFashion aMirrorFashion aMirrorFashion aMirrorFashion"
-    ". . . . . .";
+    "main_banner_1 main_banner_1 main_banner_2 main_banner_2 Vindo Vindo"
+    "main_banner_1 main_banner_1 main_banner_2 main_banner_2 . .";
+}
+
+.template_areas_state_3 {
+  grid-template-areas:
+    " . . . . . ."
+    ". . aMirrorFashion aMirrorFashion . .";
 }
 
 /*
+
 Modelo:
 
--1
+.template_areas_state_inicial {
 
   "Seja Seja main_banner_2 main_banner_2 main_banner_3 main_banner_3"
   ". . main_banner_2 main_banner_2 main_banner_3 main_banner_3";
+}
 
--2
+.template_areas_state_1 {
 
   "main_banner_1 main_banner_1 Bem Bem main_banner_3 main_banner_3"
   "main_banner_1 main_banner_1 . . main_banner_3 main_banner_3";  
+  }
   
--3
+.template_areas_state_2 {
 
   "main_banner_1 main_banner_1 main_banner_2 main_banner_2 Vindo Vindo"
   "main_banner_1 main_banner_1 main_banner_2 main_banner_2 . .";
+  }
   
 */
 
 /*
-.template_areas_mudança_3 {
+.template_areas_state_3 {
   grid-template-areas:
     " . . . . . ."
     ". . aMirrorFashion aMirrorFashion . .";
 }
 */
 
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+.main_banner_1 {
+  grid-area: main_banner_1;
+  background-color: yellowgreen;
+  width: 33vw;
+}
+.main_banner_2 {
+  grid-area: main_banner_2;
+  background-color: pink;
+  width: 33vw;
+}
+.main_banner_3 {
+  grid-area: main_banner_3;
+  background-color: palevioletred;
+  width: 33vw;
+}
+.main_banner_4 {
+  grid-area: main_banner_4;
+  background-color: rebeccapurple;
+  width: 33vw;
+}
+.main_banner_5 {
+  grid-area: main_banner_5;
+  background-color: gray;
+  width: 33vw;
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+.main_banner_1_state_inicial {
+  animation-name: main_banner_1_state_inicial;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+.main_banner_2_state_inicial {
+  animation-name: main_banner_2_state_inicial;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+.main_banner_3_state_inicial {
+  animation-name: main_banner_3_state_inicial;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+.main_banner_4_state_inicial {
+  animation-name: main_banner_4_state_inicial;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+.main_banner_5_state_inicial {
+  animation-name: main_banner_5_state_inicial;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
 /*---------------------------------------------------------------------------------------------------------------------------------------*/

@@ -19,7 +19,7 @@ var DivAnimationMain = () => {
   /*#Hook_Conteudo*/
   return (
     <div
-      className="DivAnimation_main template_areas_inicial"
+      className="DivAnimation_main template_areas_state_inicial"
       /*onClick={gridTN.gridTN${1}.Disparar_Evento_Quando.Click}*/
       /*onMouseOut={gridTN.gridTN${1}.Disparar_Evento_Quando.Out}*/
       /*onMouseOver={gridTN.gridTN${1}.Disparar_Evento_Quando.Over}*/
@@ -34,11 +34,26 @@ var DivAnimationMain = () => {
       <h1 className="Vindo"> Vindo </h1>
       <h1 className="aMirrorFashion"> a MirrorFashion </h1>
 
-      <div className="main_banner_1"> main banner 1 </div>
-      <div className="main_banner_2"> main banner 2 </div>
-      <div className="main_banner_3"> main banner 3 </div>
-      <div className="main_banner_4"> main banner 4 </div>
-      <div className="main_banner_5"> main banner 5 </div>
+      <div className="main_banner_1 main_banner_1_state_inical">
+        {" "}
+        main banner 1{" "}
+      </div>
+      <div className="main_banner_2 main_banner_2_state_inical">
+        {" "}
+        main banner 2{" "}
+      </div>
+      <div className="main_banner_3 main_banner_3_state_inical">
+        {" "}
+        main banner 3{" "}
+      </div>
+      <div className="main_banner_4 main_banner_4_state_inical">
+        {" "}
+        main banner 4{" "}
+      </div>
+      <div className="main_banner_5 main_banner_5_state_inical">
+        {" "}
+        main banner 5{" "}
+      </div>
     </div>
   );
   /*Hook_Conteudo#*/
