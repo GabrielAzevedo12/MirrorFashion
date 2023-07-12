@@ -4,7 +4,7 @@ import {
   Aumentar_ElementoPai,
   Diminuir_ElementoPai,
   gridTN11,
-  Analise_class_p,
+  Remover_class,
 } from "../../../Dbanner/f/f.js";
 
 //---------------------------------------------------------------------------------------------------------------------------------------
@@ -123,30 +123,74 @@ const window_Event_onscroll3 = () => {
 };
 
 //---------------------------------------------------------------------------------------------------------------------------------------
-
+const Analise_class_p = (db, name_class, soluçoes) => {
+  for (let x of db) {
+    if (x === name_class["p1"] || x === null) {
+      console.log("Existe o elemento " + name_class["p1"]);
+      soluçoes["1"]();
+      break;
+    } else if (x === name_class["p2"]) {
+      console.log("Existe o elemento " + name_class["p2"]);
+      soluçoes["2"]();
+      break;
+    } else if (x === name_class["p3"]) {
+      console.log("Existe o elemento " + name_class["p3"]);
+      soluçoes["3"]();
+      break;
+    } else if (x === name_class["p4"]) {
+      console.log("Existe o elemento " + name_class["p4"]);
+      soluçoes["4"]();
+      break;
+    } else if (x === name_class["p5"]) {
+      console.log("Existe o elemento " + name_class["p5"]);
+      soluçoes["5"]();
+      break;
+    }
+  }
+};
+//---------------------------------------------------------------------------------------------------------------------------------------
 //Definição
 const window_Event_onscroll = () => {
   const soluçoes_onscroll_window = {
       1: () => {
-        Adicionar_class($(".DivAnimation_main"), "animaçao_scroll_1");
+        //Mudança de layout DivAnimation_main 1
+        Remover_class($(".DivAnimation_main"), "template_areas_state_inicial");
+        Adicionar_class($(".DivAnimation_main"), "template_areas_state_1");
       },
       2: () => {
-        Adicionar_class($(".DivAnimation_main"), "animaçao_scroll_2");
+        //Mudança de layout DivAnimation_main 2
+        Remover_class($(".DivAnimation_main"), "template_areas_state_1");
+        Adicionar_class($(".DivAnimation_main"), "template_areas_state_2");
       },
       3: () => {
-        Adicionar_class($(".DivAnimation_main"), "animaçao_scroll_3");
+        //Mudança de layout DivAnimation_main 3
+        Remover_class($(".DivAnimation_main"), "template_areas_state_2");
+        Adicionar_class($(".DivAnimation_main"), "template_areas_state_3");
+      },
+      4: () => {
+        //Mudança de layout DivAnimation_main 4
+        Remover_class($(".DivAnimation_main"), "template_areas_state_3");
+        Adicionar_class($(".DivAnimation_main"), "template_areas_state_4");
+      },
+      5: () => {
+        //Mudança de layout DivAnimation_main 5
+        Remover_class($(".DivAnimation_main"), "template_areas_state_4");
+        Adicionar_class($(".DivAnimation_main"), "template_areas_state_5");
       },
     },
     nameCond_onscroll_window = {
-      1: "animaçao_scroll_1",
-      2: "animaçao_scroll_2",
-      3: "animaçao_scroll_3",
+      1: "template_areas_state_inicial",
+      2: "template_areas_state_1",
+      3: "template_areas_state_2",
+      4: "template_areas_state_4",
+      5: "template_areas_state_5",
     };
 
   window.onscroll = () => {
     const Exe_animaçao_DivAnimation = () => {
-      console.log("a função Exe_animaçao_DivMain foi executada");
-    };
+        console.log("a função Exe_animaçao_DivMain foi executada");
+      },
+      db = DivAnimation_main.classList;
     Exe_animaçao_DivAnimation();
   };
 };
