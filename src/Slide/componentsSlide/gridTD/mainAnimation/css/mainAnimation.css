@@ -178,15 +178,19 @@ Modelo:
 
 @keyframes main_banner_1_state_inicial {
   0% {
+    width: 0;
   }
   100% {
+    width: 33vw;
   }
 }
 
 @keyframes main_banner_2_state_inicial {
   0% {
+    width: 0;
   }
   100% {
+    width: 33vw;
   }
 }
 
@@ -205,6 +209,42 @@ Modelo:
 }
 
 @keyframes main_banner_5_state_inicial {
+  0% {
+  }
+  100% {
+  }
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+
+@keyframes main_banner_1_state_1 {
+  0% {
+  }
+  100% {
+  }
+}
+
+@keyframes main_banner_2_state_1 {
+  0% {
+  }
+  100% {
+  }
+}
+
+@keyframes main_banner_3_state_1 {
+  0% {
+  }
+  100% {
+  }
+}
+
+@keyframes main_banner_4_state_1 {
+  0% {
+  }
+  100% {
+  }
+}
+
+@keyframes main_banner_5_state_1 {
   0% {
   }
   100% {
