@@ -118,29 +118,101 @@ Modelo:
   width: 33vw;
 }
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
+
 .main_banner_1_state_inicial {
   animation-name: main_banner_1_state_inicial;
   animation-duration: 0.5s;
   animation-iteration-count: 1;
 }
+.main_banner_1_state_1 {
+  animation-name: main_banner_1_state_1;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+
 .main_banner_2_state_inicial {
   animation-name: main_banner_2_state_inicial;
   animation-duration: 0.5s;
   animation-iteration-count: 1;
 }
+.main_banner_2_state_1 {
+  animation-name: main_banner_2_state_1;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+
 .main_banner_3_state_inicial {
   animation-name: main_banner_3_state_inicial;
   animation-duration: 0.5s;
   animation-iteration-count: 1;
 }
+.main_banner_3_state_1 {
+  animation-name: main_banner_3_state_1;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+
 .main_banner_4_state_inicial {
   animation-name: main_banner_4_state_inicial;
   animation-duration: 0.5s;
   animation-iteration-count: 1;
 }
+.main_banner_4_state_1 {
+  animation-name: main_banner_4_state_1;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+
 .main_banner_5_state_inicial {
   animation-name: main_banner_5_state_inicial;
   animation-duration: 0.5s;
   animation-iteration-count: 1;
+}
+.main_banner_5_state_1 {
+  animation-name: main_banner_5_state_1;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+
+@keyframes main_banner_1_state_inicial {
+  0% {
+  }
+  100% {
+  }
+}
+
+@keyframes main_banner_2_state_inicial {
+  0% {
+  }
+  100% {
+  }
+}
+
+@keyframes main_banner_3_state_inicial {
+  0% {
+  }
+  100% {
+  }
+}
+
+@keyframes main_banner_4_state_inicial {
+  0% {
+  }
+  100% {
+  }
+}
+
+@keyframes main_banner_5_state_inicial {
+  0% {
+  }
+  100% {
+  }
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+.displayNone {
+  display: none;
 }
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
