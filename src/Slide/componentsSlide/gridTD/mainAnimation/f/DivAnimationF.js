@@ -154,28 +154,66 @@ const window_Event_onscroll = () => {
   const soluçoes_onscroll_window = {
       1: () => {
         //Mudança de layout DivAnimation_main 1
+        Remover_class($(".DivAnimation_main"), "displayNone");
         Remover_class($(".DivAnimation_main"), "template_areas_state_inicial");
         Adicionar_class($(".DivAnimation_main"), "template_areas_state_1");
+        //---------------------------------------------------------
+        Remover_class($(".main_banner_1"), "displayNone");
+        Remover_class($(".main_banner_1"), "main_banner_1_state_inical");
+        Adicionar_class($(".main_banner_1"), "main_banner_1_state_1");
+        //---------------------------------------------------------
+        Remover_class($(".main_banner_2"), "displayNone");
+        Remover_class($(".main_banner_2"), "main_banner_2_state_inical");
+        Adicionar_class($(".main_banner_2"), "main_banner_2_state_1");
+        //---------------------------------------------------------
       },
       2: () => {
         //Mudança de layout DivAnimation_main 2
         Remover_class($(".DivAnimation_main"), "template_areas_state_1");
         Adicionar_class($(".DivAnimation_main"), "template_areas_state_2");
+        //---------------------------------------------------------
+        Remover_class($(".main_banner_1"), "main_banner_1_state_inical");
+        Adicionar_class($(".main_banner_1"), "main_banner_1_state_1");
+        //---------------------------------------------------------
+        Remover_class($(".main_banner_2"), "main_banner_2_state_inical");
+        Adicionar_class($(".main_banner_2"), "main_banner_2_state_1");
+        //---------------------------------------------------------
       },
       3: () => {
         //Mudança de layout DivAnimation_main 3
         Remover_class($(".DivAnimation_main"), "template_areas_state_2");
         Adicionar_class($(".DivAnimation_main"), "template_areas_state_3");
+        //---------------------------------------------------------
+        Remover_class($(".main_banner_1"), "main_banner_1_state_inical");
+        Adicionar_class($(".main_banner_1"), "main_banner_1_state_1");
+        //---------------------------------------------------------
+        Remover_class($(".main_banner_2"), "main_banner_2_state_inical");
+        Adicionar_class($(".main_banner_2"), "main_banner_2_state_1");
+        //---------------------------------------------------------
       },
       4: () => {
         //Mudança de layout DivAnimation_main 4
         Remover_class($(".DivAnimation_main"), "template_areas_state_3");
         Adicionar_class($(".DivAnimation_main"), "template_areas_state_4");
+        //---------------------------------------------------------
+        Remover_class($(".main_banner_1"), "main_banner_1_state_inical");
+        Adicionar_class($(".main_banner_1"), "main_banner_1_state_1");
+        //---------------------------------------------------------
+        Remover_class($(".main_banner_2"), "main_banner_2_state_inical");
+        Adicionar_class($(".main_banner_2"), "main_banner_2_state_1");
+        //---------------------------------------------------------
       },
       5: () => {
         //Mudança de layout DivAnimation_main 5
         Remover_class($(".DivAnimation_main"), "template_areas_state_4");
         Adicionar_class($(".DivAnimation_main"), "template_areas_state_5");
+        //---------------------------------------------------------
+        Remover_class($(".main_banner_1"), "main_banner_1_state_inical");
+        Adicionar_class($(".main_banner_1"), "main_banner_1_state_1");
+        //---------------------------------------------------------
+        Remover_class($(".main_banner_2"), "main_banner_2_state_inical");
+        Adicionar_class($(".main_banner_2"), "main_banner_2_state_1");
+        //---------------------------------------------------------
       },
     },
     nameCond_onscroll_window = {
