@@ -174,7 +174,7 @@ arqFilhoFJs="gtfh${1}F.js";
  
 dropCont "${conthookjsFilho}" "${arqFilhoJs}" "${dir1}" ;
 dropCont "${contcssFilho}" "${arqFilhoCss}" "${dir2}" ;
-dropCont "/*Animação do hook gtd${2}fh${1}*/" "${arqFilhoCss}" "${dir2}" ;
+dropCont "/*Animação do hook gtd${2}fh${1}*/" "${arqFilhoCssA}" "${dir2}" ;
 dropCont "${conthookjsFilhoF}" "${arqFilhoFJs}" "${dir3}" ;
 
 #-------------------------------------------------------------------------------------------------------------------------------
