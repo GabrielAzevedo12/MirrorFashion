@@ -19,7 +19,7 @@ var DivAnimationMain = () => {
   /*#Hook_Conteudo*/
   return (
     <div
-      className="DivAnimation_main displayNone template_areas_state_inicial"
+      className="DivAnimation_main template_areas_state_inicial"
       /*onClick={gridTN.gridTN${1}.Disparar_Evento_Quando.Click}*/
       /*onMouseOut={gridTN.gridTN${1}.Disparar_Evento_Quando.Out}*/
       /*onMouseOver={gridTN.gridTN${1}.Disparar_Evento_Quando.Over}*/
@@ -29,10 +29,10 @@ var DivAnimationMain = () => {
       /*onDragOver={gridTN.gridTN${1}.Disparar_Evento_Quando.DragOver}*/
       onDrag={Event_onDrag}
     >
-      <h1 className="Seja"> Seja </h1>
-      <h1 className="Bem"> Bem </h1>
-      <h1 className="Vindo"> Vindo </h1>
-      <h1 className="aMirrorFashion"> a MirrorFashion </h1>
+      <h1 className="Seja displayNone"> Seja </h1>
+      <h1 className="Bem displayNone"> Bem </h1>
+      <h1 className="Vindo displayNone"> Vindo </h1>
+      <h1 className="aMirrorFashion displayNone"> a MirrorFashion </h1>
 
       <div className="main_banner_1 displayNone main_banner_1_state_inical">
         main banner 1

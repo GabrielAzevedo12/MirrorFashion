@@ -15,7 +15,7 @@
 .Bem,
 .Vindo,
 .aMirrorFashion {
-  font-size: 2rem;
+  font-size: 5rem;
   color: aliceblue;
   width: 33vw;
 }
@@ -100,12 +100,14 @@ Modelo:
 .main_banner_2 {
   grid-area: main_banner_2;
   background-color: pink;
-  width: 33vw;
+  width: 0;
+  left: -100vw;
 }
 .main_banner_3 {
   grid-area: main_banner_3;
   background-color: palevioletred;
-  width: 33vw;
+  width: 0;
+  left: 100vw;
 }
 .main_banner_4 {
   grid-area: main_banner_4;
@@ -178,26 +180,30 @@ Modelo:
 
 @keyframes main_banner_1_state_inicial {
   0% {
-    width: 0;
   }
   100% {
-    width: 33vw;
   }
 }
 
 @keyframes main_banner_2_state_inicial {
   0% {
     width: 0;
+    left: -100vw;
   }
   100% {
     width: 33vw;
+    left: 0;
   }
 }
 
 @keyframes main_banner_3_state_inicial {
   0% {
+    width: 0;
+    left: 100vw;
   }
   100% {
+    width: 33vw;
+    left: 0;
   }
 }
 
