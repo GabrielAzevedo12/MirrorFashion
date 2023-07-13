@@ -187,7 +187,7 @@ Modelo:
 }
 .main_banner_3_state_1 {
   animation-name: main_banner_3_state_1;
-  animation-duration: 2s;
+  animation-duration: 0.5s;
   animation-iteration-count: 1;
 
   width: 33vw;
