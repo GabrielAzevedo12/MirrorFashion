@@ -131,7 +131,7 @@ const Analise_class_p = (db, name_class, soluçoes) => {
       break;
     } else if (x === name_class["2"]) {
       console.log("Existe o elemento " + name_class["2"]);
-      /*soluçoes["2"]();*/
+      soluçoes["2"]();
       break;
     } else if (x === name_class["3"]) {
       console.log("Existe o elemento " + name_class["3"]);
@@ -155,6 +155,8 @@ const window_Event_onscroll = () => {
       1: () => {
         //Mudança de layout DivAnimation_main 1
         Remover_class($(".DivAnimation_main"), "displayNone");
+        Remover_class($(".DivAnimation_main"), "template_areas_state_inicial");
+        Adicionar_class($(".DivAnimation_main"), "template_areas_state_1");
         //---------------------------------------------------------
         Remover_class($(".main_banner_2"), "displayNone");
         Remover_class($(".main_banner_2"), "main_banner_2_state_inicial");
@@ -168,6 +170,7 @@ const window_Event_onscroll = () => {
         //---------------------------------------------------------
       },
       2: () => {
+        /*
         //Mudança de layout DivAnimation_main 2
         Remover_class($(".DivAnimation_main"), "template_areas_state_inicial");
         Adicionar_class($(".DivAnimation_main"), "template_areas_state_1");
@@ -178,6 +181,10 @@ const window_Event_onscroll = () => {
         Remover_class($(".main_banner_2"), "main_banner_2_state_inicial");
         Adicionar_class($(".main_banner_2"), "main_banner_2_state_1");
         //---------------------------------------------------------
+        */
+        setTimeout(() => {
+          console.log("teste 2");
+        }, 2000);
       },
       3: () => {
         //Mudança de layout DivAnimation_main 3
