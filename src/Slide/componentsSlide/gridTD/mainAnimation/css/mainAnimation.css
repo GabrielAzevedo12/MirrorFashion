@@ -48,9 +48,14 @@
 }
 
 .template_areas_state_2 {
+  /*
   grid-template-areas:
     "main_banner_1 main_banner_1 Bem Bem main_banner_3 main_banner_3"
     "main_banner_1 main_banner_1 . . main_banner_3 main_banner_3";
+    */
+  grid-template-areas:
+    "main_banner_2 main_banner_2 Bem Bem main_banner_3 main_banner_3"
+    "main_banner_2 main_banner_2 . . main_banner_3 main_banner_3";
 }
 
 .template_areas_state_3 {
@@ -114,8 +119,8 @@ Modelo:
   grid-area: main_banner_2;
   background-color: pink;
 
-  width: 0;
-  height: 0;
+  width: 33vw;
+  height: 100%;
   left: -100vw;
 }
 .main_banner_3 {
@@ -145,7 +150,7 @@ Modelo:
 }
 .main_banner_1_state_1 {
   animation-name: main_banner_1_state_1;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-iteration-count: 1;
 
   width: 33vw;
@@ -174,9 +179,7 @@ Modelo:
   animation-duration: 0.5s;
   animation-iteration-count: 1;
 
-  width: 0;
-  height: 0;
-  left: -100vw;
+  left: -33vw;
   rotate: 0deg;
 }
 
@@ -349,15 +352,11 @@ Modelo:
 
 @keyframes main_banner_2_state_2 {
   0% {
-    width: 33vw;
-    height: 100%;
     left: 0;
     rotate: -360deg;
   }
   100% {
-    width: 0;
-    height: 0;
-    left: -100vw;
+    left: -33vw;
     rotate: 0deg;
   }
 }

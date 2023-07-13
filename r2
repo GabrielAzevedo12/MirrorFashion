@@ -1,30 +1,25 @@
-.template_areas_state_inicial {
+const Analise_class_p = (db, name_class, soluçoes) => {
 
-  grid-template-areas: 
-  "Seja Seja main_banner_2 main_banner_2 main_banner_3 main_banner_3"
-  ". . main_banner_2 main_banner_2 main_banner_3 main_banner_3";
-}
-
-.template_areas_state_1 {
-
-  grid-template-areas:
-  "main_banner_1 main_banner_1 Bem Bem main_banner_3 main_banner_3"
-  "main_banner_1 main_banner_1 . . main_banner_3 main_banner_3";  
+    if ( ( x >= 0 && x <= 13 ) || x === null ) {
+      console.log("Existe o elemento " + name_class["1"]);
+      soluçoes["1"]();
+      break;
+    } else if ( ( x >= 13 && x <= 13 ) || x === null ) {
+      console.log("Existe o elemento " + name_class["2"]);
+      soluçoes["2"]();
+      break;
+    } else if (x === name_class["3"]) {
+      console.log("Existe o elemento " + name_class["3"]);
+      /*soluçoes["3"]();*/
+      break;
+    } else if (x === name_class["4"]) {
+      console.log("Existe o elemento " + name_class["4"]);
+      /*soluçoes["4"]();*/
+      break;
+    } else if (x === name_class["5"]) {
+      console.log("Existe o elemento " + name_class["5"]);
+      /*soluçoes["5"]();*/
+      break;
+    }
   
-  }
-  
-.template_areas_state_2 {
-
-  grid-template-areas:
-  "main_banner_1 main_banner_1 main_banner_2 main_banner_2 Vindo Vindo"
-  "main_banner_1 main_banner_1 main_banner_2 main_banner_2 . .";
-  
-  }
-  
-
-.template_areas_state_3 {
-    
-  grid-template-areas:
-    " . . . . . ."
-    ". . aMirrorFashion aMirrorFashion . .";
-}
+};

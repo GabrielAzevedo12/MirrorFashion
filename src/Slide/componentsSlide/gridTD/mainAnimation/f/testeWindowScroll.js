@@ -1,3 +1,4 @@
+var quantExecuções = 0;
 //---------------------------------------------------------------------------------------------------------------------------------------
 var $ = (NomeDaIndentificão) => {
   /*O argumento é obrigatoriamento uma string*/
@@ -68,18 +69,24 @@ const window_Event_onscroll = () => {
             //---------------------------------------------------------
             Remover_class($(".Bem"), "displayNone");
             //---------------------------------------------------------
+            /*
             Remover_class($(".DivAnimation_main"), "template_areas_state_1");
             Adicionar_class($(".DivAnimation_main"), "template_areas_state_2");
+            */
             //---------------------------------------------------------
+            /*
             Remover_class($(".main_banner_1"), "displayNone");
             Remover_class($(".main_banner_1"), "main_banner_1_state_inicial");
             Adicionar_class($(".main_banner_1"), "main_banner_1_state_1");
+            */
             //---------------------------------------------------------
             Remover_class($(".main_banner_2"), "main_banner_2_state_1");
             Adicionar_class($(".main_banner_2"), "main_banner_2_state_2");
+            /*
             setTimeout(() => {
               Adicionar_class($(".main_banner_2"), "displayNone");
             }, 2000);
+            */
           };
           alterarStates();
         }, 2000);
@@ -135,8 +142,10 @@ const window_Event_onscroll = () => {
   window.onscroll = () => {
     const Exe_animaçao_DivAnimation = () => {
       let db = $(".DivAnimation_main").classList;
-      console.log("a função Exe_animaçao_DivMain foi executada");
+      /*console.log("a função Exe_animaçao_DivMain foi executada");*/
       Analise_class_p(db, nameCond_onscroll_window, soluçoes_onscroll_window);
+      quantExecuções = quantExecuções + 1;
+      console.log(quantExecuções);
     };
 
     Exe_animaçao_DivAnimation();
