@@ -92,6 +92,10 @@ Modelo:
 */
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
+.main_banner {
+  position: relative;
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
 .main_banner_1 {
   grid-area: main_banner_1;
   background-color: yellowgreen;
@@ -145,6 +149,7 @@ Modelo:
   width: 33vw;
   height: 100%;
   left: 0;
+  rotate: -360deg;
 }
 
 .main_banner_3_state_inicial {
@@ -160,6 +165,7 @@ Modelo:
   width: 33vw;
   height: 100%;
   left: 0;
+  rotate: -360deg;
 }
 
 .main_banner_4_state_inicial {
@@ -198,11 +204,13 @@ Modelo:
     width: 0;
     height: 0;
     left: -100vw;
+    rotate: 0deg;
   }
   100% {
     width: 33vw;
     height: 100%;
     left: 0;
+    rotate: -360deg;
   }
 }
 
@@ -211,11 +219,13 @@ Modelo:
     width: 0;
     height: 0;
     left: 100vw;
+    rotate: 0deg;
   }
   100% {
     width: 33vw;
     height: 100%;
     left: 0;
+    rotate: -360deg;
   }
 }
 
@@ -246,11 +256,13 @@ Modelo:
     width: 0;
     height: 0;
     left: -100vw;
+    rotate: 0deg;
   }
   100% {
     width: 33vw;
     height: 100%;
     left: 0;
+    rotate: -360deg;
   }
 }
 
@@ -259,11 +271,13 @@ Modelo:
     width: 0;
     height: 0;
     left: 100vw;
+    rotate: 0deg;
   }
   100% {
     width: 33vw;
     height: 100%;
     left: 0;
+    rotate: -360deg;
   }
 }
 
