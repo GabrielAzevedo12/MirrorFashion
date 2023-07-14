@@ -24,7 +24,14 @@
   grid-area: Seja;
 }
 .Bem {
-  grid-area: Bem;
+  position: relative;
+
+  animation-name: text_animation_state_2;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+
+  left: 33vw;
+  rotate: -360deg;
 }
 .Vindo {
   grid-area: Vindo;
@@ -222,6 +229,7 @@ Modelo:
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
+/* #main_banner_stateInicial */
 
 @keyframes main_banner_1_state_inicial {
   0% {
@@ -273,7 +281,10 @@ Modelo:
   100% {
   }
 }
+
+/* main_banner_stateInicial# */
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
+/* #main_banner_state1 */
 
 @keyframes main_banner_1_state_1 {
   0% {
@@ -334,7 +345,11 @@ Modelo:
   }
 }
 
+/* main_banner_state1# */
+
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
+/* #main_banner_state2 */
+
 @keyframes main_banner_1_state_2 {
   0% {
     width: 0;
@@ -390,6 +405,22 @@ Modelo:
   }
 }
 
+/* main_banner_state2# */
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+/* #text_animation_state2 */
+
+@keyframes text_animation_state_2 {
+  0% {
+    left: 0;
+    rotate: 0deg;
+  }
+  100% {
+    left: 33vw;
+    rotate: -360deg;
+  }
+}
+
+/* text_animation_state2# */
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
 .displayNone {
   display: none;

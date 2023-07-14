@@ -13,6 +13,11 @@ const Adicionar_class = (e, name_class) => {
 const Remover_class = (e, name_class) => {
   e.classList.remove(name_class);
 };
+
+const new_text = (e, text) => {
+  e.textContent = text;
+};
+
 //---------------------------------------------------------------------------------------------------------------------------------------
 const Analise_class_p = (db, name_class, soluçoes) => {
   for (let x of db) {
@@ -65,9 +70,12 @@ const window_Event_onscroll = () => {
           const alterarStates = () => {
             //Mudança de layout DivAnimation_main 2
             //---------------------------------------------------------
-            Adicionar_class($(".Seja"), "displayNone");
+            new_text($(".Seja"), "Bem");
+            Adicionar_class($(".Seja"), "Bem");
+            /*
             //---------------------------------------------------------
             Remover_class($(".Bem"), "displayNone");
+            */
             //---------------------------------------------------------
             /*
             Remover_class($(".DivAnimation_main"), "template_areas_state_1");
